@@ -1,0 +1,15 @@
+{
+  "name": "Panel szkolenia AI",
+  "short_name": "Panel AI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e5edf6",
+  "theme_color": "#e5edf6",
+  "icons": [
+    {
+      "src": "assets/project-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
