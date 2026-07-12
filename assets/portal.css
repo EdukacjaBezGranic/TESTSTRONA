@@ -24,6 +24,119 @@ body {
   color: var(--text);
 }
 
+body.trainer-gate-pending {
+  overflow: hidden;
+}
+
+body.trainer-gate-pending .wrap {
+  pointer-events: none;
+  user-select: none;
+  filter: blur(7px) saturate(.9);
+  transform: scale(.992);
+}
+
+.trainer-access-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(255, 255, 255, .54) 0%, rgba(255, 255, 255, .34) 36%, rgba(226, 232, 240, .42) 100%),
+    rgba(241, 245, 249, .38);
+  backdrop-filter: blur(10px);
+}
+
+body:not(.trainer-gate-pending) .trainer-access-overlay {
+  display: none;
+}
+
+.trainer-access-box {
+  position: relative;
+  overflow: hidden;
+  width: min(460px, 100%);
+  padding: 30px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .94), rgba(248, 250, 252, .86)),
+    radial-gradient(circle at 12% 8%, rgba(14, 116, 144, .18), transparent 36%);
+  border: 1px solid rgba(203, 213, 225, .88);
+  border-radius: 14px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, .22);
+}
+
+.trainer-access-box::before {
+  content: "";
+  position: absolute;
+  inset: -60% -90%;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 38%, rgba(255, 255, 255, .76) 50%, transparent 62%);
+  opacity: .58;
+  animation: silverFade 7s ease-in-out infinite;
+}
+
+.trainer-access-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.trainer-access-box h2 {
+  margin: 10px 0 8px;
+  color: #0f172a;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.trainer-access-box p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.trainer-access-box label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.trainer-password-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.trainer-password-row input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  color: #111827;
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.trainer-password-row input:focus {
+  border-color: rgba(14, 116, 144, .72);
+  box-shadow: 0 0 0 4px rgba(14, 116, 144, .14);
+}
+
+.trainer-access-error {
+  min-height: 20px;
+  margin: 12px 0 0 !important;
+  color: #b42318 !important;
+  font-size: 13px;
+  font-weight: 750;
+}
+
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -727,6 +840,30 @@ body {
   margin-top: auto;
 }
 
+.organizer-card .btn {
+  margin-top: 0;
+}
+
+.organizer-downloads {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+}
+
+.organizer-downloads .btn {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.organizer-downloads .download-link {
+  background: rgba(255, 255, 255, .78);
+  border-color: rgba(var(--accent-rgb), .24);
+  color: #233449;
+}
+
 .generator-card .small {
   margin: 12px 0 0;
   color: #64748b;
@@ -783,6 +920,10 @@ body {
   }
 
   .generator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .organizer-downloads {
     grid-template-columns: 1fr;
   }
 
@@ -918,6 +1059,14 @@ body {
   .portal-lead {
     font-size: 14px;
     line-height: 1.48;
+  }
+
+  .trainer-access-box {
+    padding: 22px;
+  }
+
+  .trainer-password-row {
+    grid-template-columns: 1fr;
   }
 }
 

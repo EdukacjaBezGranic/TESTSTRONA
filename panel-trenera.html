@@ -4,10 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Centrum szkoleń - Panel trenera</title>
-<link rel="stylesheet" href="assets/portal.css?v=20260710-01">
-<script src="assets/portal.js?v=20260709-02" defer></script>
+<link rel="stylesheet" href="assets/portal.css?v=20260711-panel-gate-light">
+<script src="assets/portal.js?v=20260711-panel-gate" defer></script>
 </head>
-<body>
+<body class="trainer-gate-pending" data-panel-gate="trainer">
+<div class="trainer-access-overlay" data-trainer-gate role="dialog" aria-modal="true" aria-labelledby="trainerGateTitle">
+  <form class="trainer-access-box" data-trainer-gate-form>
+    <span class="tag">dostęp chroniony</span>
+    <h2 id="trainerGateTitle">Panel trenera</h2>
+    <p>Podaj hasło dostępu, aby przejść do materiałów prowadzącego.</p>
+    <label for="trainerPassword">Hasło</label>
+    <div class="trainer-password-row">
+      <input id="trainerPassword" name="trainerPassword" type="password" autocomplete="current-password" data-trainer-password>
+      <button class="btn" type="submit">Otwórz panel</button>
+    </div>
+    <p class="trainer-access-error" data-trainer-error aria-live="polite"></p>
+  </form>
+</div>
 <main class="wrap">
   <section class="hero">
     <div class="hero-copy">
@@ -169,19 +182,25 @@
   </section>
 
   <section class="brand-strip" aria-label="Logotypy projektu i partnerów">
-    <img src="grafiki/logotypy-pasek.png" alt="Logotypy projektu Edukacja bez granic, Kierunek Kompetencje 4.0, Unii Europejskiej i WUP w Katowicach">
+    <img src="grafiki/logotypy-pasek.png?v=20260710-baner2" alt="Logotypy projektu Edukacja bez granic, Kierunek Kompetencje 4.0, Unii Europejskiej i WUP w Katowicach">
     <a class="brand-strip-home" href="index.html" aria-label="Przejdź do strony głównej projektu Edukacja bez granic"></a>
   </section>
 
   <section class="section generator-section">
-    <h2>Zapisy na szkolenia</h2>
-    <p class="portal-lead">Osobna strona z formularzami Google Forms dla wszystkich tematów szkoleniowych z panelu trenera.</p>
+    <h2>Pliki do organizacji</h2>
+    <p class="portal-lead">Materiały pomocnicze przy przygotowaniu szkolenia: szablon listy obecności oraz grafiki informacyjne do wykorzystania w komunikacji z uczestnikami.</p>
     <div class="generator-grid">
-      <article class="generator-card generator-card-wide" style="--accent:#0e7490;--accent-rgb:14,116,144;">
-        <span class="tag">formularze</span>
-        <h3>Formularze zapisów na szkolenia</h3>
-        <p>Strona dzieli ofertę na nowe programy wynikające z projektu Edukacja bez granic oraz pozostałe szkolenia dostępne w panelu trenera, w tym materiały z projektu Kierunek Kompetencje 4.0 i innych programów mobilności.</p>
-        <a class="btn" href="zapisy.html">Przejdź do zapisów</a>
+      <article class="generator-card generator-card-wide organizer-card" style="--accent:#0e7490;--accent-rgb:14,116,144;">
+        <span class="tag">organizacja szkolenia</span>
+        <h3>Lista obecności i plakaty</h3>
+        <p>W tym miejscu znajdują się pliki, które mogą przydać się przed szkoleniem: miejsce na listę obecności oraz grafiki do zapowiedzi wybranych tematów.</p>
+        <div class="organizer-downloads">
+          <button class="btn ghost download-link" type="button" disabled>Szablon listy obecności - do podłączenia</button>
+          <a class="btn ghost download-link" href="grafiki/baner-fake-news.png" download>Plakat: myślenie krytyczne</a>
+          <a class="btn ghost download-link" href="grafiki/baner-komunikacja-storytelling.png" download>Plakat: wystąpienia publiczne</a>
+          <a class="btn ghost download-link" href="grafiki/baner-grywalizacja.png" download>Plakat: grywalizacja</a>
+        </div>
+        <p class="small">Pliki można pobrać i wykorzystać przy organizacji zajęć, przygotowaniu sali albo komunikacji z uczestnikami.</p>
       </article>
     </div>
   </section>

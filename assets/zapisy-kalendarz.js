@@ -8,12 +8,20 @@ const normalizeDescription = (description) => {
   return String(description).split('\n').map((line) => line.trim()).filter(Boolean);
 };
 
+const inferTone = (event) => {
+  if (event.tone) return event.tone;
+  if (event.id === 'fake-news') return 'gold';
+  if (event.id === 'komunikacja' || event.id === 'sel' || event.id === 'mindfulness') return 'green';
+  if (event.id === 'ai') return 'cyan';
+  return 'blue';
+};
+
 const trainingEvents = (portalData.trainings || []).map((event) => ({
   ...event,
   description: normalizeDescription(event.description),
   logo: event.logo || (event.source === 'Kierunek Kompetencje 4.0' ? competencesLogo : projectLogo),
   button: event.button || (event.open ? 'Zapisz się - formularz Google' : 'Zapisy wkrótce'),
-  tone: event.tone || 'blue'
+  tone: inferTone(event)
 }));
 
 const minMonth = { year: 2026, month: 8 };
@@ -35,8 +43,10 @@ const calendarModeButtons = document.querySelectorAll('[data-calendar-mode]');
 const calendarViews = document.querySelectorAll('[data-calendar-view]');
 
 function parseDate(value) {
+  if (!value) return null;
   const [year, month, day] = value.split('-').map(Number);
-  return new Date(year, month - 1, day);
+  const date = new Date(year, month - 1, day);
+  return Number.isNaN(date.getTime()) ? null : date;
 }
 
 function monthIndex(year, month) {
@@ -48,25 +58,27 @@ function formatMonth(year, month) {
 }
 
 function formatFullDate(value) {
+  const date = parseDate(value);
+  if (!date) return 'Termin wkrótce';
   return new Intl.DateTimeFormat('pl-PL', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
     year: 'numeric'
-  }).format(parseDate(value));
+  }).format(date);
 }
 
 function eventsInMonth(year, month) {
   return trainingEvents
     .filter(event => {
       const eventDate = parseDate(event.date);
-      return eventDate.getFullYear() === year && eventDate.getMonth() === month;
+      return eventDate && eventDate.getFullYear() === year && eventDate.getMonth() === month;
     })
     .sort((a, b) => parseDate(a.date) - parseDate(b.date));
 }
 
 function eventById(id) {
-  return trainingEvents.find(event => event.id === id) || trainingEvents[0];
+  return trainingEvents.find(event => event.id === id) || trainingEvents.find(event => parseDate(event.date)) || trainingEvents[0];
 }
 
 function setText(selector, value) {
@@ -104,10 +116,12 @@ function renderDetailLogo(event) {
 
   logo.src = event.logo || projectLogo;
   logoWrap.style.setProperty('--detail-color', event.color);
+  detailPanel?.style.setProperty('--detail-color', event.color || '#0b3fa8');
 }
 
 function selectEvent(id) {
   const event = eventById(id);
+  if (!event) return;
   selectedEventId = event.id;
 
   setText('[data-detail-source]', event.source);
@@ -130,6 +144,7 @@ function makeEventButton(event) {
   button.className = `calendar-event ${event.open ? 'is-open' : 'is-waiting'} is-${event.tone}`;
   button.type = 'button';
   button.dataset.eventId = event.id;
+  button.style.setProperty('--event-color', event.color || '#2563eb');
   button.innerHTML = `<small>${event.time}</small>${event.shortTitle}`;
   return button;
 }
@@ -159,7 +174,7 @@ function renderMonth() {
 
     const events = monthEvents.filter(event => {
       const eventDate = parseDate(event.date);
-      return eventDate.toDateString() === cellDate.toDateString();
+      return eventDate && eventDate.toDateString() === cellDate.toDateString();
     });
 
     events.forEach(event => day.append(makeEventButton(event)));
@@ -188,6 +203,7 @@ function renderList(monthEvents) {
     button.className = 'calendar-list-item';
     button.type = 'button';
     button.dataset.eventId = event.id;
+    button.style.setProperty('--event-color', event.color || '#2563eb');
     button.innerHTML = `<span><strong>${formatFullDate(event.date)}</strong><small>${event.time}</small></span><b>${event.title}</b>`;
     calendarList.append(button);
   });
@@ -219,10 +235,13 @@ function changeMonth(delta) {
 }
 
 function goToNearestEvent() {
-  const firstEvent = trainingEvents[0];
+  const firstEvent = trainingEvents.find(event => parseDate(event.date)) || trainingEvents[0];
+  if (!firstEvent) return;
   const date = parseDate(firstEvent.date);
-  currentYear = date.getFullYear();
-  currentMonth = date.getMonth();
+  if (date) {
+    currentYear = date.getFullYear();
+    currentMonth = date.getMonth();
+  }
   selectedEventId = firstEvent.id;
   renderMonth();
 }

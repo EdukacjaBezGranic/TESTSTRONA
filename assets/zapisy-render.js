@@ -21,9 +21,9 @@
   }[char]));
 
   const formatDate = (value) => {
-    if (!value) return '';
+    if (!value) return 'Termin wkrótce';
     const date = new Date(`${value}T12:00:00`);
-    if (Number.isNaN(date.getTime())) return '';
+    if (Number.isNaN(date.getTime())) return 'Termin wkrótce';
     return new Intl.DateTimeFormat('pl-PL', {
       day: 'numeric',
       month: 'long',
@@ -62,7 +62,7 @@
     const image = training.image || 'grafiki/projekt-hero.png';
     const title = training.title || 'Szkolenie';
     const descriptions = asDescription(training.description);
-    const meta = [formatDate(training.date), training.time, training.place].filter(Boolean).join(' · ');
+    const meta = [formatDate(training.date), training.date ? training.time : '', training.place].filter(Boolean).join(' · ');
     const accentRgb = colorToRgb(color);
 
     return `

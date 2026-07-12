@@ -112,6 +112,48 @@ function requestPortalAccess(label) {
   return false;
 }
 
+function openTrainerPanelGate() {
+  document.body.classList.remove('trainer-gate-pending');
+  const overlay = document.querySelector('[data-trainer-gate]');
+  if (overlay) overlay.setAttribute('aria-hidden', 'true');
+}
+
+function initTrainerPanelGate() {
+  if (!document.body.matches('[data-panel-gate="trainer"]')) return;
+
+  const form = document.querySelector('[data-trainer-gate-form]');
+  const input = document.querySelector('[data-trainer-password]');
+  const error = document.querySelector('[data-trainer-error]');
+
+  if (hasPortalAccess()) {
+    openTrainerPanelGate();
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    if (input) input.focus();
+  });
+
+  if (!form || !input) return;
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const password = input.value.trim();
+
+    if (password === ACCESS_PASSWORD) {
+      rememberPortalAccess();
+      if (error) error.textContent = '';
+      openTrainerPanelGate();
+      return;
+    }
+
+    if (error) error.textContent = 'Nieprawidłowe hasło. Spróbuj ponownie.';
+    input.select();
+  });
+}
+
+initTrainerPanelGate();
+
 document.addEventListener('click', event => {
   const protectedLink = event.target.closest('a[data-access-protected]');
   if (!protectedLink) return;
