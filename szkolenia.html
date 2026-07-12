@@ -6,8 +6,8 @@
 <meta name="description" content="Nowe tematy szkoleń projektu Edukacja bez granic: myślenie krytyczne, komunikacja oraz grywalizacja w edukacji dorosłych.">
 <title>Nowe tematy szkoleń - Edukacja bez granic</title>
 <link rel="icon" type="image/png" href="grafiki/logo-projektu-symbol-transparent.png">
-<link rel="stylesheet" href="assets/public.css?v=20260712-training-story">
-<script src="assets/public.js?v=20260709-04" defer></script>
+<link rel="stylesheet" href="assets/public.css?v=20260712-training-videos">
+<script src="assets/public.js?v=20260712-training-videos" defer></script>
 </head>
 <body class="public-page">
 <header class="site-header">
@@ -45,7 +45,14 @@
   </section>
 
   <section class="training-detail reveal" id="fake-news" style="--training-accent:#b38300">
-    <figure class="training-visual"><img src="grafiki/fake-news.jpg" alt="Analiza wiadomości i wiarygodności źródeł"><strong>Myślenie krytyczne, dezinformacja i manipulacja</strong></figure>
+    <figure class="training-visual training-video-card">
+      <button class="training-video-trigger" type="button" data-video-src="videos/fake-news-zapisy.mp4" aria-label="Odtwórz zapowiedź szkolenia Myślenie krytyczne, dezinformacja i manipulacja">
+        <img src="grafiki/video-posters/fake-news.jpg" alt="Zapowiedź szkolenia Myślenie krytyczne, dezinformacja i manipulacja" loading="lazy">
+        <span class="training-video-play" aria-hidden="true">▶</span>
+        <span class="training-video-label">Obejrzyj zapowiedź</span>
+      </button>
+      <strong>Myślenie krytyczne, dezinformacja i manipulacja</strong>
+    </figure>
     <div class="training-copy">
       <h2>Myślenie krytyczne, dezinformacja i manipulacja</h2>
       <h3>Dlaczego ten temat jest ważny?</h3>
@@ -64,7 +71,14 @@
   </section>
 
   <section class="training-detail reveal" id="komunikacja" style="--training-accent:#145c42">
-    <figure class="training-visual"><img src="grafiki/komunikacja.webp" alt="Prowadzenie wystąpienia i komunikacja z grupą"><strong>Wystąpienia publiczne i storytelling</strong></figure>
+    <figure class="training-visual training-video-card">
+      <button class="training-video-trigger" type="button" data-video-src="videos/komunikacja-zapisy.mp4" aria-label="Odtwórz zapowiedź szkolenia Wystąpienia publiczne i storytelling">
+        <img src="grafiki/video-posters/komunikacja.jpg" alt="Zapowiedź szkolenia Wystąpienia publiczne i storytelling" loading="lazy">
+        <span class="training-video-play" aria-hidden="true">▶</span>
+        <span class="training-video-label">Obejrzyj zapowiedź</span>
+      </button>
+      <strong>Wystąpienia publiczne i storytelling</strong>
+    </figure>
     <div class="training-copy">
       <h2>Wystąpienia publiczne i storytelling</h2>
       <h3>Dlaczego ten temat jest ważny?</h3>
@@ -83,7 +97,14 @@
   </section>
 
   <section class="training-detail reveal" id="grywalizacja" style="--training-accent:#073a98">
-    <figure class="training-visual"><img src="grafiki/gamifikacja.jpg" alt="Praca zespołowa i uczenie się poprzez doświadczenie"><strong>Grywalizacja, uczenie przez gry i doświadczenie</strong></figure>
+    <figure class="training-visual training-video-card">
+      <button class="training-video-trigger" type="button" data-video-src="videos/gamifikacja-zapisy.mp4" aria-label="Odtwórz zapowiedź szkolenia Grywalizacja, uczenie przez gry i doświadczenie">
+        <img src="grafiki/video-posters/gamifikacja.jpg" alt="Zapowiedź szkolenia Grywalizacja, uczenie przez gry i doświadczenie" loading="lazy">
+        <span class="training-video-play" aria-hidden="true">▶</span>
+        <span class="training-video-label">Obejrzyj zapowiedź</span>
+      </button>
+      <strong>Grywalizacja, uczenie przez gry i doświadczenie</strong>
+    </figure>
     <div class="training-copy">
       <h2>Grywalizacja, uczenie przez gry i doświadczenie</h2>
       <h3>Dlaczego ten temat jest ważny?</h3>
@@ -109,6 +130,12 @@
   </section>
 
   <div class="brand-bar reveal"><img src="grafiki/logotypy-pasek.png?v=20260710-baner2" alt="Logotypy projektu i partnerów"></div>
+  <div class="training-video-modal" data-video-modal aria-hidden="true">
+    <div class="training-video-dialog" role="dialog" aria-modal="true" aria-label="Zapowiedź szkolenia">
+      <button class="training-video-close" type="button" data-video-close aria-label="Zamknij film">×</button>
+      <video class="training-video-player" data-video-player controls playsinline preload="metadata"></video>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer"><div class="site-footer-inner"><div><strong>Edukacja bez granic</strong><p>Projekt Wojewódzkiego Urzędu Pracy w Katowicach realizowany w ramach programu Erasmus+.</p></div><nav class="site-footer-links" aria-label="Nawigacja w stopce"><a href="index.html">Strona główna</a><a href="o-projekcie.html">O projekcie</a><a href="zapisy.html">Zapisy</a><a href="kontakt.html">Kontakt</a></nav></div></footer>

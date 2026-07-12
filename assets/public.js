@@ -33,3 +33,36 @@ if ('IntersectionObserver' in window) {
 document.querySelectorAll('[data-current-year]').forEach(item => {
   item.textContent = String(new Date().getFullYear());
 });
+
+const trainingVideoModal = document.querySelector('[data-video-modal]');
+const trainingVideoPlayer = document.querySelector('[data-video-player]');
+const trainingVideoClose = document.querySelector('[data-video-close]');
+
+function closeTrainingVideo() {
+  if (!trainingVideoModal || !trainingVideoPlayer) return;
+  trainingVideoPlayer.pause();
+  trainingVideoPlayer.removeAttribute('src');
+  trainingVideoPlayer.load();
+  trainingVideoModal.classList.remove('is-open');
+  trainingVideoModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('video-modal-open');
+}
+
+document.querySelectorAll('[data-video-src]').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    if (!trainingVideoModal || !trainingVideoPlayer) return;
+    trainingVideoPlayer.src = trigger.dataset.videoSrc;
+    trainingVideoModal.classList.add('is-open');
+    trainingVideoModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('video-modal-open');
+    trainingVideoPlayer.play().catch(() => {});
+  });
+});
+
+trainingVideoClose?.addEventListener('click', closeTrainingVideo);
+trainingVideoModal?.addEventListener('click', event => {
+  if (event.target === trainingVideoModal) closeTrainingVideo();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && trainingVideoModal?.classList.contains('is-open')) closeTrainingVideo();
+});

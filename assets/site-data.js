@@ -12,7 +12,7 @@ window.portalSiteData = {
       "shortTitle": "Myślenie krytyczne",
       "date": "2026-09-17",
       "time": "10:00 - 14:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Pracownicy instytucji publicznych, doradcy zawodowi, trenerzy i osoby pracujące z informacją.",
       "description": [
         "Szkolenie pomaga rozpoznawać fałszywe informacje, manipulację i treści tworzone po to, aby wywołać szybką reakcję odbiorcy.",
@@ -33,7 +33,7 @@ window.portalSiteData = {
       "shortTitle": "Wystąpienia publiczne",
       "date": "2026-09-18",
       "time": "10:00 - 14:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Pracownicy prowadzący spotkania, szkolenia, konsultacje i prezentacje dla odbiorców.",
       "description": [
         "Szkolenie wzmacnia umiejętność jasnego, spokojnego i angażującego przekazywania informacji.",
@@ -54,7 +54,7 @@ window.portalSiteData = {
       "shortTitle": "Grywalizacja",
       "date": "2026-09-24",
       "time": "10:00 - 15:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Edukatorzy, trenerzy, doradcy zawodowi i osoby projektujące działania rozwojowe dla dorosłych.",
       "description": [
         "Szkolenie pokazuje, jak wykorzystywać elementy gier, zadania, wyzwania i mechanizmy motywacyjne w edukacji dorosłych.",
@@ -75,7 +75,7 @@ window.portalSiteData = {
       "shortTitle": "Sztuczna inteligencja",
       "date": "2026-09-25",
       "time": "9:00 - 13:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Pracownicy instytucji publicznych, edukatorzy, trenerzy, doradcy zawodowi oraz osoby zainteresowane AI.",
       "description": [
         "Szkolenie pokazuje, jak korzystać z narzędzi AI w pracy zawodowej i edukacyjnej.",
@@ -96,7 +96,7 @@ window.portalSiteData = {
       "shortTitle": "SEL",
       "date": "2026-10-01",
       "time": "10:00 - 14:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Osoby pracujące z grupami, edukatorzy, trenerzy, doradcy zawodowi i pracownicy instytucji publicznych.",
       "description": [
         "Szkolenie poświęcone jest rozwojowi kompetencji społecznych i emocjonalnych.",
@@ -117,7 +117,7 @@ window.portalSiteData = {
       "shortTitle": "Cyberbezpieczeństwo",
       "date": "2026-10-02",
       "time": "10:00 - 14:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Pracownicy administracji, osoby korzystające z narzędzi cyfrowych i prowadzące komunikację elektroniczną.",
       "description": [
         "Szkolenie porządkuje podstawowe zasady bezpiecznej pracy z pocztą, linkami, dokumentami i danymi.",
@@ -138,7 +138,7 @@ window.portalSiteData = {
       "shortTitle": "Mindfulness",
       "date": "2026-10-08",
       "time": "10:00 - 14:00",
-      "place": "Centrum Szkoleniowe, Katowice",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
       "audience": "Osoby pracujące z ludźmi, zespoły obsługujące klientów oraz pracownicy narażeni na obciążenie emocjonalne.",
       "description": [
         "Szkolenie pokazuje proste sposoby dbania o uwagę, koncentrację i odporność psychiczną w codziennej pracy.",
