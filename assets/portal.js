@@ -1,5 +1,7 @@
-const APP_PATH_PREFIX = window.location.pathname.includes('/portal-szkolen/') ? '../' : '';
-const appPath = path => `${APP_PATH_PREFIX}${path}`;
+// Wszystkie odnośniki są względne względem panel-trenera.html znajdującego się
+// w katalogu głównym repozytorium. Dzięki temu działają również na GitHub Pages
+// pod adresem /<nazwa-repozytorium>/ bez wychodzenia do katalogu domeny.
+const appPath = path => path;
 
 const TRAININGS = {
   ai: {

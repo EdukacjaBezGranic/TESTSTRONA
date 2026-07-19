@@ -1,0 +1,23 @@
+RAPORT KONTROLI POD GITHUB PAGES
+
+Sprawdzono:
+- strukturę katalogów i plik startowy index.html,
+- lokalne odwołania href/src w plikach HTML,
+- odwołania url(...) w CSS,
+- ścieżki tworzone dynamicznie dla paneli,
+- składnię wszystkich plików JavaScript,
+- obecność pliku .nojekyll.
+
+Poprawiono:
+- assets/portal.js: usunięto błędne wychodzenie o katalog wyżej dla adresów
+  zawierających /portal-szkolen/. Na GitHub Pages powodowało to kierowanie
+  linków poza katalog repozytorium.
+
+Wynik:
+- brak uszkodzonych bezpośrednich ścieżek HTML/CSS,
+- brak uszkodzonych sprawdzonych ścieżek dynamicznych,
+- brak błędów składni JavaScript,
+- projekt jest przygotowany do publikacji z katalogu głównego repozytorium.
+
+Publikacja:
+GitHub -> Settings -> Pages -> Deploy from a branch -> main / (root).
