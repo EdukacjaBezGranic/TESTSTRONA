@@ -23,7 +23,7 @@ window.portalSiteData = {
       "logo": "grafiki/logo-projektu-symbol-transparent.png",
       "open": true,
       "link": "https://forms.gle/KzJmaQr8hvH5dkGM8",
-      "button": "Zapisz się - formularz Google"
+      "button": "Zapisz się"
     },
     {
       "id": "komunikacja",

@@ -217,7 +217,7 @@ function renderTrainingInfo(key, card) {
       </div>
     </div>
     <div class="info-points">${data.points.map(point => `<span>${point}</span>`).join('')}</div>
-    ${data.href ? `<a class="btn" href="${data.href}" data-access-protected="training" data-access-label="panelu szkolenia">${data.cta || 'Otwórz panel'}</a>` : '<button class="btn ghost" type="button" disabled>Panel w przygotowaniu</button>'}
+    ${data.href ? `<a class="btn open-panel-btn" href="${data.href}" data-access-protected="training" data-access-label="panelu szkolenia">${data.cta || 'Otwórz panel'}</a>` : '<button class="btn ghost" type="button" disabled>Panel w przygotowaniu</button>'}
   `;
 
   arrangeTrainingGrid(card, info);

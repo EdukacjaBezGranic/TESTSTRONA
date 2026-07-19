@@ -44,7 +44,7 @@
   };
 
   const renderAction = (training) => {
-    const label = training.button || (training.open ? 'Zapisz się' : 'Zapisy wkrótce');
+    const label = training.open ? 'Zapisz się' : 'Termin zostanie ogłoszony';
     if (training.open && training.link) {
       return `
         <span class="signup-status is-open">Zapisy otwarte</span>
@@ -53,7 +53,7 @@
     }
     return `
       <span class="signup-status">Zapisy wkrótce</span>
-      <span class="public-btn signup-btn-disabled" aria-disabled="true">${escapeHtml(label)}</span>
+      <span class="signup-soon-note" aria-disabled="true">${escapeHtml(label)}</span>
     `;
   };
 

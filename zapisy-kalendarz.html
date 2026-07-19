@@ -1,147 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Zapisy na szkolenia Wojewódzkiego Urzędu Pracy w Katowicach w układzie kalendarza terminów.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Zapisy na szkolenia Wojewódzkiego Urzędu Pracy w Katowicach w układzie kalendarza terminów." name="description"/>
 <title>Zapisy na szkolenia - kalendarz</title>
-<link rel="icon" type="image/png" href="grafiki/logo-projektu-symbol-transparent.png">
-<link rel="stylesheet" href="assets/public.css?v=20260712-training-story">
-<link rel="stylesheet" href="assets/zapisy-kalendarz.css?v=20260712-visual-refresh">
-<script src="assets/public.js?v=20260709-04" defer></script>
-<script src="assets/site-data.js?v=cms-1783756918100" defer></script>
-<script src="assets/contact-render.js?v=20260710-cms01" defer></script>
-<script src="assets/zapisy-kalendarz.js?v=20260710-color-calendar" defer></script>
+<link href="grafiki/logo-projektu-symbol-transparent.png" rel="icon" type="image/png"/>
+<link href="assets/public.css?v=o-projekcie-white-001" rel="stylesheet"/>
+<link href="assets/zapisy-kalendarz.css?v=20260712-visual-refresh" rel="stylesheet"/>
+<script defer="" src="assets/public.js?v=20260718-nav-course-fix-01"></script>
+<script defer="" src="assets/site-data.js?v=20260712-signup-action-polish"></script>
+<script defer="" src="assets/contact-render.js?v=20260710-cms01"></script>
+<script defer="" src="assets/zapisy-kalendarz.js?v=20260710-color-calendar"></script>
 </head>
 <body class="public-page calendar-signup-page">
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="site-logo" href="index.html" aria-label="Edukacja bez granic - strona główna">
-      <img src="grafiki/logo-projektu-symbol-transparent.png" alt="">
-      <span>Edukacja bez granic<small>nowe kompetencje i umiejętności</small></span>
-    </a>
-    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="siteNav" aria-label="Otwórz menu"><span></span><span></span><span></span></button>
-    <nav class="site-nav" id="siteNav" data-site-nav aria-label="Główna nawigacja">
-      <a href="index.html">Strona główna</a>
-      <a href="o-projekcie.html">O projekcie</a>
-      <a href="nasze-szkolenia.html">Nasze szkolenia</a>
-      <a href="szkolenia.html">Nowe tematy szkoleń</a>
-      <a class="nav-signups" href="zapisy.html" aria-current="page">Zapisy na szkolenia</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a class="nav-trainer" href="panel-trenera.html">Panel trenera</a>
-    </nav>
-  </div>
+<div class="site-header-inner">
+<a aria-label="Edukacja bez granic - strona główna" class="site-logo" href="index.html">
+<img alt="" src="grafiki/logo-projektu-symbol-transparent.png"/>
+<span>Edukacja bez granic<small>nowe kompetencje i umiejętności</small></span>
+</a>
+<button aria-controls="siteNav" aria-expanded="false" aria-label="Otwórz menu" class="nav-toggle" data-nav-toggle="" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Główna nawigacja" class="site-nav" data-site-nav="" id="siteNav">
+<a href="index.html">Strona główna</a>
+<a href="o-projekcie.html">O projekcie</a>
+<a href="nasze-szkolenia.html">Nasze szkolenia</a>
+<a href="szkolenia.html">Nowe tematy szkoleń</a>
+<a href="kursy-online.html">Kursy online</a><a aria-current="page" class="nav-signups" href="zapisy.html">Zapisy na szkolenia</a>
+<a href="kontakt.html">Kontakt</a>
+
+</nav>
+</div>
 </header>
-
 <main class="calendar-main">
-  <section class="calendar-hero reveal">
-    <div class="calendar-hero-copy">
-      <h1>Zapisy na szkolenia</h1>
-      <p>Sprawdź dostępne terminy, wybierz szkolenie i przejdź do formularza zgłoszeniowego. Przy szkoleniach, dla których nabór nie został jeszcze otwarty, pojawi się informacja o zapisach w późniejszym terminie.</p>
-      <div class="calendar-hero-actions">
-        <a class="public-btn" href="#kalendarz">Zobacz terminy</a>
-        <a class="public-btn public-btn-ghost" href="zapisy.html">Wróć do zapisów</a>
-      </div>
-    </div>
-    <div class="calendar-hero-mark" aria-hidden="true">
-      <img src="grafiki/logo-projektu-symbol-transparent.png" alt="">
-    </div>
-  </section>
-
-  <section class="calendar-layout reveal" id="kalendarz" aria-labelledby="calendarTitle">
-    <div class="calendar-board">
-      <div class="calendar-board-head">
-        <div>
-          <h2 id="calendarTitle">Kalendarz szkoleń</h2>
-          <p>Kliknij wybrany termin, aby zobaczyć szczegóły szkolenia i dostępność zapisów.</p>
-        </div>
-        <div class="calendar-controls" aria-label="Widok terminów">
-          <button class="calendar-mini-btn" type="button" data-calendar-nearest>Najbliższy termin</button>
-          <button class="calendar-arrow-btn" type="button" data-calendar-prev aria-label="Poprzedni miesiąc">
-            <svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
-          <button class="calendar-arrow-btn" type="button" data-calendar-next aria-label="Następny miesiąc">
-            <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="calendar-mode-row">
-        <h3 data-calendar-title>Wrzesień 2026</h3>
-        <div class="calendar-mode-switch" role="tablist" aria-label="Przełącz widok">
-          <button class="is-active" type="button" data-calendar-mode="month" role="tab" aria-selected="true">Miesiąc</button>
-          <button type="button" data-calendar-mode="list" role="tab" aria-selected="false">Lista</button>
-        </div>
-      </div>
-
-      <div class="calendar-month is-active" data-calendar-view="month">
-        <div class="calendar-weekdays" aria-hidden="true">
-          <span>Poniedziałek</span><span>Wtorek</span><span>Środa</span><span>Czwartek</span><span>Piątek</span><span>Sobota</span><span>Niedziela</span>
-        </div>
-        <div class="calendar-grid" data-calendar-grid></div>
-      </div>
-
-      <div class="calendar-list" data-calendar-view="list" data-calendar-list></div>
-
-      <div class="calendar-legend" aria-label="Legenda">
-        <span><i class="legend-gold"></i>Nowe programy projektu</span>
-        <span><i class="legend-blue"></i>Pozostałe szkolenia</span>
-        <span><i class="legend-green"></i>Kompetencje społeczne</span>
-      </div>
-    </div>
-
-    <aside class="calendar-details" aria-live="polite">
-      <button class="calendar-close" type="button" aria-label="Wyczyść wybór">
-        <svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
-      </button>
-      <div class="calendar-details-head">
-        <span class="calendar-details-icon calendar-details-logo" data-detail-icon aria-hidden="true">
-          <img src="grafiki/logo-projektu-symbol-transparent.png" alt="" data-detail-logo>
-        </span>
-        <div>
-          <p data-detail-source>Projekt Edukacja bez granic</p>
-          <h2 data-detail-title>Myślenie krytyczne, dezinformacja i manipulacja</h2>
-        </div>
-      </div>
-      <dl class="calendar-detail-meta">
-        <div><dt>Data</dt><dd data-detail-date>Wtorek, 8 września 2026</dd></div>
-        <div><dt>Godzina</dt><dd data-detail-time>9:00-13:00</dd></div>
-        <div><dt>Miejsce</dt><dd data-detail-place>Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29</dd></div>
-      </dl>
-      <div class="calendar-detail-section">
-        <h3>Opis szkolenia</h3>
-        <div class="calendar-detail-description" data-detail-description>
-          <p>Szkolenie pomaga rozpoznawać fałszywe i manipulacyjne treści, oceniać wiarygodność źródeł oraz odróżniać fakty od opinii i emocjonalnych przekazów.</p>
-          <p>Uczestnicy poznają praktyczne metody weryfikowania informacji, zdjęć i internetowych publikacji. Uczą się także, jak spokojnie reagować na niepewne treści i wspierać innych w podejmowaniu decyzji na podstawie sprawdzonych danych.</p>
-        </div>
-      </div>
-      <div class="calendar-detail-section">
-        <h3>Dla kogo?</h3>
-        <p data-detail-audience>Pracownicy instytucji publicznych, doradcy zawodowi, edukatorzy i osoby pracujące z informacją.</p>
-      </div>
-      <div class="calendar-detail-action" data-detail-action>
-        <a class="public-btn calendar-form-btn" href="https://forms.gle/KzJmaQr8hvH5dkGM8" target="_blank" rel="noopener noreferrer">Zapisz się - formularz Google</a>
-      </div>
-    </aside>
-  </section>
-
-  <section class="calendar-contact reveal">
-    <div>
-      <h2>Nie znalazłeś odpowiedniego terminu?</h2>
-      <p>Powiatowe urzędy pracy zainteresowane organizacją szkolenia mogą skontaktować się z Wojewódzkim Urzędem Pracy w Katowicach. Chętnie omówimy potrzeby grupy i dostępne możliwości.</p>
-    </div>
-    <div class="calendar-contact-actions">
-      <a class="public-btn" href="mailto:pr@wup-katowice.pl" data-contact-email-link>Napisz wiadomość</a>
-      <a class="public-btn public-btn-ghost" href="tel:+48327573384" data-contact-phone>32 757 33 84</a>
-    </div>
-  </section>
+<section class="calendar-hero reveal">
+<div class="calendar-hero-copy">
+<h1>Zapisy na szkolenia</h1>
+<p>Sprawdź dostępne terminy, wybierz szkolenie i przejdź do formularza zgłoszeniowego. Przy szkoleniach, dla których nabór nie został jeszcze otwarty, pojawi się informacja o zapisach w późniejszym terminie.</p>
+<div class="calendar-hero-actions">
+<a class="public-btn" href="#kalendarz">Zobacz terminy</a>
+<a class="public-btn public-btn-ghost" href="zapisy.html">Wróć do zapisów</a>
+</div>
+</div>
+<div aria-hidden="true" class="calendar-hero-mark">
+<img alt="" src="grafiki/logo-projektu-symbol-transparent.png"/>
+</div>
+</section>
+<section aria-labelledby="calendarTitle" class="calendar-layout reveal" id="kalendarz">
+<div class="calendar-board">
+<div class="calendar-board-head">
+<div>
+<h2 id="calendarTitle">Kalendarz szkoleń</h2>
+<p>Kliknij wybrany termin, aby zobaczyć szczegóły szkolenia i dostępność zapisów.</p>
+</div>
+<div aria-label="Widok terminów" class="calendar-controls">
+<button class="calendar-mini-btn" data-calendar-nearest="" type="button">Najbliższy termin</button>
+<button aria-label="Poprzedni miesiąc" class="calendar-arrow-btn" data-calendar-prev="" type="button">
+<svg viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg>
+</button>
+<button aria-label="Następny miesiąc" class="calendar-arrow-btn" data-calendar-next="" type="button">
+<svg viewbox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></svg>
+</button>
+</div>
+</div>
+<div class="calendar-mode-row">
+<h3 data-calendar-title="">Wrzesień 2026</h3>
+<div aria-label="Przełącz widok" class="calendar-mode-switch" role="tablist">
+<button aria-selected="true" class="is-active" data-calendar-mode="month" role="tab" type="button">Miesiąc</button>
+<button aria-selected="false" data-calendar-mode="list" role="tab" type="button">Lista</button>
+</div>
+</div>
+<div class="calendar-month is-active" data-calendar-view="month">
+<div aria-hidden="true" class="calendar-weekdays">
+<span>Poniedziałek</span><span>Wtorek</span><span>Środa</span><span>Czwartek</span><span>Piątek</span><span>Sobota</span><span>Niedziela</span>
+</div>
+<div class="calendar-grid" data-calendar-grid=""></div>
+</div>
+<div class="calendar-list" data-calendar-list="" data-calendar-view="list"></div>
+<div aria-label="Legenda" class="calendar-legend">
+<span><i class="legend-gold"></i>Nowe programy projektu</span>
+<span><i class="legend-blue"></i>Pozostałe szkolenia</span>
+<span><i class="legend-green"></i>Kompetencje społeczne</span>
+</div>
+</div>
+<aside aria-live="polite" class="calendar-details">
+<button aria-label="Wyczyść wybór" class="calendar-close" type="button">
+<svg viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+</button>
+<div class="calendar-details-head">
+<span aria-hidden="true" class="calendar-details-icon calendar-details-logo" data-detail-icon="">
+<img alt="" data-detail-logo="" src="grafiki/logo-projektu-symbol-transparent.png"/>
+</span>
+<div>
+<p data-detail-source="">Projekt Edukacja bez granic</p>
+<h2 data-detail-title="">Myślenie krytyczne, dezinformacja i manipulacja</h2>
+</div>
+</div>
+<dl class="calendar-detail-meta">
+<div><dt>Data</dt><dd data-detail-date="">Wtorek, 8 września 2026</dd></div>
+<div><dt>Godzina</dt><dd data-detail-time="">9:00-13:00</dd></div>
+<div><dt>Miejsce</dt><dd data-detail-place="">Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29</dd></div>
+</dl>
+<div class="calendar-detail-section">
+<h3>Opis szkolenia</h3>
+<div class="calendar-detail-description" data-detail-description="">
+<p>Szkolenie pomaga rozpoznawać fałszywe i manipulacyjne treści, oceniać wiarygodność źródeł oraz odróżniać fakty od opinii i emocjonalnych przekazów.</p>
+<p>Uczestnicy poznają praktyczne metody weryfikowania informacji, zdjęć i internetowych publikacji. Uczą się także, jak spokojnie reagować na niepewne treści i wspierać innych w podejmowaniu decyzji na podstawie sprawdzonych danych.</p>
+</div>
+</div>
+<div class="calendar-detail-section">
+<h3>Dla kogo?</h3>
+<p data-detail-audience="">Pracownicy instytucji publicznych, doradcy zawodowi, edukatorzy i osoby pracujące z informacją.</p>
+</div>
+<div class="calendar-detail-action" data-detail-action="">
+<a class="public-btn calendar-form-btn" href="https://forms.gle/KzJmaQr8hvH5dkGM8" rel="noopener noreferrer" target="_blank">Zapisz się</a>
+</div>
+</aside>
+</section>
+<section class="calendar-contact reveal">
+<div>
+<h2>Nie znalazłeś odpowiedniego terminu?</h2>
+<p>Powiatowe urzędy pracy zainteresowane organizacją szkolenia mogą skontaktować się z Wojewódzkim Urzędem Pracy w Katowicach. Chętnie omówimy potrzeby grupy i dostępne możliwości.</p>
+</div>
+<div class="calendar-contact-actions">
+<a class="public-btn" data-contact-email-link="" href="mailto:pr@wup-katowice.pl">Napisz wiadomość</a>
+<a class="public-btn public-btn-ghost" data-contact-phone="" href="tel:+48327573384">32 757 33 84</a>
+</div>
+</section>
 </main>
-
 <footer class="site-footer">
-  <div class="site-footer-inner">
-    <div><strong>Edukacja bez granic</strong><p>Projekt Wojewódzkiego Urzędu Pracy w Katowicach realizowany w ramach programu Erasmus+.</p></div>
-    <nav class="site-footer-links" aria-label="Nawigacja w stopce"><a href="index.html">Strona główna</a><a href="o-projekcie.html">O projekcie</a><a href="nasze-szkolenia.html">Nasze szkolenia</a><a href="szkolenia.html">Nowe tematy szkoleń</a><a href="kontakt.html">Kontakt</a></nav>
-  </div>
+<div class="site-footer-inner">
+<div><strong>Edukacja bez granic</strong><p>Projekt Wojewódzkiego Urzędu Pracy w Katowicach realizowany w ramach programu Erasmus+.</p></div>
+<nav aria-label="Nawigacja w stopce" class="site-footer-links"><a href="index.html">Strona główna</a><a href="o-projekcie.html">O projekcie</a><a href="nasze-szkolenia.html">Nasze szkolenia</a><a href="szkolenia.html">Nowe tematy szkoleń</a><a href="kontakt.html">Kontakt</a><a class="footer-trainer-link" href="panel-trenera.html">Panel trenera</a></nav>
+</div>
 </footer>
 </body>
 </html>

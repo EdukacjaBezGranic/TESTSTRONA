@@ -851,3 +851,51 @@
   .calendar-details,
   .calendar-contact { border-radius: 17px; }
 }
+
+/* Responsive polish for registration calendar */
+html { overflow-x: hidden; }
+@media (max-width: 1199px) {
+  .calendar-shell, .calendar-page, .calendar-layout { min-width: 0; }
+}
+@media (max-width: 1024px) {
+  .calendar-layout, .booking-layout, .calendar-content { grid-template-columns: 1fr !important; }
+  .calendar-sidebar, .booking-sidebar { position: static !important; width: 100% !important; }
+  .calendar-grid { min-width: 0; }
+}
+@media (max-width: 680px) {
+  .calendar-toolbar { flex-wrap: wrap; gap: 10px; }
+  .calendar-toolbar > * { min-width: 0; }
+  .calendar-title { width: 100%; text-align: center; order: -1; }
+  .calendar-weekdays, .calendar-days { gap: 4px; }
+  .calendar-weekdays > *, .calendar-day { min-width: 0; }
+  .calendar-day { min-height: 72px; padding: 6px; border-radius: 10px; }
+  .calendar-day-number { font-size: 13px; }
+  .calendar-event { padding: 4px 5px; font-size: 10px; line-height: 1.2; }
+  .calendar-modal, .booking-modal { padding: 10px; }
+  .calendar-dialog, .booking-dialog { width: 100% !important; max-height: 90vh; overflow-y: auto; border-radius: 14px; }
+}
+@media (max-width: 390px) {
+  .calendar-day { min-height: 64px; padding: 4px; }
+  .calendar-event { font-size: 9px; }
+}
+
+
+/* Force white text on trainer buttons */
+.open-panel-btn,
+.open-generator-btn,
+.btn-open,
+.btn-primary,
+a.btn-primary{
+ color:#fff !important;
+}
+.open-panel-btn:hover,
+.open-generator-btn:hover,
+.btn-open:hover,
+.btn-primary:hover,
+a.btn-primary:hover,
+.open-panel-btn:focus,
+.open-generator-btn:focus,
+.btn-open:focus,
+.btn-primary:focus{
+ color:#fff !important;
+}

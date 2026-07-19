@@ -20,7 +20,7 @@ const trainingEvents = (portalData.trainings || []).map((event) => ({
   ...event,
   description: normalizeDescription(event.description),
   logo: event.logo || (event.source === 'Kierunek Kompetencje 4.0' ? competencesLogo : projectLogo),
-  button: event.button || (event.open ? 'Zapisz się - formularz Google' : 'Zapisy wkrótce'),
+  button: event.button || (event.open ? 'Zapisz się' : 'Zapisy wkrótce'),
   tone: inferTone(event)
 }));
 

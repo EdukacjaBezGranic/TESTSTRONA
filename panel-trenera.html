@@ -1,225 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Centrum szkoleń - Panel trenera</title>
-<link rel="stylesheet" href="assets/portal.css?v=20260711-panel-gate-light">
-<script src="assets/portal.js?v=20260711-panel-gate" defer></script>
+<link href="grafiki/logo-projektu-symbol-transparent.png" rel="icon" type="image/png"/>
+<link href="assets/public.css?v=o-projekcie-white-001" rel="stylesheet"/>
+<link href="assets/portal.css?v=portal3-build002" rel="stylesheet"/>
+<link href="assets/trainer-integration.css?v=20260712-visual-polish-dark" rel="stylesheet"/>
+<script defer="" src="assets/public.js?v=20260718-nav-course-fix-01"></script>
+<script defer="" src="assets/portal.js?v=20260712-panel-integrated"></script>
 </head>
-<body class="trainer-gate-pending" data-panel-gate="trainer">
-<div class="trainer-access-overlay" data-trainer-gate role="dialog" aria-modal="true" aria-labelledby="trainerGateTitle">
-  <form class="trainer-access-box" data-trainer-gate-form>
-    <span class="tag">dostęp chroniony</span>
-    <h2 id="trainerGateTitle">Panel trenera</h2>
-    <p>Podaj hasło dostępu, aby przejść do materiałów prowadzącego.</p>
-    <label for="trainerPassword">Hasło</label>
-    <div class="trainer-password-row">
-      <input id="trainerPassword" name="trainerPassword" type="password" autocomplete="current-password" data-trainer-password>
-      <button class="btn" type="submit">Otwórz panel</button>
-    </div>
-    <p class="trainer-access-error" data-trainer-error aria-live="polite"></p>
-  </form>
+<body class="public-page trainer-page trainer-gate-pending" data-panel-gate="trainer">
+<header class="site-header">
+<div class="site-header-inner">
+<a aria-label="Edukacja bez granic - strona główna" class="site-logo" href="index.html">
+<img alt="" src="grafiki/logo-projektu-symbol-transparent.png"/>
+<span>Edukacja bez granic<small>nowe kompetencje i umiejętności</small></span>
+</a>
+<button aria-controls="siteNav" aria-expanded="false" aria-label="Otwórz menu" class="nav-toggle" data-nav-toggle="" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Główna nawigacja" class="site-nav" data-site-nav="" id="siteNav">
+<a href="index.html">Strona główna</a>
+<a href="o-projekcie.html">O projekcie</a>
+<a href="nasze-szkolenia.html">Nasze szkolenia</a>
+<a href="szkolenia.html">Nowe tematy szkoleń</a>
+<a href="kursy-online.html">Kursy online</a><a class="nav-signups" href="zapisy.html">Zapisy na szkolenia</a>
+<a href="kontakt.html">Kontakt</a>
+
+</nav>
 </div>
-<main class="wrap">
-  <section class="hero">
-    <div class="hero-copy">
-      <span class="tag">platforma szkoleń</span>
-      <h1><span class="title-main">Centrum szkoleń</span><span class="title-sub">Panel trenera</span></h1>
-      <p>Jedno miejsce dla paneli szkoleniowych, materiałów, ćwiczeń i narzędzi prowadzącego.</p>
-    </div>
-    <div class="hero-visual">
-      <a class="project-home-logo" href="index.html" aria-label="Przejdź do strony głównej projektu Edukacja bez granic">
-        <img src="grafiki/logo-projektu-symbol-transparent.png" alt="Logo projektu Edukacja bez granic">
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Wybierz szkolenie</h2>
-    <div class="training-grid">
-      <article class="training-card is-ready is-selected" data-training="ai" tabindex="0" style="--accent:#0e7490;--accent-rgb:14,116,144;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/ai.jpg" alt="">
-          <span>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</span>
-          <small>gotowy panel szkoleniowy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">gotowy panel</span>
-          <h3>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</h3>
-          <div class="meta">
-            <span>25 ćwiczeń</span>
-            <span>materiały</span>
-            <span>wydruki</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-info-card" id="trainingInfo" style="--accent:#0e7490;--accent-rgb:14,116,144;">
-        <span class="tag">szczegóły szkolenia</span>
-        <h3>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</h3>
-        <div class="info-copy">
-          <div>
-            <strong>Dlaczego ważne?</strong>
-            <p>AI coraz częściej trafia do codziennej pracy biurowej, ale bez dobrych zasad łatwo o ogólniki, błędy i niekontrolowane dopowiadanie faktów.</p>
-          </div>
-          <div>
-            <strong>Cel szkolenia</strong>
-            <p>Celem szkolenia jest nauczenie uczestników praktycznego, bezpiecznego i świadomego korzystania z AI przy tekstach, notatkach, materiałach i zadaniach urzędowych.</p>
-          </div>
-        </div>
-        <div class="info-points">
-          <span>praktyczne prompty</span>
-          <span>teksty urzędowe</span>
-          <span>ćwiczenia warsztatowe</span>
-          <span>bezpieczna praca z AI</span>
-        </div>
-        <a class="btn" href="panel-ai-ex7-probe/index.html" data-app-path="panel-ai-ex7-probe/index.html" data-access-protected="training" data-access-label="panelu szkolenia">Otwórz panel</a>
-      </article>
-
-      <article class="training-card" data-training="fake-news" tabindex="0" style="--accent:#b25b72;--accent-rgb:178,91,114;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/fake-news.jpg" alt="">
-          <span>Fake newsy i krytyczne myślenie</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>Fake newsy i krytyczne myślenie</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>narzędzia</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-card" data-training="komunikacja" tabindex="0" style="--accent:#6d5bd0;--accent-rgb:109,91,208;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/komunikacja.webp" alt="">
-          <span>Komunikacja i wystąpienia</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>Komunikacja i wystąpienia</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>materiały</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-card" data-training="gamifikacja" tabindex="0" style="--accent:#c36a12;--accent-rgb:195,106,18;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/gamifikacja.jpg" alt="">
-          <span>Gamifikacja</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>Gamifikacja</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>materiały</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-card" data-training="sel" tabindex="0" style="--accent:#0f8f68;--accent-rgb:15,143,104;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/sel.jpg" alt="">
-          <span>SEL i kompetencje społeczno-emocjonalne</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>SEL i kompetencje społeczno-emocjonalne</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>materiały</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-card" data-training="cyber" tabindex="0" style="--accent:#2563eb;--accent-rgb:37,99,235;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/cyberbezpieczenstwo.jpg" alt="">
-          <span>Cyberbezpieczeństwo</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>Cyberbezpieczeństwo</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>narzędzia</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="training-card" data-training="mindfulness" tabindex="0" style="--accent:#475569;--accent-rgb:71,85,105;">
-        <div class="cover-slot image-cover">
-          <img class="cover-photo" src="grafiki/mindfulness.jpg" alt="">
-          <span>Mindfulness</span>
-          <small>panel roboczy</small>
-        </div>
-        <div class="card-content">
-          <span class="tag">panel roboczy</span>
-          <h3>Mindfulness</h3>
-          <div class="meta">
-            <span>8 ćwiczeń</span>
-            <span>materiały</span>
-            <span>QR / timer</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="brand-strip" aria-label="Logotypy projektu i partnerów">
-    <img src="grafiki/logotypy-pasek.png?v=20260710-baner2" alt="Logotypy projektu Edukacja bez granic, Kierunek Kompetencje 4.0, Unii Europejskiej i WUP w Katowicach">
-    <a class="brand-strip-home" href="index.html" aria-label="Przejdź do strony głównej projektu Edukacja bez granic"></a>
-  </section>
-
-  <section class="section generator-section">
-    <h2>Pliki do organizacji</h2>
-    <p class="portal-lead">Materiały pomocnicze przy przygotowaniu szkolenia: szablon listy obecności oraz grafiki informacyjne do wykorzystania w komunikacji z uczestnikami.</p>
-    <div class="generator-grid">
-      <article class="generator-card generator-card-wide organizer-card" style="--accent:#0e7490;--accent-rgb:14,116,144;">
-        <span class="tag">organizacja szkolenia</span>
-        <h3>Lista obecności i plakaty</h3>
-        <p>W tym miejscu znajdują się pliki, które mogą przydać się przed szkoleniem: miejsce na listę obecności oraz grafiki do zapowiedzi wybranych tematów.</p>
-        <div class="organizer-downloads">
-          <button class="btn ghost download-link" type="button" disabled>Szablon listy obecności - do podłączenia</button>
-          <a class="btn ghost download-link" href="grafiki/baner-fake-news.png" download>Plakat: myślenie krytyczne</a>
-          <a class="btn ghost download-link" href="grafiki/baner-komunikacja-storytelling.png" download>Plakat: wystąpienia publiczne</a>
-          <a class="btn ghost download-link" href="grafiki/baner-grywalizacja.png" download>Plakat: grywalizacja</a>
-        </div>
-        <p class="small">Pliki można pobrać i wykorzystać przy organizacji zajęć, przygotowaniu sali albo komunikacji z uczestnikami.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section generator-section">
-    <h2>Generator zaświadczeń</h2>
-    <p class="portal-lead">Jedna wersja generatora działająca w przeglądarce na każdym komputerze.</p>
-    <div class="generator-grid">
-      <article class="generator-card generator-card-wide">
-        <span class="tag">HTML / przeglądarka</span>
-        <h3>Generator zaświadczeń</h3>
-        <p>Uniwersalna wersja generatora do przygotowania zaświadczeń, listy uczestników do podpisu, plików PDF i CSV. Działa lokalnie w Chrome, Edge lub Safari.</p>
-        <a class="btn" href="generator-zaswiadczen-html/index.html" data-app-path="generator-zaswiadczen-html/index.html" target="_blank" rel="noopener noreferrer" data-access-protected="generator" data-access-label="generatora zaświadczeń">Otwórz generator</a>
-        <p class="small">Nie trzeba wybierać wersji Mac lub Windows. Wystarczy otworzyć generator w przeglądarce.</p>
-      </article>
-    </div>
-  </section>
-
-  <p class="footer">Projekt portalu szkoleń. Wersja robocza z miejscem na grafiki.</p>
+</header>
+<div aria-labelledby="trainerGateTitle" aria-modal="true" class="trainer-access-overlay" data-trainer-gate="" role="dialog">
+<form class="trainer-access-box" data-trainer-gate-form="">
+<span class="tag">dostęp chroniony</span>
+<h2 id="trainerGateTitle">Panel trenera</h2>
+<p>Podaj hasło dostępu, aby przejść do materiałów prowadzącego.</p>
+<label for="trainerPassword">Hasło</label>
+<div class="trainer-password-row">
+<input autocomplete="current-password" data-trainer-password="" id="trainerPassword" name="trainerPassword" type="password"/>
+<button class="btn open-panel-btn" style="color:#fff" type="submit">Otwórz panel</button>
+</div>
+<p aria-live="polite" class="trainer-access-error" data-trainer-error=""></p>
+</form>
+</div>
+<main class="wrap trainer-main">
+<section class="public-hero inner-hero trainer-public-hero">
+<div class="public-hero-content">
+<span class="trainer-hero-kicker">platforma szkoleń</span>
+<h1>Centrum szkoleń<span>Panel trenera</span></h1>
+<p>Jedno miejsce dla paneli szkoleniowych, materiałów, ćwiczeń i narzędzi prowadzącego.</p>
+</div>
+</section>
+<section class="section">
+<h2>Wybierz szkolenie</h2>
+<div class="training-grid">
+<article class="training-card is-ready is-selected" data-training="ai" style="--accent:#0e7490;--accent-rgb:14,116,144;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/ai.jpg"/>
+<span>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</span>
+<small>gotowy panel szkoleniowy</small>
+</div>
+<div class="card-content">
+<span class="tag">gotowy panel</span>
+<h3>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</h3>
+<div class="meta">
+<span>25 ćwiczeń</span>
+<span>materiały</span>
+<span>wydruki</span>
+</div>
+</div>
+</article>
+<article class="training-info-card" id="trainingInfo" style="--accent:#0e7490;--accent-rgb:14,116,144;">
+<span class="tag">szczegóły szkolenia</span>
+<h3>Wykorzystanie sztucznej inteligencji w pracy i w edukacji</h3>
+<div class="info-copy">
+<div>
+<strong>Dlaczego ważne?</strong>
+<p>AI coraz częściej trafia do codziennej pracy biurowej, ale bez dobrych zasad łatwo o ogólniki, błędy i niekontrolowane dopowiadanie faktów.</p>
+</div>
+<div>
+<strong>Cel szkolenia</strong>
+<p>Celem szkolenia jest nauczenie uczestników praktycznego, bezpiecznego i świadomego korzystania z AI przy tekstach, notatkach, materiałach i zadaniach urzędowych.</p>
+</div>
+</div>
+<div class="info-points">
+<span>praktyczne prompty</span>
+<span>teksty urzędowe</span>
+<span>ćwiczenia warsztatowe</span>
+<span>bezpieczna praca z AI</span>
+</div>
+<a class="btn open-panel-btn" data-access-label="panelu szkolenia" data-access-protected="training" data-app-path="panel-ai-ex7-probe/index.html" href="panel-ai-ex7-probe/index.html" style="color:#fff">Otwórz panel</a>
+</article>
+<article class="training-card" data-training="fake-news" style="--accent:#b25b72;--accent-rgb:178,91,114;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/fake-news.jpg"/>
+<span>Fake newsy i krytyczne myślenie</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>Fake newsy i krytyczne myślenie</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>narzędzia</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+<article class="training-card" data-training="komunikacja" style="--accent:#6d5bd0;--accent-rgb:109,91,208;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/komunikacja.webp"/>
+<span>Komunikacja i wystąpienia</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>Komunikacja i wystąpienia</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>materiały</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+<article class="training-card" data-training="gamifikacja" style="--accent:#c36a12;--accent-rgb:195,106,18;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/gamifikacja.jpg"/>
+<span>Gamifikacja</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>Gamifikacja</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>materiały</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+<article class="training-card" data-training="sel" style="--accent:#0f8f68;--accent-rgb:15,143,104;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/sel.jpg"/>
+<span>SEL i kompetencje społeczno-emocjonalne</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>SEL i kompetencje społeczno-emocjonalne</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>materiały</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+<article class="training-card" data-training="cyber" style="--accent:#2563eb;--accent-rgb:37,99,235;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/cyberbezpieczenstwo.jpg"/>
+<span>Cyberbezpieczeństwo</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>Cyberbezpieczeństwo</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>narzędzia</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+<article class="training-card" data-training="mindfulness" style="--accent:#475569;--accent-rgb:71,85,105;" tabindex="0">
+<div class="cover-slot image-cover">
+<img alt="" class="cover-photo" src="grafiki/mindfulness.jpg"/>
+<span>Mindfulness</span>
+<small>panel roboczy</small>
+</div>
+<div class="card-content">
+<span class="tag">panel roboczy</span>
+<h3>Mindfulness</h3>
+<div class="meta">
+<span>8 ćwiczeń</span>
+<span>materiały</span>
+<span>QR / timer</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section aria-label="Logotypy projektu i partnerów" class="brand-strip">
+<img alt="Logotypy projektu Edukacja bez granic, Kierunek Kompetencje 4.0, Unii Europejskiej i WUP w Katowicach" src="grafiki/logotypy-pasek.png?v=20260710-baner2"/>
+<a aria-label="Przejdź do strony głównej projektu Edukacja bez granic" class="brand-strip-home" href="index.html"></a>
+</section>
+<section class="section generator-section">
+<h2>Pliki do organizacji</h2>
+<p class="portal-lead">Materiały pomocnicze przy przygotowaniu szkolenia: szablon listy obecności oraz grafiki informacyjne do wykorzystania w komunikacji z uczestnikami.</p>
+<div class="generator-grid">
+<article class="generator-card generator-card-wide organizer-card" style="--accent:#0e7490;--accent-rgb:14,116,144;">
+<span class="tag">organizacja szkolenia</span>
+<h3>Lista obecności i plakaty</h3>
+<p>W tym miejscu znajdują się pliki, które mogą przydać się przed szkoleniem: miejsce na listę obecności oraz grafiki do zapowiedzi wybranych tematów.</p>
+<div class="organizer-downloads">
+<button class="btn ghost download-link" disabled="" type="button">Szablon listy obecności - do podłączenia</button>
+<a class="btn ghost download-link" download="" href="grafiki/baner-fake-news.png">Plakat: myślenie krytyczne</a>
+<a class="btn ghost download-link" download="" href="grafiki/baner-komunikacja-storytelling.png">Plakat: wystąpienia publiczne</a>
+<a class="btn ghost download-link" download="" href="grafiki/baner-grywalizacja.png">Plakat: grywalizacja</a>
+</div>
+<p class="small">Pliki można pobrać i wykorzystać przy organizacji zajęć, przygotowaniu sali albo komunikacji z uczestnikami.</p>
+</article>
+</div>
+</section>
+<section class="section generator-section">
+<h2>Generator zaświadczeń</h2>
+<p class="portal-lead">Jedna wersja generatora działająca w przeglądarce na każdym komputerze.</p>
+<div class="generator-grid">
+<article class="generator-card generator-card-wide">
+<span class="tag">HTML / przeglądarka</span>
+<h3>Generator zaświadczeń</h3>
+<p>Uniwersalna wersja generatora do przygotowania zaświadczeń, listy uczestników do podpisu, plików PDF i CSV. Działa lokalnie w Chrome, Edge lub Safari.</p>
+<a class="btn open-generator-btn" data-access-label="generatora zaświadczeń" data-access-protected="generator" data-app-path="generator-zaswiadczen-html/index.html" href="generator-zaswiadczen-html/index.html" rel="noopener noreferrer" style="color:#fff" target="_blank">Otwórz generator</a>
+<p class="small">Nie trzeba wybierać wersji Mac lub Windows. Wystarczy otworzyć generator w przeglądarce.</p>
+</article>
+</div>
+</section>
 </main>
+<footer class="site-footer">
+<div class="site-footer-inner">
+<div><strong>Edukacja bez granic</strong><p>Projekt Wojewódzkiego Urzędu Pracy w Katowicach realizowany w ramach programu Erasmus+.</p></div>
+<nav aria-label="Nawigacja w stopce" class="site-footer-links">
+<a href="o-projekcie.html">O projekcie</a>
+<a href="nasze-szkolenia.html">Nasze szkolenia</a>
+<a href="szkolenia.html">Nowe tematy szkoleń</a>
+<a href="kursy-online.html">Kursy online</a><a href="zapisy.html">Zapisy</a>
+<a href="kontakt.html">Kontakt</a>
+<a class="footer-trainer-link" href="panel-trenera.html">Panel trenera</a>
+</nav>
+</div>
+</footer>
 </body>
 </html>

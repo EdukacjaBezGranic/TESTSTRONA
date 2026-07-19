@@ -2383,3 +2383,24 @@ body {
     border-bottom: 1pt solid #cbd5e1;
   }
 }
+
+
+/* Force white text on trainer buttons */
+.open-panel-btn,
+.open-generator-btn,
+.btn-open,
+.btn-primary,
+a.btn-primary{
+ color:#fff !important;
+}
+.open-panel-btn:hover,
+.open-generator-btn:hover,
+.btn-open:hover,
+.btn-primary:hover,
+a.btn-primary:hover,
+.open-panel-btn:focus,
+.open-generator-btn:focus,
+.btn-open:focus,
+.btn-primary:focus{
+ color:#fff !important;
+}
