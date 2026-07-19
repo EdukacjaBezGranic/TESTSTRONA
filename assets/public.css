@@ -3447,3 +3447,17 @@ color:#fff!important;
 .project-white-text * {
   color: #ffffff !important;
 }
+
+
+/* Stały, łatwo widoczny odnośnik do kursów online. */
+.site-nav .nav-online {
+  color: #0e5f78;
+  border: 1px solid #9fd4df;
+  background: #eefbfc;
+}
+.site-nav .nav-online:hover,
+.site-nav .nav-online[aria-current="page"] {
+  color: #fff;
+  background: #0e7490;
+  border-color: #0e7490;
+}
