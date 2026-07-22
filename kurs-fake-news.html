@@ -4672,34 +4672,21 @@ document.addEventListener('keydown', event => {
 });
 
 
-// Płynne otwieranie kursu online bez wyświetlania katalogu.
-(() => {
-  const courseLinks = document.querySelectorAll('a[data-course-open]');
-  if (!courseLinks.length) return;
-
-  const overlay = document.createElement('div');
-  overlay.className = 'course-opening-overlay';
-  overlay.setAttribute('aria-hidden', 'true');
-  overlay.innerHTML = `
-    <div class="course-opening-card" role="status" aria-live="polite">
-      <div class="course-opening-spinner" aria-hidden="true"></div>
-      <strong>Otwieranie kursu online</strong>
-      <span>Przygotowujemy panel szkolenia…</span>
-    </div>`;
-  document.body.appendChild(overlay);
-
-  courseLinks.forEach(link => {
-    link.addEventListener('click', event => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      if (link.target === '_blank') return;
-      const target = link.href;
-      event.preventDefault();
-      overlay.classList.add('is-visible');
-      overlay.setAttribute('aria-hidden', 'false');
-      window.setTimeout(() => { window.location.assign(target); }, 280);
-    });
+// Linki do kursów używają natywnej nawigacji przeglądarki.
+document.querySelectorAll('a[data-course-open]').forEach(link => {
+  link.addEventListener('click', event => {
+    if (event.defaultPrevented) return;
+    // Bez nakładki i opóźnienia: zapobiega zawieszeniu ekranu po użyciu przycisku Wstecz.
   });
-})();
+});
+
+// Po przywróceniu strony z pamięci przeglądarki usuń ewentualną starą nakładkę.
+window.addEventListener('pageshow', () => {
+  document.querySelectorAll('.course-opening-overlay').forEach(overlay => {
+    overlay.classList.remove('is-visible');
+    overlay.setAttribute('aria-hidden', 'true');
+  });
+});
 
 
     const MODULE_ONE_EXAMPLES = [
@@ -4931,7 +4918,7 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
               publikowanych w internecie.
             </p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="#REJESTRACJA_FORMULARZ" onclick="placeholderLink(event, 'formularza rejestracyjnego i testu początkowego')">
+<a class="btn btn-primary" href="https://forms.gle/7rJ6Q3eMgx7XBsLw6" target="_blank" rel="noopener noreferrer">
                 Zarejestruj się i wykonaj test
               </a>
 <button class="btn btn-secondary" onclick="scrollToAccess()">Mam już kod</button>
@@ -5131,8 +5118,8 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
       accessCode: "FAKTY2026",
 
       links: {
-        registration: "#REJESTRACJA_FORMULARZ",
-        preTest: "#TEST_POCZATKOWY",
+        registration: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
+        preTest: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
         finalTest: "#TEST_KONCOWY",
         motivationAfter: "#ANKIETA_MOTYWACJI_PO",
         evaluation: "#ANKIETA_OCENY",
@@ -5249,7 +5236,7 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
         safeStorage.setItem("fakeNewsAccess", "granted");
         message.style.color = "var(--green-dark)";
         message.textContent = "Kod poprawny. Otwieram szkolenie…";
-        setTimeout(showDashboard, 350);
+        setTimeout(() => showDashboard("push"), 350);
       } else {
         message.style.color = "#a13d30";
         message.textContent = "Kod jest nieprawidłowy. W wersji demonstracyjnej wpisz: FAKTY2026";
@@ -5258,22 +5245,43 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
     }
 
     function scrollToAccess() {
-      showLanding();
+      showLanding("replace");
       setTimeout(() => document.getElementById("dostep").scrollIntoView({ behavior: "smooth" }), 50);
     }
 
-    function showLanding() {
+    function updateCourseHistory(view, moduleId = null, mode = "push") {
+      if (mode === "none") return;
+
+      const url = new URL(window.location.href);
+      if (view === "dashboard") {
+        url.hash = "panel-szkolenia";
+      } else if (view === "module" && moduleId) {
+        url.hash = `modul-${moduleId}`;
+      } else {
+        url.hash = "";
+      }
+
+      const state = { courseView: view, moduleId };
+      const method = mode === "replace" ? "replaceState" : "pushState";
+      window.history[method](state, "", url);
+    }
+
+    function showLanding(historyMode = "replace") {
       document.getElementById("landing").classList.remove("hidden");
       document.getElementById("courseArea").classList.remove("visible");
       document.getElementById("moduleView").classList.remove("visible");
+      currentModule = null;
+      updateCourseHistory("landing", null, historyMode);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    function showDashboard() {
+    function showDashboard(historyMode = "replace") {
       document.getElementById("landing").classList.add("hidden");
       document.getElementById("moduleView").classList.remove("visible");
       document.getElementById("courseArea").classList.add("visible");
+      currentModule = null;
       renderModules();
+      updateCourseHistory("dashboard", null, historyMode);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -5319,7 +5327,13 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
       // Funkcja pozostaje, ponieważ wywołują ją istniejące akcje modułów.
     }
 
-    function openModule(id) {
+    function openModule(id, historyMode = "push") {
+      // Gdy moduł zostaje otwarty bezpośrednio, najpierw zapisz panel modułów
+      // jako poprzedni krok. Dzięki temu przycisk Wstecz zawsze wraca do „Twój panel szkolenia”.
+      if (historyMode === "push" && window.location.hash !== "#panel-szkolenia") {
+        updateCourseHistory("dashboard", null, "replace");
+      }
+
       currentModule = MODULES.find(item => item.id === id);
       if (!currentModule) return;
 
@@ -5344,6 +5358,7 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
         ? "Moduł jest oznaczony jako ukończony"
         : "Oznacz moduł jako ukończony";
 
+      updateCourseHistory("module", currentModule.id, historyMode);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -5637,13 +5652,54 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
       alert(`To jest miejsce na link do ${name}. Link podmienimy po przygotowaniu formularza lub materiału.`);
     }
 
+    function restoreCourseRoute() {
+      const hasAccess = safeStorage.getItem("fakeNewsAccess") === "granted";
+      const moduleMatch = window.location.hash.match(/^#modul-(\d+)$/);
+
+      if (hasAccess && moduleMatch) {
+        openModule(Number(moduleMatch[1]), "none");
+        return;
+      }
+
+      if (hasAccess && (window.location.hash === "#panel-szkolenia" || window.location.hash === "#moduly")) {
+        if (window.location.hash === "#moduly") {
+          updateCourseHistory("dashboard", null, "replace");
+        }
+        showDashboard("none");
+        return;
+      }
+
+      showLanding("none");
+    }
+
+    window.addEventListener("popstate", restoreCourseRoute);
+    window.addEventListener("pageshow", () => {
+      document.querySelectorAll(".course-opening-overlay").forEach(overlay => {
+        overlay.classList.remove("is-visible");
+        overlay.setAttribute("aria-hidden", "true");
+      });
+      restoreCourseRoute();
+    });
+
     document.addEventListener("DOMContentLoaded", () => {
       renderModules();
 
-      if (safeStorage.getItem("fakeNewsAccess") === "granted") {
-        // Uczestnik może wrócić do kursu bez ponownego wpisywania kodu.
-        // Strona startowa pozostaje widoczna; przycisk "Mam kod" prowadzi do dostępu.
+      const hasKnownRoute = window.location.hash === "#panel-szkolenia"
+        || window.location.hash === "#moduly"
+        || /^#modul-\d+$/.test(window.location.hash);
+
+      if (!window.history.state || !window.history.state.courseView) {
+        const moduleMatch = window.location.hash.match(/^#modul-(\d+)$/);
+        const initialView = moduleMatch
+          ? { courseView: "module", moduleId: Number(moduleMatch[1]) }
+          : (window.location.hash === "#panel-szkolenia" || window.location.hash === "#moduly")
+            ? { courseView: "dashboard", moduleId: null }
+            : { courseView: "landing", moduleId: null };
+
+        window.history.replaceState(initialView, "", window.location.href);
       }
+
+      restoreCourseRoute();
     });
   </script>
 <script id="m1-stable-module-script">
@@ -5749,8 +5805,8 @@ body.m1-active #m1FinalTest{scroll-margin-top:24px}
 
   const originalOpenModule = window.openModule;
   if (typeof originalOpenModule === 'function') {
-    window.openModule = function(id) {
-      originalOpenModule(id);
+    window.openModule = function(id, historyMode = "push") {
+      originalOpenModule(id, historyMode);
       if (id === 1) setTimeout(initialise, 0);
     };
   }

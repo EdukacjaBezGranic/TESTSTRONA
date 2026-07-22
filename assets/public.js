@@ -68,31 +68,18 @@ document.addEventListener('keydown', event => {
 });
 
 
-// Płynne otwieranie kursu online bez wyświetlania katalogu.
-(() => {
-  const courseLinks = document.querySelectorAll('a[data-course-open]');
-  if (!courseLinks.length) return;
-
-  const overlay = document.createElement('div');
-  overlay.className = 'course-opening-overlay';
-  overlay.setAttribute('aria-hidden', 'true');
-  overlay.innerHTML = `
-    <div class="course-opening-card" role="status" aria-live="polite">
-      <div class="course-opening-spinner" aria-hidden="true"></div>
-      <strong>Otwieranie kursu online</strong>
-      <span>Przygotowujemy panel szkolenia…</span>
-    </div>`;
-  document.body.appendChild(overlay);
-
-  courseLinks.forEach(link => {
-    link.addEventListener('click', event => {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      if (link.target === '_blank') return;
-      const target = link.href;
-      event.preventDefault();
-      overlay.classList.add('is-visible');
-      overlay.setAttribute('aria-hidden', 'false');
-      window.setTimeout(() => { window.location.assign(target); }, 280);
-    });
+// Linki do kursów używają natywnej nawigacji przeglądarki.
+document.querySelectorAll('a[data-course-open]').forEach(link => {
+  link.addEventListener('click', event => {
+    if (event.defaultPrevented) return;
+    // Bez nakładki i opóźnienia: zapobiega zawieszeniu ekranu po użyciu przycisku Wstecz.
   });
-})();
+});
+
+// Po przywróceniu strony z pamięci przeglądarki usuń ewentualną starą nakładkę.
+window.addEventListener('pageshow', () => {
+  document.querySelectorAll('.course-opening-overlay').forEach(overlay => {
+    overlay.classList.remove('is-visible');
+    overlay.setAttribute('aria-hidden', 'true');
+  });
+});
