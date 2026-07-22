@@ -1,0 +1,6 @@
+POPRAWKA UKŁADU MODUŁÓW
+
+- Moduł 1 i Moduł 2 mają identyczną szerokość.
+- Układ boczny i dodatkowe metadane zostały wyłączone.
+- Informacja o czasie została usunięta.
+- Wszystkie moduły korzystają z układu wzorcowego Modułu 1.

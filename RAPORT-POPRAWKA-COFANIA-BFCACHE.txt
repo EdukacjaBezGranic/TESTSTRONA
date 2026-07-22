@@ -1,0 +1,12 @@
+POPRAWKA NAWIGACJI KURSU ONLINE
+
+Naprawiono:
+1. Usunięto opóźnione przekierowanie z nakładką „Otwieranie kursu online”.
+2. Link do kursu korzysta teraz z natywnej nawigacji przeglądarki.
+3. Po przywróceniu strony z pamięci BFCache stara nakładka jest automatycznie ukrywana.
+4. Przed otwarciem modułu zawsze zapisywany jest stan #moduly.
+5. Strzałka Wstecz z #modul-1 prowadzi do #moduly.
+
+Kontrola:
+- assets/public.js: składnia JavaScript poprawna.
+- skrypty historii w kurs-fake-news.html: składnia JavaScript poprawna.

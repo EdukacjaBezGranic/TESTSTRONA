@@ -1,0 +1,20 @@
+RAPORT POPRAWKI NAWIGACJI W KURSIE ONLINE
+
+Wprowadzona zmiana:
+- ekran wejścia do kursu ma osobny stan historii,
+- panel wyboru modułów używa adresu #moduly,
+- każdy otwarty moduł używa adresu #modul-N, np. #modul-1,
+- strzałka Wstecz z modułu prowadzi do panelu wyboru modułów,
+- kolejne cofnięcie prowadzi do ekranu wejścia,
+- odświeżenie strony na #moduly lub #modul-N przywraca odpowiedni widok,
+  jeżeli dostęp do kursu został wcześniej zapisany w przeglądarce.
+
+Kontrola:
+- składnia 3 osadzonych skryptów JavaScript: poprawna,
+- sprawdzone lokalne odwołania href/src/url: 372,
+- brakujące lokalne pliki: 0,
+- link formularza rejestracji i testu pozostaje podpięty:
+  https://forms.gle/7rJ6Q3eMgx7XBsLw6
+
+Plik zmieniony:
+- kurs-fake-news.html
