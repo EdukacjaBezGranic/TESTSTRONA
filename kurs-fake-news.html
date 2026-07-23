@@ -5247,6 +5247,11 @@ body.module-2-active .materials-download-block{
 }
 </style>
 
+
+<style id="audio-summary-style">
+.audio-summary-box{margin-top:1rem}
+.audio-summary-box audio{border-radius:12px}
+</style>
 </head>
 <body class="public-page online-course-page">
 <header class="site-header">
@@ -5643,6 +5648,15 @@ body.module-2-active .materials-download-block{
       <span class="accordion-icon" aria-hidden="true">+</span>
     </summary>
     <div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/sygnaly-ostrzegawcze-jezyk.jpg" target="_blank" rel="noopener">
+<img src="assets/img/sygnaly-ostrzegawcze-jezyk.jpg" alt="Infografika: Sygnały ostrzegawcze w języku przekazu" loading="lazy">
+</a>
+<figcaption><strong>Infografika:</strong> Najczęściej wykorzystywane sygnały ostrzegawcze w języku przekazu.</figcaption>
+</figure>
+
+
+
       <ul class="module2-check-list">
         <li>„Udostępnij, zanim usuną!”</li>
         <li>„Media nigdy ci tego nie powiedzą.”</li>
@@ -5651,7 +5665,13 @@ body.module-2-active .materials-download-block{
         <li>„Jeśli milczysz, zgadzasz się na krzywdę.”</li>
       </ul>
       <p>Taki język nie jest automatycznym dowodem fałszu, ale ma ograniczyć czas na refleksję i zwiększyć prawdopodobieństwo impulsywnej reakcji.</p>
-    </div>
+    <div class="audio-summary-box">
+<button class="btn btn-primary" type="button" onclick="this.style.display='none';this.nextElementSibling.hidden=false;this.nextElementSibling.play()">Posłuchaj podsumowania</button>
+<audio controls hidden preload="none" style="display:block;width:100%;margin-top:12px;">
+<source src="assets/audio/jak-emocje-paralizuja-myslenie.m4a" type="audio/mp4">
+</audio>
+</div>
+</div>
   </details>
 </section>
 
