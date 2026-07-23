@@ -3489,6 +3489,9 @@ color:#fff!important;
 .example-dot.active{background:var(--blue);transform:scale(1.2)}
 @media (max-width:700px){.example-viewer-top{align-items:flex-start;flex-direction:column}.example-progress{max-width:none;width:100%}.example-card{padding:14px}.example-controls{display:grid;grid-template-columns:1fr 1fr}.example-dots{grid-column:1/-1;grid-row:1}.example-nav-button{width:100%;padding:11px 10px}.example-image-wrap{border-radius:12px}}
 
+
+.m1-video-wrap { margin-top: 1rem; overflow: hidden; border-radius: 18px; background: #0b1220; box-shadow: 0 14px 34px rgba(15, 23, 42, .16); }
+.m1-video-wrap video { display: block; width: 100%; height: auto; max-height: 72vh; background: #000; }
 </style>
 <style>
 /* course.css */
@@ -5252,6 +5255,13 @@ body.module-2-active .materials-download-block{
 .audio-summary-box{margin-top:1rem}
 .audio-summary-box audio{border-radius:12px}
 </style>
+
+<style id="glossary-visibility-fix">
+#slownik-pojec{display:block!important;visibility:visible!important;opacity:1!important}
+#slownik-pojec .course-accordion{display:block!important}
+#slownik-pojec .accordion-content{visibility:visible}
+</style>
+
 </head>
 <body class="public-page online-course-page">
 <header class="site-header">
@@ -5392,21 +5402,12 @@ body.module-2-active .materials-download-block{
 <div class="content-column">
 
 <article class="content-block" id="m1IntroVideo">
-<h3><span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">miejsce na film</span></h3>
-<div class="placeholder">
-<div>
-<div class="placeholder-icon">
-<svg fill="none" viewbox="0 0 24 24">
-<path d="m9 7 8 5-8 5V7Z" fill="currentColor"></path>
-<rect height="16" rx="4" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="4"></rect>
-</svg>
-</div>
-<strong>Miejsce na osadzony film</strong>
-<span>
-                    Tutaj później wstawisz film z YouTube, Microsoft Stream albo innego
-                    źródła. Zalecany czas: 2–5 minut.
-                  </span>
-</div>
+<h3><span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span></h3>
+<div class="m1-video-wrap">
+<video controls preload="metadata" playsinline aria-label="Film wprowadzający do Modułu 1">
+<source src="assets/video/film-modul-1.mp4?v=1" type="video/mp4">
+Twoja przeglądarka nie obsługuje odtwarzania filmu. <a href="assets/video/film-modul-1.mp4?v=1">Pobierz film</a>.
+</video>
 </div>
 </article>
 
@@ -5442,6 +5443,16 @@ body.module-2-active .materials-download-block{
     </summary>
     <div class="accordion-content">
       <p><strong>Chaos medialny</strong> (często nazywany również <strong>nieładem informacyjnym</strong> – ang. <em>information disorder</em>) to stan bezprecedensowego zanieczyszczenia współczesnego ekosystemu informacyjnego, w którym odbiorca jest poddawany ciągłej presji „tsunami” bodźców z wielu kanałów komunikacji.</p>
+
+      <figure class="accordion-infographic">
+        <a href="assets/img/chaos-medialny.jpg?v=4" target="_blank" rel="noopener">
+          <img src="assets/img/chaos-medialny.jpg?v=4"
+               alt="Infografika: Chaos informacyjny i jego wpływ na odbiorcę"
+               loading="lazy">
+        </a>
+        <figcaption><strong>Infografika:</strong> Chaos informacyjny i jego wpływ na odbiorcę.</figcaption>
+      </figure>
+
       <p>Zjawisko to sprawia, że odróżnienie prawdy od fałszu staje się systemowo trudne, co prowadzi do <strong>destabilizacji debaty publicznej</strong>, polaryzacji społeczeństwa i osłabienia procesów demokratycznych.</p>
     </div>
   </details>
@@ -5456,6 +5467,15 @@ body.module-2-active .materials-download-block{
       <span class="accordion-icon" aria-hidden="true">+</span>
     </summary>
     <div class="accordion-content">
+      <figure class="accordion-infographic">
+        <a href="assets/img/dlaczego-fake-news-to-za-malo.jpg?v=5" target="_blank" rel="noopener">
+          <img src="assets/img/dlaczego-fake-news-to-za-malo.jpg?v=5"
+               alt="Infografika: Dlaczego termin fake news to za mało"
+               loading="lazy">
+        </a>
+        <figcaption><strong>Infografika:</strong> Dlaczego termin „fake news” nie opisuje całego chaosu informacyjnego.</figcaption>
+      </figure>
+
       <div class="mini-card-grid">
         <article class="mini-card">
           <h3>Sprzeczność wewnętrzna</h3>
@@ -5506,7 +5526,7 @@ body.module-2-active .materials-download-block{
     <p class="section-lead">Każdy blok możesz rozwinąć osobno. Dzięki temu łatwiej wrócisz do konkretnego zagadnienia.</p>
   </div>
 
-  <details class="course-accordion accent-teal">
+  <details class="course-accordion accent-teal" open>
     <summary>
       <span class="accordion-number">I</span>
       <span>
@@ -5516,7 +5536,10 @@ body.module-2-active .materials-download-block{
       <span class="accordion-icon" aria-hidden="true">+</span>
     </summary>
     <div class="accordion-content">
-      <dl class="glossary-list">
+      <div style="margin-bottom:24px;text-align:center;">
+<img src="assets/img/kluczowe-pojecia-nieladu-informacyjnego.jpeg" alt="Kluczowe pojęcia nieładu informacyjnego" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.15);">
+</div>
+<dl class="glossary-list">
         <div><dt>Dezinformacja <span>(disinformation)</span></dt><dd>Celowe i świadome tworzenie oraz rozpowszechnianie fałszywych, zmanipulowanych lub wyrwanych z kontekstu treści. Jej celem jest wprowadzenie odbiorców w błąd, wywołanie określonych reakcji społecznych albo osiągnięcie korzyści politycznych, ekonomicznych lub wizerunkowych.</dd></div>
         <div><dt>Misinformacja <span>(misinformation)</span></dt><dd>Mylne lub nieprawdziwe informacje rozpowszechniane bez złej intencji, często wskutek błędu, pośpiechu lub braku wiedzy.</dd></div>
         <div><dt>Malinformacja <span>(malinformation)</span></dt><dd>Udostępnianie prawdziwych informacji w zmienionym lub zafałszowanym kontekście albo z intencją wyrządzenia szkody.</dd></div>
@@ -5535,6 +5558,13 @@ body.module-2-active .materials-download-block{
       <span class="accordion-icon" aria-hidden="true">+</span>
     </summary>
     <div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/mechanizmy-techniki.jpg" target="_blank" rel="noopener">
+<img src="assets/img/mechanizmy-techniki.jpg" alt="Deepfake, clickbait, bańka informacyjna, postprawda i prebunking." loading="lazy">
+</a>
+<figcaption><strong>Infografika:</strong> Deepfake, clickbait, bańka informacyjna, postprawda i prebunking.</figcaption>
+</figure>
+
       <dl class="glossary-list">
         <div><dt>Deepfake</dt><dd>Materiał wideo, obraz lub nagranie audio wygenerowane albo zmodyfikowane przez sztuczną inteligencję tak, aby imitować prawdziwą osobę lub sytuację.</dd></div>
         <div><dt>Clickbait</dt><dd>Sensacyjny nagłówek, miniatura lub treść zaprojektowana tak, aby wzbudzić ciekawość i skłonić użytkownika do kliknięcia.</dd></div>
@@ -5555,6 +5585,13 @@ body.module-2-active .materials-download-block{
       <span class="accordion-icon" aria-hidden="true">+</span>
     </summary>
     <div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/aktorzy-weryfikacja.jpg" target="_blank" rel="noopener">
+<img src="assets/img/aktorzy-weryfikacja.jpg" alt="Bot, troll, fact-checking i wiralność." loading="lazy">
+</a>
+<figcaption><strong>Infografika:</strong> Bot, troll, fact-checking i wiralność.</figcaption>
+</figure>
+
       <dl class="glossary-list">
         <div><dt>Bot</dt><dd>Zautomatyzowane lub półzautomatyzowane konto, które naśladuje ludzkie zachowania i może budować sztuczne zainteresowanie tematem.</dd></div>
         <div><dt>Troll</dt><dd>Użytkownik publikujący podżegające lub obraźliwe treści w celu wywołania konfliktu i polaryzacji.</dd></div>
@@ -6100,6 +6137,7 @@ body.module-2-active .materials-download-block{
       const module2Supplement = document.getElementById("module2Supplement");
       const m1Test = document.getElementById("m1FinalTestStatic");
       const m2Test = document.getElementById("m2FinalTestStatic");
+      const introVideoBlock = document.getElementById("m1IntroVideo");
       const introHeading = document.querySelector("#m1IntroVideo h3");
       const theoryHeading = document.querySelector("#m1LessonContentBlock h3");
 
@@ -6111,6 +6149,7 @@ body.module-2-active .materials-download-block{
       if (moduleMeta) moduleMeta.hidden = true;
 
 
+      if (introVideoBlock) introVideoBlock.hidden = moduleId !== 1;
       if (module1Supplement) module1Supplement.hidden = moduleId !== 1;
       if (module2Supplement) module2Supplement.hidden = moduleId !== 2;
       if (m1Test) m1Test.hidden = moduleId !== 1;
@@ -6122,17 +6161,17 @@ body.module-2-active .materials-download-block{
         infographicImage.src = "assets/img/chaos-medialny-infografika.jpg";
         infographicImage.alt = "Infografika: Chaos medialny – jak zrozumieć i przetrwać nieład informacyjny";
         infographicCaption.innerHTML = "<strong>Infografika: Nieład informacyjny.</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.";
-        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">miejsce na film</span>';
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span>';
         theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Poznaj pojęcia i mechanizmy nieładu informacyjnego.</small><span class="m1-section-status" id="m1ContentStatus">0/4 sekcji</span>';
       } else if (moduleId === 2) {
         infographicLink.href = "assets/img/emocje-kontra-fakty-infografika.jpg";
         infographicImage.src = "assets/img/emocje-kontra-fakty-infografika.jpg";
         infographicImage.alt = "Infografika: Dlaczego emocje wygrywają z faktami";
         infographicCaption.innerHTML = "<strong>Infografika: Dlaczego emocje wygrywają z faktami?</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.";
-        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Dowiedz się, dlaczego emocje mogą ograniczać analityczną ocenę informacji.</small><span class="m1-section-status">miejsce na film</span>';
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Dowiedz się, dlaczego emocje mogą ograniczać analityczną ocenę informacji.</small><span class="m1-section-status">film</span>';
         theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Poznaj emocje i mechanizmy psychologiczne wykorzystywane w manipulacji.</small>';
       } else {
-        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">miejsce na film</span>';
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span>';
         theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Zapoznaj się z najważniejszymi treściami modułu.</small>';
       }
     }
