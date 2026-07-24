@@ -1,0 +1,17 @@
+POPRAWKA MODUŁU 3 – SPÓJNY NAGŁÓWEK I BRAK IKON
+
+Wprowadzone zmiany:
+1. Usunięto dodatkowy, niestandardowy nagłówek hero wewnątrz treści Modułu 3.
+2. Pozostawiono nagłówek modułu używany wspólnie przez pozostałe moduły kursu.
+3. Usunięto wszystkie ozdobne ikony i emoji z nagłówków sekcji Modułu 3.
+4. Usunięto symbole „+” z rozwijanych sekcji.
+5. Symbole zaznaczenia w checkliście zastąpiono neutralną numeracją.
+6. Nagłówek „Podstawa źródłowa tekstu” przedstawiono jako zwykłą sekcję, bez drugiego hero.
+7. Zachowano pełną treść Modułu 3 oraz pozostałe pliki projektu.
+
+Kontrola:
+- sprawdzono brak klas i elementów m3-hero oraz m3-icon,
+- sprawdzono brak usuniętych emoji i ozdobnych symboli w treści Modułu 3,
+- sprawdzono składnię osadzonych skryptów JavaScript,
+- sprawdzono lokalne odwołania do zasobów,
+- sprawdzono integralność końcowego archiwum ZIP.

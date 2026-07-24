@@ -1,0 +1,17 @@
+MODUŁ 3 – RAPORT ZMIAN I TESTÓW
+
+Wprowadzone zmiany:
+- Dodano pełną treść z pliku „Wklejony tekst(2).txt” bez skracania części merytorycznej.
+- Zmieniono Moduł 3 na „AI, deepfake i współczesne oszustwa cyfrowe”.
+- Podzielono materiał na sekcje, akordeony, przykłady, noty źródłowe, pola „Zapamiętaj” i checklistę.
+- Dodano osobny responsywny styl Modułu 3.
+- Zachowano istniejące pliki, Moduły 1–2, film i grafiki.
+
+Testy:
+- integralność ZIP: zaliczona,
+- odwołania lokalne i HTTP: zaliczone (103 odwołania, 0 brakujących zasobów; kluczowe pliki zwracają HTTP 200),
+- kontrola składni JavaScript: zaliczona (node --check); struktura HTML odczytana poprawnie.
+
+Znane ograniczenia:
+- Nie dodano nowych grafik ani filmu do Modułu 3; moduł wykorzystuje atrakcyjne komponenty tekstowe.
+- Fragmenty oznaczone w źródle jako wiedza ogólna zachowują stosowne noty o potrzebie uzupełnienia źródeł.
