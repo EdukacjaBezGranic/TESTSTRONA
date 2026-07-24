@@ -1,0 +1,89 @@
+PORTAL „EDUKACJA BEZ GRANIC”
+AUDYT KONTRASTU I LOGOTYPÓW W NAGŁÓWKU
+Data: 24.07.2026
+
+1. ZAKRES
+
+Sprawdzono główne publiczne podstrony:
+- index.html — strona główna,
+- kursy-online.html — katalog kursów,
+- zapisy.html — oferta i zapisy,
+- zapisy-kalendarz.html — kalendarz terminów,
+- kontakt.html — kontakt,
+- panel-trenera.html — panel trenera,
+- kurs-fake-news.html — kurs online z modułami 1–5.
+
+Sprawdzono także strony przekierowujące i lokalne odwołania do plików.
+
+2. WPROWADZONE ZMIANY W NAGŁÓWKU
+
+Obok logo projektu umieszczono:
+- monochromatyczne logo „Dofinansowane przez Unię Europejską”,
+- przygotowaną monochromatyczną, białą wersję logo Wojewódzkiego Urzędu Pracy w Katowicach.
+
+Logotypy:
+- znajdują się w jednej, uporządkowanej grupie brandingowej,
+- są oddzielone subtelną pionową linią,
+- mają skalowanie dla desktopu, tabletu i telefonu,
+- zachowują czytelność na ciemnym, matowym pasku nawigacji,
+- mają poprawne opisy alternatywne.
+
+Nowy plik:
+- grafiki/logo-wup-mono-white.png
+
+3. WYNIKI AUDYTU KONTRASTU
+
+Strona główna:
+- ciemne sekcje mają jasne nagłówki i tekst,
+- jasne karty mają ciemną typografię,
+- trzy kolorowe programy zachowują biały tekst.
+
+Katalog kursów:
+- wprowadzenie na ciemnym tle ma jasny tekst,
+- karta kursu ma ciemny tekst na jasnym panelu,
+- sekcja kolejnych kursów ma jasny tekst na ciemnym panelu.
+
+Zapisy:
+- jasne karty szkoleń mają ciemną typografię,
+- naprawiono panel „Szkolenie dla pracowników lub klientów instytucji”: wcześniej reguła jasnej sekcji mogła wymuszać ciemny tekst na granatowym tle; obecnie cały panel ma jasną typografię,
+- statusy i przyciski zachowują własne kolory.
+
+Kalendarz zapisów:
+- plansza kalendarza, szczegóły i kontakt mają ciemny tekst na jasnych powierzchniach,
+- przyciski zachowują wymagany kontrast.
+
+Kontakt:
+- treści w jasnych panelach mają ciemny tekst,
+- naprawiono zabezpieczenie kolorów w ciemnym panelu CTA, aby nagłówek i opis zawsze pozostały jasne.
+
+Panel trenera:
+- jasne karty i okno logowania mają ciemną typografię,
+- ciemne banery i przyciski mają biały tekst.
+
+Kurs online:
+- ciemna rama portalu ma jasne opisy,
+- właściwe panele modułów pozostają jasne z ciemną typografią,
+- nagłówek otrzymał tę samą grupę logotypów co pozostałe podstrony.
+
+4. POPRAWKA MENU TABLETOWEGO
+
+Menu mobilne jest uruchamiane już przy szerokości do 1024 px. W poprzedniej wersji ciemna kolorystyka rozwijanego menu była wymuszana dopiero poniżej 760 px, co mogło powodować zbyt jasny tekst na jasnym tle na tabletach.
+
+Teraz menu rozwijane w całym zakresie tabletowym ma:
+- ciemne tło,
+- jasne linki,
+- czytelny stan aktywny i hover.
+
+5. TESTY TECHNICZNE
+
+- poprawność parsowania 11 głównych plików HTML: OK,
+- obecność grupy logotypów na 7 właściwych podstronach: OK,
+- składnia wszystkich lokalnych plików JavaScript: OK,
+- bilans nawiasów w plikach CSS: OK,
+- 303 lokalne odwołania do HTML, CSS, JS, obrazów, filmów i pozostałych zasobów: 0 braków,
+- test HTTP stron, arkusza CSS i nowych logotypów: 200 OK,
+- wizualny przegląd renderów strony głównej, katalogu kursów, zapisów i kontaktu: OK.
+
+6. ZNANE OGRANICZENIE TESTU
+
+W środowisku roboczym automatyczne otwarcie lokalnej strony przez Playwright zostało zablokowane przez politykę administratora. Dlatego kontrolę wykonano poprzez analizę kodu, test lokalnego serwera HTTP oraz renderowanie ekranowe stron statycznych. Elementy generowane dynamicznie w kalendarzu i kursie sprawdzono dodatkowo na poziomie kodu, składni i odwołań do zasobów.

@@ -1,0 +1,13 @@
+RAPORT – ROZBUDOWANA STRONA GŁÓWNA
+
+WPROWADZONE ZMIANY
+- Usunięto z głównej nawigacji pozycje: O projekcie, Tematy szkoleń i Nasze szkolenia.
+- Ujednolicono menu na wszystkich publicznych podstronach: Start, Kursy online, Zapisy na szkolenia, Kontakt.
+- Rozbudowano stronę główną o treści wcześniej rozproszone na podstronach.
+- Dodano sekcje: odbiorcy, proces projektu, doświadczenia międzynarodowe, pełniejsza oferta szkoleniowa, sposób pracy i galeria.
+- Zachowano trzy główne programy projektu i dodano sześć tematów rozwijanych równolegle.
+- Stare adresy o-projekcie.html, szkolenia.html i nasze-szkolenia.html przekierowują do właściwych sekcji strony głównej, dzięki czemu dawne linki nie prowadzą do błędu.
+- Zachowano kurs online, zapisy, kontakt, panel trenera oraz pozostałe elementy projektu.
+
+ZAŁOŻENIE INFORMACYJNE
+Strona główna jest teraz centralnym miejscem prezentacji projektu i oferty. Osobne podstrony z powtarzającymi się informacjami nie są eksponowane w menu.

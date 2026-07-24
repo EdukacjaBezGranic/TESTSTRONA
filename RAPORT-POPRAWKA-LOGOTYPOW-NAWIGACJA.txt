@@ -1,0 +1,17 @@
+POPRAWKA LOGOTYPÓW W PASKU NAWIGACJI
+
+Wprowadzone zmiany:
+- usunięto mniejszą, roboczą wersję logo finansowania UE (SVG),
+- zastosowano wskazane przez użytkownika logo UE w białej wersji monochromatycznej,
+- przywrócono osobne białe logo Wojewódzkiego Urzędu Pracy w Katowicach,
+- na pasku pozostają: logo projektu + logo UE + logo WUP,
+- poprawiono skalowanie logotypów na desktopie, tablecie i telefonie.
+
+Zmodyfikowane nagłówki:
+- zapisy-kalendarz.html
+- kursy-online.html
+- kontakt.html
+- zapisy.html
+- panel-trenera.html
+- index.html
+- kurs-fake-news.html

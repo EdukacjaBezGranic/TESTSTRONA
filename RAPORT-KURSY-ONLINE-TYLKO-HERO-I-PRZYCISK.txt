@@ -1,0 +1,33 @@
+RAPORT ZMIANY — KURSY ONLINE
+Data: 24.07.2026
+
+ZAKRES ZMIANY
+1. Usunięto ze strony kursy-online.html cały segment znajdujący się pod nagłówkiem:
+   - „Praktyczna ścieżka”,
+   - rozbudowaną kartę kursu,
+   - dane o liczbie modułów i czasie,
+   - przycisk „Mam kod dostępu”,
+   - sekcję „Kolejne kursy”.
+2. W nagłówku strony pozostawiono opis kursu.
+3. Bezpośrednio w nagłówku dodano jeden przycisk „Otwórz kurs online”.
+4. Przycisk prowadzi natywnie do pliku kurs-fake-news.html.
+5. Zmniejszono dolny odstęp strony po usunięciu dodatkowych sekcji.
+
+ELEMENTY ZACHOWANE
+- grafika tła nagłówka,
+- pasek nawigacji i logotypy,
+- stopka,
+- cały kurs i Moduły 1–5,
+- pozostałe podstrony i zasoby portalu.
+
+WERYFIKACJA
+- strona kursy-online.html zawiera tylko jedną sekcję główną: nagłówek,
+- dokładnie jeden przycisk otwierający kurs,
+- brak usuniętych tekstów i paneli,
+- cel przycisku istnieje,
+- brak brakujących lokalnych odwołań w projekcie,
+- 20 plików JavaScript przeszło kontrolę składni,
+- strona, arkusz CSS, tło nagłówka oraz kurs zwracają HTTP 200.
+
+OGRANICZENIE ŚRODOWISKA
+Chromium uruchamiany bezpośrednio w trybie headless zawieszał się w tym środowisku. Układ został dodatkowo sprawdzony przez renderowanie statyczne WeasyPrint oraz kontrolę struktury HTML/CSS. Nie instalowano nowych zależności.
