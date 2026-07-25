@@ -6392,6 +6392,16 @@ body.online-course-page #moduleView .side-card{background:#e8e4dc!important;bord
 .availability-anchor-sift p,.availability-anchor-remember p,.availability-anchor-remember li,
 .social-proof-card-dark p,.social-proof-artificial p,.social-proof-artificial li,.social-proof-popularity p,.social-proof-popularity li,
 .repetition-card-dark p,.confirmation-trigger p,.confirmation-remember p,.confirmation-remember li{color:#f4f7f8!important}
+
+/* Rejestracja dobrowolna — kurs bez kodu dostępu */
+.registration-request-panel{grid-template-columns:1fr !important;max-width:980px;margin-inline:auto}
+.registration-request-panel .access-copy{max-width:none}
+.registration-benefits{margin:14px 0 18px;padding-left:1.35rem;color:var(--course-ink);line-height:1.65}
+.registration-benefits li{margin:.45rem 0}
+.registration-time{margin:18px 0 12px !important}
+.registration-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.registration-actions .btn{min-width:230px;justify-content:center}
+@media(max-width:640px){.registration-actions{flex-direction:column}.registration-actions .btn{width:100%;min-width:0}}
 </style>
 </head>
 <body class="public-page online-course-page">
@@ -6425,9 +6435,9 @@ body.online-course-page #moduleView .side-card{background:#e8e4dc!important;bord
             </p>
 <div class="hero-actions">
 <a class="btn btn-primary" href="https://forms.gle/7rJ6Q3eMgx7XBsLw6" rel="noopener noreferrer" target="_blank">
-                Zarejestruj się i wykonaj test
+                Wypełnij formularz rejestracyjny
               </a>
-<button class="btn btn-secondary" onclick="scrollToAccess()">Mam już kod</button>
+<button class="btn btn-secondary" onclick="startCourse()">Rozpocznij kurs</button>
 </div>
 <div class="hero-meta">
 <div class="meta-item">
@@ -6474,8 +6484,8 @@ body.online-course-page #moduleView .side-card{background:#e8e4dc!important;bord
 </div>
 <div class="path-step">
 <div class="number">2</div>
-<strong>Kod dostępu</strong>
-<span>Po wysłaniu formularza otrzymuje kod widoczny na stronie potwierdzenia.</span>
+<strong>Rozpoczęcie kursu</strong>
+<span>Po wypełnieniu formularza uczestnik może od razu przejść do pięciu modułów szkolenia.</span>
 </div>
 <div class="path-step">
 <div class="number">3</div>
@@ -6492,25 +6502,25 @@ body.online-course-page #moduleView .side-card{background:#e8e4dc!important;bord
 </section>
 <section class="section" id="dostep">
 <div class="container">
-<div class="access-panel">
+<div class="access-panel registration-request-panel">
 <div class="access-copy">
-<h2>Rozpocznij kurs po otrzymaniu kodu</h2>
-<p>
-                Kod można wyświetlić uczestnikowi po wypełnieniu formularza rejestracyjnego
-                i testu początkowego. W wersji demonstracyjnej użyj kodu
-                <strong>FAKTY2026</strong>.
-              </p>
-<div class="access-note">
-                To rozwiązanie nie tworzy kont użytkowników. Kod otwiera kurs, a oficjalnym
-                potwierdzeniem udziału pozostają odpowiedzi zapisane w Google Forms.
-              </div>
+<h2>Zanim rozpoczniesz kurs</h2>
+<p>Prosimy o wypełnienie krótkiego formularza rejestracyjnego, który zawiera również ankietę oraz test wstępny.</p>
+<p><strong>Zebrane informacje pozwolą nam:</strong></p>
+<ul class="registration-benefits">
+<li>ocenić poziom wiedzy uczestników przed rozpoczęciem szkolenia,</li>
+<li>porównać wyniki przed i po ukończeniu kursu,</li>
+<li>ocenić jakość i skuteczność przygotowanych materiałów,</li>
+<li>doskonalić kolejne edycje szkolenia,</li>
+<li>udokumentować rezultaty projektu „Edukacja bez granic” realizowanego w ramach programu Erasmus+.</li>
+</ul>
+<p class="registration-time"><strong>Wypełnienie formularza zajmuje około 5 minut.</strong></p>
+<div class="access-note">Kurs jest dostępny bez kodu dostępu, jednak będziemy wdzięczni za wcześniejsze wypełnienie formularza. Dzięki temu możemy rzetelnie ocenić efekty szkolenia, rozwijać materiały edukacyjne oraz prawidłowo dokumentować rezultaty projektu.</div>
+<div class="registration-actions">
+<a class="btn btn-primary" href="https://forms.gle/7rJ6Q3eMgx7XBsLw6" rel="noopener noreferrer" target="_blank">Wypełnij formularz rejestracyjny</a>
+<button class="btn btn-secondary" type="button" onclick="startCourse()">Rozpocznij kurs</button>
 </div>
-<form class="access-form" onsubmit="unlockCourse(event)">
-<label for="accessCode">Kod dostępu do szkolenia</label>
-<input autocomplete="off" id="accessCode" placeholder="Wpisz kod" type="text"/>
-<button class="btn btn-primary" type="submit">Otwórz kurs</button>
-<div class="form-message" id="formMessage" role="alert"></div>
-</form>
+</div>
 </div>
 </div>
 </section>
@@ -7089,8 +7099,6 @@ Twoja przeglądarka nie obsługuje odtwarzania filmu. <a href="assets/video/film
        KONFIGURACJA DO PÓŹNIEJSZEJ PODMIANY
        ========================================================== */
     const COURSE_CONFIG = {
-      accessCode: "FAKTY2026",
-
       links: {
         registration: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
         preTest: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
@@ -7200,22 +7208,9 @@ Twoja przeglądarka nie obsługuje odtwarzania filmu. <a href="assets/video/film
       safeStorage.setItem("fakeNewsCompleted", JSON.stringify(list));
     }
 
-    function unlockCourse(event) {
-      event.preventDefault();
-      const input = document.getElementById("accessCode");
-      const message = document.getElementById("formMessage");
-      const value = input.value.trim().toUpperCase();
-
-      if (value === COURSE_CONFIG.accessCode.toUpperCase()) {
-        safeStorage.setItem("fakeNewsAccess", "granted");
-        message.style.color = "var(--green-dark)";
-        message.textContent = "Kod poprawny. Otwieram szkolenie…";
-        setTimeout(() => showDashboard("push"), 350);
-      } else {
-        message.style.color = "#a13d30";
-        message.textContent = "Kod jest nieprawidłowy. W wersji demonstracyjnej wpisz: FAKTY2026";
-        input.focus();
-      }
+    function startCourse() {
+      safeStorage.setItem("fakeNewsAccess", "granted");
+      showDashboard("push");
     }
 
     function scrollToAccess() {
@@ -8046,15 +8041,14 @@ Twoja przeglądarka nie obsługuje odtwarzania filmu. <a href="assets/video/film
     }
 
     function restoreCourseRoute() {
-      const hasAccess = safeStorage.getItem("fakeNewsAccess") === "granted";
       const moduleMatch = window.location.hash.match(/^#modul-(\d+)$/);
 
-      if (hasAccess && moduleMatch) {
+      if (moduleMatch) {
         openModule(Number(moduleMatch[1]), "none");
         return;
       }
 
-      if (hasAccess && (window.location.hash === "#panel-szkolenia" || window.location.hash === "#moduly")) {
+      if (window.location.hash === "#panel-szkolenia" || window.location.hash === "#moduly") {
         if (window.location.hash === "#moduly") {
           updateCourseHistory("dashboard", null, "replace");
         }
