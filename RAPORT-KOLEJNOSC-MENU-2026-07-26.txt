@@ -1,0 +1,21 @@
+RAPORT ZMIANY KOLEJNOŚCI GÓRNEGO MENU
+Data: 26.07.2026
+
+Wprowadzona kolejność:
+1. Start
+2. Nasze szkolenia
+3. Zapisy na szkolenia
+4. Kursy online
+5. Kontakt
+
+Zakres:
+- zmieniono wyłącznie kolejność odsyłaczy w górnym pasku nawigacyjnym,
+- zachowano dotychczasowe style, wyróżnienia aktywnej podstrony, logotypy i treści,
+- na Panelu trenera, gdzie nie było odsyłacza „Nasze szkolenia”, zastosowano kolejność: Start, Zapisy na szkolenia, Kursy online, Kontakt.
+
+Weryfikacja:
+- sprawdzono kolejność menu we wszystkich 8 plikach korzystających z klasy site-nav,
+- sprawdzono lokalne odwołania href/src: brak brakujących zasobów,
+- sprawdzono składnię projektowych plików JavaScript: bez błędów,
+- uruchomiono projekt przez lokalny serwer HTTP; główne podstrony zwróciły kod 200,
+- paczka ZIP została sprawdzona testem integralności.
