@@ -4782,3 +4782,11 @@ img,video,iframe{max-width:100%}
   .site-funding-logo-eu{height:22px !important;max-width:90px !important}
   .site-funding-logo-wup{height:21px !important;max-width:74px !important}
 }
+
+
+/* UJEDNOLICENIE PASKA NAWIGACJI — 2026-07-26 */
+.site-nav > a{visibility:visible!important;opacity:1!important}
+.site-nav > a[href="nasze-szkolenia.html"]{display:inline-flex!important}
+@media(max-width:1024px){
+  .site-nav > a[href="nasze-szkolenia.html"]{display:flex!important}
+}

@@ -1,5 +1,34 @@
+// Wspólny pasek nawigacji — jedna kolejność na wszystkich podstronach.
+const publicNavItems = [
+  { href: 'index.html', label: 'Start' },
+  { href: 'nasze-szkolenia.html', label: 'Nasze szkolenia' },
+  { href: 'zapisy.html', label: 'Zapisy na szkolenia', className: 'nav-signups' },
+  { href: 'kursy-online.html', label: 'Kursy online', className: 'nav-online' },
+  { href: 'kontakt.html', label: 'Kontakt' }
+];
+
+function normalizePublicNavigation(nav) {
+  if (!nav) return;
+  const fileName = window.location.pathname.split('/').pop() || 'index.html';
+  const activeHref = fileName === 'zapisy-kalendarz.html'
+    ? 'zapisy.html'
+    : fileName === 'kurs-fake-news.html'
+      ? 'kursy-online.html'
+      : fileName;
+
+  nav.replaceChildren(...publicNavItems.map(item => {
+    const link = document.createElement('a');
+    link.href = item.href;
+    link.textContent = item.label;
+    if (item.className) link.className = item.className;
+    if (item.href === activeHref) link.setAttribute('aria-current', 'page');
+    return link;
+  }));
+}
+
 const navToggle = document.querySelector('[data-nav-toggle]');
 const siteNav = document.querySelector('[data-site-nav]');
+normalizePublicNavigation(siteNav);
 
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
