@@ -1135,3 +1135,31 @@ a.btn-primary:hover,
 .btn-primary:focus{
  color:#fff !important;
 }
+
+
+/* RESPONSYWNOŚĆ PANELI / NARZĘDZI — 2026-07-25 */
+html,body{overflow-x:hidden}
+img,video,iframe{max-width:100%}
+@media(max-width:700px){
+  .portal-shell,.portal-main,.portal-content,.panel-shell{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .portal-card,.panel-card,.tool-card{
+    padding:18px!important;
+    border-radius:18px!important;
+  }
+  .portal-grid,.panel-grid,.tool-grid{
+    grid-template-columns:1fr!important;
+  }
+  .portal-actions,.panel-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .portal-actions .btn,.panel-actions .btn{
+    width:100%!important;
+    min-height:48px!important;
+  }
+  input,select,textarea,button{font-size:16px}
+}

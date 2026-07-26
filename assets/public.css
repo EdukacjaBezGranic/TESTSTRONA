@@ -4501,3 +4501,119 @@ body.public-page{
   }
   .public-page:not(.home-rd) .public-section-head{margin-bottom:22px}
 }
+
+
+/* =========================================================
+   RESPONSYWNOŚĆ — AUDYT TELEFON / TABLET 2026-07-25
+   Bezpieczne poprawki końcowe dla publicznych podstron.
+   ========================================================= */
+html{overflow-x:hidden}
+body{overflow-x:hidden}
+img,video,iframe{max-width:100%}
+.public-page *, .home-onepage *{box-sizing:border-box}
+
+@media(max-width:820px){
+  .site-header-inner{
+    width:min(calc(100% - 24px),var(--public-max))!important;
+    min-height:68px!important;
+    gap:10px!important;
+  }
+  .site-branding{
+    min-width:0!important;
+    max-width:calc(100% - 54px)!important;
+    gap:9px!important;
+  }
+  .site-branding .site-brand,
+  .site-branding .site-project-brand{
+    min-width:0!important;
+  }
+  .site-branding .site-brand span,
+  .site-branding .site-project-brand span{
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+  .site-funding-logos{gap:8px!important;min-width:0!important}
+  .site-funding-logo{max-width:112px!important;max-height:38px!important;object-fit:contain}
+  .site-funding-logo-wup{max-width:86px!important}
+  .nav-toggle{flex:0 0 44px!important;width:44px!important;height:44px!important}
+  .site-nav{
+    left:12px!important;
+    right:12px!important;
+    top:calc(100% + 6px)!important;
+    max-height:calc(100vh - 92px)!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+  }
+  .site-nav a{min-height:46px!important;display:flex!important;align-items:center!important}
+}
+
+@media(max-width:700px){
+  .public-main,
+  .public-section > .public-container,
+  .public-container,
+  .home-rd-main{
+    width:calc(100% - 24px)!important;
+  }
+  .public-hero.inner-hero{
+    min-height:auto!important;
+    padding:18px 0!important;
+    border-radius:0!important;
+  }
+  .public-hero.inner-hero .public-hero-content{
+    width:calc(100% - 24px)!important;
+    max-width:none!important;
+    margin:0 auto!important;
+    padding:22px 18px!important;
+    border-radius:18px!important;
+  }
+  .public-hero h1,
+  .public-section-head h2,
+  .home-rd-section-heading h2{
+    overflow-wrap:anywhere;
+    hyphens:auto;
+  }
+  .public-hero h1{font-size:clamp(28px,8.7vw,40px)!important;line-height:1.08!important}
+  .public-hero p{font-size:15.5px!important;line-height:1.65!important}
+  .public-btn,
+  .public-actions .public-btn,
+  .online-hero-actions .public-btn{
+    width:100%!important;
+    min-height:48px!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+  .public-actions,
+  .online-hero-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .public-grid,
+  .public-card-grid,
+  .signup-grid,
+  .contact-grid,
+  .home-one-values,
+  .home-one-audience-grid{
+    grid-template-columns:1fr!important;
+  }
+  .public-card,
+  .signup-card,
+  .contact-card{padding:20px!important;border-radius:18px!important}
+  table{font-size:14px}
+  .table-wrap,
+  .public-table-wrap{overflow-x:auto!important;-webkit-overflow-scrolling:touch}
+  input,select,textarea,button{font-size:16px}
+}
+
+@media(max-width:430px){
+  .site-header-inner{width:calc(100% - 18px)!important}
+  .site-funding-logo{max-width:92px!important;max-height:32px!important}
+  .site-funding-logo-wup{max-width:70px!important}
+  .site-brand-separator{display:none!important}
+  .public-main,
+  .public-section > .public-container,
+  .public-container,
+  .home-rd-main{width:calc(100% - 18px)!important}
+  .public-hero.inner-hero .public-hero-content{width:calc(100% - 18px)!important;padding:20px 16px!important}
+  .public-section{padding-top:30px!important;padding-bottom:30px!important}
+}

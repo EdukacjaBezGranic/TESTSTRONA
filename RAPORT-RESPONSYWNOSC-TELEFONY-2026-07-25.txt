@@ -1,0 +1,37 @@
+AUDYT I POPRAWKI RESPONSYWNOŚCI — 25.07.2026
+
+Zakres:
+- strona główna i publiczne podstrony,
+- nagłówki i nawigacja,
+- strona kursu online,
+- panel formularza w nagłówku kursu,
+- lista modułów,
+- widoki treści Modułów 1–5,
+- przyciski, karty, ilustracje, tabele i formularze.
+
+Najważniejsze poprawki:
+1. Ujednolicono boczne marginesy na telefonach 390–430 px.
+2. Zabezpieczono stronę przed poziomym przewijaniem.
+3. Zmniejszono i uporządkowano nagłówek oraz logotypy na telefonach.
+4. Menu mobilne otrzymało ograniczenie wysokości i własne przewijanie.
+5. Nagłówki i długie tytuły mogą bezpiecznie zawijać się na małych ekranach.
+6. Przyciski na telefonach mają pełną szerokość i minimum 48 px wysokości.
+7. Panel „Zanim rozpoczniesz kurs” przechodzi w jedną kolumnę.
+8. Karty modułów i ich stopki przechodzą w jedną kolumnę.
+9. Sekcje, akordeony, ćwiczenia i ilustracje dopasowują się do szerokości ekranu.
+10. Tabele otrzymały poziome przewijanie zamiast wychodzenia poza ekran.
+11. Pola formularzy mają 16 px, co ogranicza automatyczne powiększanie w iOS.
+12. Dodano osobne korekty dla ekranów do 430 px.
+
+Walidacja:
+- sprawdzono 35 plików HTML,
+- sprawdzono 312 lokalnych odwołań,
+- brak rzeczywistych brakujących zasobów (jedno odwołanie jest szablonem JavaScript: ${item.src}),
+- bilans nawiasów CSS: poprawny,
+- sprawdzono składnię 3 skryptów osadzonych w stronie kursu: bez błędów,
+- integralność końcowego ZIP: sprawdzona.
+
+Ograniczenie środowiska:
+- wbudowana przeglądarka testowa nie była dostępna,
+- uruchomienie systemowego Chromium w trybie headless przekroczyło limit czasu,
+- dlatego walidacja objęła strukturę, składnię, odwołania i reguły responsywne, bez wiarygodnych zrzutów z prawdziwego silnika przeglądarki.
