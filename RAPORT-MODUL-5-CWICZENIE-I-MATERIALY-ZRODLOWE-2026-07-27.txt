@@ -1,0 +1,48 @@
+RAPORT ZMIAN — MODUŁ 5 I MATERIAŁY ŹRÓDŁOWE
+Data: 2026-07-27
+
+PODSTAWA
+- Zmiany wykonano na najnowszej wersji projektu z ujednoliconą typografią nagłówka i stopki.
+- Zachowano dotychczasową treść, nawigację, moduły, grafiki i funkcje kursu.
+
+WPROWADZONE ZMIANY
+1. Moduł 5 — nowe ćwiczenie praktyczne
+- Dodano CZĘŚĆ 5.7: „Studium przypadku 6: materiał udający wiadomości telewizyjne”.
+- Wstawiono przekazaną grafikę jako:
+  grafiki/studium-przypadku-material-udajacy-wiadomosci.png
+- Ćwiczenie składa się z trzech etapów:
+  a) rozpoznanie sygnałów ostrzegawczych,
+  b) plan weryfikacji krok po kroku,
+  c) wybór najbezpieczniejszej decyzji.
+- Dodano interaktywną kontrolę zaznaczonych sygnałów i informację zwrotną.
+- Dodano końcowy blok „Zapamiętaj”.
+
+2. Numeracja Modułu 5
+- Dotychczasowa część 5.7 „Symulacja pracy fact-checkera” została oznaczona jako 5.8.
+- Dotychczasowa część 5.8 „Gra: rozpoznaj rodzaj manipulacji” została oznaczona jako 5.9.
+- Zachowano pełną treść obu części.
+
+3. Panel modułów — materiały źródłowe obok Modułu 5
+- Dodano rozwijaną kartę „Materiały źródłowe”.
+- Zamknięta karta znajduje się bezpośrednio obok Modułu 5.
+- Po rozwinięciu karta zajmuje pełną szerokość panelu.
+- Umieszczono 26 pozycji źródłowych przekazanych przez użytkownika.
+- Dodano końcową informację o sposobie wykorzystania materiałów i grupach odbiorców.
+- Moduł 6 „Test końcowy i ankiety” pozostaje oddzielną kartą poniżej.
+
+4. Informacja o Module 5
+- Zaktualizowano opis zakresu Modułu 5.
+- Szacowany czas zmieniono z 50–65 minut na 60–75 minut.
+- Dodano temat dotyczący oceny materiału udającego profesjonalny serwis informacyjny.
+
+WERYFIKACJA
+- Składnia 3 skryptów JavaScript: OK (node --check).
+- Kolejność części Modułu 5 od 5.1 do 5.9: OK.
+- Liczba pozycji na liście materiałów źródłowych: 26.
+- Karta źródeł znajduje się pomiędzy Modułem 5 i Modułem 6: OK.
+- Lokalne odwołania w plikach HTML: 340 sprawdzonych, 0 brakujących.
+- Test przez lokalny serwer HTTP: strona i nowa grafika zwracają prawidłową odpowiedź.
+- Integralność końcowego ZIP-a: OK.
+
+OGRANICZENIE TESTU WIZUALNEGO
+- Systemowy Chromium ponownie nie zakończył generowania zrzutów ekranu w tym środowisku i został przerwany po limicie czasu. Nie wykonano więc wiarygodnego testu wizualnego w pełnej przeglądarce.
