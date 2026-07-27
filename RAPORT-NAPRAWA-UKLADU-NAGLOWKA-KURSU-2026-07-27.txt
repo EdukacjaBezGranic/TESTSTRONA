@@ -1,0 +1,17 @@
+NAPRAWA UKŁADU NAGŁÓWKA KURSU — 2026-07-27
+
+Przyczyna problemu:
+- przy szerokości tabletowej starsze reguły CSS zawijały nawigację do drugiego wiersza,
+- przycisk menu był zredukowany do słabo widocznej kreski,
+- tekst przy logo projektu nie miał wystarczająco silnych reguł układu i nachodził na opis,
+- wiele kolejnych warstw CSS wzajemnie nadpisywało zachowanie nagłówka.
+
+Wprowadzone zmiany:
+- powyżej 1024 px: logo, logotypy finansowania i menu pozostają w jednym wierszu,
+- do 1024 px: nawigacja jest domyślnie ukryta i otwierana czytelnym przyciskiem hamburgera,
+- usunięto zawijanie menu do osobnego stałego wiersza,
+- tekst logo ma wymuszony układ pionowy i brak podkreślenia,
+- na tabletach tekst przy logo jest ukrywany, aby logotypy nie nachodziły na siebie,
+- menu rozwijane zachowuje pełną szerokość i czytelne przyciski.
+
+Nie zmieniono treści ani układu modułów kursu.

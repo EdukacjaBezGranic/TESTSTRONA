@@ -1,0 +1,26 @@
+PODMIANA PASKA LOGOTYPÓW — 26.07.2026
+
+Wprowadzone zmiany:
+- zastąpiono dotychczasową grafikę grafiki/logotypy-pasek.png nową grafiką przekazaną przez użytkownika,
+- zachowano dotychczasową ścieżkę pliku, dzięki czemu nowy pasek wyświetla się we wszystkich miejscach używających tego zasobu,
+- zaktualizowano parametr cache-busting do v=20260726-baner3 w plikach:
+  index.html,
+  kontakt.html,
+  zapisy.html,
+  panel-trenera.html.
+
+Zachowane elementy:
+- struktura stron,
+- pasek nawigacyjny,
+- treści portalu,
+- pozostałe grafiki i multimedia.
+
+Weryfikacja:
+- sprawdzono 35 plików HTML i 338 lokalnych odwołań do zasobów,
+- brak brakujących plików,
+- format nowej grafiki: PNG, 1600 × 400 px,
+- proporcja 4:1 zgodna z dotychczasowym paskiem,
+- końcowa paczka ZIP przeszła test integralności.
+
+Ograniczenie:
+- nie wykonywano pełnego testu wizualnego w przeglądarce; zmiana dotyczy wyłącznie podmiany zasobu graficznego o zachowanej proporcji.

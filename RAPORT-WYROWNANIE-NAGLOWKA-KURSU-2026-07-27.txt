@@ -1,0 +1,20 @@
+RAPORT – WYROẂNANIE NAGŁÓWKA KURSU DO GŁÓWNEJ TREŚCI
+Data: 2026-07-27
+
+Wprowadzona zmiana:
+- górny pasek kursu otrzymał tę samą maksymalną szerokość (1180 px) co główny kontener kursu,
+- wymuszono automatyczne, równe marginesy po lewej i prawej stronie,
+- zachowano dotychczasowy układ logo, logotypów finansowania i menu,
+- na tabletach i telefonach zachowano responsywne szerokości oraz menu mobilne.
+
+Nie zmieniono:
+- treści kursu,
+- kolejności menu,
+- wyglądu hero i modułów,
+- materiałów graficznych i filmów.
+
+Weryfikacja:
+- sprawdzono obecność nowej reguły CSS,
+- sprawdzono strukturę nagłówka i menu,
+- sprawdzono lokalne odwołania do zasobów,
+- sprawdzono integralność końcowego archiwum ZIP.

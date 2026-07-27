@@ -4790,3 +4790,97 @@ img,video,iframe{max-width:100%}
 @media(max-width:1024px){
   .site-nav > a[href="nasze-szkolenia.html"]{display:flex!important}
 }
+
+
+/* =========================================================
+   STOPKA PORTALU — WYRÓWNANIE DO GŁÓWNEJ SIATKI 2026-07-27
+   ========================================================= */
+.site-footer{
+  width:100%;
+  margin-top:32px;
+}
+.site-footer .site-footer-inner{
+  width:min(1180px,calc(100% - 48px)) !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:34px 0 !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,auto) !important;
+  align-items:center !important;
+  gap:42px !important;
+  box-sizing:border-box !important;
+}
+.site-footer .site-footer-inner > div{
+  min-width:0;
+  max-width:560px;
+}
+.site-footer .site-footer-inner strong{
+  margin:0 0 6px !important;
+  font-size:16px !important;
+  line-height:1.25 !important;
+}
+.site-footer .site-footer-inner p{
+  max-width:560px;
+  margin:0 !important;
+  font-size:13px !important;
+  line-height:1.55 !important;
+}
+.site-footer .site-footer-links{
+  min-width:0;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-end !important;
+  align-items:center !important;
+  column-gap:10px !important;
+  row-gap:10px !important;
+}
+.site-footer .site-footer-links a{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:36px !important;
+  padding:8px 10px !important;
+  border-radius:9px !important;
+  font-size:12.5px !important;
+  font-weight:750 !important;
+  line-height:1.2 !important;
+  white-space:nowrap !important;
+  text-decoration:none !important;
+}
+.site-footer .site-footer-links a:hover,
+.site-footer .site-footer-links a:focus-visible{
+  background:rgba(255,255,255,.09) !important;
+  color:#fff !important;
+  outline:none;
+}
+@media(max-width:980px){
+  .site-footer .site-footer-inner{
+    grid-template-columns:1fr !important;
+    gap:22px !important;
+  }
+  .site-footer .site-footer-links{
+    justify-content:flex-start !important;
+  }
+}
+@media(max-width:760px){
+  .site-footer .site-footer-inner{
+    width:calc(100% - 24px) !important;
+    padding:28px 0 !important;
+  }
+  .site-footer .site-footer-links{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:8px !important;
+  }
+  .site-footer .site-footer-links a{
+    width:100% !important;
+    min-height:42px !important;
+    justify-content:flex-start !important;
+    padding:10px 12px !important;
+    white-space:normal !important;
+  }
+}
+@media(max-width:420px){
+  .site-footer .site-footer-links{
+    grid-template-columns:1fr !important;
+  }
+}
