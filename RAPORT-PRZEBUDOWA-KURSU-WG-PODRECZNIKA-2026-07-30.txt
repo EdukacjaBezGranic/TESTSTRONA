@@ -1,0 +1,69 @@
+RAPORT PRZEBUDOWY KURSU ONLINE
+Data: 30.07.2026
+
+ŹRÓDŁO MERYTORYCZNE
+- Podrecznik_Moduly_1_5_STYL_UE_Z_GRAFIKAMI(1).docx
+- Dokument Word został przyjęty jako źródło treści, kolejności tematów, tabel, ćwiczeń, słowników, samoocen i materiałów źródłowych.
+
+WPROWADZONE ZMIANY
+1. Zastąpiono dotychczasową konstrukcję kursu nową wersją opartą na pięciu modułach podręcznika:
+   - Moduł 1: 16 tematów
+   - Moduł 2: 22 tematy, łącznie z osobną sekcją źródeł
+   - Moduł 3: 27 tematów, łącznie z osobną sekcją źródeł
+   - Moduł 4: 22 tematy
+   - Moduł 5: 24 tematy
+   - Razem: 111 sekcji kursu
+
+2. Przeniesiono i uporządkowano elementy dokumentu Word:
+   - 121 tabel i bloków tabelarycznych,
+   - 62 wyróżnione bloki: wnioski, pytania, wskazówki, cele ćwiczeń i przykłady,
+   - 18 grafik dydaktycznych z modułów oraz logo ośrodka źródłowego,
+   - ćwiczenia, checklisty, skale samooceny, słowniki i bibliografie.
+
+3. Zachowano zasoby dotychczasowego projektu i dopasowano je tematycznie:
+   - 33 przypisania istniejących grafik, infografik, ilustracji i filmów,
+   - przykłady fake news, fałszywego profilu, fałszywej oferty pracy, zdjęcia w fałszywym kontekście, cherry-pickingu i deepfake,
+   - materiały o algorytmach, emocjach, weryfikacji, SIFT, AI, tożsamości grupowej i dobrostanie.
+
+4. Dodano nowy interfejs kursu:
+   - pełna lista pięciu modułów i wszystkich tematów w lewym panelu,
+   - moduły i etapy widoczne bez ukrywania głównych treści w akordeonach,
+   - wyszukiwarka tematów,
+   - postęp całego kursu i każdego modułu,
+   - oznaczanie przeczytanych sekcji,
+   - zapamiętywanie ostatniego miejsca,
+   - responsywny panel nawigacji na telefonach,
+   - 542 interaktywne pola odpowiedzi, checkboxy i skale z zapisem w przeglądarce.
+
+5. Zachowano pozostałą część portalu:
+   - stronę główną,
+   - informacje o projekcie,
+   - kursy online,
+   - szkolenia,
+   - zapisy i kalendarz,
+   - kontakt,
+   - panel trenera,
+   - generator dokumentacji szkoleniowej,
+   - dotychczasowe grafiki, filmy i materiały pomocnicze.
+
+NOWE PLIKI KURSU
+- kurs-fake-news.html
+- assets/course-v2.css
+- assets/course-v2.js
+- assets/course-media/docx/
+
+WYNIKI TESTÓW
+- 5 modułów i 111 sekcji obecnych w kodzie i nawigacji.
+- 0 brakujących zasobów.
+- 0 zduplikowanych identyfikatorów sekcji.
+- 0 uszkodzonych obrazów.
+- Wszystkie obrazy mają opisy alternatywne.
+- JavaScript przeszedł kontrolę składni node --check.
+- Testowane widoki: desktop 1440 x 1000 i telefon 390 x 844.
+- Sprawdzone: zmiana modułu, właściwa lista tematów, wyszukiwarka, mobilny panel boczny, pola odpowiedzi i zapisywanie danych.
+- 0 błędów konsoli i 0 błędów działania strony w teście interakcji.
+- Test serwera lokalnego: 61 unikalnych zasobów kursu zwróciło status HTTP 200.
+
+OGRANICZENIA
+- Postęp i odpowiedzi są zapisywane lokalnie w przeglądarce użytkownika. Nie są synchronizowane między urządzeniami.
+- Kurs jest przygotowany dla aktualnych wersji Chrome, Edge, Firefox i Safari.

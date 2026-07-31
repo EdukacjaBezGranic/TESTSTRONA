@@ -1,0 +1,39 @@
+PEŁNA PRZEBUDOWA KURSU ONLINE
+Data: 2026-07-28
+
+ZAŁOŻENIE
+Przebudowano faktyczny projekt HTML/CSS/JavaScript. Nie generowano ani nie podmieniano grafik kursu.
+
+WPROWADZONE ZMIANY
+1. Nowa ciemna powłoka kursu zgodna z portalem.
+2. Stały panel boczny z postępem i nawigacją po modułach.
+3. Nowe oznaczenia MODUŁ 01–05 i ETAP 01–XX.
+4. Jednocześnie widoczny jest jeden etap; przejście do kolejnego wykorzystuje wolny morph/przenikanie.
+5. Nawigacja etapów u góry oraz przyciski Poprzedni/Następny na dole.
+6. Automatyczne rozpoznawanie proporcji obrazów: szerokie, poziome, kwadratowe i pionowe.
+7. Obrazy są prezentowane bez rozciągania, z object-fit: contain i osobnymi limitami szerokości/wysokości.
+8. Mniej ramek w ramkach: jedna główna powierzchnia czytania, listowe akordeony, lekkie separatory.
+9. Naprzemienne warianty układu tekst–media tam, gdzie pozwala na to struktura treści.
+10. Responsywny panel modułów i etapów na tabletach i telefonach.
+11. Zachowano testy, ćwiczenia, multimedia, materiały źródłowe i zapis postępu.
+
+AUDYT TREŚCI
+- Tekst widoczny przed przebudową: 42506 znaków.
+- Tekst widoczny po przebudowie: 42506 znaków.
+- Różnica wynika wyłącznie z nowych etykiet interfejsu dodawanych przez JavaScript; istniejąca treść HTML nie została usunięta.
+
+WERYFIKACJA TECHNICZNA
+- Sprawdzenie osadzonych skryptów wykonano przez node --check.
+- Sprawdzono lokalne odwołania do zasobów.
+- Sprawdzono uruchomienie przez lokalny serwer HTTP.
+- Sprawdzono integralność końcowego ZIP-a.
+
+WYNIKI TESTÓW KOŃCOWYCH
+- 4 osadzone skrypty JavaScript sprawdzone przez node --check: bez błędów.
+- 253 lokalne odwołania do plików sprawdzone: brak brakujących zasobów.
+- Duplikaty identyfikatorów HTML: brak.
+- Lokalny serwer HTTP dla kurs-fake-news.html: status 200.
+- Zachowanie treści: 42 506 znaków przed i 42 506 znaków po przebudowie.
+
+OGRANICZENIE TESTU WIZUALNEGO
+Dostępny systemowy Chromium nie ukończył renderowania strony w trybie headless i został zatrzymany po przekroczeniu limitu czasu. Nie zaliczono więc pełnego testu wizualnego w rzeczywistej przeglądarce. Walidacja składni, struktury, zasobów, treści i serwera HTTP zakończyła się prawidłowo.

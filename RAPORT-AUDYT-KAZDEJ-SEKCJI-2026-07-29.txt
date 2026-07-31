@@ -1,0 +1,36 @@
+RAPORT AUDYTU KAŻDEJ SEKCJI KURSU
+Data: 29.07.2026
+
+Zakres kontroli
+- 5 modułów kursu.
+- 46 etapów tematycznych.
+- układ desktopowy 1440 px,
+- układ mobilny 390 px,
+- wszystkie ramki, pola tekstowe, siatki kart, grafiki, filmy, formularze i pola odpowiedzi.
+
+Wprowadzone poprawki
+1. Usunięto podwójne ramki historycznych kontenerów. Każdy etap ma obecnie jedną spójną powierzchnię treści.
+2. Ujednolicono szerokości, promienie narożników, obramowania, cienie i odstępy wszystkich pól.
+3. Wyrównano karty w tych samych rzędach i dodano automatyczne dopasowanie ich wysokości.
+4. Uporządkowano osobne pola wprowadzeń, refleksji, przykładów, źródeł, ćwiczeń i podsumowań.
+5. Poprawiono kontrast pól jasnych i ciemnych.
+6. Grafiki i filmy zachowują proporcje, są centrowane i nie są rozciągane ani przypadkowo przycinane.
+7. Układy tekst + multimedia mają równe kolumny na dużym ekranie i pełną pojedynczą kolumnę na telefonie.
+8. Rozbudowane studium przypadku 5.7 otrzymało pełną pionową ścieżkę zamiast wąskiej, nadmiernie wydłużonej kolumny.
+9. Pola wyboru w ćwiczeniu 5.7 zostały ustawione w jednej czytelnej kolumnie, bez wychodzenia tekstu poza ramkę.
+10. Poprawiono oznaczenia lekcji MAPA/PLAN/numery, aby nie wychodziły poza pola.
+11. Wszystkie etapy modułu nadal są widoczne od razu w całości, bez wewnętrznego przewijania.
+12. Na telefonie wyzerowano desktopowe numery kolumn, które mogły zwężać grafikę do małego punktu.
+
+Wyniki testów
+- 46/46 etapów zostało otwartych i sprawdzonych automatycznie.
+- brak poziomego rozsuwania aktywnych sekcji na desktopie i telefonie,
+- brak elementów multimedialnych szerszych od ramki etapu,
+- brak niewidocznych etapów w nawigacji,
+- liczba etapów: 11, 10, 6, 7 i 12,
+- wewnętrzna lista etapów nie posiada ukrytego przewijania,
+- testy wykonano w Chromium przez Playwright.
+
+Uwagi
+- Ostrzeżenie przeglądarki dotyczące atrybutu web-share nie wpływa na wygląd ani działanie kursu.
+- Zewnętrzne materiały lub pola oznaczone jako miejsca do późniejszego uzupełnienia pozostawiono zgodnie z treścią projektu.

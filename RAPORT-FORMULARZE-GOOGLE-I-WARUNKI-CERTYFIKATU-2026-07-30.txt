@@ -1,0 +1,69 @@
+RAPORT ZMIAN – FORMULARZE GOOGLE I WARUNKI CERTYFIKATU
+Data: 30.07.2026
+Projekt: Edukacja bez granic
+Kurs: Media Literacy, Fake News i Krytyczne Myślenie
+
+1. WPROWADZONE ZMIANY
+
+A. Początek kursu
+- dodano osobną, widoczną sekcję „Zanim rozpoczniesz”;
+- przygotowano kafel „Formularz uczestnika”;
+- przygotowano kafel „Test wiedzy przed kursem”;
+- dodano prośbę o wykonanie obu etapów przed rozpoczęciem nauki;
+- dodano informację o stosowaniu tego samego adresu e-mail we wszystkich formularzach;
+- przycisk „Rozpocznij kurs” w nagłówku prowadzi teraz do sekcji startowej;
+- pozostawiono osobny przycisk „Kontynuuj zapisany kurs”.
+
+B. Warunki otrzymania certyfikatu
+- dodano wyraźny blok z warunkami otrzymania certyfikatu;
+- warunki obejmują formularz uczestnika, test wstępny, ukończenie pięciu modułów,
+  zaliczenie testu końcowego zgodnie z progiem wskazanym w formularzu oraz ankietę ewaluacyjną;
+- wskazano, że faktyczne spełnienie warunków jest potwierdzane na podstawie Google Forms;
+- zaznaczenia w portalu opisano jako prywatną listę kontrolną uczestnika.
+
+C. Koniec kursu
+- dodano osobną sekcję „Test końcowy i ankieta ewaluacyjna”;
+- przygotowano miejsce na test wiedzy po kursie;
+- przygotowano miejsce na ankietę ewaluacyjną;
+- dodano podsumowanie: liczba wykonanych formularzy i liczba ukończonych modułów;
+- dodano wizualny postęp warunków certyfikatu od 0% do 100%.
+
+D. Zapis lokalny i przenoszenie postępu
+- potwierdzenia wykonania czterech formularzy zapisują się lokalnie w przeglądarce;
+- lista kontrolna jest dołączana do eksportowanego pliku postępu;
+- po wczytaniu pliku postępu przywracane są także zaznaczenia formularzy;
+- funkcja wyczyszczenia postępu usuwa również lokalną listę kontrolną formularzy.
+
+E. Konfiguracja linków
+- dodano plik assets/course-forms-config.js;
+- po wklejeniu właściwego adresu Google Forms przycisk automatycznie staje się aktywny;
+- bez adresu przycisk pozostaje nieaktywny i pokazuje komunikat „Link zostanie dodany po utworzeniu formularza”;
+- dodano instrukcję INSTRUKCJA-PODPIECIA-LINKOW-GOOGLE-FORMS.txt.
+
+2. ELEMENTY ZACHOWANE
+- wszystkie 111 tematów kursu;
+- pięć modułów i dotychczasowa kolejność treści;
+- lokalny zapis odpowiedzi i samoocen;
+- PDF bieżącego modułu oraz zbiorczy PDF całego kursu;
+- eksport i import postępu;
+- logotypy projektu i Unii Europejskiej;
+- pozostałe strony portalu i panel trenera.
+
+3. TESTY
+- kod JavaScript sprawdzony poleceniem node --check: bez błędów;
+- dokument HTML: 111 sekcji, brak zduplikowanych identyfikatorów;
+- 4 kafle formularzy, 4 przyciski i 4 pola potwierdzenia;
+- test lokalnego zapisu formularza uczestnika i testu wstępnego: pozytywny;
+- test eksportu postępu: wersja 2 zawiera stan formularzy;
+- test pełnego postępu: 4 z 4 formularzy, 5 z 5 modułów, 100%;
+- test podpięcia przykładowego adresu Google Forms: przycisk aktywuje się prawidłowo;
+- test widoku desktopowego 1440 × 1000: pozytywny;
+- test widoku mobilnego 390 × 844: brak poziomego przepełnienia dokumentu;
+- 65 lokalnych zasobów sprawdzono przez serwer HTTP: wszystkie zwróciły status 200;
+- brak błędów JavaScript w konsoli.
+
+4. ZNANE OGRANICZENIA
+- właściwe formularze Google nie zostały jeszcze utworzone, ponieważ nie przekazano ich adresów;
+- obecne przyciski są celowo nieaktywne do czasu wklejenia czterech publicznych linków;
+- portal bez kont użytkowników nie może samodzielnie potwierdzić faktycznego wysłania Google Forms;
+- ostateczna weryfikacja certyfikatu musi odbywać się po stronie organizatora na podstawie odpowiedzi formularzy.

@@ -1,0 +1,21 @@
+AKTUALIZACJA INSTRUKCJI – ŚCIEŻKA CERTYFIKATU
+==============================================
+
+Data: 30.07.2026
+
+Zaktualizowano plik:
+INSTRUKCJA-PODPIECIA-LINKOW-GOOGLE-FORMS.txt
+
+Dodano:
+- pełne warunki otrzymania certyfikatu,
+- wymóg ukończenia pięciu modułów na poziomie 100%,
+- opis pliku PDF „Potwierdzenie ukończenia części e-learningowej”,
+- informację, że PDF nie jest certyfikatem,
+- adres do przesłania dokumentu: lmalinowski@wup-katowice.pl,
+- proponowany temat i treść wiadomości e-mail,
+- informację o ręcznym dodaniu PDF jako załącznika,
+- procedurę weryfikacji przez organizatora,
+- wyjaśnienie ograniczeń kursu bez logowania i bazy danych.
+
+Zakres zmiany:
+Zmodyfikowano wyłącznie dokumentację. Kod i wygląd portalu nie zostały w tej aktualizacji zmienione.

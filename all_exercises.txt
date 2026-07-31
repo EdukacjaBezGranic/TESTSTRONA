@@ -1,0 +1,196 @@
+
+### 1. Ćwiczenie 1. Jak docierały do mnie informacje?
+SELECT: Która ścieżka dominowała? => Samodzielne wyszukiwanie | Inna osoba | Platforma lub algorytm | Narzędzie AI | Kilka ścieżek w podobnym stopniu
+INPUT: Co zauważyłeś? – opcjonalnie
+CHOICES: Samodzielne wyszukiwanie | Wiadomość od innej osoby | Polecenie platformy | Kanał dobrany przez algorytm | Treść utworzona lub streszczona przez AI
+
+### 2. Ćwiczenie 2. Mój ekosystem informacyjny
+SELECT: Z czego korzystasz najczęściej? => Źródła oficjalne | Portale informacyjne | Media społecznościowe | Komunikatory i osoby | Wyszukiwarki lub AI
+SELECT: Gdzie widzisz największe ryzyko? => Jednostronność | Emocjonalny przekaz | Nieznany autor | Dobór algorytmiczny | Brak kontekstu
+INPUT: Jedno źródło do uważniejszego sprawdzania – opcjonalnie
+CHOICES: Źródła oficjalne i eksperckie | Portale i redakcje informacyjne | Media społecznościowe i twórcy | Komunikatory i osoby prywatne | Wyszukiwarki i narzędzia AI
+
+### 3. Ćwiczenie 3. Sprawdzenie różnorodności źródeł
+ASSESS: Porównuję informację w więcej niż jednym źródle. | Sięgam do źródeł oficjalnych lub eksperckich. | Sprawdzam, czy widzę różne perspektywy. | Rozpoznaję wpływ algorytmów i emocjonalnego języka. | Weryfikuję treść przed jej udostępnieniem.
+
+### 4. Ćwiczenie 4. Szybka autorefleksja
+SELECT: Najczęściej ufam źródłu, gdy… => jest oficjalne lub eksperckie | znam autora i jego kompetencje | pokazuje źródła i dowody | widziałem tę informację wiele razy | poleciła je zaufana osoba
+SELECT: Jak różnorodne są Twoje źródła? => Regularnie widzę różne perspektywy | Czasem widzę odmienne poglądy | Najczęściej widzę podobne poglądy | Nie zwracam na to uwagi
+SELECT: Który nawyk chcesz wzmocnić? => Porównywanie kilku źródeł | Docieranie do źródła pierwotnego | Zatrzymanie reakcji emocjonalnej | Weryfikowanie obrazów i nagrań | Ograniczenie automatycznego przewijania
+INPUT: Mój najważniejszy wniosek – opcjonalnie
+
+### 5. Ćwiczenie 5. Analiza fikcyjnego postu
+SELECT: Co może budować pozorne zaufanie? => Duża liczba wyświetleń | Tysiące udostępnień | Liczne komentarze | Wszystkie te elementy
+SELECT: Co wiadomo o źródle filmu? => Podano autora, źródła i dowody | Podano autora, ale bez źródeł | Nie podano autora ani źródeł | Nie potrafię ocenić
+SELECT: Jaki mechanizm dominuje? => Społeczny dowód słuszności | Mylenie popularności z wiarygodnością | Wzmocnienie zasięgu przez algorytm | Kilka mechanizmów naraz
+SELECT: Najbardziej odpowiedzialna reakcja => Uznać liczbę wyświetleń za potwierdzenie | Powtórzyć tezę w komentarzu | Sprawdzić autora, źródła i pierwotny kontekst | Pominąć bez refleksji
+INPUT: Co sprawdzisz jako pierwsze? – opcjonalnie
+CHOICES: Duża liczba wyświetleń jako „dowód” | Tysiące udostępnień jako „potwierdzenie” | Brak autora i źródeł | Komentarze zastępujące dowody | Popularność utożsamiona z prawdą
+
+### 6. Ćwiczenie 6. Bilet wyjścia z modułu
+TEXTAREA: Co zauważyłem w swoich nawykach?
+TEXTAREA: Co zmienię podczas korzystania z informacji?
+TEXTAREA: Co chcę jeszcze sprawdzić lub zrozumieć?
+
+### 7. Ćwiczenie 1. Zatrzymaj emocję
+SELECT: Pierwsza reakcja => Strach | Złość lub oburzenie | Ciekawość | Podejrzliwość | Brak silnej reakcji
+SELECT: Czego najbardziej brakuje w przekazie? => Źródła nagrania | Daty i miejsca | Dowodów na oskarżenie | Pełnego kontekstu | Wszystkich tych informacji
+SELECT: Co zrobisz przed reakcją? => Udostępnię ostrzegawczo | Zatrzymam się i sprawdzę | Skomentuję od razu | Pominę bez sprawdzania
+INPUT: Jedno zdanie: co uruchomiło emocję? – opcjonalnie
+CHOICES: „Szokujący film” | „Naszym dzieciom” | „Udostępnij natychmiast” | „Zostanie usunięte”
+
+### 8. Ćwiczenie 2. Post, z którym od razu się zgadzam
+SELECT: Który wpływ był najsilniejszy? => Zgodność z moimi poglądami | Zaufanie do osoby lub grupy | Powtarzalność | Silna emocja | Pozorny autorytet
+SELECT: Co sprawdzisz przed udostępnieniem? => Autora i źródło | Dowody | Inne wiarygodne źródła | Pełny kontekst | Wszystkie te elementy
+INPUT: Moja krótka zasada na przyszłość – opcjonalnie
+CHOICES: Post potwierdzał moje przekonania | Pochodził od osoby z mojej grupy | Widziałem tę tezę wiele razy | Przekaz był alarmujący | Autor wyglądał na eksperta
+
+### 9. Ćwiczenie 3. SIFT w wersji online
+SELECT: S – Zatrzymaj się => Nie udostępniam i nazywam reakcję | Udostępniam ostrzegawczo | Od razu komentuję
+SELECT: I – Zbadaj źródło => To oficjalny kanał instytucji | Źródło jest nieznane lub niejasne | Konto prawdopodobnie się podszywa | Muszę sprawdzić autora i domenę
+SELECT: F – Znajdź lepsze źródła => Wiarygodne źródła potwierdzają | Brak potwierdzenia | Źródła oficjalne zaprzeczają | Jeszcze nie sprawdziłem
+SELECT: T – Dotrzyj do kontekstu => Znalazłem pierwotny komunikat | Znalazłem część kontekstu | Nie znalazłem źródła pierwotnego | Jeszcze nie sprawdziłem
+SELECT: Końcowa decyzja => Udostępniam | Najpierw dalej sprawdzam | Zgłaszam jako podejrzane | Sprostowuję z linkiem do źródła | Nie rozpowszechniam
+INPUT: Pierwsze źródło, które sprawdzę – opcjonalnie
+
+### 10. (bez tytułu 10)
+SELECT: Czy informacja jest gotowa do udostępnienia? => Tak – potwierdziłem najważniejsze elementy | Nie – brakuje potwierdzenia | Nie mam pewności | Nie będę jej udostępniać
+INPUT: Najważniejszy brak do sprawdzenia – opcjonalnie
+CHOICES: Autor lub organizacja są rozpoznawalni | Data odpowiada opisywanemu wydarzeniu | Treść potwierdza nagłówek | Podano źródło pierwotne lub dowody | Inne wiarygodne źródła potwierdzają informację | Obrazy i nagrania są użyte we właściwym kontekście | Rozpoznałem emocjonalny język lub presję czasu | Sprawdziłem możliwość użycia AI lub manipulacji
+
+### 11. Ćwiczenie 4. Dwa nagłówki – jedno wydarzenie
+SELECT: Co podkreśla nagłówek A? => Ostatni wzrost | Trend wieloletni | Przyczynę wzrostu | Możliwe rozwiązanie
+SELECT: Co podkreśla nagłówek B? => Ostatni wzrost | Trend wieloletni | Przyczynę wzrostu | Możliwe rozwiązanie
+SELECT: Który nagłówek silniej alarmuje? => Nagłówek A | Nagłówek B | Oba podobnie | Żaden
+SELECT: Jakich danych potrzeba najbardziej? => Liczb bezwzględnych i procentów | Porównania kilku okresów | Metody liczenia | Danych dla różnych grup | Pełnego zestawu tych danych
+INPUT: Krótki wniosek – opcjonalnie
+
+### 12. (bez tytułu 12)
+SELECT: Który rodzaj manipulacji rozpoznajesz najlepiej? => Manipulację emocjonalną | Fałszywy kontekst | Podszywanie się | Manipulację danymi | Treści syntetyczne i AI
+SELECT: Na którą emocję chcesz uważać? => Strach | Złość | Oburzenie | Nadmierna nadzieja | Presja czasu
+SELECT: Który krok zastosujesz najpierw? => Zatrzymanie reakcji | Sprawdzenie źródła | Porównanie innych źródeł | Dotarcie do kontekstu pierwotnego | Weryfikacja obrazu lub nagrania
+TEXTAREA: Moja zasada przed udostępnieniem
+
+### 13. Ćwiczenie 3.1. Rozpoznaj rodzaj wypowiedzi
+SELECT: 1. „W badaniu wzięło udział 240 osób.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+SELECT: 2. „Ten raport jest napisany zbyt skomplikowanym językiem.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+SELECT: 3. „Spadek liczby zgłoszeń może oznaczać częstsze korzystanie z usług online.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+SELECT: 4. „Każdy, kto ufa tej instytucji, jest naiwny.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+SELECT: 5. „Za pięć lat większość porad będzie udzielana przez chatboty.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+SELECT: 6. „Urzędy powinny zawsze publikować pełne dane źródłowe.” => Fakt | Opinia | Interpretacja | Założenie | Przewidywanie | Sąd wartościujący
+INPUT: Uwaga do jednego niejednoznacznego zdania – opcjonalnie
+
+### 14. Ćwiczenie 3.2. Szybka ocena źródła
+INPUT: Materiał – opcjonalnie
+SELECT: Czy autor lub instytucja są rozpoznawalni? => Tak | Częściowo | Nie | Nie wiem
+SELECT: Czy data jest aktualna i widoczna? => Tak | Nie | Nie ma znaczenia | Nie wiem
+SELECT: Czy materiał pokazuje dowody lub źródła? => Tak – konkretne i sprawdzalne | Częściowo | Nie | Nie wiem
+SELECT: Czy inne źródła potwierdzają tezę? => Tak | Częściowo lub z zastrzeżeniami | Nie | Jeszcze nie sprawdziłem
+SELECT: Ocena końcowa => Wiarygodne | Częściowo wiarygodne | Niewiarygodne | Brak danych do oceny
+INPUT: Najważniejszy brak – opcjonalnie
+
+### 15. Ćwiczenie 3.3. Liczba bez kontekstu
+SELECT: Które wyjaśnienie jest możliwe? => Usługa się pogorszyła | Skargi łatwiej zgłaszać | Wzrosła liczba użytkowników | Zmienił się sposób liczenia | Kilka wyjaśnień naraz
+SELECT: Co można stwierdzić na podstawie samego procentu? => System działa gorzej | System działa lepiej | Nie da się ocenić bez kontekstu | Dane są fałszywe
+CHOICES: Liczba skarg przed i po zmianie | Liczba użytkowników systemu | Okres porównania | Sposób rejestrowania skarg | Informacja, czy ułatwiono zgłaszanie
+
+### 16. Ćwiczenie 3.4. Jedno zdarzenie – dwie ramy
+SELECT: Pierwszy nagłówek stosuje ramę… => Ułatwienia i porządku | Utrudnienia i wykluczenia | Konfliktu | Neutralną
+SELECT: Drugi nagłówek stosuje ramę… => Ułatwienia i porządku | Utrudnienia i wykluczenia | Konfliktu | Neutralną
+SELECT: Jakiego kontekstu brakuje? => Alternatyw dla osób bez dostępu online | Danych o czasie obsługi | Informacji o wsparciu pracowników | Wszystkich tych informacji
+TEXTAREA: Neutralny nagłówek – jedna wersja
+
+### 17. Ćwiczenie 3.5. CLEAR w skróconej wersji
+SELECT: Obszar decyzji => Praca lub szkolenie | Zdrowie | Zakup lub usługa | Komunikat instytucji | Inny
+INPUT: C – Co dokładnie muszę ustalić?
+SELECT: L – Jakie źródła sprawdzę? => Oficjalne lub pierwotne | Eksperckie | Opinie użytkowników | Co najmniej dwa różne typy źródeł
+SELECT: E – Jak oceniasz dowody? => Spójne i sprawdzalne | Częściowe | Słabe lub niejasne | Brak dowodów
+SELECT: A – Czy rozważyłeś inne wyjaśnienia lub opcje? => Tak – co najmniej dwie | Tylko jedną | Nie | Nie dotyczy
+SELECT: R – Czy jesteś gotowy do decyzji? => Tak | Potrzebuję więcej danych | Odkładam decyzję | Odrzucam tę opcję
+INPUT: Co mogłoby zmienić Twoją decyzję? – opcjonalnie
+
+### 18. (bez tytułu 18)
+SELECT: Gotowość do decyzji => Mam wystarczające dane | Potrzebuję więcej danych | Nie podejmuję decyzji na tej podstawie
+INPUT: Najważniejszy brak – opcjonalnie
+CHOICES: Ustaliłem główne twierdzenie | Oddzieliłem fakt od opinii i założenia | Sprawdziłem autora i źródło | Oceniłem dowody i ich związek z tezą | Zauważyłem brakujące informacje | Rozważyłem inne wyjaśnienia | Sprawdziłem emocje i możliwy błąd poznawczy | Oceniłem skutki uwierzenia lub udostępnienia
+
+### 19. (bez tytułu 19)
+SELECT: Którą umiejętność chcesz stosować częściej? => Ocenę źródła | Ocenę dowodów | Rozpoznawanie błędów rozumowania | Szukanie innych wyjaśnień | Uporządkowane podejmowanie decyzji
+SELECT: Największe ryzyko podczas korzystania z AI => Błędne informacje | Brak źródeł i kontekstu | Stronniczość | Nadmierne zaufanie | Kilka ryzyk naraz
+TEXTAREA: Pytanie, które zadam przed decyzją
+
+### 20. Ćwiczenie 4.1. Porównaj dwa nagłówki
+SELECT: Rama nagłówka A => Usługi i wsparcie | Koszty i obciążenie | Bezpieczeństwo | Konflikt
+SELECT: Rama nagłówka B => Usługi i wsparcie | Koszty i obciążenie | Bezpieczeństwo | Konflikt
+SELECT: Który nagłówek silniej wywołuje emocje? => A | B | Oba | Żaden
+SELECT: Jakich danych potrzeba? => Kosztów i źródeł finansowania | Liczby i potrzeb użytkowników | Efektów działania centrum | Wszystkich tych danych
+INPUT: Słowo najmocniej ustawiające ramę – opcjonalnie
+
+### 21. Ćwiczenie 4.2. Uogólnienie czy uzasadniony wniosek
+SELECT: Co jest faktem możliwym do sprawdzenia? => Czy konkretna osoba popełniła przestępstwo | Czy wszyscy uchodźcy popełniają przestępstwa | Czy przyjęcie uchodźców powoduje wzrost przestępczości | Żaden element
+SELECT: Gdzie pojawia się uogólnienie? => Od jednej osoby do całej grupy | Od miasta do całego kraju | Od jednego roku do wielu lat | Nie ma uogólnienia
+SELECT: Jakie założenie jest ukryte? => Jedno zdarzenie dowodzi związku przyczynowego | Wszystkie grupy mają takie same cechy | Dane są kompletne | Kilka założeń naraz
+SELECT: Jakich danych potrzeba? => Porównywalnych wskaźników przestępczości | Danych z dłuższego okresu | Danych dla różnych grup i liczebności | Analizy innych przyczyn | Pełnego zestawu tych danych
+
+### 22. Ćwiczenie 4.3. Czy udostępnić nagranie?
+SELECT: Co wiadomo na pewno? => Nagranie przedstawia potwierdzony atak | Istnieje nagranie przedstawiające niejasne zdarzenie | Znamy miejsce i datę | Znamy autora
+SELECT: Jak sprawdzić miejsce i datę? => Metadane i szczegóły obrazu | Wyszukiwanie wsteczne i kadry | Wiarygodne źródła lokalne i oficjalne | Połączyć kilka metod
+SELECT: Czy publikacja może zaszkodzić widocznym osobom? => Tak | Nie | Nie wiadomo
+SELECT: Czy istnieje mniej szkodliwe źródło? => Tak – należy użyć zweryfikowanego materiału | Nie | Jeszcze nie sprawdziłem
+SELECT: Decyzja => Udostępniam nagranie | Udostępniam po zasłonięciu danych | Nie udostępniam przed weryfikacją | Zgłaszam i nie rozpowszechniam
+INPUT: Jedno uzasadnienie – opcjonalnie
+
+### 23. (bez tytułu 23)
+SELECT: Jaka rama dominuje? => Bezpieczeństwo | Humanitarna | Gospodarcza | Kulturowa | Polityczna | Moralna
+SELECT: Jaki jest język? => Neutralny | Emocjonalny | Polaryzujący | Dehumanizujący | Mieszany
+SELECT: Jak oceniasz dowody? => Sprawdzalne i aktualne | Częściowe | Słabe lub bez kontekstu | Brak dowodów
+SELECT: Czy pokazano różne perspektywy? => Tak | Tylko częściowo | Nie | Nie wiem
+SELECT: Możliwy skutek udostępnienia => Lepsze poinformowanie | Mobilizacja do działania | Polaryzacja lub szkoda | Skutki mieszane | Nie wiem
+INPUT: Najważniejszy brak – opcjonalnie
+
+### 24. (bez tytułu 24)
+SELECT: Który temat wymaga od Ciebie największej ostrożności? => Migracja i uchodźcy | Wojna i konflikt | Polityka i wybory | Tożsamość i mniejszości | Zdrowie publiczne
+SELECT: Na którą ramę chcesz uważać? => Jednorodne zagrożenie | Spisek i ukrywanie prawdy | Dehumanizacja | Podział „my–oni” | Pojedynczy przypadek jako reguła
+SELECT: Co sprawdzisz najpierw? => Źródło i datę | Dane i metodę | Kontekst obrazu lub nagrania | Brakujące perspektywy | Możliwą szkodę
+TEXTAREA: Moja zasada przed udostępnieniem treści wrażliwej
+
+### 25. Ćwiczenie 5.1. Mój sygnał przeciążenia
+SELECT: Który sygnał chcesz ograniczyć najpierw? => Sprawdzanie bez celu | Ciągłe wracanie do tematu | Wiadomości przed snem | Przewijanie mimo napięcia | Całkowite unikanie
+SELECT: Pierwszy krok => Ustalam godziny sprawdzania | Wyłączam część powiadomień | Kończę wiadomości przed snem | Robię przerwę po sygnale napięcia | Ograniczam liczbę źródeł
+CHOICES: Sprawdzam wiadomości bez konkretnego celu | Wracam do tego samego tematu wiele razy | Czytam obciążające treści przed snem | Czuję napięcie, ale nadal przewijam | Unikam wiadomości z powodu przesytu
+
+### 26. Ćwiczenie 5.2. Trzy momenty kontaktu z informacją
+SELECT: Co zauważyłeś? => Najczęściej korzystam w konkretnym celu | Często działam z przyzwyczajenia | Kontakt z informacją zwykle mnie nie obciąża | Często kończę z napięciem | Moje reakcje są zróżnicowane
+
+### 27. Ćwiczenie 5.3. Zmień reakcję w odpowiedź
+SELECT: Pierwszy impuls => Przesłać dalej na wszelki wypadek | Skrytykować urząd bez sprawdzenia | Poprosić o oficjalne źródło | Zatrzymać się i sprawdzić
+SELECT: Co nadaje przekazowi pozorną wiarygodność? => Powołanie się na osobę pracującą w urzędzie | Podanie konkretnego terminu | Sugestia, aby ostrzec innych | Kilka elementów naraz
+SELECT: Pierwszy krok weryfikacji => Sprawdzić oficjalną stronę i kanały instytucji | Wyszukać komunikaty innych wiarygodnych źródeł | Zapytać wyłącznie AI | Zapytać kolejne osoby prywatne
+SELECT: Najlepsza spokojna odpowiedź => „Podeślij proszę oficjalny komunikat. Sprawdźmy stronę urzędu, zanim przekażemy tę informację dalej.” | „To na pewno kłamstwo, nie pisz takich rzeczy.” | „Brzmi konkretnie, więc wyślę dalej na wszelki wypadek.”
+TEXTAREA: Własna wersja spokojnej odpowiedzi – opcjonalnie
+
+### 28. Ćwiczenie 5.4. Sprzeciw bez ataku na osobę
+SELECT: Najlepsza wersja => „Nie zgadzam się z tym wnioskiem. Sprawdźmy źródło danych, okres i sposób liczenia.” | „Sam jesteś naiwny, skoro wierzysz tym liczbom.” | „Każdy ma swoją prawdę, więc nie ma czego sprawdzać.” | „Te statystyki są głupie.”
+TEXTAREA: Własna wersja – opcjonalnie
+
+### 29. (bez tytułu 29)
+SELECT: Źródła => Zostawiam kilka sprawdzonych źródeł | Śledzę jak najwięcej źródeł | Korzystam głównie z mediów społecznościowych | Korzystam wyłącznie ze źródeł oficjalnych
+SELECT: Godziny sprawdzania wiadomości => Ustalam 1–3 konkretne pory | Sprawdzam przez cały dzień | Tylko rano | Tylko wieczorem
+SELECT: Sygnał do przerwy => Napięcie lub zmęczenie | Powtarzanie tego samego przewijania | Zbliżająca się pora snu | Każdy z tych sygnałów
+SELECT: Weryfikacja trudnej informacji => Źródło oficjalne lub pierwotne | Ekspert lub fact-checker | Znajomy | Wyłącznie odpowiedź AI | Co najmniej dwa różne źródła
+SELECT: Jedno działanie społeczne lub obywatelskie => Spokojna rozmowa | Udostępnienie sprostowania | Sięgnięcie do dokumentu lub konsultacji | Pomoc komuś w weryfikacji | Na razie nie wybieram działania
+INPUT: Jedno zobowiązanie na tydzień – opcjonalnie
+
+### 30. (bez tytułu 30)
+SELECT: S – Czy znam źródło? => Tak i jest wiarygodne | Znam je częściowo | Nie | Nie wiem
+SELECT: H – Czy treść może zaszkodzić? => Ryzyko jest małe | Może wprowadzić w błąd lub narazić kogoś | Ryzyko jest wysokie | Nie wiem
+SELECT: A – Czy są dowody? => Tak – konkretne i sprawdzalne | Częściowe | Brak | Nie wiem
+SELECT: R – Dlaczego chcę udostępnić? => Aby rzetelnie poinformować | Pod wpływem emocji | Aby pokazać przynależność lub stanowisko | Bo inni udostępniają
+SELECT: E – Jaka emocja dominuje? => Spokój | Strach | Złość | Oburzenie | Nadzieja
+SELECT: Decyzja => Udostępniam | Najpierw sprawdzam | Nie udostępniam | Szukam bezpieczniejszego źródła
+
+### 31. (bez tytułu 31)
+SELECT: Co najczęściej zwiększa mój stres? => Ciągłe sprawdzanie | Duża liczba negatywnych treści | Konflikty w komentarzach | Sprzeczne informacje | Powiadomienia
+SELECT: Jak ograniczę przeciążenie? => Ustalę pory sprawdzania | Ograniczę liczbę źródeł | Wprowadzę przerwy | Zakończę media przed snem | Połączę kilka działań
+SELECT: Jak będę uczestniczyć w rozmowach online? => Podam źródło | Oddzielę osobę od poglądu | Zrobię przerwę przed odpowiedzią | Zadam pytanie zamiast atakować | Połączę kilka zasad
+TEXTAREA: Moje jedno zobowiązanie

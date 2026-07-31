@@ -1,0 +1,37 @@
+REDESIGN KURSU ONLINE - LEKKI UKŁAD I SUBTELNE PRZEJŚCIA
+Data: 2026-07-28
+
+ZAKRES ZMIAN
+1. Zachowano wszystkie istniejące treści, testy, ćwiczenia, materiały źródłowe i mechanizm zapisu postępu.
+2. Przebudowano ekran startowy kursu:
+   - jasne, matowe powierzchnie,
+   - spokojna kolorystyka zgodna z portalem,
+   - wyraźniejsza hierarchia treści,
+   - lżejszy panel rejestracyjny.
+3. Przebudowano panel modułów:
+   - moduły są prezentowane jako lekkie poziome sekcje,
+   - dodano podgląd najważniejszych zagadnień,
+   - dodano pasek postępu,
+   - zachowano status ukończenia i przyciski otwarcia.
+4. Zachowano rozwijane pole „Materiały źródłowe” i dopasowano je do nowego układu.
+5. Przebudowano widok otwartego modułu:
+   - jasny nagłówek,
+   - lżejsze panele treści,
+   - spokojniejsze akordeony,
+   - większe odstępy i czytelniejsza typografia.
+6. Dodano subtelne animacje:
+   - przenikanie,
+   - delikatne przesunięcie,
+   - morph karty modułu w nagłówek modułu przy obsługiwanym View Transition API.
+7. Dodano obsługę prefers-reduced-motion oraz odnośnik „Przejdź do treści kursu”.
+8. Nie zmieniano wspólnego nagłówka ani stopki portalu.
+
+WERYFIKACJA
+- Sprawdzono składnię 3 osadzonych skryptów JavaScript przez node --check: bez błędów.
+- Sprawdzono 348 lokalnych odwołań do zasobów: brak brakujących plików.
+- Lokalny serwer HTTP zwrócił status 200 dla kurs-fake-news.html.
+- Sprawdzono obecność nowego układu, paska postępu, materiałów źródłowych i mechanizmu przejść.
+- Integralność końcowej paczki ZIP: prawidłowa.
+
+OGRANICZENIE ŚRODOWISKA
+Systemowy Chromium nie zakończył generowania zrzutu ekranu w dostępnym środowisku i został zatrzymany po przekroczeniu limitu czasu. Z tego powodu nie zaliczono pełnego testu wizualnego w rzeczywistej przeglądarce. Wykonano walidację strukturalną, składniową, zasobów i serwera HTTP.

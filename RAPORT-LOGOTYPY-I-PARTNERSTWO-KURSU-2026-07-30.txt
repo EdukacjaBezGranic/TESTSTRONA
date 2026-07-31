@@ -1,0 +1,38 @@
+RAPORT ZMIAN - LOGOTYPY I INFORMACJA O WSPÓŁPRACY
+Data: 30.07.2026
+
+WPROWADZONE ZMIANY
+1. Nagłówek kursu
+- usunięto kafelek z paskiem logotypów oraz informacją „5 modułów / 111 tematów i ćwiczeń”;
+- w jego miejscu umieszczono monochromatyczne logo projektu „Edukacja bez granic”;
+- dodano monochromatyczne logo „Dofinansowane przez Unię Europejską”;
+- dopasowano wielkość, odstępy i układ logotypów do widoku desktopowego i mobilnego.
+
+2. Informacja o programie szkolenia
+- usunięto techniczny opis materiału źródłowego, tłumaczenia i adaptacji grafik;
+- usunięto sąsiedni blok „Jak pracować z kursem” z części informacyjnej;
+- dodano oficjalne logo Wojewódzkiego Urzędu Pracy w Katowicach obok logo Areadne Lifelong Learning Centre;
+- pozostawiono jeden opis: „Program szkolenia został wypracowany we współpracy z Areadne Lifelong Learning Centre w ramach projektu „Edukacja bez granic”.”
+
+3. Uproszczenie komunikatów
+- opis kursu w nagłówku ma teraz charakter uczestnikowski, bez informacji o technicznej przebudowie;
+- usunięto z widocznego opisu zeszytu uczestnika określenie „plik JSON”;
+- uproszczono komunikat o prywatności i przycisk zapisu postępu.
+
+ELEMENTY ZACHOWANE
+- wszystkie moduły, sekcje, ćwiczenia, grafiki dydaktyczne i multimedia;
+- automatyczny zapis lokalny odpowiedzi;
+- PDF modułu i zbiorczy PDF kursu;
+- eksport i import postępu;
+- usunięcie niewłaściwej grafiki „Trzy obszary zmiany” z punktu 4 Modułu 5;
+- pozostałe strony portalu i zgodność z GitHub Pages.
+
+WERYFIKACJA
+- sprawdzono 61 unikalnych lokalnych zasobów używanych przez stronę kursu - brak brakujących plików;
+- brak zduplikowanych identyfikatorów HTML;
+- poprawna składnia plików course-v2.js i course-workbook.js;
+- prawidłowy bilans nawiasów w arkuszu CSS;
+- wykonano podgląd nagłówka i sekcji partnerstwa w rozdzielczości 1440 × 1200;
+- wykonano podgląd mobilny 390 × 1100;
+- w obu widokach szerokość dokumentu odpowiada szerokości ekranu - brak poziomego przepełnienia;
+- potwierdzono brak odwołania do grafiki „trzy-obszary-zmiany.png” w stronie kursu.

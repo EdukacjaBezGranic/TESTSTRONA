@@ -1,0 +1,19 @@
+WYPEŁNIENIE RAMEK TREŚCIĄ — 2026-07-29
+
+Zakres:
+- kurs-fake-news.html
+
+Wprowadzone poprawki:
+- zmniejszono efekt pustych przestrzeni w ramkach i sekcjach modułów,
+- ustawiono naturalne wypełnienie kart treścią od górnej krawędzi,
+- usunięto sztuczne min-height / height dla bloków treści i sekcji modułowych,
+- ujednolicono pionowy rytm odstępów wewnątrz lesson-body, section-body i podobnych kontenerów,
+- dociśnięto pierwsze i ostatnie elementy do naturalnych granic kart,
+- uporządkowano marginesy dla calloutów, przykładów, case studies i pól feedbacku,
+- wyrównano zachowanie kart w siatkach (kompetencje, narzędzia, kroki, gry, checklisty),
+- poprawiono ekspozycję multimediów wewnątrz sekcji.
+
+Efekt:
+- mniej martwych stref wewnątrz ramek,
+- lepsze wykorzystanie powierzchni kart,
+- bardziej zwarte i estetyczne sekcje.

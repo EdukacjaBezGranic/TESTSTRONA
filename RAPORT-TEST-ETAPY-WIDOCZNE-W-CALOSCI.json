@@ -1,0 +1,70 @@
+{
+  "modules": [
+    {
+      "module": 1,
+      "topics": 11,
+      "stages": 11,
+      "sidebar": {
+        "scrollHeight": 1091,
+        "clientHeight": 1091,
+        "overflow": "visible"
+      },
+      "labels_full": true
+    },
+    {
+      "module": 2,
+      "topics": 10,
+      "stages": 10,
+      "sidebar": {
+        "scrollHeight": 1053,
+        "clientHeight": 1053,
+        "overflow": "visible"
+      },
+      "labels_full": true
+    },
+    {
+      "module": 3,
+      "topics": 6,
+      "stages": 6,
+      "sidebar": {
+        "scrollHeight": 897,
+        "clientHeight": 897,
+        "overflow": "visible"
+      },
+      "labels_full": true
+    },
+    {
+      "module": 4,
+      "topics": 7,
+      "stages": 7,
+      "sidebar": {
+        "scrollHeight": 935,
+        "clientHeight": 935,
+        "overflow": "visible"
+      },
+      "labels_full": true
+    },
+    {
+      "module": 5,
+      "topics": 12,
+      "stages": 12,
+      "sidebar": {
+        "scrollHeight": 1130,
+        "clientHeight": 1130,
+        "overflow": "visible"
+      },
+      "labels_full": true
+    }
+  ],
+  "mobile": {
+    "buttons": 11,
+    "nav": {
+      "scrollWidth": 332,
+      "clientWidth": 332,
+      "overflow": "visible",
+      "display": "grid"
+    },
+    "no_horizontal_page_overflow": true
+  },
+  "console_errors": []
+}

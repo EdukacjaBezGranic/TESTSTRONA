@@ -1,0 +1,23 @@
+ZAKRES POPRAWEK
+
+1. Treści wewnątrz etapów kursu są rozwinięte domyślnie i pozostają widoczne.
+2. Usunięto zbędny drugi poziom zwijania treści - nagłówki pełnią funkcję separatorów.
+3. Zmieniono instrukcje tekstowe, które wcześniej zachęcały do rozwijania bloków.
+4. Ujednolicono szerokość pola czytania, marginesy i pionowy rytm treści.
+5. Siatki kart mają równe kolumny, równe wysokości i symetryczne odstępy.
+6. Proste sekcje z jednym głównym medium wykorzystują zrównoważony układ 50/50 tekst + grafika/film.
+7. Rozbudowane sekcje pozostają w czytelnym układzie jednokolumnowym, aby uniknąć nierównych kolumn.
+8. Grafiki otrzymały spójne ramy, ograniczenie wysokości i object-fit: contain.
+9. Filmy i osadzone materiały mają proporcje 16:9, mieszczą się w oknie i nie są przycinane.
+10. Studia przypadku z filmem lub obrazem otrzymały dopasowany układ tekst + medium.
+11. Na tabletach i telefonach układ przechodzi w jedną kolumnę, a karty nie wychodzą poza ekran.
+
+WERYFIKACJA
+
+- sprawdzono wszystkie 5 modułów oraz reprezentatywne etapy tekstowe, graficzne i filmowe;
+- treści rozwijane: 0 zamkniętych bloków w aktywnych, kontrolowanych etapach;
+- grafiki, filmy i iframe: 0 elementów wychodzących poza szerokość ekranu;
+- przewijanie poziome: brak przy 1440 x 1000 px i 390 x 844 px;
+- błędy JavaScript i błędy konsoli: 0;
+- lokalne zasoby wskazane przez kurs: 0 brakujących;
+- finalny ZIP rozpakowano ponownie i zweryfikowano.

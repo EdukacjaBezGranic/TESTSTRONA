@@ -1,0 +1,10 @@
+DODANA NAWIGACJA I POSTĘP WEDŁUG TEMATÓW MODUŁU
+
+Zmiany:
+- pod głównymi modułami w lewym panelu dodano sekcję „Tematy modułu”;
+- dodano liniowy pasek postępu i licznik aktualnego tematu;
+- aktywny temat jest wyróżniony, a wcześniejsze etapy oznaczone na osi;
+- kliknięcie tematu przełącza właściwą część modułu;
+- na desktopie górny poziomy pasek tematów jest ukryty, aby nie dublować nawigacji;
+- na tabletach i telefonach pozostaje pozioma nawigacja nad treścią, ponieważ boczny panel przechodzi do układu poziomego;
+- nie zmieniono treści, materiałów, testów ani logiki ukończenia modułów.

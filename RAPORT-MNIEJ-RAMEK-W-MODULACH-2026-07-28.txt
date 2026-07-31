@@ -1,0 +1,29 @@
+KOREKTA WNĘTRZA MODUŁÓW — MNIEJ RAMEK W RAMKACH
+Data: 2026-07-28
+
+WPROWADZONE ZMIANY
+1. Każdy etap modułu ma teraz jedną główną powierzchnię do czytania.
+2. Usunięto obramowania, cienie i osobne tła z głównych kontenerów zagnieżdżonych wewnątrz etapu.
+3. Nagłówki części są oddzielone lekką linią zamiast kolejnego kolorowego kafla.
+4. Akordeony wyglądają jak otwarta lista z separatorami:
+   - brak pełnych ramek,
+   - brak dodatkowych cieni,
+   - brak osobnego białego pudełka po rozwinięciu.
+5. Statyczne mini-karty zostały zamienione na lekkie bloki z delikatnym pionowym akcentem.
+6. Bloki „Zapamiętaj” i podsumowania zachowują wyróżnienie, ale nie mają podwójnych obwódek.
+7. Grafiki, filmy i elementy interaktywne zachowują potrzebne kadrowanie.
+8. Zachowano wolniejsze efekty morph z poprzedniej wersji.
+
+NIE ZMIENIONO
+- treści kursu,
+- ćwiczeń i testów,
+- grafik i filmów,
+- zapisu postępu,
+- układu modułów i nawigacji,
+- kolorystyki portalu.
+
+WERYFIKACJA
+- plik kurs-fake-news.html zapisany prawidłowo,
+- dodano końcowy arkusz nadpisujący zagnieżdżone ramki,
+- zachowano reguły prefers-reduced-motion,
+- końcowy ZIP sprawdzony pod kątem integralności.

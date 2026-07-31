@@ -1,0 +1,38 @@
+POPRAWKA KAFELKA ŹRÓDEŁ I CIEMNIEJSZEJ PALETY KURSU
+Data: 2026-07-28
+
+WPROWADZONE ZMIANY
+
+1. Naprawiono zwinięty kafelek „Materiały źródłowe”.
+- Kafelek nie dziedziczy już siatki zwykłego modułu.
+- Nagłówek źródeł zajmuje pełną szerokość.
+- Po zwinięciu lista publikacji jest bezwzględnie ukryta.
+- Poprawiono ułożenie numeru, tytułu, opisu, statusu i przycisku rozwijania.
+- Na telefonach status pomocniczy jest ukrywany, dzięki czemu tytuł i przycisk nie nachodzą na siebie.
+- Po rozwinięciu źródła wyświetlają się w dwóch kolumnach na dużym ekranie i w jednej kolumnie na telefonie.
+
+2. Przyciemniono kolorystykę kursu bez zmiany zaakceptowanego układu.
+- Przywrócono ciemne grafitowo-granatowe otoczenie zgodne z dotychczasowym portalem.
+- Ekran startowy kursu ma ciemniejszy, matowy charakter.
+- Zachowano jasne panele modułów i treści, aby kurs pozostał lekki i czytelny.
+- Użyto dotychczasowych niebieskich i mosiężno-złotych akcentów.
+- Przyciemniono panel rejestracyjny i panel postępu.
+- Zachowano animacje przenikania, przesunięcia i morph.
+
+ELEMENTY ZACHOWANE
+- wszystkie treści kursu,
+- materiały źródłowe,
+- testy i ćwiczenia,
+- grafiki i nagrania,
+- mechanizm zapisywania postępu,
+- nagłówek i stopka portalu,
+- wersja responsywna.
+
+WERYFIKACJA
+- 3 osadzone skrypty JavaScript: składnia prawidłowa,
+- 348 lokalnych odwołań do zasobów: brak brakujących plików,
+- reguła ukrywająca zwiniętą treść źródeł: obecna,
+- końcowy ZIP: test integralności prawidłowy.
+
+OGRANICZENIE
+Systemowy Chromium ponownie nie ukończył generowania zrzutu ekranu w dostępnym środowisku. Wykonano walidację struktury HTML, składni JavaScript, reguł CSS, zasobów oraz integralności paczki.

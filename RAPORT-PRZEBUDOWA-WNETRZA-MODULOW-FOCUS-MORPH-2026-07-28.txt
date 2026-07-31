@@ -1,0 +1,53 @@
+PRZEBUDOWA WNĘTRZA MODUŁÓW — FOCUS DECK I PRAWDZIWY MORPH
+Data: 2026-07-28
+
+POWÓD ZMIANY
+Poprzednia wersja nadal opierała się na wielu ramkach umieszczonych w kolejnych ramkach, a treści były prezentowane w długim pionowym ciągu. Efekt morph dotyczył głównie rozwijania akordeonów, więc nie zmieniał faktycznie sposobu przechodzenia przez moduł.
+
+WPROWADZONE ZMIANY
+1. Wprowadzono tryb „jedna część na raz”.
+- Uczestnik nie widzi już wszystkich głównych części modułu ułożonych jedna pod drugą.
+- Każda część jest osobną sceną kursu.
+- Wszystkie treści pozostały zachowane i są dostępne z paska nawigacyjnego.
+
+2. Dodano prawdziwe przejście morph.
+- Po kliknięciu „Dalej”, „Wstecz” albo nazwy części aktualna scena przekształca się w kolejną.
+- W przeglądarkach obsługujących View Transition API używany jest morph pomiędzy dwiema scenami.
+- W pozostałych przeglądarkach działa płynne przenikanie i przesunięcie.
+- Uwzględniono ustawienie prefers-reduced-motion.
+
+3. Ograniczono liczbę ramek.
+- Pozostawiono jedną główną matową powierzchnię czytania.
+- Usunięto obramowania i cienie z głównych sekcji wewnątrz tej powierzchni.
+- Akordeony działają jak elegancka lista z separatorami, a nie zestaw kolejnych kart.
+- Bloki „Zapamiętaj”, przykłady i ćwiczenia mają lekkie tło bez ciężkich cieni.
+
+4. Zmieniono rytm wizualny.
+- Sceny otrzymały duże, subtelne numery w tle.
+- Sekcje z materiałami wizualnymi naprzemiennie wykorzystują układ szeroki, dzielony i odwrócony.
+- W Module 5 obrazy i nagrania mogą znajdować się obok opisu, zamiast zawsze pod nim.
+
+5. Dodano nawigację po częściach.
+- Przyklejony pasek pokazuje aktualną część, postęp oraz przyciski „Wstecz” i „Dalej”.
+- Dostępna jest przewijana lista wszystkich części modułu.
+- Na dole sceny znajdują się dodatkowe przyciski przejścia.
+- Na komputerze można przechodzić między scenami klawiszami strzałek.
+
+ELEMENTY ZACHOWANE
+- wszystkie treści kursu,
+- wszystkie grafiki i nagrania,
+- ćwiczenia i testy,
+- materiały źródłowe,
+- zapis ukończonych modułów,
+- wspólny nagłówek i stopka portalu,
+- ciemna kolorystyka otoczenia kursu.
+
+WERYFIKACJA
+- 3 osadzone skrypty JavaScript: składnia prawidłowa w node --check,
+- 348 lokalnych odwołań do zasobów: brak brakujących plików,
+- stary mechanizm pionowej nawigacji i animacji usunięty,
+- nowy mechanizm Focus Deck oraz View Transition API obecny,
+- integralność końcowej paczki ZIP: prawidłowa.
+
+OGRANICZENIE ŚRODOWISKA
+Browser plugin nie jest dostępny. Próba wykonania zrzutu przez systemowy Chromium została zatrzymana po przekroczeniu limitu czasu. Nie zaliczono pełnego testu wizualnego w prawdziwej przeglądarce; wykonano walidację struktury, składni JavaScript i odwołań do zasobów.

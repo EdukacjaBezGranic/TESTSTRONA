@@ -1,0 +1,36 @@
+RAPORT — UJEDNOLICENIE TYPOGRAFII NAWIGACJI I STOPKI
+Data: 27.07.2026
+
+WPROWADZONA ZMIANA
+1. Dodano jeden wspólny arkusz assets/site-shell-unified.css.
+2. Arkusz jest ładowany jako ostatni na każdej stronie posiadającej główny nagłówek portalu.
+3. Wymuszono identyczną rodzinę czcionek, grubość, rozmiar i brak podkreślenia dla:
+   - nazwy projektu w nagłówku,
+   - dopisku pod nazwą projektu,
+   - wszystkich pozycji górnego menu,
+   - tytułu i opisu w stopce,
+   - wszystkich odnośników w stopce.
+4. Zmiana obejmuje również dynamiczne widoki modułów kursu, ponieważ wszystkie są wyświetlane w pliku kurs-fake-news.html.
+5. Nie zmieniono treści kursu, modułów, ćwiczeń ani materiałów źródłowych.
+
+STRONY OBJĘTE ZMIANĄ
+- index.html
+- nasze-szkolenia.html
+- zapisy.html
+- zapisy-kalendarz.html
+- kursy-online.html
+- kurs-fake-news.html
+- kontakt.html
+- panel-trenera.html
+
+WYNIKI TESTÓW
+- kolejność i nazwy pozycji górnego menu na 8 stronach: OK
+- wspólny arkusz CSS ładowany jako ostatni na 8 stronach: OK
+- składnia wspólnego CSS: OK
+- 12 osadzonych skryptów JavaScript: OK
+- 348 lokalnych odwołań do zasobów: brak brakujących plików
+- lokalny serwer HTTP: index.html, kurs-fake-news.html i wspólny CSS — HTTP 200
+- integralność paczki ZIP: sprawdzona po utworzeniu
+
+OGRANICZENIE TESTOWE
+Systemowy Chromium w tym środowisku nie kończy pracy w trybie headless, dlatego nie wykonano wiarygodnego automatycznego zrzutu ekranu. Zmianę zweryfikowano strukturalnie, przez kolejność kaskady CSS, parser CSS, sprawdzenie zasobów, JavaScript i lokalny serwer HTTP.

@@ -1,0 +1,31 @@
+RAPORT ZMIAN - PROFESJONALNY WYGLAD KART PRACY PDF
+Data: 30.07.2026
+
+WPROWADZONE ZMIANY
+1. Dodano logo projektu "Edukacja bez granic" oraz znak "Dofinansowane przez Unie Europejska" do naglowka kazdej strony PDF.
+2. Zbiorczy PDF calego kursu otrzymal osobna, reprezentacyjna strone tytulowa.
+3. PDF pojedynczego modulu otrzymal uporzadkowany naglowek, karte tytulowa modulu oraz dane uczestnika.
+4. Dodano stala stopke z nazwa projektu, Wojewodzkim Urzedem Pracy w Katowicach, data i numerem strony.
+5. Odpowiedzi uczestnika sa prezentowane w jednolitych, czytelnych blokach z delikatnym tlem i niebieskim akcentem.
+6. Uporzadkowano informacje o postepie, dacie utworzenia dokumentu i prywatnym charakterze zapisu.
+7. Dodano automatyczne dzielenie bardzo dlugich odpowiedzi miedzy strony z oznaczeniem "Ciag dalszy odpowiedzi".
+8. Zachowano dotychczasowe funkcje: PDF modulu, zbiorczy PDF, zapis lokalny, eksport i import postepu.
+
+WYNIKI TESTOW
+- skladnia JavaScript: poprawna (node --check),
+- wygenerowano PDF pojedynczego modulu: format A4, prawidlowa struktura,
+- wygenerowano zbiorczy PDF: strona tytulowa + strony modulow,
+- test dlugich odpowiedzi: 10 stron A4 bez obciecia tresci; kontynuacje prawidlowo przenoszone,
+- brak bledow JavaScript i bledow konsoli podczas generowania,
+- wizualnie sprawdzono wyrenderowane strony PDF: logotypy, naglowki, stopki, bloki odpowiedzi i numeracje,
+- finalna paczka zostala ponownie rozpakowana i sprawdzona.
+
+ZACHOWANE ELEMENTY
+- tresc i struktura pieciu modulow,
+- prywatny zapis odpowiedzi w przegladarce,
+- opcjonalne imie i nazwisko,
+- eksport i import postepu,
+- brak wysylania odpowiedzi do organizatora lub na serwer.
+
+ZNANE OGRANICZENIE
+Strony PDF sa generowane lokalnie jako wysokiej jakosci obrazy umieszczone w pliku PDF. Zapewnia to stabilny wyglad bez serwera, ale tekst w PDF nie jest zaznaczalny ani przeszukiwalny.

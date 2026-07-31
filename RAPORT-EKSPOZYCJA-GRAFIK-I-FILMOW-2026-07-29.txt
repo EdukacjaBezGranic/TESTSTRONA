@@ -1,0 +1,10 @@
+EKSPOZYCJA GRAFIK I FILMÓW – 29.07.2026
+
+- ujednolicono szerokość wszystkich grafik, infografik i filmów względem pola tekstowego,
+- filmy otrzymały stałą ramę 16:9 oraz object-fit: contain,
+- grafiki zachowują pełny kadr bez rozciągania i przypadkowego przycinania,
+- podpisy pod ilustracjami są wyśrodkowane i mają wspólną szerokość,
+- materiały wizualne otrzymały spójne obramowanie, promień narożników i cień,
+- sekcje studiów przypadku mają równy rytm: opis → medium → decyzja → informacja zwrotna,
+- przyciski odpowiedzi są symetryczne na desktopie i układają się pionowo na telefonie,
+- zachowano wszystkie treści, multimedia i funkcje kursu.

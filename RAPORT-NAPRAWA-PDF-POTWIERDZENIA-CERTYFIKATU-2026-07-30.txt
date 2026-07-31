@@ -1,0 +1,59 @@
+NAPRAWA MECHANIZMU PDF DO WERYFIKACJI CERTYFIKATU
+=================================================
+
+Zakres poprawki
+---------------
+Usunięto błąd polegający na braku przycisku do wygenerowania dokumentu po spełnieniu
+warunków ukończenia kursu.
+
+Nowe działanie
+--------------
+1. Panel dokumentu pozostaje ukryty, dopóki uczestnik nie spełni wszystkich warunków:
+   - 111 z 111 tematów ukończonych,
+   - 5 z 5 modułów ukończonych w 100%,
+   - formularz uczestnika oznaczony jako wykonany,
+   - test wstępny oznaczony jako wykonany,
+   - test końcowy oznaczony jako wykonany,
+   - ankieta ewaluacyjna oznaczona jako wykonana.
+2. Po spełnieniu warunków pojawia się panel „Potwierdzenie ukończenia części e-learningowej”.
+3. Uczestnik wpisuje imię i nazwisko oraz adres e-mail użyty w Google Forms.
+4. Po sprawdzeniu danych aktywuje się przycisk „Pobierz PDF do weryfikacji”.
+5. PDF zawiera:
+   - logotyp projektu i dofinansowania Unii Europejskiej,
+   - dane uczestnika,
+   - ogólny wynik ukończenia 100%,
+   - pięć modułów ze statusem 100%,
+   - oświadczenia o ukończeniu kursu oraz wypełnieniu formularzy,
+   - datę wygenerowania i numer dokumentu,
+   - informację, że dokument nie jest certyfikatem.
+6. Przycisk „Przygotuj wiadomość e-mail” otwiera wiadomość adresowaną do
+   lmalinowski@wup-katowice.pl. Uczestnik ręcznie dołącza pobrany PDF.
+
+Zmodyfikowane pliki
+-------------------
+- kurs-fake-news.html
+- assets/course-certificate.js
+- assets/course-forms.js
+- assets/course-forms.css
+- assets/course-v2.js
+- assets/course-workbook.js
+- INSTRUKCJA-PODPIECIA-LINKOW-GOOGLE-FORMS.txt
+
+Weryfikacja
+-----------
+- zachowano 111 sekcji i 5 modułów,
+- panel jest ukryty przed spełnieniem warunków,
+- panel pojawia się przy stanie 4 z 4 formularzy i 5 z 5 modułów,
+- status listy kontrolnej pokazuje 100%,
+- pola danych są wczytywane z lokalnego profilu uczestnika,
+- przycisk PDF pozostaje nieaktywny do podania prawidłowych danych,
+- wygenerowano prawidłowy plik PDF-1.4 o rozmiarze ok. 286 kB,
+- PDF wyrenderowano i sprawdzono wizualnie jako jedną stronę A4,
+- sprawdzono układ desktopowy 1440 × 1000 i mobilny 390 × 844,
+- brak błędów JavaScriptu podczas testu interakcyjnego.
+
+Ograniczenie
+------------
+Portal zapisuje postęp lokalnie i nie ma kont użytkowników ani serwera weryfikacyjnego.
+PDF stanowi oświadczenie uczestnika. Organizator potwierdza dane w Google Forms i sprawdza
+wynik testu końcowego przed wystawieniem certyfikatu.

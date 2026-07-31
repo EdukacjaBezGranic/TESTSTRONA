@@ -1,0 +1,78 @@
+/* Usprawnienia ćwiczeń indywidualnych – 2026-07-30 */
+.ecosystem-map .course-answer--line{
+  min-height:44px;
+  min-width:150px;
+  margin:0;
+  padding:.62rem .68rem;
+  resize:none;
+}
+.ecosystem-map select.course-answer--line{min-width:158px;cursor:pointer}
+.classification-exercise{display:grid;gap:14px;margin:1rem 0 1.5rem}
+.classification-item{padding:16px;border:1px solid #dce5eb;border-radius:12px;background:#fbfcfd}
+.classification-statement{margin:0 0 12px!important;color:#183d5c;font-weight:800}
+.classification-options{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;border:0}
+.classification-options legend{width:100%;margin:0 0 6px;color:#607384;font-size:.8rem;font-weight:800}
+.classification-option{display:flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid #d8e2e9;border-radius:999px;background:#fff;color:#294b64;font-size:.86rem;font-weight:700;cursor:pointer;transition:border-color .15s ease,background .15s ease,transform .15s ease}
+.classification-option:hover{border-color:var(--module-accent);background:color-mix(in srgb,var(--module-accent) 5%,white)}
+.classification-option:has(input:checked){border-color:var(--module-accent);background:color-mix(in srgb,var(--module-accent) 10%,white);color:var(--module-accent)}
+.classification-option input{width:17px;height:17px;margin:0;accent-color:var(--module-accent)}
+.classification-justification{display:block;margin-top:12px;color:#36566e;font-size:.86rem;font-weight:800}
+.classification-justification small{font-weight:500;color:#6d7d89}
+.classification-justification .course-answer{margin:.45rem 0 0;min-height:64px}
+.exit-ticket-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:1rem}
+.exit-ticket-item{display:flex;flex-direction:column;padding:14px;border:1px solid #dce5eb;border-radius:12px;background:#fbfcfd;color:#264a64;font-weight:800}
+.exit-ticket-item .course-answer{flex:1;min-height:76px;margin:.65rem 0 0}
+@media(max-width:760px){
+  .exit-ticket-grid{grid-template-columns:1fr}
+  .classification-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .classification-option{border-radius:10px}
+}
+@media(max-width:460px){.classification-options{grid-template-columns:1fr}}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* Zwarta forma ćwiczeń i natychmiastowe wyniki samoocen */
+.exercise-compact{
+  margin:1.15rem 0;
+  padding:1.15rem;
+  border:1px solid #dbe5eb;
+  border-radius:16px;
+  background:#fbfcfd;
+}
+.exercise-compact h3{margin:0 0 .45rem;color:#173f5d;font-size:1.05rem;line-height:1.35}
+.exercise-intro{margin:.15rem 0 .85rem!important;color:#5a7080;font-size:.93rem}
+.choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.65rem;margin:.75rem 0 1rem}
+.choice-card{display:flex;align-items:flex-start;gap:.65rem;min-height:54px;padding:.78rem .85rem;border:1px solid #d7e2e9;border-radius:12px;background:#fff;color:#294b64;font-weight:700;cursor:pointer;transition:.15s ease}
+.choice-card:hover{border-color:var(--module-accent);transform:translateY(-1px)}
+.choice-card:has(input:checked){border-color:var(--module-accent);background:color-mix(in srgb,var(--module-accent) 8%,white)}
+.choice-card input{width:18px;height:18px;margin:.1rem 0 0;accent-color:var(--module-accent);flex:0 0 auto}
+.compact-grid{display:grid;gap:.75rem;margin:.75rem 0}
+.compact-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.compact-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.compact-field{display:flex;flex-direction:column;gap:.42rem;padding:.82rem;border:1px solid #dbe5eb;border-radius:12px;background:#fff;color:#2c5068;font-size:.86rem;font-weight:800}
+.compact-field .course-answer{width:100%;margin:0;min-height:43px;padding:.65rem .72rem;border:1px solid #cfdce5;border-radius:9px;background:#fff;color:#16374e;font:inherit;font-weight:500}
+.compact-field textarea.course-answer{min-height:72px;resize:vertical}
+.compact-select{cursor:pointer}
+.headline-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin:.8rem 0}
+.headline-pair blockquote{margin:0;padding:1rem;border-left:4px solid var(--module-accent);border-radius:10px;background:#f4f8fa;color:#23465f}
+.classification-select-list{display:grid;gap:.7rem;margin:.8rem 0}
+.classification-select-list .compact-field{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(180px,.75fr);align-items:center}
+.compact-choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.65rem}
+.exercise-feedback{margin-top:.8rem;padding:.75rem .9rem;border:1px solid #d9e5eb;border-radius:10px;background:#f4f8fa}
+.exercise-feedback summary{cursor:pointer;color:#175477;font-weight:800}
+.compact-assessment th,.compact-assessment td{text-align:center;vertical-align:middle}
+.compact-assessment th[scope="row"]{text-align:left;min-width:250px}
+.assessment-dot{display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.assessment-dot input{position:absolute;opacity:0;pointer-events:none}
+.assessment-dot span{display:grid;place-items:center;width:36px;height:36px;border:1px solid #cbd9e2;border-radius:50%;background:#fff;color:#31566e;font-weight:800;transition:.15s ease}
+.assessment-dot:hover span{border-color:var(--module-accent)}
+.assessment-dot input:checked + span{border-color:var(--module-accent);background:var(--module-accent);color:#fff;box-shadow:0 0 0 4px color-mix(in srgb,var(--module-accent) 15%,transparent)}
+.compact-assessment tr.is-assessment-focus th[scope="row"]{color:#8a4b00}
+.compact-assessment tr.is-assessment-focus{background:#fff8e9}
+.assessment-result{display:grid;gap:.35rem;margin-top:.85rem;padding:1rem 1.05rem;border:1px solid #d4e1e8;border-radius:13px;background:#f2f7fa;color:#35576d}
+.assessment-result strong{color:#174f73;font-size:1rem}
+.assessment-result span{line-height:1.5}
+.assessment-result small{color:#6a4b16;font-weight:800}
+.assessment-result.is-complete{border-color:color-mix(in srgb,var(--module-accent) 45%,#d4e1e8);background:color-mix(in srgb,var(--module-accent) 7%,white)}
+.micro-log select{min-width:135px;width:100%}
+@media(max-width:900px){.compact-grid.three{grid-template-columns:1fr 1fr}.classification-select-list .compact-field{grid-template-columns:1fr}.compact-assessment{min-width:680px}}
+@media(max-width:700px){.compact-grid.two,.compact-grid.three,.headline-pair{grid-template-columns:1fr}.exercise-compact{padding:.9rem}.choice-grid{grid-template-columns:1fr}.assessment-dot span{width:32px;height:32px}.compact-assessment th[scope="row"]{min-width:210px}}
