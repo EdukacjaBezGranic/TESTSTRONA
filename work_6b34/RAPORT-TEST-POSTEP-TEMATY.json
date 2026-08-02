@@ -1,0 +1,57 @@
+{
+  "modules": [
+    {
+      "module": 1,
+      "active_module": "1",
+      "topics": 11,
+      "stages": 11,
+      "start_counter": "1 / 11",
+      "end_counter": "11 / 11",
+      "active_scene": "10",
+      "overflow_x": false
+    },
+    {
+      "module": 2,
+      "active_module": "2",
+      "topics": 10,
+      "stages": 10,
+      "start_counter": "1 / 10",
+      "end_counter": "10 / 10",
+      "active_scene": "9",
+      "overflow_x": false
+    },
+    {
+      "module": 3,
+      "active_module": "3",
+      "topics": 6,
+      "stages": 6,
+      "start_counter": "1 / 6",
+      "end_counter": "6 / 6",
+      "active_scene": "5",
+      "overflow_x": false
+    },
+    {
+      "module": 4,
+      "active_module": "4",
+      "topics": 7,
+      "stages": 7,
+      "start_counter": "1 / 7",
+      "end_counter": "7 / 7",
+      "active_scene": "6",
+      "overflow_x": false
+    },
+    {
+      "module": 5,
+      "active_module": "5",
+      "topics": 12,
+      "stages": 12,
+      "start_counter": "1 / 12",
+      "end_counter": "12 / 12",
+      "active_scene": "11",
+      "overflow_x": false
+    }
+  ],
+  "errors": [
+    "console warning: Unrecognized feature: 'web-share'."
+  ]
+}

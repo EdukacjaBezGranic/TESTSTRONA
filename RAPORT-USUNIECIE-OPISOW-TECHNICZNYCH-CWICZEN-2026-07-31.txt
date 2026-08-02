@@ -1,0 +1,54 @@
+RAPORT ZMIAN – OPISY ĆWICZEŃ SKIEROWANE DO UCZESTNIKA
+Data: 31.07.2026
+Plik bazowy: PORTAL-3-GITHUB-KURS-AUDYT-WYJASNIENIA-POJEC-RAM-2026-07-30.zip
+
+1. ZAKRES ZMIAN
+
+Przejrzano instrukcje i wprowadzenia do ćwiczeń we wszystkich pięciu modułach. Usunięto sformułowania opisujące sposób projektowania lub techniczne dostosowanie kursu, m.in.:
+- „ćwiczenia zostały dostosowane do samodzielnej nauki online”;
+- informacje o ograniczeniu liczby pól tekstowych;
+- komunikaty „nie musisz pisać pełnej analizy/notatek”;
+- porównania typu „zamiast dziesięciu opisów” i „zamiast prowadzić całodzienny dziennik”;
+- powtarzane komunikaty „wystarczy pięć zaznaczeń”.
+
+Zastąpiono je krótkimi instrukcjami, które mówią uczestnikowi bezpośrednio:
+- co ma przeanalizować;
+- jakie odpowiedzi ma zaznaczyć;
+- jaki wniosek ma zapisać;
+- kiedy zobaczy wynik samooceny;
+- które kwestie wymagają dalszego sprawdzenia.
+
+2. NAJWAŻNIEJSZE KOREKTY
+
+- „13. Krótkie ćwiczenia online” zmieniono na „13. Ćwiczenia praktyczne”.
+- Wprowadzenie do ćwiczeń w Module 1 opisuje teraz działania uczestnika, bez komentarza o adaptacji kursu.
+- We wszystkich pięciu samoocenach podano znaczenie skali 1–5 oraz informację o wyniku i obszarach do dalszej pracy.
+- Bilet wyjścia z Modułu 1 otrzymał instrukcję odpowiadającą trzem polom odpowiedzi.
+- Lista kontrolna weryfikacji wskazuje wprost, co oznaczają zaznaczone i niezaznaczone punkty.
+- Przykłady analityczne w Modułach 2–4 otrzymały instrukcje odnoszące się do źródła, dowodów, kontekstu i skutków udostępnienia.
+- Dziennik kontaktu z informacją, zdrowa rutyna medialna i checklista SHARE opisują czynności uczestnika bez komentarzy o skracaniu lub upraszczaniu ćwiczeń.
+
+3. ELEMENTY ZACHOWANE
+
+- 111 sekcji kursu;
+- 331 unikalnych kluczy zapisu odpowiedzi;
+- układ, grafiki, filmy i ilustracje;
+- samooceny i automatyczne wyniki;
+- zapis lokalny, eksport/import postępu i karty pracy PDF;
+- formularze Google Forms;
+- końcowy PDF do weryfikacji warunków certyfikatu;
+- poprawka błędu „Tainted canvases may not be exported”.
+
+4. WERYFIKACJA
+
+- 111 sekcji kursu: poprawne;
+- identyfikatory HTML: 121, bez duplikatów;
+- klucze zapisu: 331, bez duplikatów;
+- lokalne odwołania do plików: 121, brak brakujących zasobów;
+- składnia wszystkich skryptów JavaScript: poprawna (node --check);
+- widok desktopowy 1440 × 1000: sprawdzony w renderze offline;
+- widok mobilny 390 × 844: sprawdzony w renderze offline;
+- zaznaczanie odpowiedzi samooceny: sprawdzone;
+- błędy konsoli w renderze kontrolnym: brak.
+
+Środowisko testowe blokowało bezpośrednią nawigację Chromium do lokalnego serwera (ERR_BLOCKED_BY_ADMINISTRATOR). Warstwę wizualną zweryfikowano w kontrolowanym renderze offline z rzeczywistymi arkuszami stylów projektu. Kontrolę struktury, zasobów i skryptów wykonano osobno na pełnej paczce.

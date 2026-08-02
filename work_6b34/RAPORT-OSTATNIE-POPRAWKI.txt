@@ -1,0 +1,12 @@
+WPROWADZONE ZMIANY
+1. Dodano film wprowadzający do Modułu 1:
+   assets/video/film-modul-1.mp4
+2. Film osadzono lokalnie w kurs-fake-news.html z kontrolkami, preload="metadata" i playsinline.
+3. Film jest wyświetlany wyłącznie w Module 1, aby nie pojawiał się omyłkowo w innych modułach.
+4. Podmieniono grafikę „Dlaczego fake news to za mało?” na przesłaną poprawioną wersję.
+5. Zmieniono parametr cache grafiki na ?v=5.
+
+WERYFIKACJA
+- Film: MP4, H.264 + AAC, 854×480, 114,282 s, 6 809 948 bajtów.
+- Sprawdzono obecność pliku filmu i grafiki w paczce.
+- Sprawdzono względne ścieżki zasobów wymagane przez GitHub Pages.

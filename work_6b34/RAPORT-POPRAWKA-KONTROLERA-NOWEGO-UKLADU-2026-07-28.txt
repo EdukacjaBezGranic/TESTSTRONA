@@ -1,0 +1,34 @@
+POPRAWKA KONTROLERA NOWEGO UKŁADU KURSU
+Data: 2026-07-28
+
+PROBLEM WIDOCZNY NA ZRZUCIE
+- nowe style zostały wczytane, ale kontroler przebudowanego układu nie został uruchomiony po otwarciu modułu;
+- nagłówek modułu został potraktowany jak lewa kolumna i tytuł został ucięty;
+- nie pojawiła się boczna nawigacja po modułach;
+- film i infografika były widoczne jednocześnie, zamiast jako osobne etapy;
+- moduł pozostawał ograniczony do starej szerokości 1180 px.
+
+WPROWADZONE POPRAWKI
+1. Podłączono kontroler nowego układu do faktycznie aktywnej funkcji openModule.
+2. Dodano ponowne, bezpieczne uruchomienie kontrolera po zakończeniu historycznych nakładek JavaScript.
+3. Dodano klasę course-shell-ready, dzięki której układ dwukolumnowy włącza się dopiero po poprawnym utworzeniu obu kolumn.
+4. Dodano awaryjny układ pełnej szerokości. W razie problemu ze skryptem tytuł nie wpadnie już do wąskiej lewej kolumny.
+5. Rozszerzono rzeczywisty widok modułu z 1180 px do dostępnej szerokości kontenera projektu.
+6. Poprawiono kafel „Materiały źródłowe” w bocznej nawigacji.
+7. Poszerzono oznaczenia etapów i umożliwiono wyświetlanie etykiet w dwóch wierszach.
+8. Zachowano jeden aktywny etap, boczne menu modułów, pasek etapów, przyciski nawigacyjne oraz efekt morph.
+
+ZACHOWANE ELEMENTY
+- cała treść kursu;
+- filmy, grafiki i materiały do pobrania;
+- testy, ćwiczenia i mechanizm zapisu postępu;
+- nagłówek i stopka portalu;
+- ciemna kolorystyka projektu.
+
+WERYFIKACJA
+- tekst widoczny przed i po poprawce: identyczny, 42 506 znaków;
+- 4 osadzone skrypty JavaScript: składnia prawidłowa;
+- zduplikowane identyfikatory HTML: brak;
+- 26 lokalnych odwołań sprawdzonych w głównym pliku kursu: brak brakujących plików;
+- test kontrolera w Playwright przez page.set_content: utworzono sidebar, główną powłokę, pasek etapów i aktywną scenę;
+- lokalne nawigowanie Chromium do file:// i localhost jest blokowane administracyjnie w środowisku testowym, dlatego użyto testu DOM przez page.set_content.

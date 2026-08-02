@@ -1,0 +1,14 @@
+PORTAL 3 — KOLORYSTYKA PREMIUM MATOWA
+Data: 24.07.2026
+
+ZMIANY
+- Rozjaśniono granatowo-grafitowe tło całego portalu.
+- Ograniczono mocne gradienty i połysk; dominują matowe, spokojne powierzchnie.
+- Zachowano eleganckie ciepłe panele w odcieniu kości słoniowej.
+- Złote akcenty zostały stonowane do koloru szczotkowanego mosiądzu.
+- Przyciski i granatowe panele otrzymały łagodniejszy, przygaszony błękit.
+- Zmniejszono intensywność cieni, aby strona była lżejsza i mniej kontrastowa.
+- Zachowano układ, treści, funkcje, moduły, grafiki, filmy i ścieżki GitHub Pages.
+
+WERSJA CSS
+premium-matte-20260724-01

@@ -1,0 +1,32 @@
+Audyt i poprawa responsywności – telefony i tablety, pion/poziom
+Data: 2026-07-31
+Baza: course_module1_fix_algorytmy_centered
+
+Zakres:
+- dodano wspólny arkusz assets/responsive-20260731.css
+- dołączono arkusz do wszystkich stron HTML portalu i kursu
+- poprawiono zachowanie układów na telefonach i tabletach w orientacji pionowej i poziomej
+
+Najważniejsze poprawki:
+1. Portal publiczny
+- nagłówek i logotypy zawijają się bez wychodzenia poza ekran
+- przyciski w hero przechodzą do jednej kolumny na małych ekranach
+- główne siatki kart i sekcji przechodzą z 2-3 kolumn do 1 kolumny
+- meta-boxy i stopka układają się pionowo na telefonach
+
+2. Kurs online
+- główne sekcje kursu, formularze, przestrzeń pracy i panel certyfikatu przechodzą do jednej kolumny
+- przyciski akcji w kursie mają pełną szerokość na małych ekranach
+- tabele otrzymały przewijanie poziome zamiast rozpychania strony
+- odtwarzacze wideo zachowują proporcje i szerokość kontenera
+- boczny panel kursu i pasek postępu zostały dopasowane do telefonu w pionie i poziomie
+- poprawiono odstępy i paddingi dla ekranów <= 640 px
+
+3. Orientacja pozioma
+- osobne reguły dla telefonów/tabletów w orientacji poziomej
+- niższy topbar, lepsze wysokości i marginesy
+- dopasowana szerokość panelu bocznego kursu
+
+Uwagi:
+- zmiany mają charakter nakładki CSS i nie ingerują w logikę kursu
+- zachowano dotychczasowe mechanizmy: postęp, formularze, PDF, ćwiczenia, samooceny, panel certyfikatu

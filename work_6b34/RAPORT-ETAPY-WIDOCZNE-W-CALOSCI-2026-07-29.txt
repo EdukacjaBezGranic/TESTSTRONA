@@ -1,0 +1,17 @@
+RAPORT ZMIANY - ETAPY MODUŁU WIDOCZNE W CAŁOŚCI
+Data: 2026-07-29
+
+Wprowadzone zmiany:
+- usunięto wewnętrzne przewijanie lewego panelu kursu;
+- wszystkie etapy bieżącego modułu są wyświetlane od razu;
+- pełne nazwy etapów nie są ucinane do dwóch wierszy;
+- lewy panel został zagęszczony bez utraty czytelności;
+- na urządzeniach mobilnych wszystkie etapy są widoczne w siatce zamiast poziomego paska przewijanego;
+- wyłączono automatyczne przewijanie strony do aktywnego punktu w panelu.
+
+Zachowano:
+- aktywne oznaczenie etapu;
+- licznik i pasek postępu;
+- kliknięcie etapu i przejście do odpowiedniej treści;
+- nawigację poprzedni/następny;
+- wszystkie treści, multimedia i funkcje kursu.

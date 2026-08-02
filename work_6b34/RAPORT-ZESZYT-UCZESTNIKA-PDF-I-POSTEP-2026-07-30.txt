@@ -1,0 +1,37 @@
+RAPORT ZMIAN - KURS ONLINE
+Data: 30.07.2026
+
+WPROWADZONE FUNKCJE
+1. Automatyczny zapis lokalny odpowiedzi z ćwiczeń i samoocen w przeglądarce użytkownika.
+2. Widoczny komunikat o prywatności i stanie zapisu.
+3. Opcjonalne imię i nazwisko umieszczane wyłącznie w generowanym PDF.
+4. PDF osobno dla każdego modułu - przycisk w panelu uczestnika i na końcu każdego modułu.
+5. Zbiorczy PDF całego kursu z odpowiedziami, samooceną i postępem.
+6. Eksport pełnego postępu do pliku JSON.
+7. Import pliku JSON i możliwość kontynuowania pracy na innym urządzeniu.
+8. Normalizacja zapisu odpowiedzi radiowych w samoocenach.
+9. Usunięcie z Modułu 5, punktu 4, grafiki „Trzy obszary zmiany”, która dotyczyła różnych szkoleń projektu. Treść merytoryczna punktu oraz właściwa grafika podręcznika pozostały bez zmian.
+
+PRYWATNOŚĆ
+- Brak kont i logowania.
+- Odpowiedzi nie są wysyłane do WUP, GitHuba ani zewnętrznej bazy danych.
+- Dane pozostają w localStorage przeglądarki, dopóki użytkownik ich nie wyczyści.
+- PDF i plik postępu są generowane lokalnie na urządzeniu użytkownika.
+
+TESTY
+- Poprawność składni JavaScript: course-v2.js i course-workbook.js - wynik pozytywny.
+- Test interfejsu w Chromium przez osadzony dokument testowy - bez błędów konsoli JavaScript.
+- Wykryto 5 przycisków PDF modułów oraz panel zbiorczy.
+- Test wpisania odpowiedzi i komunikatu automatycznego zapisu - wynik pozytywny.
+- Test eksportu JSON wraz z odpowiedzią - wynik pozytywny.
+- Test generowania PDF modułu i zbiorczego PDF - wynik pozytywny.
+- Walidacja wygenerowanego PDF: PDF 1.4, format A4, poprawny odczyt przez pdfinfo.
+- Test responsywności panelu przy szerokości 390 px - wynik pozytywny.
+- Sprawdzenie 63 lokalnych odwołań do zasobów - brak brakujących plików.
+- Test lokalnego serwera HTTP: 64 zasoby zwróciły status 200.
+- Grafika „trzy-obszary-zmiany.png” nie występuje w kodzie kursu.
+
+ZNANE OGRANICZENIA
+- Zapis lokalny jest przypisany do konkretnej przeglądarki i domeny. Do przenoszenia danych służy eksport/import JSON.
+- Wyczyszczenie danych witryny w przeglądarce usuwa lokalne odpowiedzi, chyba że wcześniej wyeksportowano plik postępu.
+- PDF zawiera wyłącznie odpowiedzi faktycznie uzupełnione przez uczestnika.

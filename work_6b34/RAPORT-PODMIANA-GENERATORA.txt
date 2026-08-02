@@ -1,0 +1,13 @@
+PODMIANA GENERATORA — WERSJA MASTER
+
+Wykonano:
+- całkowicie usunięto pliki starego generatora,
+- wstawiono Generator Dokumentacji Szkoleniowej WUP 3.0.2,
+- zachowano ścieżkę generator-zaswiadczen-html/index.html, aby istniejące
+  zabezpieczenia dostępu i linki nadal działały,
+- zmieniono nazwę i opis w panelu trenera,
+- sprawdzono obecność plików HTML, CSS, JavaScript i szablonów graficznych.
+
+Publikacja:
+Wgraj zawartość paczki do repozytorium przez GitHub Desktop,
+wykonaj Commit to main, a następnie Push origin.

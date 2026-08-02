@@ -1,0 +1,27 @@
+Rozbudowa Modułu 2, punktu 4
+„Dlaczego fake news i manipulacja się rozprzestrzeniają?”
+
+Źródło bazowe:
+- najnowsza wersja portalu z ujednoliconymi szerokościami i responsywnością
+- materiał przekazany przez użytkownika: „Wklejony kod markdown(2).md”
+
+Zakres wprowadzonych treści:
+- współdziałanie technologii, psychologii i relacji społecznych
+- dystrybucja algorytmiczna i ekonomia uwagi
+- pętla emocja → reakcja → widoczność → kolejne reakcje
+- niski koszt tworzenia i skalowanie za pomocą AI
+- błąd potwierdzenia, rozumowanie motywowane i efekt powtarzania
+- presja czasu, redukowanie niepewności i przeciążenie informacyjne
+- chęć ostrzegania, tożsamość grupowa i społeczny dowód słuszności
+- nieintencjonalne wzmacnianie misinformacji
+- wyjaśnienie, dlaczego sprostowania mają trudniejsze zadanie
+- pytania refleksyjne i blok „Zapamiętaj”
+
+Nie wprowadzono całego materiału źródłowego. Treść została skrócona, uporządkowana i dostosowana do formy kursu online.
+
+Elementy zachowane:
+- identyfikator sekcji i mechanizm oznaczania postępu
+- liczba sekcji kursu
+- formularze, ćwiczenia, PDF i zapis lokalny
+- ujednolicone szerokości pól
+- responsywność telefonu i tabletu

@@ -1,0 +1,61 @@
+RAPORT AKTUALIZACJI KURSU
+Automatyczna samoocena i indywidualny tryb ćwiczeń
+Data: 30.07.2026
+
+1. WPROWADZONE ZMIANY
+
+A. Ćwiczenie 3 - Sprawdzenie różnorodności źródeł
+- zachowano skalę odpowiedzi od 1 do 5 oraz siedem oryginalnych stwierdzeń;
+- dodano automatyczne zliczanie punktów po udzieleniu wszystkich odpowiedzi;
+- dodano informację o postępie samooceny: liczba odpowiedzi z 7;
+- dodano orientacyjny profil nawyków informacyjnych:
+  * Podstawy do wzmocnienia - 7-17 punktów;
+  * Świadome nawyki w rozwoju - 18-27 punktów;
+  * Dobrze rozwinięte nawyki informacyjne - 28-35 punktów;
+- automatycznie wskazywane są dwa najniżej ocenione obszary;
+- każdy wskazany obszar otrzymuje krótką, praktyczną podpowiedź do dalszej pracy;
+- wynik jest wyraźnie opisany jako orientacyjny - nie jest oceną, testem wiedzy ani warunkiem certyfikatu;
+- dwa najniżej ocenione wiersze są wizualnie wyróżnione;
+- dodano pole „Mój pierwszy krok po tej samoocenie”.
+
+B. Zapis i PDF
+- automatyczne podsumowanie samooceny zapisuje się razem z pozostałymi odpowiedziami;
+- podsumowanie trafia do PDF karty pracy Modułu 1;
+- podsumowanie jest również zachowywane w eksporcie postępu kursu.
+
+C. Tryb indywidualny
+- „Ćwiczenie 4. Rozmowa o nawykach informacyjnych” zmieniono na „Ćwiczenie 4. Autorefleksja o nawykach informacyjnych”;
+- usunięto instrukcję pracy w grupach i przedstawiania wniosków na forum;
+- „Wnioski grupy” zmieniono na „Moje dwa najważniejsze wnioski”;
+- zachowano dotychczasowe klucze zapisu odpowiedzi, aby nie utracić wcześniej wpisanych treści;
+- pozostały jedynie odniesienia do grupy będące częścią analizowanych sytuacji, np. odpowiedź w grupowym komunikatorze - nie są to polecenia pracy zespołowej.
+
+D. Widok mobilny
+- tabela samooceny na telefonie została przebudowana w czytelne karty;
+- każde stwierdzenie jest widoczne nad osobnym zestawem odpowiedzi 1-5;
+- usunięto konieczność poziomego przewijania tabeli samooceny.
+
+2. ELEMENTY ZACHOWANE
+- pełne 111 sekcji kursu;
+- automatyczny zapis lokalny;
+- eksport i import postępu;
+- generowanie PDF modułu i całego kursu;
+- logotypy projektu i Unii Europejskiej w PDF;
+- struktura portalu, grafiki, filmy i pozostałe strony;
+- dotychczasowe odpowiedzi uczestnika do Ćwiczenia 4.
+
+3. WYNIKI TESTÓW
+- składnia wszystkich plików JavaScript: poprawna;
+- liczba sekcji kursu: 111;
+- brak zduplikowanych identyfikatorów HTML;
+- brak brakujących lokalnych zasobów;
+- nowe pliki JS i CSS zwracają status HTTP 200;
+- test interakcji: 7 odpowiedzi, wynik 24/35, profil „Świadome nawyki w rozwoju”;
+- poprawnie wskazane dwa najniższe obszary: wpływ emocji 1/5 i rozumienie algorytmów 2/5;
+- brak błędów JavaScriptu i konsoli w testach desktopowych i mobilnych;
+- wygenerowany PDF Modułu 1: poprawny plik PDF, 181 883 bajty;
+- PDF został wyrenderowany i wizualnie sprawdzony - podsumowanie samooceny jest czytelne i nie jest ucięte.
+
+4. OGRANICZENIA
+- wynik samooceny opiera się na deklaracji uczestnika i nie może być traktowany jako obiektywna diagnoza kompetencji;
+- automatyczna interpretacja została wdrożona w tym konkretnym ćwiczeniu. Ten sam mechanizm można później zastosować do kolejnych skal samooceny po ustaleniu odrębnych obszarów i interpretacji.

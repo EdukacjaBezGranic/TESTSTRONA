@@ -1,0 +1,39 @@
+RAPORT NAPRAWY FINALNEGO PDF DO WERYFIKACJI
+Data: 30.07.2026
+
+Problem zgłoszony
+Po użyciu przycisku przygotowania dokumentu komunikat „Przygotowuję dokument” pojawiał się na moment, lecz plik PDF nie był zapisywany na urządzeniu.
+
+Przyczyna
+Poprzedni mechanizm próbował uruchomić automatyczne pobieranie pliku po zakończeniu asynchronicznego tworzenia dokumentu. Część przeglądarek blokuje takie pobieranie, ponieważ następuje ono już po wygaśnięciu bezpośredniej akcji użytkownika. Dodatkowo komunikat błędu był natychmiast zastępowany zwykłym komunikatem panelu, dlatego użytkownik nie widział przyczyny niepowodzenia.
+
+Wprowadzone zmiany
+1. Przycisk „Przygotuj PDF do weryfikacji” tworzy dokument i udostępnia trwały, widoczny przycisk:
+   „PDF jest gotowy – kliknij tutaj, aby zapisać dokument”.
+2. Pobranie następuje po osobnym, bezpośrednim kliknięciu użytkownika, którego przeglądarka nie powinna blokować.
+3. Dodano systemowe okno zapisu, gdy przeglądarka obsługuje tę funkcję.
+4. Dodano niezależny wariant awaryjny:
+   „Otwórz wersję do druku / zapisu jako PDF”.
+   W otwartym widoku uczestnik może wybrać w oknie drukowania opcję „Zapisz jako PDF”.
+5. Komunikaty sukcesu i błędu pozostają widoczne. Nie są już automatycznie nadpisywane.
+6. W razie błędu uczestnik otrzymuje komunikat z techniczną przyczyną, o ile przeglądarka ją udostępni.
+7. Zmieniono wersje plików CSS i JavaScript w adresach zasobów, aby GitHub Pages i przeglądarka nie korzystały ze starej wersji zapisanej w pamięci podręcznej.
+
+Weryfikacja
+- składnia pliku assets/course-certificate.js: poprawna;
+- liczba sekcji kursu: 111;
+- podział sekcji na moduły: 16 / 22 / 27 / 22 / 24;
+- brak zduplikowanych identyfikatorów HTML;
+- sprawdzono 445 lokalnych odwołań do zasobów – brak brakujących plików;
+- test jednostkowy mechanizmu odblokowania, generowania i udostępnienia pliku: zaliczony;
+- wygenerowany obiekt ma typ application/pdf;
+- nagłówek wygenerowanego pliku: %PDF-1.4;
+- format: A4, jedna strona;
+- nazwa testowego pliku: potwierdzenie-ukonczenia-kursu-jan-kowalski.pdf;
+- test komunikatu po wygenerowaniu i wyświetlenia przycisku pobierania: zaliczony.
+
+Sposób działania dla uczestnika
+1. Uczestnik spełnia warunki ukończenia kursu i wpisuje imię, nazwisko oraz adres e-mail.
+2. Wybiera „Przygotuj PDF do weryfikacji”.
+3. Po utworzeniu dokumentu wybiera duży przycisk „PDF jest gotowy – kliknij tutaj, aby zapisać dokument”.
+4. Gdy zwykłe pobieranie jest blokowane, używa opcji „Otwórz wersję do druku / zapisu jako PDF” i wybiera „Zapisz jako PDF”.

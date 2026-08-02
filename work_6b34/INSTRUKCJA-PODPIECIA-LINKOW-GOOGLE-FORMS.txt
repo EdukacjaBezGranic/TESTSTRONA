@@ -1,0 +1,130 @@
+PODPIĘCIE FORMULARZY GOOGLE I WERYFIKACJA CERTYFIKATU
+======================================================
+
+1. FORMULARZE GOOGLE W KURSIE
+-----------------------------
+
+Kurs ma przygotowane cztery miejsca:
+1. formularz uczestnika,
+2. test wiedzy przed kursem,
+3. test wiedzy po kursie,
+4. ankieta ewaluacyjna.
+
+Po utworzeniu formularzy otwórz plik:
+assets/course-forms-config.js
+
+Wklej publiczne adresy formularzy między apostrofy przy odpowiednich polach „url”.
+
+Przykład:
+registration: {
+  label: 'Formularz uczestnika',
+  url: 'https://docs.google.com/forms/d/e/TUTAJ_ID_FORMULARZA/viewform'
+}
+
+Pola konfiguracji:
+- registration – formularz uczestnika,
+- pretest – test wstępny,
+- finaltest – test końcowy,
+- evaluation – ankieta ewaluacyjna.
+
+Do czasu wstawienia właściwego adresu przycisk pozostaje nieaktywny i wyświetla informację,
+że link zostanie dodany po utworzeniu formularza.
+
+2. ZASADA IDENTYFIKACJI UCZESTNIKA
+----------------------------------
+
+We wszystkich formularzach uczestnik powinien podać ten sam adres e-mail. Ten sam adres
+e-mail powinien zostać użyty także przy wysyłaniu potwierdzenia ukończenia kursu do WUP.
+
+Zaznaczenia w portalu są prywatną listą kontrolną uczestnika. Faktyczne spełnienie warunków
+otrzymania certyfikatu należy potwierdzić na podstawie:
+- postępu zapisanego w kursie,
+- wygenerowanego potwierdzenia ukończenia części e-learningowej,
+- odpowiedzi zapisanych w Google Forms,
+- zgodności imienia, nazwiska i adresu e-mail.
+
+3. WARUNKI OTRZYMANIA CERTYFIKATU
+---------------------------------
+
+Certyfikat ukończenia kursu może zostać wystawiony po spełnieniu wszystkich warunków:
+1. ukończeniu wszystkich pięciu modułów kursu na poziomie 100%,
+2. wygenerowaniu pliku PDF „Potwierdzenie ukończenia części e-learningowej”,
+3. zaliczeniu testu końcowego zgodnie z progiem ustalonym przez organizatora,
+4. wypełnieniu ankiety ewaluacyjnej,
+5. przesłaniu pliku PDF do weryfikacji,
+6. pozytywnej weryfikacji danych przez Wojewódzki Urząd Pracy w Katowicach.
+
+Formularz uczestnika i test wstępny są elementami obowiązkowymi przed rozpoczęciem właściwej
+części kursu.
+
+4. POTWIERDZENIE UKOŃCZENIA CZĘŚCI E-LEARNINGOWEJ
+--------------------------------------------------
+
+Po ukończeniu wszystkich pięciu modułów w 100% oraz oznaczeniu czterech formularzy jako
+wykonanych portal automatycznie odblokowuje przycisk do wygenerowania pliku PDF:
+
+„Potwierdzenie ukończenia części e-learningowej”
+
+Dokument powinien zawierać:
+- logo projektu „Edukacja bez granic”,
+- logo dofinansowania Unii Europejskiej,
+- nazwę kursu,
+- imię i nazwisko uczestnika,
+- adres e-mail używany w formularzach,
+- datę ukończenia,
+- listę pięciu modułów ze statusem 100%,
+- ogólny poziom ukończenia kursu: 100%,
+- indywidualny numer potwierdzenia,
+- oświadczenie o ukończeniu 111 tematów w pięciu modułach,
+- oświadczenie o wypełnieniu formularza uczestnika, testu wstępnego, testu końcowego i ankiety,
+- informację, że dokument nie jest certyfikatem.
+
+Zalecana treść zastrzeżenia w PDF:
+
+„Dokument potwierdza ukończenie części e-learningowej kursu. Nie jest certyfikatem.
+Certyfikat zostanie wydany po weryfikacji ukończenia wszystkich modułów, zaliczenia testu
+końcowego oraz wypełnienia ankiety ewaluacyjnej.”
+
+5. WYSŁANIE DOKUMENTU DO WERYFIKACJI
+------------------------------------
+
+Po pobraniu PDF uczestnik korzysta z przycisku „Przygotuj wiadomość e-mail” i wysyła
+wygenerowany dokument na adres:
+
+lmalinowski@wup-katowice.pl
+
+Zalecany temat wiadomości:
+
+Potwierdzenie ukończenia kursu – Imię i nazwisko
+
+Zalecana treść wiadomości:
+
+Dzień dobry,
+przesyłam potwierdzenie ukończenia części e-learningowej kursu
+„Media Literacy, Fake News i Krytyczne Myślenie”.
+Wypełniłem(-am) również test końcowy i ankietę ewaluacyjną.
+Proszę o weryfikację spełnienia warunków otrzymania certyfikatu.
+
+Uwaga: przeglądarka może przygotować wiadomość e-mail, ale nie może automatycznie dołączyć
+pobranego pliku PDF. Uczestnik musi samodzielnie dodać dokument jako załącznik przed wysłaniem.
+
+6. WERYFIKACJA PO STRONIE ORGANIZATORA
+--------------------------------------
+
+Przed wystawieniem certyfikatu należy sprawdzić:
+- czy uczestnik ukończył wszystkie moduły na poziomie 100%,
+- czy dane w potwierdzeniu PDF są kompletne,
+- czy test końcowy został wypełniony i zaliczony,
+- czy ankieta ewaluacyjna została wypełniona,
+- czy we wszystkich dokumentach i formularzach użyto zgodnych danych oraz tego samego adresu e-mail.
+
+Dopiero po pozytywnej weryfikacji organizator wystawia właściwy certyfikat ukończenia kursu.
+
+7. WAŻNE OGRANICZENIE TECHNICZNE
+--------------------------------
+
+Kurs nie wymaga logowania i nie korzysta z kont użytkowników ani zewnętrznej bazy danych.
+Postęp uczestnika jest zapisywany lokalnie w przeglądarce. Z tego powodu wygenerowany PDF
+jest potwierdzeniem złożonym przez uczestnika, a nie samodzielnym, urzędowym certyfikatem.
+Ostateczna decyzja o wydaniu certyfikatu należy do organizatora po zestawieniu danych z PDF
+i odpowiedziami zapisanymi w Google Forms.

@@ -1,0 +1,57 @@
+UPORZĄDKOWANIE LOGIKI KURSU ONLINE — 25.07.2026
+
+Zasada wykonania:
+- nie usunięto treści merytorycznych,
+- nie skrócono treści szkoleniowych,
+- treści robocze i redakcyjne przeniesiono do panelu trenera,
+- zmieniono kolejność i sposób prezentacji tam, gdzie poprawiało to ciąg dydaktyczny.
+
+Wprowadzone zmiany:
+
+MODUŁ 1
+- poprawiono numerację części z 2.1–2.4 na 1.1–1.4,
+- zachowano dotychczasową kolejność: podstawy → pojęcia → przyczyny → miejsca występowania → sprawdzenie wiedzy.
+
+MODUŁ 2
+- krótki blok wprowadzający przekształcono w „Mapę modułu” i „Plan zagadnień”,
+- zachowano wszystkie wcześniejsze informacje o bodźcu, emocji, impulsie, reakcji, clickbaicie, bańkach i odzyskiwaniu dystansu,
+- szczegółowe mechanizmy ustawiono w kolejności:
+  1. efekt potwierdzenia,
+  2. heurystyka dostępności i efekt zakotwiczenia,
+  3. efekt powtarzania,
+  4. społeczny dowód słuszności,
+  5. autorytet i pozory eksperckości,
+- blok dotyczący zatrzymania emocji pozostaje zakończeniem części teoretycznej.
+
+MODUŁ 3
+- główna treść szkoleniowa pozostała bez skracania,
+- noty redakcyjne, uwagi o brakujących źródłach oraz szczegółową podstawę źródłową przeniesiono z widoku uczestnika do Panelu trenera,
+- dzięki temu uczestnik widzi ciąg: ograniczenia AI → deepfake → podszywanie się → oszustwa → ochrona.
+
+MODUŁ 4
+- metodę SIFT, czytanie lateralne i sygnały ostrzegawcze przeniesiono przed katalog narzędzi,
+- nowa kolejność:
+  1. metoda SIFT i zasady weryfikacji,
+  2. Google Lens i odwrotne wyszukiwanie obrazem,
+  3. Fact Check Explorer i serwisy weryfikujące fakty,
+  4. sprawdzanie domeny, daty i archiwalnej wersji strony,
+  5. weryfikacja raportów, liczb i cytatów,
+  6. najprostsza zasada weryfikacji,
+- zaktualizowano listę tematów wyświetlaną na karcie modułu.
+
+MODUŁ 5
+- pozostawiono bez zmian, ponieważ jego kolejność była już logiczna i praktyczna.
+
+ELEMENTY ROBOCZE
+- panel „Do przygotowania” usunięto z widoku uczestnika,
+- jego treść zachowano w Panelu trenera razem z notami redakcyjnymi Modułu 3.
+
+WALIDACJA
+- sprawdzono składnię 3 osadzonych skryptów JavaScript: bez błędów,
+- sprawdzono 311 lokalnych odwołań: brak brakujących zasobów,
+- potwierdzono nową kolejność Modułu 2 i Modułu 4,
+- potwierdzono przeniesienie not redakcyjnych do Panelu trenera,
+- sprawdzono integralność paczki ZIP.
+
+OGRANICZENIE
+- w tym środowisku nie wykonano wiarygodnego testu wizualnego w pełnej przeglądarce; zmiany dotyczą struktury i kolejności treści, a składnia oraz zasoby zostały zweryfikowane automatycznie.

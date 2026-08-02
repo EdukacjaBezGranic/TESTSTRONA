@@ -1,0 +1,90 @@
+RAPORT – PEŁNA REDAKCJA TREŚCI KURSU
+Data: 30.07.2026
+
+1. ZAKRES PRAC
+
+Podstawą prac była najnowsza kompletna wersja portalu:
+PORTAL-3-GITHUB-KURS-DEEPFAKE-WIDEO-AUDIO-2026-07-30.zip
+
+Redakcją objęto całą warstwę narracyjną kursu „Media Literacy, Fake News i Krytyczne Myślenie”, w tym:
+- wprowadzenie do kursu i opisy ścieżki uczestnika;
+- wprowadzenia do pięciu modułów;
+- opisy merytoryczne, definicje wprowadzające i przejścia między tematami;
+- instrukcje do ćwiczeń i samoocen;
+- zamknięcia modułów i tekst końcowy;
+- opisy formularzy Google, testów i ankiety ewaluacyjnej;
+- komunikaty dotyczące zapisu odpowiedzi i kart pracy PDF.
+
+Przejrzano wszystkie 111 sekcji. Zmiany językowe wprowadzono w 42 sekcjach, w których tekst wymagał uproszczenia, doprecyzowania albo usunięcia schematycznych konstrukcji. Fragmenty zgodne z przyjętymi zasadami pozostawiono bez sztucznego parafrazowania.
+
+2. NAJWAŻNIEJSZE KOREKTY
+
+- Zmieniono otwarcia wszystkich pięciu modułów, aby jasno wskazywały temat, odbiorcę i sposób pracy.
+- Ograniczono zdania bezosobowe i nadmiar rzeczowników odczasownikowych.
+- Zastąpiono ogólne sformułowania opisem konkretnego działania użytkownika, platformy, algorytmu lub systemu AI.
+- Uporządkowano relację: kto tworzy przekaz, kto zwiększa jego widoczność, kto podejmuje decyzję i jakie mogą być skutki.
+- Ujednolicono indywidualny tryb kursu. Usunięto widoczne określenia „przykład do dyskusji”, „pytanie do dyskusji” oraz wcześniejsze pozostałości pracy grupowej.
+- Zmieniono część efektów uczenia się tak, aby opisywały obserwowalne działania uczestnika, np. „wyjaśnia” i „wskazuje” zamiast ogólnego „rozumie”.
+- Zachowano pełny zakres merytoryczny. Liczba słów wzrosła z 17 168 do 17 200.
+
+3. AUDYT JĘZYKOWY
+
+W widocznej treści kursu nie występują zakazane lub schematyczne konstrukcje:
+- „nie tylko…, ale także…”;
+- „w dzisiejszym świecie”;
+- „w obecnych czasach”;
+- „w dobie dynamicznych zmian”;
+- „należy zauważyć, że”;
+- „warto podkreślić, że”;
+- „trzeba zaznaczyć, że”;
+- „jak już wcześniej wspomniano”;
+- „ma na celu”;
+- „odgrywa rolę”;
+- „podsumowując”;
+- „kluczowy / kluczowe”;
+- „synergia”;
+- „holistyczne podejście”;
+- „wnioski grupy”;
+- „praca w grupach”;
+- „przykład do dyskusji”;
+- „pytanie do dyskusji”.
+
+4. ELEMENTY ZACHOWANE
+
+Nie zmieniono:
+- struktury pięciu modułów i 111 sekcji;
+- grafik, ilustracji, filmów deepfake i materiałów multimedialnych;
+- pól ćwiczeń, samoocen i odpowiedzi;
+- zapisu lokalnego, eksportu i importu postępu;
+- generowania kart pracy PDF;
+- formularzy Google i warunków certyfikatu;
+- nawigacji, identyfikatorów sekcji i mechanizmu postępu;
+- arkuszy CSS i plików JavaScript.
+
+Porównanie struktury przed i po redakcji:
+- sekcje: 111 / 111;
+- panele modułów: 5 / 5;
+- pola input: 294 / 294;
+- pola textarea: 256 / 256;
+- przyciski: 142 / 142;
+- obrazy: 56 / 56;
+- odtwarzacze wideo: 2 / 2;
+- osadzone materiały: 2 / 2;
+- pliki JavaScript: 5 / 5;
+- arkusze stylów: 4 / 4.
+
+5. TESTY
+
+- HTML został ponownie przeanalizowany po zapisie: 111 sekcji, 5 paneli modułów i brak zduplikowanych identyfikatorów.
+- Sprawdzono sygnatury 550 pól odpowiedzi – wszystkie identyfikatory i atrybuty pozostały bez zmian.
+- Składnia wszystkich lokalnych plików JavaScript przeszła kontrolę node --check.
+- Sprawdzono 69 lokalnych zasobów przez serwer HTTP – każdy zwrócił status 200.
+- Widok desktopowy 1440 × 1000: strona renderuje się prawidłowo, bez nakładania treści i bez błędów wykonania.
+- Widok mobilny 390 × 844: brak przewijania poziomego, widoczny przycisk „Plan kursu”, treść modułu mieści się w ekranie.
+- Przetestowano ścieżkę: strona startowa → „Rozpocznij kurs” → formularze wstępne → „Przejdź do kursu” → Moduł 1.
+- Po kliknięciu wyświetla się zredagowane wprowadzenie Modułu 1.
+- Konsola nie zgłosiła błędów JavaScript. Pojawiło się wyłącznie ostrzeżenie przeglądarki dotyczące nierozpoznanej funkcji „web-share” w osadzonym materiale; nie wpływa ono na działanie kursu.
+
+6. OGRANICZENIA TESTU
+
+Środowisko przeglądarkowe blokowało bezpośrednie otwieranie adresów localhost i file://. Dlatego test renderowania i interakcji wykonano w lokalnym obrazie testowym zawierającym ten sam HTML, CSS i JavaScript. Niezależnie od tego wszystkie pliki produkcyjne zostały sprawdzone przez lokalny serwer HTTP, a 69 zasobów zwróciło status 200.

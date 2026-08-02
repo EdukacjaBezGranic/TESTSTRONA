@@ -1,0 +1,155 @@
+window.portalSiteData = {
+  "contact": {
+    "email": "pr@wup-katowice.pl",
+    "phone": "32 757 33 84"
+  },
+  "trainings": [
+    {
+      "id": "fake-news",
+      "group": "new",
+      "source": "Projekt Edukacja bez granic",
+      "title": "Myślenie krytyczne, dezinformacja i manipulacja",
+      "shortTitle": "Myślenie krytyczne",
+      "date": "2026-09-17",
+      "time": "10:00 - 14:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Pracownicy instytucji publicznych, doradcy zawodowi, trenerzy i osoby pracujące z informacją.",
+      "description": [
+        "Szkolenie pomaga rozpoznawać fałszywe informacje, manipulację i treści tworzone po to, aby wywołać szybką reakcję odbiorcy.",
+        "Uczestnicy uczą się oceniać wiarygodność źródeł, oddzielać fakty od opinii i spokojnie sprawdzać informacje przed ich dalszym wykorzystaniem."
+      ],
+      "color": "#d4a017",
+      "image": "grafiki/fake-news.jpg",
+      "logo": "grafiki/logo-projektu-symbol-transparent.png",
+      "open": true,
+      "link": "https://forms.gle/KzJmaQr8hvH5dkGM8",
+      "button": "Zapisz się"
+    },
+    {
+      "id": "komunikacja",
+      "group": "new",
+      "source": "Projekt Edukacja bez granic",
+      "title": "Wystąpienia publiczne i storytelling",
+      "shortTitle": "Wystąpienia publiczne",
+      "date": "2026-09-18",
+      "time": "10:00 - 14:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Pracownicy prowadzący spotkania, szkolenia, konsultacje i prezentacje dla odbiorców.",
+      "description": [
+        "Szkolenie wzmacnia umiejętność jasnego, spokojnego i angażującego przekazywania informacji.",
+        "Uczestnicy pracują nad strukturą wypowiedzi, kontaktem z grupą, opowiadaniem przykładów i budowaniem komunikatu, który jest zrozumiały dla odbiorcy."
+      ],
+      "color": "#1f6f54",
+      "image": "grafiki/komunikacja.webp",
+      "logo": "grafiki/logo-projektu-symbol-transparent.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    },
+    {
+      "id": "grywalizacja",
+      "group": "new",
+      "source": "Projekt Edukacja bez granic",
+      "title": "Grywalizacja, uczenie przez gry i doświadczenie",
+      "shortTitle": "Grywalizacja",
+      "date": "2026-09-24",
+      "time": "10:00 - 15:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Edukatorzy, trenerzy, doradcy zawodowi i osoby projektujące działania rozwojowe dla dorosłych.",
+      "description": [
+        "Szkolenie pokazuje, jak wykorzystywać elementy gier, zadania, wyzwania i mechanizmy motywacyjne w edukacji dorosłych.",
+        "Celem jest tworzenie zajęć, które bardziej angażują uczestników i pomagają im bezpiecznie ćwiczyć nowe sposoby działania."
+      ],
+      "color": "#0d4f96",
+      "image": "grafiki/gamifikacja.jpg",
+      "logo": "grafiki/logo-projektu-symbol-transparent.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    },
+    {
+      "id": "ai",
+      "group": "other",
+      "source": "Kierunek Kompetencje 4.0",
+      "title": "Praktyczne wykorzystanie sztucznej inteligencji",
+      "shortTitle": "Sztuczna inteligencja",
+      "date": "2026-09-25",
+      "time": "9:00 - 13:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Pracownicy instytucji publicznych, edukatorzy, trenerzy, doradcy zawodowi oraz osoby zainteresowane AI.",
+      "description": [
+        "Szkolenie pokazuje, jak korzystać z narzędzi AI w pracy zawodowej i edukacyjnej.",
+        "Uczy tworzenia treści, przygotowywania materiałów, automatyzacji prostych zadań, pracy z promptami oraz bezpiecznego i odpowiedzialnego korzystania z AI."
+      ],
+      "color": "#7c3aed",
+      "image": "grafiki/ai.jpg",
+      "logo": "grafiki/kierunek-kompetencje.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    },
+    {
+      "id": "sel",
+      "group": "other",
+      "source": "Kierunek Kompetencje 4.0",
+      "title": "Social and Emotional Learning",
+      "shortTitle": "SEL",
+      "date": "2026-10-01",
+      "time": "10:00 - 14:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Osoby pracujące z grupami, edukatorzy, trenerzy, doradcy zawodowi i pracownicy instytucji publicznych.",
+      "description": [
+        "Szkolenie poświęcone jest rozwojowi kompetencji społecznych i emocjonalnych.",
+        "Uczy lepszej komunikacji, samoświadomości, empatii, współpracy, radzenia sobie z emocjami i budowania relacji w grupie."
+      ],
+      "color": "#9acd32",
+      "image": "grafiki/sel.jpg",
+      "logo": "grafiki/kierunek-kompetencje.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    },
+    {
+      "id": "cyber",
+      "group": "other",
+      "source": "Program mobilności",
+      "title": "Cyberbezpieczeństwo w pracy i komunikacji",
+      "shortTitle": "Cyberbezpieczeństwo",
+      "date": "2026-10-02",
+      "time": "10:00 - 14:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Pracownicy administracji, osoby korzystające z narzędzi cyfrowych i prowadzące komunikację elektroniczną.",
+      "description": [
+        "Szkolenie porządkuje podstawowe zasady bezpiecznej pracy z pocztą, linkami, dokumentami i danymi.",
+        "Uczestnicy uczą się rozpoznawać typowe zagrożenia oraz reagować w sposób spokojny i zgodny z procedurami."
+      ],
+      "color": "#1f4e79",
+      "image": "grafiki/cyberbezpieczenstwo.jpg",
+      "logo": "grafiki/logo-projektu-symbol-transparent.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    },
+    {
+      "id": "mindfulness",
+      "group": "other",
+      "source": "Program mobilności",
+      "title": "Mindfulness i dobrostan w pracy",
+      "shortTitle": "Mindfulness",
+      "date": "2026-10-08",
+      "time": "10:00 - 14:00",
+      "place": "Wojewódzki Urząd Pracy w Katowicach, ul. Sokolska 29",
+      "audience": "Osoby pracujące z ludźmi, zespoły obsługujące klientów oraz pracownicy narażeni na obciążenie emocjonalne.",
+      "description": [
+        "Szkolenie pokazuje proste sposoby dbania o uwagę, koncentrację i odporność psychiczną w codziennej pracy.",
+        "Uczestnicy poznają praktyki wspierające regulację napięcia, spokojniejszą komunikację i lepsze zarządzanie energią."
+      ],
+      "color": "#4f9d69",
+      "image": "grafiki/mindfulness.jpg",
+      "logo": "grafiki/logo-projektu-symbol-transparent.png",
+      "open": false,
+      "link": "",
+      "button": "Zapisy wkrótce"
+    }
+  ]
+};

@@ -1,0 +1,84 @@
+RAPORT – UPROSZCZENIE ĆWICZEŃ ONLINE I NATYCHMIASTOWE WYNIKI SAMOOCEN
+Data: 30.07.2026
+Projekt: „Edukacja bez granic”
+Kurs: „Media Literacy, Fake News i Krytyczne Myślenie”
+
+1. ZAŁOŻENIE ZMIANY
+Przeanalizowano ćwiczenia we wszystkich pięciu modułach pod kątem samodzielnej nauki online. Ograniczono zadania wymagające długiego wpisywania, wielostronicowych tabel oraz pracy grupowej. Zachowano pytania, które sprawdzają rozumienie treści lub prowadzą do użytecznej autorefleksji.
+
+2. NAJWAŻNIEJSZE ZMIANY
+- liczbę dużych pól tekstowych zmniejszono z 226 do 10;
+- rozbudowane tabele uzupełniane ręcznie zastąpiono krótkimi listami wyboru, checkboxami, skalami i pojedynczymi polami na własny wniosek;
+- ćwiczenia grupowe przekształcono w zadania indywidualne;
+- usunięto sformułowania: „wnioski grupy”, „pracujcie w grupach”, „omówcie na forum” i podobne;
+- w ćwiczeniach refleksyjnych pozostawiono najwyżej jedno krótkie pole tekstowe, gdy własna odpowiedź uczestnika wnosi wartość;
+- samooceny w każdym module mają pięć stwierdzeń i wymagają wyłącznie pięciu zaznaczeń;
+- po uzupełnieniu samooceny od razu pojawia się wynik, opis profilu i najsłabiej oceniony obszar;
+- wynik samooceny zapisuje się lokalnie i trafia do PDF karty pracy.
+
+3. ZMIANA LICZBY PÓL W MODUŁACH
+Moduł 1: 103 pola przed zmianą → 57 pól po zmianie; duże pola tekstowe: 38 → 3.
+Moduł 2: 121 pól przed zmianą → 72 pola po zmianie; duże pola tekstowe: 48 → 1.
+Moduł 3: 165 pól przed zmianą → 82 pola po zmianie; duże pola tekstowe: 53 → 2.
+Moduł 4: 67 pól przed zmianą → 56 pól po zmianie; duże pola tekstowe: 27 → 1.
+Moduł 5: 117 pól przed zmianą → 71 pól po zmianie; duże pola tekstowe: 60 → 3.
+
+Łącznie: 574 zapisujące się kontrolki przed zmianą → 338 po zmianie.
+
+4. PRZYKŁADY UPROSZCZEŃ
+Moduł 1
+- mapa ekosystemu informacyjnego została ograniczona do pięciu grup źródeł;
+- bilet wyjścia zawiera trzy krótkie odpowiedzi zamiast sześciu rozbudowanych pól;
+- samoocena różnorodności źródeł obejmuje pięć stwierdzeń.
+
+Moduł 2
+- analiza emocji, błędów poznawczych i SIFT opiera się głównie na wyborach z list;
+- checklisty wymagają zaznaczenia potwierdzonych elementów, a nie opisywania każdego kroku;
+- zadanie refleksyjne kończy się jedną krótką zasadą przed udostępnieniem.
+
+Moduł 3
+- klasyfikacja wypowiedzi odbywa się przez wybór kategorii dominującej;
+- ocena źródła, danych, ram interpretacyjnych i modelu CLEAR została skrócona do kilku decyzji;
+- pozostawiono tylko krótkie pole na neutralny nagłówek lub własne pytanie kontrolne.
+
+Moduł 4
+- analiza tematów społecznie wrażliwych odbywa się przez wybór odpowiedzi dotyczących języka, kontekstu, szkody i wiarygodności;
+- ćwiczenia nie wymagają długich opisów ani pracy w grupach;
+- jedno krótkie pole służy zapisaniu własnej zasady udostępniania treści wrażliwych.
+
+Moduł 5
+- ćwiczenia dotyczące przeciążenia, doomscrollingu, rutyny medialnej i SHARE korzystają z wyborów z list;
+- własna wypowiedź jest opcjonalna w ćwiczeniach komunikacyjnych;
+- końcowe zobowiązanie mieści się w jednym krótkim polu.
+
+5. WYNIKI SAMOOCEN
+W każdym module wynik pojawia się bezpośrednio po zaznaczeniu wszystkich pięciu odpowiedzi.
+
+Zakres wyniku: 5–25 punktów.
+- 5–12 punktów: „Podstawy do wzmocnienia”;
+- 13–19 punktów: „Umiejętności w rozwoju”;
+- 20–25 punktów: „Dobrze rozwinięte kompetencje”.
+
+Opis wyniku jest dopasowany do tematu modułu. System wskazuje jeden lub dwa najniżej ocenione obszary i zaznacza je w tabeli. Wynik ma charakter autorefleksyjny i nie wpływa na certyfikat.
+
+6. ELEMENTY ZACHOWANE
+- 5 modułów i 111 sekcji;
+- automatyczny zapis lokalny;
+- eksport i import postępu;
+- PDF modułu i zbiorczy PDF całego kursu;
+- materiały graficzne, filmy i odtwarzacze deepfake;
+- miejsca na formularze Google, test końcowy i ankietę;
+- mechanizm postępu oraz warunki certyfikatu.
+
+7. WERYFIKACJA
+- wszystkie 338 kluczy zapisu są unikalne;
+- wszystkie 5 samoocen ma po 5 stwierdzeń i po 5 odpowiedzi w skali;
+- wszystkie 5 samoocen ma pole natychmiastowego wyniku;
+- sprawdzono składnię skryptów JavaScript;
+- przeprowadzono test interakcji samooceny w Chromium: wynik 15/25, opis profilu i obszar do pracy pojawiły się bez błędów;
+- sprawdzono widok wyniku w rozmiarze desktopowym i mobilnym;
+- 68 lokalnych zasobów kursu zwróciło HTTP 200;
+- nie wykryto brakujących arkuszy CSS, skryptów ani plików multimedialnych.
+
+8. OGRANICZENIE TESTOWE
+Środowisko zablokowało bezpośrednią nawigację przeglądarki do lokalnego adresu kursu. Pełny dokument sprawdzono statycznie i przez lokalny serwer HTTP, natomiast mechanizm samooceny przetestowano w renderowanym środowisku Chromium na rzeczywistym kodzie komponentu.

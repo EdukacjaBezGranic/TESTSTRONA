@@ -1,0 +1,22 @@
+UJEDNOLICENIE TYPOGRAFII GÓRNEGO PASKA I STOPKI
+
+Zakres:
+- index.html
+- nasze-szkolenia.html
+- zapisy.html
+- zapisy-kalendarz.html
+- kursy-online.html
+- kontakt.html
+- panel-trenera.html
+- kurs-fake-news.html
+
+Wprowadzone ustawienia:
+- wspólna rodzina czcionek: Inter / system-ui / Segoe UI / Arial,
+- nazwa projektu: 16 px, grubość 700,
+- dopisek pod nazwą projektu: 10,5 px, grubość 500,
+- linki górnej nawigacji: 13 px, grubość 700,
+- tytuł w stopce: 16 px, grubość 700,
+- opis w stopce: 13 px, grubość 400,
+- linki w stopce: 13 px, grubość 700,
+- usunięcie przypadkowych podkreśleń, kursywy, kapitalików i niestandardowych wag 720/750/760/850 w obrębie nagłówka i stopki,
+- identyczne reguły dodane jako ostatni styl na każdej podstronie, aby wcześniejsze lokalne arkusze nie zmieniały wyglądu.

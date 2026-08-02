@@ -1,0 +1,24 @@
+NAPRAWA POBIERANIA PDF POTWIERDZENIA UKOŃCZENIA KURSU
+Data: 30.07.2026
+
+Zdiagnozowany problem
+- W przekazanej paczce ZIP zabrakło panelu dokumentu w pliku kurs-fake-news.html.
+- Nie został również dołączony skrypt assets/course-certificate.js do listy skryptów uruchamianych na stronie.
+- W rezultacie mechanizm generowania i pobierania dokumentu nie mógł działać w opublikowanej paczce.
+
+Wprowadzone poprawki
+- przywrócono panel „Potwierdzenie ukończenia części e-learningowej”;
+- dołączono skrypt course-certificate.js do kurs-fake-news.html;
+- zmieniono numer wersji skryptu, aby przeglądarka nie użyła starej kopii z pamięci podręcznej;
+- dodano ręczny link pobierania, który pojawia się po utworzeniu PDF i działa jako zabezpieczenie, gdy przeglądarka zablokuje pobieranie automatyczne;
+- wydłużono czas dostępności wygenerowanego pliku w przeglądarce;
+- brak pojedynczego logo nie przerywa już tworzenia całego dokumentu.
+
+Weryfikacja
+- zachowano 111 sekcji i 5 modułów kursu;
+- potwierdzono obecność panelu, przycisku pobierania, linku awaryjnego i skryptu generującego PDF;
+- składnia course-certificate.js przeszła kontrolę node --check;
+- w rzeczywistym silniku Chromium uruchomiono mechanizm z warunkami 100%, danymi uczestnika i czterema formularzami oznaczonymi jako wykonane;
+- pobrano plik potwierdzenie-ukonczenia-kursu-jan-kowalski.pdf;
+- wygenerowany dokument miał format PDF 1.4, jedną stronę A4 i rozmiar 269 484 bajtów;
+- konsola testowa nie zgłosiła błędów.

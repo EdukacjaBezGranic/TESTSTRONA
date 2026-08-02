@@ -336,3 +336,46 @@
 .course-certificate-helper.is-error{padding:12px 14px;border:1px solid #d9a6a6;border-radius:10px;background:#fff1f1;color:#7d2424}
 .course-certificate-helper.is-success{padding:12px 14px;border:1px solid #9bcab9;border-radius:10px;background:#eef9f4;color:#195d49}
 @media(max-width:700px){.course-certificate-print{width:100%}}
+
+/* Obowiązkowe potwierdzenie RODO */
+.course-privacy-consent{display:grid;grid-template-columns:auto 1fr;gap:12px;margin:14px 0;padding:14px 16px;border:1px solid rgba(213,126,34,.42);border-radius:18px;background:rgba(255,241,220,.92);backdrop-filter:blur(8px);transition:background .25s ease,border-color .25s ease,box-shadow .25s ease}
+.course-privacy-consent__icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#d57e22;color:#fff;font-size:1.05rem;font-weight:900;transition:background .25s ease}
+.course-privacy-consent__kicker{margin:0 0 4px;color:#a85f18;font-size:.76rem;font-weight:900;letter-spacing:.08em;transition:color .25s ease}
+.course-privacy-consent.is-complete{border-color:rgba(40,118,95,.34);background:rgba(238,249,244,.9);box-shadow:0 10px 26px rgba(29,117,94,.08)}
+.course-privacy-consent.is-complete .course-privacy-consent__icon{background:#1d755e}
+.course-privacy-consent.is-complete .course-privacy-consent__kicker{color:#1d755e}
+.course-privacy-consent h3{margin:0 0 4px;font-size:1.05rem;color:#173f59}
+.course-privacy-consent p{margin:0 0 7px;line-height:1.4;font-size:.9rem}
+.course-privacy-open{margin:2px 0 9px;padding:0;border:0;background:transparent;color:#155f7f;font:inherit;font-weight:850;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.course-privacy-confirm{display:flex;align-items:flex-start;gap:9px;padding:10px 12px;border:1px solid #b9d5cb;border-radius:12px;background:#fff;color:#244b5e;font-weight:750;line-height:1.45;cursor:pointer}
+.course-privacy-confirm input{flex:0 0 auto;width:20px;height:20px;margin-top:1px;accent-color:#1d755e}
+.course-privacy-status{margin:10px 0 0!important;color:#6c5727;font-size:.84rem;font-weight:700}
+.course-privacy-status.is-complete{color:#1d755e}
+[data-enter-course]:disabled{cursor:not-allowed;opacity:.5;filter:grayscale(.3)}
+.course-privacy-modal[hidden]{display:none!important}
+.course-privacy-modal{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:20px}
+.course-privacy-modal__backdrop{position:absolute;inset:0;background:rgba(8,25,36,.68);backdrop-filter:blur(7px)}
+.course-privacy-modal__panel{position:relative;display:grid;grid-template-rows:auto minmax(0,1fr) auto;width:min(900px,100%);max-height:min(88vh,920px);overflow:hidden;border:1px solid rgba(255,255,255,.34);border-radius:22px;background:rgba(250,252,252,.96);box-shadow:0 28px 90px rgba(0,0,0,.36)}
+.course-privacy-modal__header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;border-bottom:1px solid #d5e1e6;background:rgba(255,255,255,.78)}
+.course-privacy-modal__header p{margin:0 0 4px;color:#1d755e;font-size:.72rem;font-weight:900;letter-spacing:.08em}
+.course-privacy-modal__header h2{margin:0;color:#173f59;font-size:1.55rem}
+.course-privacy-modal__close{display:grid;place-items:center;width:42px;height:42px;border:1px solid #bfd0d8;border-radius:50%;background:#fff;color:#234f69;font-size:1.7rem;cursor:pointer}
+.course-privacy-modal__content{overflow-y:auto;padding:24px 28px;color:#294b5d;line-height:1.65;scrollbar-gutter:stable}
+.course-privacy-modal__content h3{margin:24px 0 7px;color:#173f59;font-size:1.02rem}
+.course-privacy-modal__content h3:first-of-type{margin-top:10px}
+.course-privacy-modal__content p{margin:0 0 12px}
+.course-privacy-modal__footer{padding:16px 24px;border-top:1px solid #d5e1e6;background:rgba(255,255,255,.82);text-align:right}
+body.has-privacy-modal{overflow:hidden}
+@media(max-width:700px){.course-privacy-consent{grid-template-columns:1fr}.course-privacy-consent__icon{width:44px;height:44px}.course-privacy-modal{padding:8px}.course-privacy-modal__panel{max-height:94vh;border-radius:16px}.course-privacy-modal__header,.course-privacy-modal__content,.course-privacy-modal__footer{padding-left:16px;padding-right:16px}.course-privacy-modal__footer .primary-action{width:100%}}
+
+.course-privacy-confirm:has(input:disabled){opacity:.62;cursor:not-allowed}.course-privacy-confirm input:disabled{cursor:not-allowed}.course-privacy-modal__read-hint{margin:0!important;padding:10px 14px;background:#edf7f3;color:#1d755e;font-weight:800;text-align:center;border-top:1px solid #cfe2da}
+
+
+/* 2026-08-02 — kompaktowa sekcja warunków certyfikatu i modal */
+.course-certificate-rule--compact{align-items:center;padding:18px 22px!important;min-height:auto}
+.course-certificate-rule--compact>div>p{margin:.25rem 0 .6rem}
+.course-certificate-rules-open{padding:0;border:0;background:transparent;color:#155f7f;font:inherit;font-weight:850;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.course-certificate-rules-modal__content ol{margin:12px 0 22px;padding-left:1.4rem}
+.course-certificate-rules-modal__content li{margin:.65rem 0;padding-left:.25rem}
+.course-certificate-rules-modal__content h3{margin-top:24px}
+@media(max-width:700px){.course-certificate-rule--compact{padding:16px!important}}

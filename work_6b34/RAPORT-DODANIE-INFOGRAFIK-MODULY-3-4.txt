@@ -1,0 +1,25 @@
+RAPORT – DODANIE INFOGRAFIK DO MODUŁÓW 3 I 4
+
+Wprowadzone zmiany:
+1. Moduł 3:
+   - „Pułapki AI” w sekcji o deepfake obrazu, filmu i głosu.
+   - „Strażnicy Prawdy” w sekcji o podszywaniu się pod osoby i instytucje.
+   - „Cyfrowy niezbędnik weryfikacji” w sekcji o ograniczaniu ryzyka oszustwa.
+2. Moduł 4:
+   - „Krytyczny Umysł” w panelu wprowadzającym.
+   - „Uwaga! To może być manipulacja” w rozwijanej części o silnych emocjach.
+   - „Procedura SIFT” we właściwej rozwijanej sekcji SIFT.
+   - „4 kroki do prawdy” w końcowym podsumowaniu zasad weryfikacji.
+3. Grafiki zoptymalizowano do formatu WebP (szerokość maks. 1600 px), aby ograniczyć rozmiar paczki.
+4. Dodano responsywne ramki, podpisy, lazy loading i teksty alternatywne.
+
+Elementy zachowane:
+- pełna treść wszystkich modułów,
+- dotychczasowe rozwijane panele i oznaczenia +/−,
+- struktura portalu i ścieżki względne zgodne z GitHub Pages,
+- Moduł 5 i wcześniejsze materiały.
+
+Weryfikacja:
+- 7/7 nowych odwołań do grafik wskazuje na istniejące pliki,
+- składnia skryptów JavaScript: poprawna (node --check),
+- grafiki mają ścieżki względne i parametr wersji cache ?v=1.

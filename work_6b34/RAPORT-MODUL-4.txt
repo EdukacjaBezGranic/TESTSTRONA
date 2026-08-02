@@ -1,0 +1,9 @@
+MODUŁ 4 – FACT-CHECKING W PRAKTYCE
+
+Zmiany:
+- dodano pełną treść z pliku „Wklejony tekst(3).txt” bez skracania treści merytorycznej,
+- podzielono materiał na równe panele i rozwijane sekcje,
+- zachowano standardowy nagłówek modułu używany w całym kursie,
+- zastosowano oznaczenia +/− przy elementach rozwijanych,
+- nie dodano ozdobnych emoji ani ikon,
+- przygotowano responsywny układ dla telefonu, tabletu i komputera.

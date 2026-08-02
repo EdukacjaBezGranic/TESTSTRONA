@@ -1,0 +1,42 @@
+RAPORT AKTUALIZACJI KURSU
+Moduł 1 – punkt 10 „PISA 2029 MAIL i AILit”
+Data: 31.07.2026
+
+BAZA
+- Użyto kompletnej paczki: PORTAL-3-GITHUB-KURS-ROZBUDOWANY-MODUL-1-PUNKT-5-2026-07-31.zip.
+- Zachowano rozbudowany punkt 5 oraz wszystkie wcześniejsze funkcje kursu.
+
+WPROWADZONE ZMIANY
+1. Obecną sekcję 10 zastąpiono rozbudowaną treścią:
+   „PISA 2029 MAIL i AILit – międzynarodowe ramy kompetencji medialnych i AI w praktyce”.
+2. Sekcja wyjaśnia:
+   - czym jest PISA 2029 MAIL i jaką funkcję pełni w kursie dla osób dorosłych;
+   - jak kompetencje MAIL przekładają się na codzienne sytuacje;
+   - czym jest AILit i jakie obejmuje cztery obszary;
+   - w których etapach obiegu informacji uczestniczy AI;
+   - jakie pytania zadawać podczas weryfikacji treści tworzonych lub przetwarzanych z udziałem AI.
+3. Dodano tabelę: sytuacja w sieci – ćwiczona umiejętność – praktyczny cel.
+4. Dodano krótkie wprowadzenie do metody SIFT jako zapowiedź treści Modułu 2.
+5. Dodano linki do oficjalnych stron OECD i Komisji Europejskiej.
+6. Zaktualizowano źródła Modułu 1 o finalną publikację AILit z 2026 roku oraz komunikat Komisji Europejskiej.
+7. Zachowano identyfikator sekcji i klucz postępu, dlatego wcześniejszy zapis ukończenia nie został przerwany.
+
+KOREKTY REDAKCYJNE
+- Zachowano pełny zakres przekazanego materiału.
+- Usunięto sformułowania techniczne i komentarze o projektowaniu treści.
+- Uporządkowano kolejność: definicja – zastosowanie – ramy AILit – cykl informacji – checklista.
+- Zastosowano polskie cudzysłowy, półpauzy i bezpośrednie instrukcje dla uczestnika.
+
+WERYFIKACJA
+- Liczba sekcji kursu: 111.
+- Unikalne klucze sekcji: 111.
+- Zduplikowane identyfikatory HTML: 0.
+- Brakujące lokalne zasoby: 0.
+- Lokalne odwołania w kursie: 121 (73 unikalne).
+- Składnia wszystkich plików JavaScript: poprawna.
+- Strona kursu zwraca HTTP 200 przez lokalny serwer.
+- Sekcję wyrenderowano z rzeczywistymi arkuszami CSS w widoku 1440 × 1000 oraz 390 × 844.
+- W renderowanym podglądzie nie wystąpiły błędy konsoli.
+
+OGRANICZENIE TESTU
+Pełna nawigacja lokalnego adresu w Playwright została zablokowana przez regułę administracyjną środowiska. Z tego powodu kontrolę wyglądu wykonano na izolowanym renderze rzeczywistej sekcji z tymi samymi arkuszami CSS. Dostępność pełnej strony i wszystkich zasobów sprawdzono oddzielnie przez lokalny serwer HTTP.

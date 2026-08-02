@@ -1,0 +1,25 @@
+Rozbudowa Modułu 4, punktu 6
+Data: 2026-07-31
+
+Podstawa:
+- najnowsza wersja kursu po rozbudowie Modułu 2, punktu 4
+- materiał użytkownika: „Moduł 4. Dyskurs publiczny, manipulacja i odporność społeczna”
+
+Wprowadzone zmiany:
+- rozszerzono tytuł punktu do: „Polityka, polaryzacja i debata publiczna – wyzwania demokracji cyfrowej”
+- rozbudowano różnicę między komunikacją demokratyczną a dezinformacją polityczną
+- dodano opis polaryzacji afektywnej i mechanizmów „my kontra oni”
+- dodano tabelę sygnałów ostrzegawczych w treściach politycznych
+- dodano ostrzeżenie dotyczące sondaży i manipulacji wykresami
+- dodano sześciostopniową procedurę analizy przekazu politycznego
+- dodano zasady uczciwego sporu demokratycznego
+- dodano wskazówki odpowiedzialnego udziału użytkownika w debacie
+- dodano pytania refleksyjne i blok „Zapamiętaj”
+
+Zakres zachowany:
+- wszystkie pozostałe sekcje i moduły
+- rozbudowane punkty Modułu 1
+- najnowsze ćwiczenia interaktywne
+- rozbudowany Moduł 2, punkt 4
+- formularze, postęp, samooceny i generowanie PDF
+- responsywność telefon/tablet oraz ujednolicone szerokości pól wprowadzających

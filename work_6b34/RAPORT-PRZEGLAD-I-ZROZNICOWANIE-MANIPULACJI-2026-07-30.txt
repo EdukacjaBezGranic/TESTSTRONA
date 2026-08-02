@@ -1,0 +1,93 @@
+RAPORT – PRZEGLĄD I ZRÓŻNICOWANIE PRZYKŁADÓW MANIPULACJI
+Kurs: „Media Literacy, Fake News i Krytyczne Myślenie”
+Data: 30.07.2026
+
+1. ZAKRES PRZEGLĄDU
+
+Przejrzano przykłady i ćwiczenia analityczne we wszystkich pięciu modułach. Weryfikacja objęła fikcyjne posty, komunikaty, nagłówki, przykłady danych, poradę zdrowotną, wypowiedzi dotyczące migracji, udziału obywatelskiego oraz materiały służące ćwiczeniu reakcji na niezweryfikowaną informację.
+
+Problemem była dominacja jednego schematu: alarmistyczny język, sugestia spisku, presja czasu i wezwanie do udostępnienia. Taki układ utrudniał pokazanie, że manipulacja może mieć spokojną, statystyczną, pozornie ekspercką albo osobistą formę.
+
+2. WPROWADZONE ZMIANY
+
+Moduł 1 – społeczny dowód słuszności
+Zmieniono ćwiczenie końcowe na przykład, w którym liczba wyświetleń, komentarzy i udostępnień zostaje przedstawiona jako dowód prawdziwości materiału. Pytania dotyczą teraz popularności mylonej z wiarygodnością oraz wzmacniania zasięgu przez algorytmy.
+
+Moduł 2 – fałszywy kontekst fotografii
+Przykład o „tajnym raporcie” zastąpiono postem wykorzystującym zdjęcie pustych półek bez daty, miejsca i autora. Ćwiczenie prowadzi do wyszukiwania obrazem, ustalenia źródła pierwotnego i sprawdzenia podpisu.
+
+Moduł 3 – dowód anegdotyczny i odwołanie do naturalności
+Poradę zdrowotną oparto na osobistym świadectwie: poprawa u jednej osoby zostaje uogólniona na wszystkich. Ćwiczenie pokazuje dowód anegdotyczny, przekonanie, że „naturalne” znaczy bezpieczne, oraz brak informacji o ryzyku.
+
+Moduł 3 – konflikt interesów i nadmierne uogólnienie wyników
+Przykład dotyczący AI zastąpiono ankietą przeprowadzoną przez producenta narzędzia. Uczestnik ocenia konflikt interesów, brak informacji o próbie, różnicę między deklaracją a pomiarem oraz zbyt szeroki wniosek.
+
+Moduł 4 – procent bez wartości bazowej i nieuprawniona przyczynowość
+Alarmistyczny post o uchodźcach zastąpiono komunikatem wykorzystującym wzrost procentowy bez liczb bezwzględnych. Pytania dotyczą wielkości populacji, definicji danych, porównywalnych okresów, związku przyczynowego i uogólnienia na całą grupę.
+
+Moduł 5 – pogłoska i rzekome źródło wewnętrzne
+Powtórzony komunikat o likwidacji urzędów zastąpiono informacją przekazaną przez „znajomą pracującą w urzędzie”. Ćwiczenie pokazuje, że bliskość rzekomego źródła nie zastępuje oficjalnego komunikatu.
+
+Moduł 5 – cherry-picking i przeniesienie wyniku lokalnego na cały kraj
+Post budujący całkowitą nieufność zastąpiono przykładem spadku frekwencji w jednej gminie, z którego autor wyprowadza wniosek o całym kraju i bezsensowności głosowania. Ćwiczenie wymaga porównania danych lokalnych, krajowych i wieloletnich.
+
+3. ZACHOWANE PRZYKŁADY
+
+Pozostawiono przykłady, które realizują odrębne funkcje dydaktyczne:
+- strach i presja czasu w przekazie dotyczącym dzieci;
+- podszywanie się pod komunikat instytucjonalny w ćwiczeniu SIFT;
+- różne ramy interpretacyjne w nagłówkach;
+- procent bez liczby początkowej i problem doboru próby;
+- pojedynczy przypadek wykorzystany do stereotypizacji grupy;
+- atak personalny zamiast rozmowy o danych.
+
+4. ZESTAW RODZAJÓW MANIPULACJI W KURSIE
+
+Po zmianach kurs obejmuje między innymi:
+- społeczny dowód słuszności;
+- mylenie popularności z wiarygodnością;
+- wyzwalacze emocjonalne i presję czasu;
+- podszywanie się pod instytucję;
+- fałszywy kontekst zdjęcia;
+- stronnicze ramowanie tematu;
+- mieszanie faktu, opinii i interpretacji;
+- procent bez wartości bazowej;
+- niejasny dobór próby;
+- mylenie korelacji z przyczynowością;
+- dowód anegdotyczny;
+- odwołanie do „naturalności”;
+- konflikt interesów;
+- nieuprawnione uogólnienie;
+- stereotypizację grupy;
+- pogłoskę i rzekome źródło wewnętrzne;
+- cherry-picking danych;
+- atak ad personam;
+- zniechęcanie do udziału obywatelskiego na podstawie zbyt słabego dowodu.
+
+5. ELEMENTY ZACHOWANE
+
+Nie zmieniono:
+- liczby i kolejności 111 sekcji;
+- struktury pięciu modułów;
+- zapisu lokalnego odpowiedzi;
+- 338 unikalnych kluczy zapisu;
+- samoocen i ich interpretacji;
+- generowania kart pracy PDF;
+- eksportu i importu postępu;
+- mechanizmu końcowego dokumentu do weryfikacji certyfikatu;
+- formularzy Google Forms i konfiguracji linków;
+- grafik, filmów, logotypów i pozostałych stron portalu.
+
+6. WERYFIKACJA
+
+- 111 sekcji kursu – zachowane;
+- 5 modułów – zachowane;
+- 338 elementów zapisujących odpowiedzi – wszystkie klucze unikalne;
+- brak zduplikowanych identyfikatorów HTML;
+- brak brakujących lokalnych zasobów;
+- składnia wszystkich lokalnych plików JavaScript – poprawna;
+- skrypt końcowego PDF – zachowany bez zmian;
+- nowe pytania i listy wyboru – sprawdzone w renderowanym widoku desktopowym i mobilnym;
+- wykonano interakcję z listą wyboru i potwierdzono zmianę wartości bez błędów konsoli.
+
+Pełna nawigacja Chromium do lokalnego serwera była blokowana przez politykę środowiska testowego. Widoki sprawdzono na rzeczywistej strukturze HTML i arkuszach CSS przez renderowanie bezpośrednie; integralność skryptów i zasobów zweryfikowano oddzielnie.

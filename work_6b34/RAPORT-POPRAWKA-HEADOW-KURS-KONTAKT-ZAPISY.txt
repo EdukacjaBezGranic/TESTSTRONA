@@ -1,0 +1,36 @@
+POPRAWKA NAGŁÓWKÓW PODSTRON — 24.07.2026
+
+Zakres zmian:
+1. Kursy online
+- wykorzystano dostarczoną ilustrację fake news jako tło nagłówka;
+- nagłówek skrócono i przebudowano;
+- usunięto ciężki, granatowy filtr;
+- tekst umieszczono na jasnym, półprzezroczystym panelu;
+- uniknięto powtórzenia tytułu kursu bezpośrednio pod nagłówkiem.
+
+2. Kontakt
+- zmniejszono zaciemnienie zdjęcia;
+- treść pozostaje czytelna na subtelnym, półprzezroczystym panelu;
+- zmniejszono panel logo WUP i wysokość całego nagłówka.
+
+3. Zapisy na szkolenia
+- zmniejszono zaciemnienie zdjęcia;
+- zmniejszono logo projektu wewnątrz nagłówka;
+- skrócono wysokość nagłówka i rozjaśniono panel tekstowy.
+
+Elementy zachowane:
+- treść stron i podstron;
+- nawigacja oraz logotypy finansowania;
+- formularze, odnośniki, moduły kursu i pozostałe funkcje;
+- wersje desktopowe, tabletowe i mobilne.
+
+Weryfikacja:
+- 35 plików HTML przeanalizowanych;
+- 310 lokalnych odwołań zweryfikowanych;
+- brak brakujących zasobów;
+- 20 plików JavaScript sprawdzonych składniowo;
+- składnia bloków CSS sprawdzona;
+- podglądy nagłówków wykonane w rozmiarze 1440 × 900 oraz 390 × 844 przy użyciu silnika WeasyPrint.
+
+Ograniczenie testu:
+- wbudowany Chromium w środowisku nie pozwolił na nawigację do lokalnego serwera ani plików z powodu blokady administratora. Podgląd wykonano silnikiem WeasyPrint; interakcje JavaScript nie były częścią tej zmiany.

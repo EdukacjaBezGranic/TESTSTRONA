@@ -1,0 +1,30 @@
+Ujednolicenie szerokości pól wprowadzających kurs
+Data: 2026-07-31
+
+Zakres zmiany:
+- blok otwierający kurs: „EDUKACJA BEZ GRANIC · WYDANIE SZKOLENIOWE 2026”
+- kafle pięciu modułów w części otwierającej
+- panel „Program szkolenia” z logotypami WUP i Areadne
+- panel „ZANIM ROZPOCZNIESZ – Formularz uczestnika i test wstępny”
+- panel „PRYWATNY ZESZYT UCZESTNIKA”
+
+Wprowadzona zasada:
+- wspólny maksymalny kontener: 1320 px
+- jednakowe lewe i prawe krawędzie wszystkich wymienionych pól
+- desktop: 1320 px przy ekranie 1440 px
+- tablet pionowy 768 px: 740 px
+- tablet poziomy 1024 px: 988 px
+- telefon pionowy 390 px: 370 px
+- telefon poziomy 844 px: 816 px
+
+Elementy zachowane:
+- pełnoszerokościowe tło headu kursu
+- odrębny wygląd każdego panelu
+- responsywność pion/poziom
+- logika kursu, postęp, formularze, ćwiczenia i generowanie PDF
+
+Weryfikacja:
+- wszystkie pięć kontenerów ma identyczne współrzędne lewej i prawej krawędzi w pięciu sprawdzonych viewportach
+- brak poziomego rozszerzenia strony
+- zachowano 111 sekcji kursu, w tym 16 sekcji Modułu 1
+- brak brakujących lokalnych zasobów

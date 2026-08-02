@@ -1,0 +1,28 @@
+{
+  "section_count": 111,
+  "duplicate_ids": [],
+  "missing_assets": [],
+  "first_image_refs": 2,
+  "second_image_refs": 2,
+  "technical_phrase_present": false,
+  "first_figure_has_caption": false,
+  "second_figure_has_caption": false,
+  "js_syntax": {
+    "assets/course-v2.js": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "assets/course-workbook.js": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "assets/course-forms.js": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "assets/course-self-assessment.js": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  }
+}

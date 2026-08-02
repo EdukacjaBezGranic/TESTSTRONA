@@ -1,0 +1,53 @@
+{
+  "source_docx": "Podrecznik_Moduly_1_5_STYL_UE_Z_GRAFIKAMI(1).docx",
+  "modules": [
+    {
+      "number": 1,
+      "title": "Edukacja medialna w epoce cyfrowej",
+      "subtitle": "Ekosystemy informacyjne, platformy, algorytmy i treści przetwarzane z udziałem sztucznej inteligencji",
+      "sections": 16,
+      "tables": 20,
+      "docx_images": 4
+    },
+    {
+      "number": 2,
+      "title": "Fake news, manipulacja i stronniczość",
+      "subtitle": "Nieład informacyjny, mechanizmy emocjonalne, błędy poznawcze, weryfikacja oraz treści syntetyczne",
+      "sections": 22,
+      "tables": 24,
+      "docx_images": 5
+    },
+    {
+      "number": 3,
+      "title": "Krytyczne myślenie i podejmowanie decyzji",
+      "subtitle": "Ocena źródeł i dowodów, dane, narracje, błędy rozumowania, model CLEAR oraz odpowiedzialne korzystanie z AI",
+      "sections": 27,
+      "tables": 33,
+      "docx_images": 3
+    },
+    {
+      "number": 4,
+      "title": "Tematy społecznie wrażliwe i wpływ mediów",
+      "subtitle": "Narracje medialne, polityka, migracja, wojna, język, obrazy, wartości demokratyczne i etyczne udostępnianie treści",
+      "sections": 22,
+      "tables": 21,
+      "docx_images": 2
+    },
+    {
+      "number": 5,
+      "title": "Odporność informacyjna, dobrostan i zaangażowanie demokratyczne",
+      "subtitle": "Przeciążenie informacyjne, doomscrolling, emocje, zdrowe nawyki, odpowiedzialny dialog i sprawczość w środowisku z udziałem AI",
+      "sections": 24,
+      "tables": 23,
+      "docx_images": 4
+    }
+  ],
+  "total_sections": 111,
+  "legacy_media_assignments": 33,
+  "course_files": [
+    "kurs-fake-news.html",
+    "assets/course-v2.css",
+    "assets/course-v2.js",
+    "assets/course-media/docx/"
+  ]
+}

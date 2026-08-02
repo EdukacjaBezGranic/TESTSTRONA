@@ -1,0 +1,16 @@
+{
+  "sections_total": 111,
+  "module1_sections": 16,
+  "duplicate_ids": [],
+  "missing_assets": [],
+  "bad_module1_images": [],
+  "local_refs": 67,
+  "checks": {
+    "5-expanded": true,
+    "7-expanded": true,
+    "7-video": true,
+    "10-expanded": true,
+    "12-expanded": true,
+    "13-new-exercises": true
+  }
+}

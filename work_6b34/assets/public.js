@@ -1,0 +1,114 @@
+// Wspólny pasek nawigacji — jedna kolejność na wszystkich podstronach.
+const publicNavItems = [
+  { href: 'index.html', label: 'Start' },
+  { href: 'nasze-szkolenia.html', label: 'Nasze szkolenia' },
+  { href: 'zapisy.html', label: 'Zapisy na szkolenia', className: 'nav-signups' },
+  { href: 'kursy-online.html', label: 'Kursy online', className: 'nav-online' },
+  { href: 'kontakt.html', label: 'Kontakt' }
+];
+
+function normalizePublicNavigation(nav) {
+  if (!nav) return;
+  const fileName = window.location.pathname.split('/').pop() || 'index.html';
+  const activeHref = fileName === 'zapisy-kalendarz.html'
+    ? 'zapisy.html'
+    : fileName === 'kurs-fake-news.html'
+      ? 'kursy-online.html'
+      : fileName;
+
+  nav.replaceChildren(...publicNavItems.map(item => {
+    const link = document.createElement('a');
+    link.href = item.href;
+    link.textContent = item.label;
+    if (item.className) link.className = item.className;
+    if (item.href === activeHref) link.setAttribute('aria-current', 'page');
+    return link;
+  }));
+}
+
+const navToggle = document.querySelector('[data-nav-toggle]');
+const siteNav = document.querySelector('[data-site-nav]');
+normalizePublicNavigation(siteNav);
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  siteNav.addEventListener('click', event => {
+    if (!event.target.closest('a')) return;
+    siteNav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+}
+
+const revealItems = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach(item => observer.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add('is-visible'));
+}
+
+document.querySelectorAll('[data-current-year]').forEach(item => {
+  item.textContent = String(new Date().getFullYear());
+});
+
+const trainingVideoModal = document.querySelector('[data-video-modal]');
+const trainingVideoPlayer = document.querySelector('[data-video-player]');
+const trainingVideoClose = document.querySelector('[data-video-close]');
+
+function closeTrainingVideo() {
+  if (!trainingVideoModal || !trainingVideoPlayer) return;
+  trainingVideoPlayer.pause();
+  trainingVideoPlayer.removeAttribute('src');
+  trainingVideoPlayer.load();
+  trainingVideoModal.classList.remove('is-open');
+  trainingVideoModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('video-modal-open');
+}
+
+document.querySelectorAll('[data-video-src]').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    if (!trainingVideoModal || !trainingVideoPlayer) return;
+    trainingVideoPlayer.src = trigger.dataset.videoSrc;
+    trainingVideoModal.classList.add('is-open');
+    trainingVideoModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('video-modal-open');
+    trainingVideoPlayer.play().catch(() => {});
+  });
+});
+
+trainingVideoClose?.addEventListener('click', closeTrainingVideo);
+trainingVideoModal?.addEventListener('click', event => {
+  if (event.target === trainingVideoModal) closeTrainingVideo();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && trainingVideoModal?.classList.contains('is-open')) closeTrainingVideo();
+});
+
+
+// Linki do kursów używają natywnej nawigacji przeglądarki.
+document.querySelectorAll('a[data-course-open]').forEach(link => {
+  link.addEventListener('click', event => {
+    if (event.defaultPrevented) return;
+    // Bez nakładki i opóźnienia: zapobiega zawieszeniu ekranu po użyciu przycisku Wstecz.
+  });
+});
+
+// Po przywróceniu strony z pamięci przeglądarki usuń ewentualną starą nakładkę.
+window.addEventListener('pageshow', () => {
+  document.querySelectorAll('.course-opening-overlay').forEach(overlay => {
+    overlay.classList.remove('is-visible');
+    overlay.setAttribute('aria-hidden', 'true');
+  });
+});

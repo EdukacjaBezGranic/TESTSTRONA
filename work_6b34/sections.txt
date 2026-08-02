@@ -1,0 +1,1321 @@
+</div>
+<button aria-controls="siteNav" aria-expanded="false" aria-label="Otwórz menu" class="nav-toggle" data-nav-toggle="" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Główna nawigacja" class="site-nav" data-site-nav="" id="siteNav"><a href="index.html">Start</a><a aria-current="page" class="nav-online" href="kursy-online.html">Kursy online</a><a class="nav-signups" href="zapisy.html">Zapisy na szkolenia</a><a href="kontakt.html">Kontakt</a></nav>
+</div>
+</header>
+<div class="course-portal-note"><a class="nav-online" href="kursy-online.html">Kursy online</a> / Fake news, dezinformacja i krytyczne myślenie</div>
+<main>
+<div id="landing">
+<section class="hero-wrap">
+<div aria-hidden="true" class="hero-background"></div>
+<div class="container hero">
+<div class="hero-glass">
+<div class="hero-main-copy">
+<a class="course-back-link" href="kursy-online.html">← Wróć do kursów online</a>
+<h1>Fake news, dezinformacja i krytyczne myślenie</h1>
+<p>
+              Samodzielny kurs online, który pokazuje, jak oceniać wiarygodność informacji,
+              rozpoznawać manipulację, sprawdzać źródła i bezpiecznie korzystać z treści
+              publikowanych w internecie.
+            </p>
+<div class="hero-meta">
+<div class="meta-item">
+<strong>5 modułów</strong>
+<span>krótkie i praktyczne części</span>
+</div>
+<div class="meta-item">
+<strong>około 4 godzin</strong>
+<span>we własnym tempie</span>
+</div>
+<div class="meta-item">
+<strong>telefon i komputer</strong>
+<span>pełna responsywność</span>
+</div>
+</div>
+</div>
+<div class="hero-registration-request" aria-labelledby="heroRegistrationTitle">
+<span class="hero-registration-kicker">Przed rozpoczęciem</span>
+<h2 id="heroRegistrationTitle">Zanim rozpoczniesz kurs</h2>
+<p>Prosimy o wypełnienie krótkiego formularza rejestracyjnego, który zawiera również ankietę oraz test wstępny.</p>
+<div class="hero-registration-facts" aria-label="Najważniejsze informacje">
+<span><strong>około 5 minut</strong><small>czas wypełnienia</small></span>
+<span><strong>bez kodu</strong><small>kurs pozostaje otwarty</small></span>
+</div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://forms.gle/7rJ6Q3eMgx7XBsLw6" rel="noopener noreferrer" target="_blank">Wypełnij formularz rejestracyjny</a>
+<button class="btn btn-secondary" onclick="startCourse()">Rozpocznij kurs</button>
+</div>
+<details class="hero-registration-details">
+<summary>Dlaczego prosimy o wypełnienie formularza?</summary>
+<div class="hero-registration-details-body">
+<p><strong>Zebrane informacje pozwolą nam:</strong></p>
+<ul>
+<li>ocenić poziom wiedzy uczestników przed rozpoczęciem szkolenia,</li>
+<li>porównać wyniki przed i po ukończeniu kursu,</li>
+<li>ocenić jakość i skuteczność przygotowanych materiałów,</li>
+<li>doskonalić kolejne edycje szkolenia,</li>
+<li>prawidłowo dokumentować realizację celów i rezultatów projektu „Edukacja bez granic” w ramach programu Erasmus+.</li>
+</ul>
+<p>Kurs jest dostępny bez kodu dostępu. Będziemy jednak wdzięczni za wcześniejsze wypełnienie formularza, ponieważ zebrane odpowiedzi są niezbędne do rzetelnej oceny efektów szkolenia oraz potwierdzenia realizacji założeń projektu.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section class="section section-tight" id="o-kursie">
+<div class="container">
+<div class="section-heading">
+<h2>Jak przebiega kurs?</h2>
+<p>Po rekomendowanym wypełnieniu formularza możesz od razu rozpocząć naukę. Kurs składa się z pięciu modułów, krótkich sprawdzeń wiedzy oraz podsumowania szkolenia.</p>
+</div>
+<div class="path" id="jak-dziala">
+<div class="path-step">
+<div class="number">1</div>
+<strong>Formularz przed kursem</strong>
+<span>Wypełnij formularz rejestracyjny zawierający ankietę i test wstępny. Kurs pozostaje dostępny również bez jego uzupełnienia.</span>
+</div>
+<div class="path-step">
+<div class="number">2</div>
+<strong>Pięć modułów</strong>
+<span>Przejdź przez filmy, teksty, przykłady, ćwiczenia i krótkie sprawdzenia wiedzy.</span>
+</div>
+<div class="path-step">
+<div class="number">3</div>
+<strong>Samodzielna nauka</strong>
+<span>Ucz się we własnym tempie na komputerze, tablecie lub telefonie.</span>
+</div>
+<div class="path-step">
+<div class="number">4</div>
+<strong>Zakończenie</strong>
+<span>Wypełnij test końcowy oraz ankietę oceniającą szkolenie i przygotowane materiały.</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="course-area" id="courseArea">
+<div class="container">
+<div class="course-top">
+<div>
+<h2>Twój panel szkolenia</h2>
+<p>Otwieraj moduły, uzupełniaj materiały i testuj układ kursu.</p>
+</div>
+</div>
+<div class="modules" id="modulesGrid"></div>
+</div>
+</section>
+<section class="module-view" id="moduleView">
+<div class="container">
+<div class="module-header">
+<button class="back-link" onclick="showDashboard()">← Wróć do panelu</button>
+<h2 id="moduleTitle">Tytuł modułu</h2>
+<p id="moduleDescription">Opis modułu.</p>
+</div>
+<div class="module-content">
+<div class="content-column">
+<article class="content-block" id="m1IntroVideo">
+<h3><span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span></h3>
+<div class="m1-video-wrap">
+<video aria-label="Film wprowadzający do Modułu 1" controls="" playsinline="" preload="metadata">
+<source src="assets/video/film-modul-1.mp4?v=1" type="video/mp4"/>
+Twoja przeglądarka nie obsługuje odtwarzania filmu. <a href="assets/video/film-modul-1.mp4?v=1">Pobierz film</a>.
+</video>
+</div>
+</article>
+<div class="course-infographic" id="moduleInfographic">
+<figure>
+<a href="assets/img/chaos-medialny-infografika.jpg" id="moduleInfographicLink" rel="noopener" target="_blank">
+<img alt="Infografika: Chaos medialny – jak zrozumieć i przetrwać nieład informacyjny" id="moduleInfographicImage" loading="lazy" src="assets/img/chaos-medialny-infografika.jpg"/>
+</a>
+<figcaption id="moduleInfographicCaption"><strong>Infografika: Nieład informacyjny.</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.</figcaption>
+</figure>
+</div>
+<div id="module1Supplement">
+<section class="lesson-section information-disorder-section" id="chaos-medialny">
+<div class="section-heading">
+<span class="section-kicker">Nieład informacyjny</span>
+<h2>Chaos medialny – dlaczego termin „fake news” nie wystarcza?</h2>
+<p class="section-lead">Rozwiń wybrany punkt, aby poznać najważniejsze przyczyny i konsekwencje chaosu informacyjnego.</p>
+</div>
+<details class="course-accordion accent-blue" open="">
+<summary>
+<span class="accordion-number">01</span>
+<span>
+<strong>Czym jest chaos medialny?</strong>
+<small>Nieład informacyjny i jego wpływ na odbiorcę</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<p><strong>Chaos medialny</strong> (często nazywany również <strong>nieładem informacyjnym</strong> – ang. <em>information disorder</em>) to stan bezprecedensowego zanieczyszczenia współczesnego ekosystemu informacyjnego, w którym odbiorca jest poddawany ciągłej presji „tsunami” bodźców z wielu kanałów komunikacji.</p>
+<figure class="accordion-infographic">
+<a href="assets/img/chaos-medialny.jpg?v=4" rel="noopener" target="_blank">
+<img alt="Infografika: Chaos informacyjny i jego wpływ na odbiorcę" loading="lazy" src="assets/img/chaos-medialny.jpg?v=4"/>
+</a>
+<figcaption><strong>Infografika:</strong> Chaos informacyjny i jego wpływ na odbiorcę.</figcaption>
+</figure>
+<p>Zjawisko to sprawia, że odróżnienie prawdy od fałszu staje się systemowo trudne, co prowadzi do <strong>destabilizacji debaty publicznej</strong>, polaryzacji społeczeństwa i osłabienia procesów demokratycznych.</p>
+</div>
+</details>
+<details class="course-accordion accent-purple">
+<summary>
+<span class="accordion-number">02</span>
+<span>
+<strong>Dlaczego „fake news” to zbyt mało?</strong>
+<small>Pięć powodów, dla których nauka odchodzi od tego terminu</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/dlaczego-fake-news-to-za-malo.jpg?v=5" rel="noopener" target="_blank">
+<img alt="Infografika: Dlaczego termin fake news to za mało" loading="lazy" src="assets/img/dlaczego-fake-news-to-za-malo.jpg?v=5"/>
+</a>
+<figcaption><strong>Infografika:</strong> Dlaczego termin „fake news” nie opisuje całego chaosu informacyjnego.</figcaption>
+</figure>
+<div class="mini-card-grid">
+<article class="mini-card">
+<h3>Sprzeczność wewnętrzna</h3>
+<p>Wielu badaczy uznaje termin „fake news” za <strong>oksymoron</strong>. Jeśli treść jest sfałszowana, nie stanowi wiadomości dziennikarskiej opartej na standardach rzetelności.</p>
+</article>
+<article class="mini-card">
+<h3>Konotacje słowa „informacja”</h3>
+<p>W języku polskim „informacja” kojarzy się z prawdziwością. Nazywanie treści dezinformacyjnej informacją może błędnie ją legitymizować.</p>
+</article>
+<article class="mini-card">
+<h3>Upolitycznienie</h3>
+<p>Pojęcie stało się narzędziem dyskredytowania mediów i oponentów, nawet wtedy, gdy ich przekaz jest zgodny z faktami.</p>
+</article>
+<article class="mini-card">
+<h3>Brak precyzji</h3>
+<p>Termin nie oddaje pełnej złożoności zjawiska. Dlatego stosuje się triadę: misinformacja, dezinformacja i malinformacja.</p>
+</article>
+<article class="mini-card">
+<h3>Naśladownictwo formy</h3>
+<p>„Fake news” sugeruje głównie treści stylizowane na news. Tymczasem chaos informacyjny obejmuje też memy, deepfake’i, zdjęcia i teorie spiskowe.</p>
+</article>
+</div>
+</div>
+</details>
+<details class="course-accordion accent-orange">
+<summary>
+<span class="accordion-number">03</span>
+<span>
+<strong>Co warto zapamiętać?</strong>
+<small>Najważniejszy wniosek przed przejściem dalej</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<div class="remember-box">
+<strong>Walka z chaosem informacyjnym wymaga odejścia od sloganów</strong>
+<p>Kluczowe są: krytyczna analiza źródeł, rozumienie intencji nadawcy oraz rozpoznawanie mechanizmów wykorzystywanych przez twórców szkodliwych treści.</p>
+</div>
+</div>
+</details>
+</section>
+<section class="lesson-section glossary-section" id="slownik-pojec">
+<div class="section-heading">
+<span class="section-kicker">Słownik modułu</span>
+<h2>Kluczowe pojęcia i mechanizmy nieładu informacyjnego</h2>
+<p class="section-lead">Każdy blok możesz rozwinąć osobno. Dzięki temu łatwiej wrócisz do konkretnego zagadnienia.</p>
+</div>
+<details class="course-accordion accent-teal" open="">
+<summary>
+<span class="accordion-number">I</span>
+<span>
+<strong>Kluczowe pojęcia nieładu informacyjnego</strong>
+<small>Dezinformacja, misinformacja, malinformacja i fake news</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<div style="margin-bottom:24px;text-align:center;">
+<img alt="Kluczowe pojęcia nieładu informacyjnego" src="assets/img/kluczowe-pojecia-nieladu-informacyjnego.jpeg" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.15);"/>
+</div>
+<dl class="glossary-list">
+<div><dt>Dezinformacja <span>(disinformation)</span></dt><dd>Celowe i świadome tworzenie oraz rozpowszechnianie fałszywych, zmanipulowanych lub wyrwanych z kontekstu treści. Jej celem jest wprowadzenie odbiorców w błąd, wywołanie określonych reakcji społecznych albo osiągnięcie korzyści politycznych, ekonomicznych lub wizerunkowych.</dd></div>
+<div><dt>Misinformacja <span>(misinformation)</span></dt><dd>Mylne lub nieprawdziwe informacje rozpowszechniane bez złej intencji, często wskutek błędu, pośpiechu lub braku wiedzy.</dd></div>
+<div><dt>Malinformacja <span>(malinformation)</span></dt><dd>Udostępnianie prawdziwych informacji w zmienionym lub zafałszowanym kontekście albo z intencją wyrządzenia szkody.</dd></div>
+<div><dt>Fake news</dt><dd>Treść przedstawiana jako fakt, choć niezgodna z prawdą, często naśladująca formę rzetelnego dziennikarstwa.</dd></div>
+</dl>
+</div>
+</details>
+<details class="course-accordion accent-pink">
+<summary>
+<span class="accordion-number">II</span>
+<span>
+<strong>Mechanizmy i techniki manipulacji</strong>
+<small>Deepfake, clickbait, bańka informacyjna, postprawda i prebunking</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/mechanizmy-techniki.jpg" rel="noopener" target="_blank">
+<img alt="Deepfake, clickbait, bańka informacyjna, postprawda i prebunking." loading="lazy" src="assets/img/mechanizmy-techniki.jpg"/>
+</a>
+<figcaption><strong>Infografika:</strong> Deepfake, clickbait, bańka informacyjna, postprawda i prebunking.</figcaption>
+</figure>
+<dl class="glossary-list">
+<div><dt>Deepfake</dt><dd>Materiał wideo, obraz lub nagranie audio wygenerowane albo zmodyfikowane przez sztuczną inteligencję tak, aby imitować prawdziwą osobę lub sytuację.</dd></div>
+<div><dt>Clickbait</dt><dd>Sensacyjny nagłówek, miniatura lub treść zaprojektowana tak, aby wzbudzić ciekawość i skłonić użytkownika do kliknięcia.</dd></div>
+<div><dt>Bańka informacyjna / komora echa</dt><dd>Zamknięcie użytkownika w jednolitym środowisku informacyjnym, często wzmacnianym przez algorytmy.</dd></div>
+<div><dt>Postprawda</dt><dd>Sytuacja, w której fakty obiektywne mają mniejszy wpływ na opinię publiczną niż emocje i osobiste przekonania.</dd></div>
+<div><dt>Prebunking</dt><dd>Technika prewencyjna polegająca na wcześniejszym pokazaniu odbiorcom schematów działania dezinformacji.</dd></div>
+</dl>
+</div>
+</details>
+<details class="course-accordion accent-green">
+<summary>
+<span class="accordion-number">III</span>
+<span>
+<strong>Aktorzy i weryfikacja</strong>
+<small>Bot, troll, fact-checking i wiralność</small>
+</span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/aktorzy-weryfikacja.jpg" rel="noopener" target="_blank">
+<img alt="Bot, troll, fact-checking i wiralność." loading="lazy" src="assets/img/aktorzy-weryfikacja.jpg"/>
+</a>
+<figcaption><strong>Infografika:</strong> Bot, troll, fact-checking i wiralność.</figcaption>
+</figure>
+<dl class="glossary-list">
+<div><dt>Bot</dt><dd>Zautomatyzowane lub półzautomatyzowane konto, które naśladuje ludzkie zachowania i może budować sztuczne zainteresowanie tematem.</dd></div>
+<div><dt>Troll</dt><dd>Użytkownik publikujący podżegające lub obraźliwe treści w celu wywołania konfliktu i polaryzacji.</dd></div>
+<div><dt>Fact-checking</dt><dd>Wieloetapowa metoda weryfikacji konkretnych twierdzeń w wiarygodnych, najlepiej pierwotnych źródłach.</dd></div>
+<div><dt>Wiralność</dt><dd>Zdolność treści do bardzo szybkiego rozprzestrzeniania się dzięki udostępnieniom kolejnych użytkowników.</dd></div>
+</dl>
+</div>
+</details>
+
+</section>
+</div>
+<div hidden="" id="module2Supplement">
+<section class="lesson-section information-disorder-section module2-section" id="emocje-i-uwaga">
+<div class="section-heading">
+<span class="section-kicker">Emocje i uwaga</span>
+<h2>Dlaczego emocjonalne treści przyciągają uwagę?</h2>
+<p class="section-lead">Silna emocja nie oznacza, że informacja jest fałszywa. Jest jednak sygnałem, że warto zwolnić i sprawdzić przekaz przed reakcją.</p>
+</div>
+<details class="course-accordion accent-blue" open="">
+<summary>
+<span class="accordion-number">01</span>
+<span><strong>Emocja pojawia się szybciej niż analiza</strong><small>Dlaczego reagujemy, zanim dokładnie przeczytamy treść</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content emotion-analysis-content">
+<div class="emotion-intro-panel">
+<p>Silne emocje, takie jak strach, gniew, oburzenie czy euforia, mogą osłabić zdolność do spokojnego oceniania informacji. Gdy trafiamy w sieci na treść, która wywołuje gwałtowną reakcję, często odpowiadamy niemal automatycznie. Klikamy, komentujemy albo udostępniamy materiał, zanim sprawdzimy, kto go opublikował, na jakich źródłach się opiera i czy jego główna teza rzeczywiście wynika z przedstawionych danych.</p>
+<p>Nie chodzi wyłącznie o brak ostrożności. Za takim zachowaniem stoją mechanizmy psychologiczne, biologiczne i technologiczne, które wzajemnie się wzmacniają.</p>
+</div>
+<figure class="accordion-infographic emotion-featured-infographic">
+<a href="assets/img/emocja-kontra-analiza.jpg?v=2" rel="noopener" target="_blank">
+<img alt="Infografika: Emocje jako paliwo dla dezinformacji" loading="lazy" src="assets/img/emocja-kontra-analiza.jpg?v=2"/>
+</a>
+<figcaption><strong>Infografika: Emocje jako paliwo dla dezinformacji.</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.</figcaption>
+</figure>
+<div class="emotion-mechanisms">
+<article class="emotion-mechanism-card">
+<div class="emotion-mechanism-number">1</div>
+<div class="emotion-mechanism-copy">
+<h3>Szybkie myślenie przejmuje kontrolę</h3>
+<p>Silne pobudzenie emocjonalne sprzyja szybkiemu i intuicyjnemu przetwarzaniu informacji. Zamiast dokładnie analizować treść, częściej opieramy się na pierwszym wrażeniu, prostych skojarzeniach i łatwych ocenach.</p>
+<p>Taki sposób reagowania ma biologiczne uzasadnienie. W sytuacji zagrożenia człowiek powinien działać szybko, a nie prowadzić długą analizę. Problem pojawia się wtedy, gdy podobną reakcję wywołuje sensacyjny nagłówek, dramatyczne nagranie lub alarmujący post. Możemy wtedy nie zauważyć luk logicznych, sprzeczności, braku autora albo nieobecności wiarygodnych źródeł.</p>
+<p>W efekcie działamy impulsywnie – na przykład udostępniamy wiadomość, zanim przeczytamy ją w całości i ocenimy jej rzetelność.</p>
+</div>
+</article>
+<article class="emotion-mechanism-card">
+<div class="emotion-mechanism-number">2</div>
+<div class="emotion-mechanism-copy">
+<h3>Przeglądamy treści pobieżnie</h3>
+<p>Internet dostarcza więcej informacji, niż jesteśmy w stanie dokładnie przetworzyć. Przechodzimy od posta do posta, zatrzymując się głównie na nagłówku, grafice i pierwszych zdaniach tekstu.</p>
+<p>Twórcy dezinformacji wykorzystują ten nawyk. Konstruują przekazy tak, aby odwoływały się do lęku, oburzenia, uprzedzeń albo silnych przekonań odbiorców. Stosują wielkie litery, wykrzykniki, dramatyczne sformułowania oraz komunikaty sugerujące, że trzeba zareagować natychmiast.</p>
+<p>Tak działa clickbait. Jego zadaniem jest wywołanie reakcji i skłonienie do kliknięcia, a nie rzetelne przedstawienie treści. Zdarza się, że sam artykuł nie potwierdza tezy zawartej w tytule albo opisuje sytuację znacznie mniej alarmującą, niż sugeruje nagłówek.</p>
+<p>Jeżeli odbiorca reaguje wyłącznie na tytuł, może przekazać dalej materiał, którego właściwie nie przeczytał.</p>
+</div>
+</article>
+<article class="emotion-mechanism-card">
+<div class="emotion-mechanism-number">3</div>
+<div class="emotion-mechanism-copy">
+<h3>Obraz wywołuje reakcję szybciej niż tekst</h3>
+<p>Zdjęcia i nagrania oddziałują bezpośrednio na emocje. Dramatyczna fotografia może wzbudzić lęk, współczucie albo gniew, zanim zaczniemy zastanawiać się nad jej pochodzeniem.</p>
+<p>Informacje wizualne przetwarzamy szybko i całościowo. Z tego powodu obraz często wydaje się bardziej przekonujący niż opis. Widzimy fotografię i odruchowo traktujemy ją jak dowód, mimo że może pochodzić z innego miejsca, przedstawiać wydarzenie sprzed kilku lat albo zostać cyfrowo zmodyfikowana.</p>
+<p>Sama fotografia może być prawdziwa, a fałszywy może być jej podpis. Dlatego przed udostępnieniem materiału trzeba sprawdzić, kiedy powstał, co przedstawia i czy nie został wyrwany z pierwotnego kontekstu.</p>
+</div>
+</article>
+<article class="emotion-mechanism-card">
+<div class="emotion-mechanism-number">4</div>
+<div class="emotion-mechanism-copy">
+<h3>Działanie zmniejsza poczucie niepewności</h3>
+<p>Informacje o zagrożeniu, kryzysie lub spisku mogą wywołać niepokój i poczucie utraty kontroli. Udostępnienie wiadomości jako „ważnego ostrzeżenia” daje chwilowe wrażenie, że robimy coś pożytecznego. Ostrzegamy innych, reagujemy na problem i próbujemy uporządkować niejasną sytuację.</p>
+<p>Takie działanie może zmniejszyć napięcie, ale nie oznacza, że informacja została sprawdzona. Fałszywe treści bywają rozpowszechniane w dobrej wierze, ponieważ samo przekazanie wiadomości daje poczucie wpływu.</p>
+<p>Dlatego komunikaty typu „przekaż dalej”, „ostrzeż rodzinę” lub „udostępnij, zanim usuną” są tak skuteczne. Łączą silną emocję z natychmiastowym poleceniem działania.</p>
+</div>
+</article>
+<article class="emotion-mechanism-card">
+<div class="emotion-mechanism-number">5</div>
+<div class="emotion-mechanism-copy">
+<h3>Reakcje innych wpływają na naszą ocenę</h3>
+<p>Na sposób odbioru informacji oddziałuje również zachowanie grupy. Jeżeli sensacyjny post został wielokrotnie udostępniony, zebrał setki komentarzy albo wywołał oburzenie wśród znajomych, możemy uznać, że musi być prawdziwy.</p>
+<p>To społeczny dowód słuszności. Obserwując reakcje innych, zakładamy, że ktoś wcześniej sprawdził informację albo wie o sprawie więcej. W rzeczywistości każda kolejna osoba mogła jedynie powtórzyć niesprawdzony przekaz.</p>
+<p>Mechanizm ten działa szczególnie silnie w bańkach informacyjnych, gdzie użytkownicy mają podobne poglądy i wzajemnie wzmacniają swoje reakcje. Im lepiej treść pasuje do przekonań grupy, tym mniejsza może być gotowość do jej samodzielnej weryfikacji.</p>
+</div>
+</article>
+</div>
+</div>
+</details>
+<details class="course-accordion accent-orange">
+<summary>
+<span class="accordion-number">02</span>
+<span><strong>Jakie emocje są najczęściej wykorzystywane?</strong><small>Strach, gniew, oburzenie, ciekawość i współczucie</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/emocje-paliwo-dezinformacji.jpg" rel="noopener" target="_blank">
+<img alt="Infografika: Emocje wykorzystywane w dezinformacji" loading="lazy" src="assets/img/emocje-paliwo-dezinformacji.jpg"/>
+</a>
+<figcaption><strong>Infografika:</strong> Emocje najczęściej wykorzystywane do zwiększania zasięgu dezinformacji.</figcaption>
+</figure>
+<div class="mini-card-grid">
+<article class="mini-card"><h3>Strach</h3><p>Skłania do szybkiego działania i szukania ochrony. Często pojawia się w treściach o zdrowiu, bezpieczeństwie i utracie pieniędzy.</p></article>
+<article class="mini-card"><h3>Gniew i oburzenie</h3><p>Wzmacniają potrzebę publicznego opowiedzenia się po jednej stronie oraz ukarania osoby lub grupy przedstawionej jako winna.</p></article>
+<article class="mini-card"><h3>Zaskoczenie</h3><p>Przyciąga uwagę obietnicą ujawnienia czegoś niezwykłego, ukrywanego lub rzekomo przemilczanego przez media.</p></article>
+<article class="mini-card"><h3>Ciekawość</h3><p>Jest podstawą clickbaitu. Odbiorca otrzymuje fragment informacji i odczuwa potrzebę poznania brakującego szczegółu.</p></article>
+<article class="mini-card"><h3>Współczucie</h3><p>Może zostać wykorzystane w fałszywych zbiórkach, zmanipulowanych historiach i apelach pozbawionych danych pozwalających na weryfikację.</p></article>
+</div>
+</div>
+</details>
+<details class="course-accordion accent-teal">
+<summary>
+<span class="accordion-number">03</span>
+<span><strong>Sygnały ostrzegawcze w języku przekazu</strong><small>Presja czasu, wielkie litery, wykrzykniki i wezwanie do natychmiastowej reakcji</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content">
+<figure class="accordion-infographic">
+<a href="assets/img/sygnaly-ostrzegawcze-jezyk.jpg" rel="noopener" target="_blank">
+<img alt="Infografika: Sygnały ostrzegawcze w języku przekazu" loading="lazy" src="assets/img/sygnaly-ostrzegawcze-jezyk.jpg"/>
+</a>
+<figcaption><strong>Infografika:</strong> Najczęściej wykorzystywane sygnały ostrzegawcze w języku przekazu.</figcaption>
+</figure>
+<ul class="module2-check-list">
+<li>„Udostępnij, zanim usuną!”</li>
+<li>„Media nigdy ci tego nie powiedzą.”</li>
+<li>„PILNE! Każdy musi to wiedzieć.”</li>
+<li>„Tylko dziś możesz uniknąć zagrożenia.”</li>
+<li>„Jeśli milczysz, zgadzasz się na krzywdę.”</li>
+</ul>
+<p>Taki język nie jest automatycznym dowodem fałszu, ale ma ograniczyć czas na refleksję i zwiększyć prawdopodobieństwo impulsywnej reakcji.</p>
+<div class="audio-summary-box">
+<button class="btn btn-primary" onclick="this.style.display='none';this.nextElementSibling.hidden=false;this.nextElementSibling.play()" type="button">Posłuchaj podsumowania</button>
+<audio controls="" hidden="" preload="none" style="display:block;width:100%;margin-top:12px;">
+<source src="assets/audio/jak-emocje-paralizuja-myslenie.m4a" type="audio/mp4"/>
+</audio>
+</div>
+</div>
+</details>
+</section>
+<section class="lesson-section glossary-section module2-section" id="mechanizmy-psychologiczne">
+<div class="section-heading">
+<span class="section-kicker">Mechanizmy psychologiczne</span>
+<h2>Dlaczego obiektywna ocena informacji bywa trudna?</h2>
+<p class="section-lead">Nasze skróty myślowe pomagają szybko podejmować decyzje, ale mogą też zostać wykorzystane do manipulacji.</p>
+</div>
+<details class="course-accordion accent-purple">
+<summary>
+<span class="accordion-number">I</span>
+<span><strong>Efekt potwierdzenia</strong><small>Chętniej przyjmujemy treści zgodne z własnymi przekonaniami</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content confirmation-bias-content">
+<div class="confirmation-intro">
+<p>Efekt potwierdzenia, nazywany również błędem konfirmacji, polega na tym, że chętniej przyjmujemy informacje zgodne z naszymi przekonaniami, a bardziej krytycznie traktujemy treści, które im przeczą. Zamiast oceniać wiadomość przede wszystkim pod kątem jej wiarygodności, źródeł i dowodów, porównujemy ją z tym, co już myślimy o danym temacie.</p>
+<p>Jeżeli informacja pasuje do naszego obrazu świata, łatwiej uznajemy ją za prawdziwą. Gdy wymaga zmiany zdania, częściej ją odrzucamy, podważamy źródło albo szukamy argumentów, które pozwolą zachować dotychczasowe stanowisko.</p>
+<p>Ten mechanizm działa szczególnie silnie w przypadku tematów, które wiążą się z emocjami, wartościami, poglądami politycznymi lub poczuciem przynależności do określonej grupy.</p>
+</div>
+<div class="confirmation-grid">
+<article class="confirmation-card"><h3>Rozumowanie motywowane</h3><p>Nie zawsze szukamy odpowiedzi na pytanie: „Czy ta informacja jest prawdziwa?”. Czasem, nawet nieświadomie, próbujemy potwierdzić to, w co już wierzymy.</p><p>To zjawisko określa się jako rozumowanie motywowane. Odbiorca nie analizuje treści w sposób neutralny, lecz interpretuje ją tak, aby pasowała do jego wcześniejszych opinii, obaw lub oczekiwań. Informacja zgodna z jego przekonaniami może zostać przyjęta bez sprawdzania, natomiast wiadomość sprzeczna z nimi zostanie poddana znacznie surowszej ocenie.</p><p>Twórcy dezinformacji wykorzystują ten mechanizm, przygotowując przekazy dopasowane do konkretnych grup odbiorców. Taka treść nie musi przekonać wszystkich. Wystarczy, że trafi do osób, które są gotowe w nią uwierzyć.</p></article>
+<article class="confirmation-card"><h3>Tożsamość grupowa i polityczna</h3><p>Opinie polityczne, wartości społeczne oraz przynależność do grupy mogą wpływać na ocenę informacji. Odbiorcy częściej uznają za wiarygodne treści zgodne z poglądami środowiska, z którym się utożsamiają.</p><img class="confirmation-card-image" src="grafiki/tozsamosc-grupowa-i-polityczna.png" alt="Infografika o wpływie tożsamości grupowej i poglądów politycznych na ocenę informacji" loading="lazy"><p>W takiej sytuacji zakwestionowanie wiadomości może być odbierane jak zakwestionowanie całej grupy albo własnej tożsamości. Dyskusja przestaje dotyczyć wyłącznie faktów, ponieważ pojawia się potrzeba obrony „swojej strony”.</p><p>Dlatego ta sama informacja może zostać oceniona zupełnie inaczej przez osoby reprezentujące odmienne poglądy. Każda z nich może zwracać uwagę na inne elementy przekazu, akceptować wygodne argumenty i pomijać dane, które nie pasują do jej stanowiska.</p></article>
+<article class="confirmation-card"><h3>Unikanie dysonansu poznawczego</h3><p>Kontakt z informacją, która podważa nasze przekonania, może wywołać dyskomfort. To napięcie nazywa się dysonansem poznawczym.</p><p>Aby je zmniejszyć, możemy odrzucić niewygodny fakt, zakwestionować autora albo uznać źródło za stronnicze. Zdarza się również, że szukamy kolejnych materiałów potwierdzających nasze stanowisko, zamiast sprawdzić, czy przeciwne argumenty są dobrze udokumentowane.</p><p>W efekcie nie bronimy prawdy, lecz własnego poczucia spójności. Im silniej dana opinia wiąże się z naszym światopoglądem, tym trudniej ocenić ją z dystansem.</p></article>
+<article class="confirmation-card"><h3>Algorytmy wzmacniają efekt potwierdzenia</h3><p>Media społecznościowe analizują, jakie treści oglądamy, komentujemy i udostępniamy. Na tej podstawie dobierają kolejne materiały, które mogą nas zainteresować.</p><img class="m5-case-image" src="grafiki/algorytmiczna-pulapka-banka-filtrujaca.png" alt="Infografika pokazująca, jak algorytmy tworzą bańkę filtrującą i komorę echa" loading="lazy"><p>Jeżeli często reagujemy na treści zgodne z naszymi poglądami, platforma zaczyna pokazywać nam więcej podobnych przekazów. Z czasem możemy odnieść wrażenie, że większość ludzi myśli tak samo jak my, ponieważ odmienne stanowiska pojawiają się coraz rzadziej.</p><p>Tak powstają bańki filtrujące i komory echa. Użytkownicy widzą głównie treści potwierdzające ich przekonania, a podobne opinie są wielokrotnie powtarzane i wzajemnie wzmacniane. Sama częstotliwość kontaktu z daną tezą może zwiększać jej pozorną wiarygodność.</p></article>
+</div>
+<div class="confirmation-trigger"><strong>„Wiedziałem, że tak jest”</strong><p>Szczególną ostrożność powinny wzbudzać informacje, które natychmiast wywołują taką myśl. Reakcja ta może być sygnałem, że przekaz potwierdza wcześniejsze przekonania i przez to obniża czujność. Nie oznacza to, że każda zgodna z naszym zdaniem informacja jest fałszywa. Oznacza jednak, że właśnie takie treści powinniśmy sprawdzać równie uważnie jak te, z którymi się nie zgadzamy.</p></div>
+<div class="confirmation-remember"><h3>Zapamiętaj</h3><p>Efekt potwierdzenia dotyczy każdego człowieka. Nie znika wraz z wiedzą, doświadczeniem ani wiekiem.</p><p>Gdy informacja idealnie pasuje do Twoich przekonań:</p><ul><li>sprawdź, kto ją opublikował,</li><li>poszukaj źródła danych lub pełnej wypowiedzi,</li><li>przeczytaj materiały przedstawiające inne stanowisko,</li><li>zastanów się, czy równie łatwo uwierzyłbyś w podobną wiadomość dotyczącą grupy, z którą sympatyzujesz,</li><li>oddziel ocenę faktów od własnej opinii o autorze lub temacie.</li></ul><p class="closing">Krytyczne myślenie nie polega wyłącznie na podważaniu informacji, z którymi się nie zgadzamy. Wymaga także sprawdzania tych, w które najbardziej chcielibyśmy uwierzyć.</p></div>
+</div>
+</details>
+<details class="course-accordion accent-pink">
+<summary>
+<span class="accordion-number">II</span>
+<span><strong>Efekt powtarzania</strong><small>Znajoma informacja zaczyna wydawać się prawdziwa</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content repetition-effect-content">
+<div class="repetition-intro">
+<p>Czy zdarzyło Ci się odnieść wrażenie, że jakaś informacja musi być prawdziwa tylko dlatego, że widziałeś ją już wiele razy? To zjawisko opisuje psychologia jako efekt iluzorycznej prawdy. Polega on na tym, że wielokrotny kontakt z tym samym przekazem zwiększa jego znajomość, a nasz mózg może błędnie uznać tę znajomość za dowód wiarygodności.</p>
+<p>Nie oznacza to, że informacja została potwierdzona nowymi faktami lub wiarygodnymi źródłami. Wystarczy, że pojawia się regularnie w mediach społecznościowych, na portalach internetowych lub w rozmowach z innymi osobami. Z czasem zaczyna wydawać się bardziej prawdopodobna tylko dlatego, że często się z nią spotykamy.</p>
+</div>
+<div class="repetition-grid">
+<article class="repetition-card"><div class="repetition-card-label">01</div><div><h3>Powtarzanie buduje pozorne zaufanie</h3><p>Ludzki mózg stara się oszczędzać energię. Znane informacje przetwarza szybciej niż nowe, dlatego odbieramy je jako bardziej wiarygodne i mniej wymagające analizy.</p><p>Twórcy dezinformacji dobrze znają ten mechanizm. Ta sama wiadomość może pojawić się jednocześnie na wielu profilach, stronach internetowych czy grupach dyskusyjnych. Chociaż wszystkie wpisy opierają się na tym samym, niezweryfikowanym przekazie, odbiorca odnosi wrażenie, że skoro informację publikuje wiele osób, musi być prawdziwa.</p><p>Zjawisko to jest szczególnie widoczne w mediach społecznościowych, gdzie algorytmy często pokazują podobne treści pochodzące z różnych źródeł. W rzeczywistości nie są to niezależne potwierdzenia, lecz kolejne kopie tego samego przekazu.</p></div></article>
+<article class="repetition-card"><div class="repetition-card-label">02</div><div><h3>Powtarzanie oswaja z fałszem</h3><p>Badania pokazują, że wielokrotny kontakt z fałszywą informacją może stopniowo osłabiać naszą czujność. Treść, która początkowo wydawała się podejrzana lub niewiarygodna, z czasem przestaje budzić tak silne wątpliwości. Staje się znajoma, a przez to łatwiejsza do zaakceptowania.</p><p>Mechanizm ten działa szczególnie skutecznie w przypadku nowych tematów, o których wiemy niewiele. Jeżeli nie posiadamy własnej wiedzy lub doświadczenia, częściej opieramy ocenę na tym, jak często spotykamy daną informację.</p></div></article>
+<article class="repetition-card repetition-card-dark"><div class="repetition-card-label">03</div><div><h3>Dlaczego samo dementowanie nie zawsze wystarcza?</h3><p>Powtarzanie fałszywej informacji stanowi wyzwanie również dla osób zajmujących się fact-checkingiem. Każde sprostowanie wymaga przypomnienia odbiorcy, jaka była pierwotna, nieprawdziwa wiadomość.</p><p>Po pewnym czasie część osób może pamiętać samo twierdzenie, ale zapomnieć, że zostało ono obalone. W efekcie fałszywa informacja pozostaje w pamięci jako coś znajomego, a szczegóły sprostowania zanikają. Zjawisko to określa się jako efekt rykoszetu (backfire effect).</p><p>Nie oznacza to, że nie należy prostować fałszywych informacji. Pokazuje jednak, że skuteczne przeciwdziałanie dezinformacji wymaga przedstawiania przede wszystkim rzetelnych faktów, a nie ciągłego powtarzania samego kłamstwa.</p></div></article>
+</div>
+<div class="repetition-remember"><span>Zapamiętaj</span><p>Sam fakt, że widziałeś daną informację wiele razy, nie oznacza, że jest prawdziwa.</p></div>
+</div>
+</details>
+<details class="course-accordion accent-green">
+<summary>
+<span class="accordion-number">III</span>
+<span><strong>Społeczny dowód słuszności</strong><small>„Skoro wszyscy udostępniają, coś musi w tym być”</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content social-proof-content">
+<div class="social-proof-intro">
+<p>Kiedy nie jesteśmy pewni, jak ocenić sytuację, często obserwujemy zachowanie innych osób. Jeżeli wiele osób popiera określony pogląd, udostępnia ten sam post albo reaguje podobnym oburzeniem, łatwo uznać, że ich reakcja musi mieć uzasadnienie.</p>
+<p>Psychologia określa ten mechanizm jako społeczny dowód słuszności. W warunkach niepewności człowiek traktuje zachowanie większości jako wskazówkę, co powinien myśleć lub zrobić. Taki skrót poznawczy ułatwia podejmowanie codziennych decyzji, lecz w przestrzeni informacyjnej może prowadzić do bezkrytycznego przyjmowania fałszywych treści.</p>
+<p><strong>Liczba reakcji, komentarzy i udostępnień nie świadczy o prawdziwości informacji.</strong> Pokazuje jedynie, że dana treść wzbudziła zainteresowanie i zaczęła krążyć wśród użytkowników.</p>
+</div>
+<div class="social-proof-grid">
+<article class="social-proof-card"><span class="social-proof-number">01</span><div><h3>Popularność tworzy pozory wiarygodności</h3><p>Post, który ma kilka reakcji, może zostać pominięty. Ten sam przekaz opublikowany z informacją o tysiącach udostępnień zaczyna przyciągać uwagę. Odbiorca może pomyśleć, że skoro tak wiele osób przekazuje go dalej, ktoś musiał wcześniej sprawdzić jego wiarygodność.</p><p>W praktyce każda kolejna osoba może opierać się na tym samym założeniu. Nikt nie sprawdza informacji, ponieważ wszyscy sądzą, że zrobił to ktoś inny.</p></div></article>
+</div>
+<div class="social-proof-flow" aria-label="Mechanizm rozprzestrzeniania się popularnej treści">
+<h3>Jak powstaje samonapędzający się mechanizm?</h3>
+<ol><li><span>1</span>Sensacyjna treść przyciąga pierwszych odbiorców.</li><li><span>2</span>Użytkownicy reagują i udostępniają ją dalej.</li><li><span>3</span>Rosnąca liczba reakcji zwiększa pozorną wiarygodność przekazu.</li><li><span>4</span>Algorytmy pokazują treść kolejnym osobom.</li><li><span>5</span>Duży zasięg zaczyna być traktowany jak potwierdzenie prawdziwości.</li></ol>
+<p>Informacja nie staje się jednak bardziej rzetelna. Zwiększa się wyłącznie liczba osób, które miały z nią kontakt.</p>
+</div>
+<div class="social-proof-grid">
+<article class="social-proof-card"><span class="social-proof-number">02</span><div><h3>Reakcje grupy wzmacniają emocje</h3><p>Społeczny dowód słuszności działa mocniej, gdy przekaz wywołuje strach, złość lub oburzenie. Jeżeli widzimy, że inni użytkownicy reagują podobnie, nasze własne emocje mogą się nasilić.</p><p>Pojawia się myślenie: „Skoro inni też są oburzeni, zagrożenie musi być prawdziwe”. Reakcja grupy zaczyna zastępować samodzielną ocenę faktów.</p><p>W takich warunkach łatwiej zaakceptować uproszczony przekaz, podzielić się nim z innymi albo dołączyć do emocjonalnej dyskusji. Im więcej osób reaguje, tym większa presja, aby również zająć stanowisko.</p><p>Nie oznacza to, że większość zawsze się myli. Oznacza natomiast, że zgodność reakcji nie może zastąpić sprawdzenia źródła, danych i kontekstu.</p></div></article>
+<article class="social-proof-card"><span class="social-proof-number">03</span><div><h3>Znajomy nadawca obniża czujność</h3><p>Informacje udostępnione przez rodzinę, znajomych lub współpracowników często budzą większe zaufanie niż treści pochodzące od nieznanych autorów. Widzimy nazwisko osoby, którą znamy, i odruchowo przenosimy zaufanie do niej na samą wiadomość.</p><p>Znajomy nie musi jednak być źródłem informacji. Najczęściej jest jedynie kolejną osobą w łańcuchu udostępnień. Mógł przekazać treść dalej bez sprawdzenia, uznając ją za ciekawą, alarmującą albo zgodną z poglądami swojej grupy.</p><p>Czasem użytkownicy udostępniają materiały, mimo że sami nie są pewni ich prawdziwości. Takie zachowanie zwiększa zasięg przekazu i wzmacnia wrażenie, że informacja została potwierdzona przez wiele osób.</p></div></article>
+<article class="social-proof-card"><span class="social-proof-number">04</span><div><h3>Bańki informacyjne wzmacniają poczucie jednomyślności</h3><p>Media społecznościowe dobierają treści na podstawie wcześniejszej aktywności użytkownika. Jeżeli często oglądamy, komentujemy lub udostępniamy materiały zgodne z naszymi poglądami, platforma zaczyna pokazywać nam więcej podobnych przekazów.</p><p>W ten sposób powstają bańki filtrujące i komory echa. Użytkownik widzi przede wszystkim opinie zgodne z własnym stanowiskiem, a odmienne perspektywy pojawiają się rzadziej. Może wtedy odnieść wrażenie, że „wszyscy” myślą podobnie.</p><p>To poczucie jednomyślności jest jednak pozorne. Nie odzwierciedla pełnego obrazu debaty, lecz efekt działania algorytmów, struktury sieci znajomych oraz wcześniejszych wyborów użytkownika.</p></div></article>
+<article class="social-proof-card social-proof-card-dark"><span class="social-proof-number">05</span><div><h3>Tłum może zostać stworzony sztucznie</h3><p>Twórcy dezinformacji wiedzą, że duża liczba reakcji zwiększa wiarygodność przekazu. Dlatego wykorzystują boty, fałszywe profile oraz zorganizowane grupy kont, które masowo lajkują, komentują i udostępniają określone treści.</p><p>Boty to zautomatyzowane konta obsługiwane przez oprogramowanie. Mogą publikować posty, powtarzać hasła, reagować na treści i wzmacniać ich zasięg. Trolle są rzeczywistymi użytkownikami, którzy prowokują konflikty, zakłócają dyskusje albo rozpowszechniają przygotowane wcześniej narracje.</p><p>Setki podobnych komentarzy nie muszą więc oznaczać poparcia setek niezależnych osób. Mogą być efektem skoordynowanej kampanii, której zadaniem jest stworzenie wrażenia popularności i społecznej akceptacji.</p><p>Taki „sztuczny tłum” wpływa na zwykłych użytkowników. Widząc dużą aktywność pod wpisem, mogą uznać, że przedstawiona teza jest powszechnie podzielana, dobrze udokumentowana lub zgodna z opinią większości.</p></div></article>
+</div>
+<div class="social-proof-reasons"><h3>Popularność nie jest dowodem</h3><p>Treść może być masowo udostępniana dlatego, że:</p><ul><li>wywołuje silne emocje,</li><li>zawiera sensacyjny nagłówek,</li><li>została podbita przez algorytmy,</li><li>pasuje do przekonań określonej grupy,</li><li>rozpowszechniają ją boty lub skoordynowane konta,</li><li>użytkownicy przekazują ją dalej bez sprawdzenia.</li></ul><p><strong>Żaden z tych powodów nie potwierdza jej prawdziwości.</strong></p></div>
+<div class="social-proof-remember"><h3>Zapamiętaj</h3><p>Gdy widzisz post z dużą liczbą udostępnień, komentarzy i reakcji:</p><ul><li>nie traktuj popularności jako dowodu,</li><li>sprawdź pierwotne źródło informacji,</li><li>zweryfikuj, czy przekaz potwierdzają niezależne źródła,</li><li>zwróć uwagę, czy komentarze nie są powtarzalne lub publikowane przez podejrzane konta,</li><li>nie zakładaj, że znajomy sprawdził wiadomość przed jej udostępnieniem,</li><li>zastanów się, czy reagujesz na fakty, czy na zachowanie tłumu.</li></ul><p class="social-proof-closing">Społeczny dowód słuszności pomaga orientować się w zachowaniach grupy, lecz nie zastępuje samodzielnej weryfikacji. Duża liczba osób może powtarzać tę samą nieprawdziwą informację. Wtedy większość nie staje się źródłem wiedzy, lecz kolejnym ogniwem w jej rozpowszechnianiu.</p></div>
+</div>
+</details>
+<details class="course-accordion accent-yellow">
+<summary>
+<span class="accordion-number">IV</span>
+<span><strong>Autorytet i pozory eksperckości</strong><small>Tytuł, strój lub logo nie zastępują kompetencji i dowodów</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content authority-content">
+<div class="authority-intro"><p>Ludzie mają naturalną skłonność do większego zaufania osobom i instytucjom, które kojarzą się z wiedzą, doświadczeniem albo wysoką pozycją społeczną. Biały fartuch, mundur, garnitur, tytuł naukowy, logo urzędu czy rozpoznawalna nazwa redakcji mogą sprawić, że przekaz od razu wydaje się bardziej wiarygodny.</p><p>Twórcy dezinformacji wykorzystują ten mechanizm, nadając fałszywym lub zmanipulowanym treściom pozory eksperckości. Sam wygląd materiału nie potwierdza jednak ani kompetencji autora, ani prawdziwości przedstawionych informacji.</p></div>
+<div class="authority-grid">
+<article class="authority-card"><span>01</span><div><h3>Strój i atrybuty budują szybkie zaufanie</h3><p>Zdjęcie osoby w białym fartuchu może wywołać wrażenie, że wypowiada się lekarz. Mundur sugeruje związek ze służbami, a garnitur z urzędem, biznesem lub polityką. Odbiorca często dokonuje takiej oceny automatycznie, zanim sprawdzi nazwisko, stanowisko i doświadczenie danej osoby.</p><p>Manipulacyjny materiał może przedstawiać rzekomego „lekarza ujawniającego prawdę”, „naukowca ostrzegającego przed ukrywanym zagrożeniem” albo „eksperta, którego media nie chcą dopuścić do głosu”. Taki przekaz opiera swoją wiarygodność na obrazie i deklarowanym statusie, a nie na dokumentach, badaniach czy możliwych do sprawdzenia argumentach.</p><p>Strój nie potwierdza wykształcenia. Tytuł „ekspert” nie informuje, kto nadał danej osobie ten status. Nawet rzeczywisty tytuł naukowy nie oznacza kompetencji we wszystkich dziedzinach.</p></div></article>
+<article class="authority-card"><span>02</span><div><h3>Podszywanie się pod instytucje</h3><p>Fałszywa strona może przypominać portal urzędu, banku, uczelni, organizacji medycznej albo redakcji informacyjnej. Oszuści liczą na to, że odbiorca rozpozna elementy wizualne i nie sprawdzi dokładnego adresu strony ani nazwy profilu.</p><p>Przykładem takiego działania było fałszywe konto podszywające się pod Państwową Komisję Wyborczą. W dniu wyborów publikowało nieprawdziwą informację o unieważnieniu głosowania. Konto wykorzystywało logo instytucji, podobną nazwę, oficjalny ton i grafikę z napisem „PILNE”. Dopiero dokładne sprawdzenie identyfikatora profilu i porównanie wpisu z oficjalnymi kanałami PKW ujawniało oszustwo.</p><p>Podobny mechanizm stosuje się przy fałszywych komunikatach banków, ZUS, policji czy ministerstw. Przekaz może wyglądać profesjonalnie, a jednocześnie prowadzić do podrobionej strony albo rozpowszechniać nieistniejący komunikat.</p></div></article>
+<article class="authority-card"><span>03</span><div><h3>Fałszywi eksperci i fikcyjne profile</h3><p>Dezinformacja może wykorzystywać osoby, które w rzeczywistości nie istnieją albo nie mają deklarowanych kwalifikacji. Profil rzekomego lekarza, badacza lub dziennikarza można stworzyć przy użyciu skradzionego zdjęcia, fałszywej biografii i nazw instytucji, z którymi dana osoba nigdy nie była związana.</p><p>Innym przypadkiem jest przedstawianie prawdziwej osoby jako eksperta w dziedzinie, w której nie posiada odpowiedniego doświadczenia. Materiał może eksponować tytuł naukowy, pomijając informację, że dotyczy on zupełnie innego obszaru.</p><p>Dlatego trzeba sprawdzić, czy dana osoba rzeczywiście istnieje, gdzie pracuje, czym zajmuje się zawodowo i czy jej dorobek dotyczy omawianego tematu.</p></div></article>
+<article class="authority-card authority-card-dark"><span>04</span><div><h3>Cytat może być prawdziwy, a przekaz fałszywy</h3><p>Dezinformacja nie zawsze wymaga wymyślenia wypowiedzi. Często wystarczy wyrwać jedno zdanie z dłuższego wywiadu, raportu lub wystąpienia.</p><blockquote>„Nie można obecnie całkowicie wykluczyć takiego ryzyka, choć dostępne dane wskazują, że jest ono niewielkie”.</blockquote><p>Po skróceniu wypowiedzi zostaje:</p><blockquote>„Nie można wykluczyć takiego ryzyka”.</blockquote><p>Słowa są autentyczne, lecz ich znaczenie zostało zmienione. Podobnie działa cherry-picking, czyli wybiórcze dobieranie danych.</p></div></article>
+</div>
+<div class="authority-check"><h3>Jak sprawdzić, czy ekspert jest wiarygodny?</h3><p>Pierwszym krokiem jest ustalenie, kim rzeczywiście jest osoba przedstawiona w materiale. Trzeba sprawdzić jej wykształcenie, doświadczenie zawodowe, afiliację i publikacje. Liczy się zgodność kompetencji z tematem wypowiedzi, a nie sam tytuł przed nazwiskiem.</p><p>Następnie trzeba dotrzeć do źródła pierwotnego. Gdy materiał powołuje się na badanie, raport lub wypowiedź, powinien umożliwiać odnalezienie pełnej publikacji. Brak autora, tytułu badania, daty albo linku do oryginału powinien zwiększyć ostrożność.</p><p>Warto również sprawdzić, czy stanowisko danej osoby jest zgodne z aktualną wiedzą w danej dziedzinie. O sile argumentu decydują dane i jakość metody badawczej, a nie liczba tytułów naukowych wymienionych przy nazwisku.</p></div>
+<div class="authority-trace"><strong>Dotarcie do pierwotnego kontekstu — krok „Trace” w metodzie SIFT</strong><p>W praktyce oznacza to odszukanie pełnego nagrania, oryginalnego artykułu, raportu albo komunikatu instytucji.</p><ul><li>czy cytat nie został skrócony,</li><li>czy wypowiedź nie dotyczyła innej sytuacji,</li><li>czy badanie rzeczywiście prowadzi do przedstawionych wniosków,</li><li>czy logo i nazwa instytucji zostały użyte za jej zgodą,</li><li>czy materiał nie został przerobiony lub opublikowany przez fałszywe konto.</li></ul></div>
+<div class="authority-remember"><h3>Zapamiętaj</h3><p>Autorytet może ułatwiać ocenę informacji, lecz nie zastępuje dowodów.</p><ul><li>sprawdź nazwisko, specjalizację i doświadczenie osoby,</li><li>ustal, czy wypowiada się w obszarze swoich kompetencji,</li><li>znajdź pełne badanie, raport albo wypowiedź,</li><li>porównaj stanowisko z opiniami innych specjalistów,</li><li>zweryfikuj adres strony i nazwę profilu,</li><li>nie uznawaj stroju, logo ani tytułu za potwierdzenie prawdziwości.</li></ul><p class="closing">Rzetelny ekspert powinien umożliwiać sprawdzenie swoich twierdzeń. Jeżeli wiarygodność przekazu opiera się głównie na fartuchu, tytule, logo albo dramatycznym cytacie, trzeba zachować szczególną ostrożność.</p></div>
+</div>
+</details>
+
+<details class="course-accordion accent-blue">
+<summary>
+<span class="accordion-number">V</span>
+<span><strong>Heurystyka dostępności i efekt zakotwiczenia</strong><small>Dlaczego pojedynczy obraz lub pierwsza informacja potrafią zdominować naszą ocenę?</small></span>
+<span aria-hidden="true" class="accordion-icon">+</span>
+</summary>
+<div class="accordion-content availability-anchor-content">
+<div class="availability-anchor-intro">
+<p>Heurystyka dostępności i efekt zakotwiczenia to dwa mechanizmy poznawcze, które pomagają wyjaśnić, dlaczego emocjonalny obraz, sugestywny przykład albo pierwsza zasłyszana liczba potrafią wpływać na sposób rozumienia całej sytuacji.</p>
+<p>Dezinformacja często wykorzystuje szybkość przetwarzania obrazu, siłę pierwszego wrażenia, uproszczenia oraz trudność w późniejszym korygowaniu raz przyjętej interpretacji.</p>
+</div>
+<section class="availability-anchor-part">
+<div class="availability-anchor-part-head"><span>01</span><div><small>Heurystyka dostępności</small><h3>To, co łatwo przywołać, wydaje się częstsze i bardziej prawdopodobne</h3></div></div>
+<p>Ludzki umysł nie zawsze ocenia ryzyko na podstawie pełnych danych. Często kieruje się tym, co łatwo przychodzi do głowy. Jeżeli niedawno widzieliśmy dramatyczne nagranie, przeczytaliśmy poruszającą historię albo zetknęliśmy się z sensacyjnym przykładem, możemy przeceniać jego znaczenie.</p>
+<p>Pojedynczy przypadek zapamiętujemy zwykle łatwiej niż zestawienie statystyczne. Historia konkretnej osoby ma twarz, emocje i narrację. Dane dotyczące tysięcy przypadków są bardziej abstrakcyjne, wymagają skupienia i porównania. Z tego powodu obrazowy przykład może zdominować spokojną analizę, nawet jeśli nie jest reprezentatywny dla szerszego zjawiska.</p>
+<div class="availability-anchor-grid">
+<article class="availability-anchor-card"><h4>Obraz wygrywa z liczbami</h4><p>Materiały wizualne wywołują szybką reakcję. Dramatyczne zdjęcie lub film mogą wzbudzić strach, gniew albo współczucie, zanim odbiorca sprawdzi ich źródło i kontekst. Obraz zapisuje się w pamięci łatwiej niż tabela, raport lub wykres.</p><p>Twórcy dezinformacji wykorzystują tę przewagę. Zamiast przedstawiać pełne dane, pokazują jeden skrajny przykład i nadają mu znaczenie ogólne.</p><blockquote>W sieci pojawia się film pokazujący gwałtowną reakcję pacjenta po przyjęciu leku. Autor wpisu sugeruje, że preparat jest powszechnie niebezpieczny.</blockquote><p>Pojedyncze nagranie może wywołać silniejsze wrażenie niż dane obejmujące setki tysięcy przypadków. Odbiorca pamięta konkretną historię i zaczyna traktować ją jako dowód na istnienie szerokiego problemu.</p><p>Nie oznacza to, że pojedynczego przypadku należy ignorować. Trzeba jednak sprawdzić, czy rzeczywiście potwierdza on szerszą tezę.</p></article>
+<article class="availability-anchor-card"><h4>Dowód anegdotyczny zastępuje analizę</h4><p>Dowód anegdotyczny opiera się na jednostkowym doświadczeniu przedstawianym jako potwierdzenie ogólnej reguły. Może brzmieć przekonująco, ponieważ jest prosty, osobisty i łatwy do zapamiętania.</p><blockquote>„Mój znajomy wysłał sto podań o pracę i nie dostał żadnej odpowiedzi. Rynek pracy całkowicie się załamał.”</blockquote><p>Historia może być prawdziwa, ale sama nie wystarcza do oceny sytuacji na całym rynku pracy. Brakuje danych o branży, kwalifikacjach, lokalizacji, jakości dokumentów aplikacyjnych oraz liczbie ofert.</p><p>Heurystyka dostępności sprawia jednak, że taki przykład może wydać się bardziej wiarygodny niż raport statystyczny, który pokazuje bardziej złożony obraz.</p></article>
+</div>
+</section>
+<section class="availability-anchor-part availability-anchor-part-dark">
+<div class="availability-anchor-part-head"><span>02</span><div><small>Efekt zakotwiczenia</small><h3>Pierwsza informacja wyznacza kierunek myślenia</h3></div></div>
+<p>Efekt zakotwiczenia polega na tym, że pierwsza informacja staje się punktem odniesienia dla kolejnych ocen. Może to być liczba, nagłówek, określenie, zdjęcie albo pierwsza interpretacja wydarzenia.</p><p>Nawet jeśli później pojawią się dokładniejsze dane, początkowa informacja nadal wpływa na sposób ich rozumienia.</p>
+<div class="availability-anchor-grid">
+<article class="availability-anchor-card"><h4>Nagłówek tworzy ramę dla całego przekazu</h4><p>Pierwszy kontakt z treścią często następuje przez nagłówek. Jeżeli jest on sensacyjny, emocjonalny lub oskarżycielski, narzuca odbiorcy sposób interpretacji materiału jeszcze przed przeczytaniem całości.</p><blockquote>„Nowe przepisy odbiorą tysiącom osób prawo do świadczeń.”</blockquote><p>Taki tytuł tworzy poczucie zagrożenia. Nawet jeśli dalsza część artykułu wyjaśnia, że zmiana dotyczy niewielkiej grupy i określonych warunków, odbiorca może nadal postrzegać temat przez pryzmat pierwszego alarmującego komunikatu.</p><p>Nagłówek staje się kotwicą. Kolejne informacje są oceniane w odniesieniu do niego.</p></article>
+<article class="availability-anchor-card"><h4>Pierwsza liczba wpływa na dalszą ocenę</h4><p>Jeżeli ktoś najpierw usłyszy, że „koszt reformy wyniesie 10 miliardów złotych”, ta kwota może stać się punktem odniesienia, nawet jeśli później okaże się, że była oparta na błędnych założeniach. Kolejne wartości będą oceniane jako wysokie lub niskie względem pierwszej liczby.</p><p>Ten mechanizm bywa wykorzystywany w przekazach politycznych, reklamach, sporach publicznych i materiałach propagandowych. Wystarczy wprowadzić do debaty sugestywną liczbę, aby wpłynąć na dalsze postrzeganie problemu.</p></article>
+<article class="availability-anchor-card availability-anchor-card-wide"><h4>Pierwsze wrażenie trudno skorygować</h4><p>Fałszywa informacja może zostać sprostowana, ale nie oznacza to, że jej wpływ całkowicie znika. Odbiorca może zapamiętać pierwotne twierdzenie, a szczegóły sprostowania z czasem zanikną.</p><p>Pierwsza interpretacja pozostaje w pamięci jako gotowa rama. Późniejsze informacje bywają do niej dopasowywane, nawet jeśli powinny ją podważyć.</p><p>Wtedy efekt zakotwiczenia łączy się z efektem potwierdzenia. Gdy pierwsza informacja pasuje do naszych poglądów, zaczynamy zwracać większą uwagę na treści, które ją wspierają, a pomijać te, które jej przeczą.</p></article>
+</div>
+</section>
+<div class="availability-anchor-process"><h3>Jak twórcy dezinformacji wykorzystują oba mechanizmy?</h3><ol><li>Odbiorca widzi dramatyczne zdjęcie lub film.</li><li>Materiał wywołuje silną emocję i łatwo zapisuje się w pamięci.</li><li>Sensacyjny nagłówek narzuca pierwszą interpretację.</li><li>Kolejne informacje są oceniane przez pryzmat tego obrazu i nagłówka.</li><li>Odbiorca zaczyna szukać treści zgodnych z pierwszym wrażeniem.</li></ol><p>W rezultacie pojedynczy przykład i pierwsza sugestia mogą zastąpić spokojną analizę danych.</p></div>
+<div class="availability-anchor-sift"><strong>Dlaczego metoda SIFT zaczyna się od zatrzymania?</strong><p>Procedura SIFT rozpoczyna się od kroku <b>Stop</b>, ponieważ pierwsze sekundy kontaktu z treścią często decydują o dalszej reakcji.</p><p>Zatrzymanie się przerywa automatyczny schemat: obraz → emocja → szybka interpretacja → udostępnienie.</p><p>Dopiero po chwili można sprawdzić źródło, autora, kontekst i potwierdzenie w innych miejscach. Ten prosty krok ogranicza ryzyko, że pierwsza liczba, nagłówek albo obraz staną się fałszywą kotwicą.</p></div>
+<div class="availability-anchor-remember"><h3>Zapamiętaj</h3><p>Informacja, którą łatwo sobie przypominasz, nie musi być reprezentatywna. Pierwsza informacja, którą usłyszysz, nie musi być najtrafniejsza.</p><p>Gdy natrafisz na dramatyczny przykład, sensacyjny nagłówek albo sugestywną liczbę:</p><ul><li>sprawdź, czy pojedynczy przypadek nie jest przedstawiany jako reguła,</li><li>poszukaj danych obejmujących większą grupę,</li><li>przeczytaj cały materiał, a nie tylko nagłówek,</li><li>ustal, kto podał pierwszą liczbę i na jakiej podstawie,</li><li>porównaj informację z innymi źródłami,</li><li>zastanów się, czy późniejsze dane oceniasz niezależnie, czy przez pryzmat pierwszego wrażenia.</li></ul><p class="closing">Krytyczne myślenie wymaga świadomości, że najbardziej sugestywny przykład nie zawsze jest najbardziej miarodajny, a pierwsza interpretacja może kierować oceną długo po tym, gdy pojawią się dokładniejsze informacje.</p></div>
+</div>
+</details>
+</section>
+<section class="lesson-section information-disorder-section module2-section" id="obrona-przed-manipulacja">
+<div class="section-heading">
+<span class="section-kicker">Praktyczna obrona</span>
+<h2>Zatrzymaj emocję, zanim podejmiesz decyzję</h2>
+<p class="section-lead">Krótka procedura pomaga odzyskać dystans i włączyć myślenie analityczne.</p>
+</div>
+<div class="module2-stop-grid">
+<article><strong>1. Nazwij emocję</strong><p>Co teraz czuję: strach, gniew, oburzenie, ciekawość czy współczucie?</p></article>
+<article><strong>2. Zatrzymaj reakcję</strong><p>Nie klikaj i nie udostępniaj pod wpływem pierwszego impulsu.</p></article>
+<article><strong>3. Sprawdź nadawcę</strong><p>Kto opublikował treść i jakie może mieć cele?</p></article>
+<article><strong>4. Poszukaj źródła</strong><p>Czy wskazano dokument, badanie, autora i datę?</p></article>
+<article><strong>5. Porównaj przekazy</strong><p>Czy informację potwierdzają niezależne i wiarygodne źródła?</p></article>
+</div>
+<div class="remember-box module2-final-note">
+<strong>Zapamiętaj</strong>
+<p>Nie manipulują nami dlatego, że jesteśmy mało inteligentni. Manipulacja wykorzystuje uniwersalne emocje i skróty myślowe. Świadomość tych mechanizmów pozwala odzyskać kontrolę nad reakcją.</p>
+</div>
+</section>
+</div>
+<article class="content-block" id="m1LessonContentBlock">
+<h3><span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Poznaj pojęcia i mechanizmy nieładu informacyjnego.</small><span class="m1-section-status" id="m1ContentStatus">0/4 sekcji</span></h3>
+<div id="lessonContent"></div>
+</article>
+<article class="content-block" id="exampleSectionBlock">
+<h3 id="exampleSectionHeading"><span class="stage-pill">ETAP 3</span> Analiza przykładów<small>Przeanalizuj przykłady i rozpoznaj techniki manipulacji.</small><span class="m1-section-status" id="m1ExamplesStatus">0/4 przykładów</span></h3>
+<div id="exampleSection"></div>
+</article>
+<article class="content-block" id="m1FinalTestStatic">
+<h3><span class="stage-pill">ETAP 4</span> Weryfikacja wiedzy<small>Quiz końcowy modułu — 5 pytań sprawdzających.</small><span class="m1-section-status" id="m1FinalStatus">nieukończony</span></h3>
+<p class="m1-quiz-intro">Odpowiedz na wszystkie pytania. Wynik 4/5 lub 5/5 oznacza zaliczenie Modułu 1.</p>
+<form class="m1-quiz" id="m1FinalForm"><fieldset class="m1-question" data-correct="0"><legend>1. Która sytuacja jest przykładem błędnej informacji?</legend><div class="m1-options"><label class="m1-option"><input name="m1q1" type="radio" value="0"/><span>Ktoś udostępnia nieaktualny termin naboru, sądząc, że nadal obowiązuje.</span></label><label class="m1-option"><input name="m1q1" type="radio" value="1"/><span>Ktoś świadomie tworzy fałszywy komunikat urzędu.</span></label><label class="m1-option"><input name="m1q1" type="radio" value="2"/><span>Ktoś publikuje prawdziwe dane osobowe, aby zaszkodzić konkretnej osobie.</span></label></div></fieldset><fieldset class="m1-question" data-correct="1"><legend>2. Co przede wszystkim odróżnia dezinformację od zwykłej pomyłki?</legend><div class="m1-options"><label class="m1-option"><input name="m1q2" type="radio" value="0"/><span>Profesjonalny wygląd publikacji.</span></label><label class="m1-option"><input name="m1q2" type="radio" value="1"/><span>Świadomy zamiar wprowadzenia odbiorców w błąd.</span></label><label class="m1-option"><input name="m1q2" type="radio" value="2"/><span>Duża liczba komentarzy.</span></label></div></fieldset><fieldset class="m1-question" data-correct="1"><legend>3. Który sygnał powinien szczególnie wzbudzić czujność?</legend><div class="m1-options"><label class="m1-option"><input name="m1q3" type="radio" value="0"/><span>Podanie autora, źródeł i podstawy prawnej.</span></label><label class="m1-option"><input name="m1q3" type="radio" value="1"/><span>Presja czasu i wezwanie do natychmiastowego udostępnienia.</span></label><label class="m1-option"><input name="m1q3" type="radio" value="2"/><span>Potwierdzenie wiadomości przez kilka niezależnych źródeł.</span></label></div></fieldset><fieldset class="m1-question" data-correct="1"><legend>4. Dlaczego tworzy się fake newsy?</legend><div class="m1-options"><label class="m1-option"><input name="m1q4" type="radio" value="0"/><span>Wyłącznie dla żartu.</span></label><label class="m1-option"><input name="m1q4" type="radio" value="1"/><span>Aby osiągnąć zysk, wpłynąć na opinie, zdobyć popularność lub wywołać chaos.</span></label><label class="m1-option"><input name="m1q4" type="radio" value="2"/><span>Ponieważ każda wiadomość w internecie jest anonimowa.</span></label></div></fieldset><fieldset class="m1-question" data-correct="0"><legend>5. Co należy zrobić przed udostępnieniem alarmującej informacji?</legend><div class="m1-options"><label class="m1-option"><input name="m1q5" type="radio" value="0"/><span>Sprawdzić autora, datę, źródła, dowody i inne wiarygodne publikacje.</span></label><label class="m1-option"><input name="m1q5" type="radio" value="1"/><span>Ocenić ją wyłącznie po liczbie reakcji.</span></label><label class="m1-option"><input name="m1q5" type="radio" value="2"/><span>Udostępnić ją szybko, a sprawdzić później.</span></label></div></fieldset></form>
+<div class="m1-quiz-actions">
+<button class="btn btn-primary" id="m1CheckFinal" type="button">Sprawdź test</button>
+<button class="m1-reset" id="m1ResetModule" type="button">Wyczyść odpowiedzi i postęp</button>
+</div>
+<div aria-live="polite" class="m1-result" id="m1FinalResult"></div>
+</article>
+<article class="content-block" hidden="" id="m2FinalTestStatic">
+<h3><span class="stage-pill">ETAP 4</span> Weryfikacja wiedzy<small>Quiz końcowy Modułu 2 — 5 pytań sprawdzających.</small><span class="m1-section-status" id="m2FinalStatus">nieukończony</span></h3>
+<p class="m1-quiz-intro">Odpowiedz na wszystkie pytania. Wynik 4/5 lub 5/5 oznacza zaliczenie Modułu 2.</p>
+<form class="m1-quiz" id="m2FinalForm">
+<fieldset class="m1-question" data-correct="1"><legend>1. Co powinno wzbudzić szczególną czujność odbiorcy?</legend><div class="m1-options">
+<label class="m1-option"><input name="m2q1" type="radio" value="0"/><span>Spokojny język i podane źródła.</span></label>
+<label class="m1-option"><input name="m2q1" type="radio" value="1"/><span>Silna presja czasu połączona z wezwaniem do natychmiastowego udostępnienia.</span></label>
+<label class="m1-option"><input name="m2q1" type="radio" value="2"/><span>Porównanie kilku niezależnych źródeł.</span></label>
+</div></fieldset>
+<fieldset class="m1-question" data-correct="0"><legend>2. Na czym polega efekt potwierdzenia?</legend><div class="m1-options">
+<label class="m1-option"><input name="m2q2" type="radio" value="0"/><span>Chętniej przyjmujemy informacje zgodne z własnymi przekonaniami.</span></label>
+<label class="m1-option"><input name="m2q2" type="radio" value="1"/><span>Każda popularna informacja jest prawdziwa.</span></label>
+<label class="m1-option"><input name="m2q2" type="radio" value="2"/><span>Emocje nie wpływają na ocenę treści.</span></label>
+</div></fieldset>
+<fieldset class="m1-question" data-correct="2"><legend>3. Dlaczego wielokrotnie powtarzane twierdzenie może wydawać się wiarygodne?</legend><div class="m1-options">
+<label class="m1-option"><input name="m2q3" type="radio" value="0"/><span>Ponieważ powtórzenie zawsze oznacza nowe dowody.</span></label>
+<label class="m1-option"><input name="m2q3" type="radio" value="1"/><span>Ponieważ algorytmy sprawdzają każdą powtarzaną treść.</span></label>
+<label class="m1-option"><input name="m2q3" type="radio" value="2"/><span>Ponieważ mózg może pomylić znajomość treści z jej prawdziwością.</span></label>
+</div></fieldset>
+<fieldset class="m1-question" data-correct="1"><legend>4. Co mówi liczba polubień i udostępnień?</legend><div class="m1-options">
+<label class="m1-option"><input name="m2q4" type="radio" value="0"/><span>Potwierdza prawdziwość informacji.</span></label>
+<label class="m1-option"><input name="m2q4" type="radio" value="1"/><span>Pokazuje popularność, ale nie zastępuje dowodów.</span></label>
+<label class="m1-option"><input name="m2q4" type="radio" value="2"/><span>Dowodzi, że treść została sprawdzona przez ekspertów.</span></label>
+</div></fieldset>
+<fieldset class="m1-question" data-correct="0"><legend>5. Jaka jest najlepsza pierwsza reakcja na treść wywołującą skrajne emocje?</legend><div class="m1-options">
+<label class="m1-option"><input name="m2q5" type="radio" value="0"/><span>Zatrzymać się, nazwać emocję i sprawdzić źródło.</span></label>
+<label class="m1-option"><input name="m2q5" type="radio" value="1"/><span>Natychmiast ją udostępnić, aby ostrzec innych.</span></label>
+<label class="m1-option"><input name="m2q5" type="radio" value="2"/><span>Uznać ją automatycznie za fałszywą.</span></label>
+</div></fieldset>
+</form>
+<div class="m1-quiz-actions">
+<button class="btn btn-primary" id="m2CheckFinal" type="button">Sprawdź test</button>
+<button class="m1-reset" id="m2ResetModule" type="button">Wyczyść odpowiedzi</button>
+</div>
+<div aria-live="polite" class="m1-result" id="m2FinalResult"></div>
+</article>
+<article class="content-block" id="materialsBlock">
+<h3>5. Materiały do pobrania</h3>
+<p>
+                Tutaj dodasz kartę pracy, checklistę, skrót modułu i przydatne linki.
+              </p>
+<div class="hero-actions" style="margin-top:16px">
+<a class="btn btn-ghost" href="#MATERIAL_PDF" onclick="placeholderLink(event, 'materiału PDF')">Pobierz kartę pracy</a>
+<a class="btn btn-secondary" href="#CHECKLISTA_PDF" onclick="placeholderLink(event, 'checklisty uczestnika')">Pobierz checklistę</a>
+</div>
+</article>
+<div class="module-actions">
+<button class="btn btn-secondary" onclick="showDashboard()">Wróć do panelu</button>
+<button class="btn btn-primary" id="completeButton" onclick="completeCurrentModule()">Oznacz moduł jako ukończony</button>
+</div>
+</div>
+<aside class="side-panel">
+<div class="side-card">
+<h4>Informacje o module</h4>
+<p><strong>Czas:</strong> <span id="moduleTime">35–45 minut</span></p>
+<p><strong>Forma:</strong> film wprowadzający, treści, przykłady i test podsumowujący.</p>
+</div>
+<div class="side-card">
+<h4>Do przygotowania</h4>
+<ul>
+<li>film lub nagranie prezentacji,</li>
+<li>tekst w prostym języku,</li>
+<li>realistyczne przykłady,</li>
+<li>5 pytań do testu podsumowującego,</li>
+<li>materiał PDF.</li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="site-footer-inner"><div><strong>Edukacja bez granic</strong><p>Kurs online przygotowany w ramach rozwoju oferty edukacyjnej Wojewódzkiego Urzędu Pracy w Katowicach.</p></div><nav aria-label="Nawigacja w stopce" class="site-footer-links"><a href="index.html">Strona główna</a><a class="nav-online" href="kursy-online.html">Kursy online</a><a href="zapisy.html">Zapisy</a><a href="kontakt.html">Kontakt</a><a class="footer-trainer-link" href="panel-trenera.html">Panel trenera</a></nav></div></footer>
+<script>
+    /* ==========================================================
+       KONFIGURACJA DO PÓŹNIEJSZEJ PODMIANY
+       ========================================================== */
+    const COURSE_CONFIG = {
+      links: {
+        registration: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
+        preTest: "https://forms.gle/7rJ6Q3eMgx7XBsLw6",
+        finalTest: "#TEST_KONCOWY",
+        motivationAfter: "#ANKIETA_MOTYWACJI_PO",
+        evaluation: "#ANKIETA_OCENY",
+        materials: "#MATERIALY_PDF"
+      }
+    };
+
+    const MODULES = [
+      {
+        id: 1,
+        title: "Fake news i dezinformacja",
+        description: "Podstawowe pojęcia, rodzaje fałszywych informacji oraz powody ich tworzenia i rozpowszechniania.",
+        time: "35–45 minut",
+        topics: [
+          "Czym jest media literacy?",
+          "Błędna informacja, dezinformacja i manipulacja.",
+          "Dlaczego powstają fake newsy?",
+          "Gdzie najczęściej spotykamy fałszywe treści?"
+        ]
+      },
+      {
+        id: 2,
+        title: "Emocje i mechanizmy manipulacji",
+        description: "Dlaczego emocjonalne treści przyciągają uwagę i jakie mechanizmy utrudniają nam obiektywną ocenę informacji.",
+        time: "35–45 minut",
+        topics: [
+          "Rola strachu, złości i zaskoczenia.",
+          "Efekt potwierdzenia i efekt powtarzania.",
+          "Clickbait oraz język presji.",
+          "Bańki informacyjne i fałszywy autorytet."
+        ]
+      },
+      {
+        id: 3,
+        title: "AI, deepfake i współczesne oszustwa cyfrowe",
+        description: "Pułapki sztucznej inteligencji, halucynacje, deepfake, podszywanie się oraz wyłudzanie danych.",
+        time: "55–70 minut",
+        topics: [
+          "Ograniczenia modeli AI i halucynacje.",
+          "Deepfake obrazu, filmu i głosu.",
+          "Podszywanie się pod osoby i instytucje.",
+          "Oszustwa, fałszywe oferty i ochrona danych."
+        ]
+      },
+      {
+        id: 4,
+        title: "Fact-checking w praktyce",
+        description: "Narzędzia i metody sprawdzania zdjęć, stron internetowych, cytatów, statystyk i kontekstu.",
+        time: "45–55 minut",
+        topics: [
+          "Google Lens i odwrotne wyszukiwanie obrazem.",
+          "Fact Check Explorer i serwisy weryfikujące fakty.",
+          "Sprawdzanie domeny, daty i archiwalnej wersji strony.",
+          "Weryfikacja raportów, liczb i cytatów."
+        ]
+      },
+      {
+        id: 5,
+        title: "Laboratorium fact-checkera",
+        description: "Praktyczne studia przypadków, symulacja weryfikacji oraz gra utrwalająca rodzaje manipulacji.",
+        time: "50–65 minut",
+        topics: [
+          "Analiza sensacyjnego artykułu i zdjęcia w fałszywym kontekście.",
+          "Rozpoznawanie deepfake, fałszywego profilu i oferty pracy.",
+          "Symulacja pracy fact-checkera krok po kroku.",
+          "Gra: rozpoznaj rodzaj manipulacji."
+        ]
+      }
+    ];
+
+    let currentModule = null;
+
+    // Bezpieczna pamięć: na GitHub Pages używa localStorage,
+    // a w trybie podglądu może przełączyć się na pamięć tymczasową.
+    const memoryStorage = {};
+    const safeStorage = {
+      getItem(key) {
+        try {
+          return window.localStorage.getItem(key);
+        } catch {
+          return Object.prototype.hasOwnProperty.call(memoryStorage, key)
+            ? memoryStorage[key]
+            : null;
+        }
+      },
+      setItem(key, value) {
+        try {
+          window.localStorage.setItem(key, value);
+        } catch {
+          memoryStorage[key] = String(value);
+        }
+      }
+    };
+
+    function getCompletedModules() {
+      try {
+        return JSON.parse(safeStorage.getItem("fakeNewsCompleted") || "[]");
+      } catch {
+        return [];
+      }
+    }
+
+    function saveCompletedModules(list) {
+      safeStorage.setItem("fakeNewsCompleted", JSON.stringify(list));
+    }
+
+    function startCourse() {
+      safeStorage.setItem("fakeNewsAccess", "granted");
+      showDashboard("push");
+    }
+
+    function scrollToAccess() {
+      showLanding("replace");
+      setTimeout(() => document.getElementById("dostep").scrollIntoView({ behavior: "smooth" }), 50);
+    }
+
+    function updateCourseHistory(view, moduleId = null, mode = "push") {
+      if (mode === "none") return;
+
+      const url = new URL(window.location.href);
+      if (view === "dashboard") {
+        url.hash = "panel-szkolenia";
+      } else if (view === "module" && moduleId) {
+        url.hash = `modul-${moduleId}`;
+      } else {
+        url.hash = "";
+      }
+
+      const state = { courseView: view, moduleId };
+      const method = mode === "replace" ? "replaceState" : "pushState";
+      window.history[method](state, "", url);
+    }
+
+    function showLanding(historyMode = "replace") {
+      document.getElementById("landing").classList.remove("hidden");
+      document.getElementById("courseArea").classList.remove("visible");
+      document.getElementById("moduleView").classList.remove("visible");
+      currentModule = null;
+      updateCourseHistory("landing", null, historyMode);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function showDashboard(historyMode = "replace") {
+      document.getElementById("landing").classList.add("hidden");
+      document.getElementById("moduleView").classList.remove("visible");
+      document.getElementById("courseArea").classList.add("visible");
+      currentModule = null;
+      renderModules();
+      updateCourseHistory("dashboard", null, historyMode);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderModules() {
+      const completed = getCompletedModules();
+      const grid = document.getElementById("modulesGrid");
+
+      grid.innerHTML = MODULES.map(module => {
+        const done = completed.includes(module.id);
+        return `
+          <article class="module-card ${done ? "completed" : ""}">
+            <div class="module-number">${done ? "✓" : module.id}</div>
+            <h3>${module.title}</h3>
+            <p>${module.description}</p>
+            <footer>
+              <span class="status">${done ? "Ukończony" : module.time}</span>
+              <button class="btn ${done ? "btn-ghost" : "btn-primary"}" onclick="openModule(${module.id})">
+                ${done ? "Otwórz ponownie" : "Rozpocznij"}
+              </button>
+            </footer>
+          </article>
+        `;
+      }).join("") + `
+        <article class="module-card final-card">
+          <div class="module-number">6</div>
+          <h3>Test końcowy i ankiety</h3>
+          <p>
+            Miejsce na test wiedzy, ankietę motywacji po szkoleniu,
+            ocenę kursu i materiałów oraz informację o ukończeniu.
+          </p>
+          <footer>
+            <span class="status" style="color:rgba(255,255,255,.72)">Etap końcowy kursu</span>
+            <button class="btn btn-secondary" onclick="showFinalPlaceholders()">Zobacz zakończenie</button>
+          </footer>
+        </article>
+      `;
+
+      updateProgress();
+    }
+
+    function updateProgress() {
+      // Górny pasek postępu kursu został usunięty z panelu.
+      // Funkcja pozostaje, ponieważ wywołują ją istniejące akcje modułów.
+    }
+
+
+
+    function tagInternalModuleBlocks() {
+      const candidates = [...document.querySelectorAll("#moduleView article, #moduleView section, #moduleView div")];
+      candidates.forEach((el) => {
+        const text = (el.textContent || "").trim();
+        if (!el.id && /^Informacje o module\b/.test(text)) el.id = "moduleInfoBlock";
+        if (!el.id && /^Do przygotowania\b/.test(text)) el.id = "preparationBlock";
+        if (!el.id && /^5\.\s*Materiały do pobrania\b/.test(text)) el.id = "materialsBlock";
+      });
+    }
+
+    function configureModuleView(moduleId) {
+      document.body.classList.toggle("module-2-active", moduleId === 2);
+      document.body.classList.toggle("module-3-active", moduleId === 3);
+      document.body.classList.toggle("module-4-active", moduleId === 4);
+      document.body.classList.toggle("module-5-active", moduleId === 5);
+      tagInternalModuleBlocks();
+      const infographic = document.getElementById("moduleInfographic");
+      const infographicLink = document.getElementById("moduleInfographicLink");
+      const infographicImage = document.getElementById("moduleInfographicImage");
+      const infographicCaption = document.getElementById("moduleInfographicCaption");
+      const module1Supplement = document.getElementById("module1Supplement");
+      const module2Supplement = document.getElementById("module2Supplement");
+      const m1Test = document.getElementById("m1FinalTestStatic");
+      const m2Test = document.getElementById("m2FinalTestStatic");
+      const introVideoBlock = document.getElementById("m1IntroVideo");
+      const introHeading = document.querySelector("#m1IntroVideo h3");
+      const theoryHeading = document.querySelector("#m1LessonContentBlock h3");
+
+      const moduleTime = document.getElementById("moduleTime");
+      const moduleDuration = document.getElementById("moduleDuration");
+      const moduleMeta = document.getElementById("moduleMeta");
+      if (moduleTime) moduleTime.hidden = true;
+      if (moduleDuration) moduleDuration.hidden = true;
+      if (moduleMeta) moduleMeta.hidden = true;
+
+
+      if (introVideoBlock) introVideoBlock.hidden = moduleId !== 1;
+      if (module1Supplement) module1Supplement.hidden = moduleId !== 1;
+      if (module2Supplement) module2Supplement.hidden = moduleId !== 2;
+      if (m1Test) m1Test.hidden = moduleId !== 1;
+      if (m2Test) m2Test.hidden = moduleId !== 2;
+      if (infographic) infographic.hidden = ![1, 2].includes(moduleId);
+
+      if (moduleId === 1) {
+        infographicLink.href = "assets/img/chaos-medialny-infografika.jpg";
+        infographicImage.src = "assets/img/chaos-medialny-infografika.jpg";
+        infographicImage.alt = "Infografika: Chaos medialny – jak zrozumieć i przetrwać nieład informacyjny";
+        infographicCaption.innerHTML = "<strong>Infografika: Nieład informacyjny.</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.";
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span>';
+        theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Poznaj pojęcia i mechanizmy nieładu informacyjnego.</small><span class="m1-section-status" id="m1ContentStatus">0/4 sekcji</span>';
+      } else if (moduleId === 2) {
+        infographicLink.href = "assets/img/emocje-kontra-fakty-infografika.jpg";
+        infographicImage.src = "assets/img/emocje-kontra-fakty-infografika.jpg";
+        infographicImage.alt = "Infografika: Dlaczego emocje wygrywają z faktami";
+        infographicCaption.innerHTML = "<strong>Infografika: Dlaczego emocje wygrywają z faktami?</strong> Kliknij obraz, aby otworzyć go w pełnym rozmiarze.";
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Dowiedz się, dlaczego emocje mogą ograniczać analityczną ocenę informacji.</small><span class="m1-section-status">film</span>';
+        theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Poznaj emocje i mechanizmy psychologiczne wykorzystywane w manipulacji.</small>';
+      } else {
+        introHeading.innerHTML = '<span class="stage-pill">ETAP 1</span> Film wprowadzający<small>Poznaj cele modułu oraz najważniejsze zagadnienia.</small><span class="m1-section-status">film</span>';
+        theoryHeading.innerHTML = '<span class="stage-pill">ETAP 2</span> Część teoretyczna<small>Zapoznaj się z najważniejszymi treściami modułu.</small>';
+      }
+    }
+
+    function openModule(id, historyMode = "push") {
+      // Gdy moduł zostaje otwarty bezpośrednio, najpierw zapisz panel modułów
+      // jako poprzedni krok. Dzięki temu przycisk Wstecz zawsze wraca do „Twój panel szkolenia”.
+      if (historyMode === "push" && window.location.hash !== "#panel-szkolenia") {
+        updateCourseHistory("dashboard", null, "replace");
+      }
+
+      currentModule = MODULES.find(item => item.id === id);
+      if (!currentModule) return;
+      configureModuleView(currentModule.id);
+
+      document.getElementById("courseArea").classList.remove("visible");
+      document.getElementById("moduleView").classList.add("visible");
+      document.getElementById("moduleTitle").textContent = `Moduł ${currentModule.id}. ${currentModule.title}`;
+      document.getElementById("moduleDescription").textContent = currentModule.description;
+      document.getElementById("moduleTime").textContent = currentModule.time;
+      renderLessonContent(currentModule);
+      renderExampleSection(currentModule);
+      const moduleFeedback = document.getElementById("exerciseFeedback");
+      moduleFeedback.textContent = "";
+      moduleFeedback.style.color = "var(--green-dark)";
+
+      document.querySelectorAll(".answer").forEach(btn => {
+        btn.classList.remove("correct", "wrong");
+        btn.disabled = false;
+      });
+
+      const completed = getCompletedModules().includes(id);
+      document.getElementById("completeButton").textContent = completed
+        ? "Moduł jest oznaczony jako ukończony"
+        : "Oznacz moduł jako ukończony";
+
+      updateCourseHistory("module", currentModule.id, historyMode);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function m5Answer(button, feedbackId, correct) {
+      const box = document.getElementById(feedbackId);
+      if (!box) return;
+      box.classList.remove("good", "bad");
+      box.classList.add("show", correct ? "good" : "bad");
+      box.innerHTML = correct
+        ? "Dobra decyzja. " + (box.dataset.good || "Odpowiedź uwzględnia konieczność weryfikacji źródła i kontekstu.")
+        : "To nie jest najbezpieczniejsza decyzja. " + (box.dataset.bad || "Zatrzymaj się i sprawdź źródło, kontekst oraz niezależne potwierdzenia.");
+    }
+
+    function m5CheckGame(select) {
+      const result = select.parentElement.querySelector(".m5-game-result");
+      const ok = select.value === select.dataset.answer;
+      result.textContent = !select.value ? "" : ok ? "Poprawnie" : "Spróbuj ponownie";
+      result.style.color = ok ? "#33745a" : "#a24f32";
+    }
+
+    function renderLessonContent(module) {
+      const container = document.getElementById("lessonContent");
+
+      if (module.id === 5) {
+        container.innerHTML = `<div class="m5-course">
+<div class="m5-intro"><p>W poprzednich modułach poznałeś mechanizmy manipulacji, zagrożenia związane ze sztuczną inteligencją oraz narzędzia służące do weryfikacji informacji. Teraz wykorzystasz tę wiedzę w praktyce. W każdym zadaniu najważniejsze jest nie szybkie zgadywanie, lecz świadome zatrzymanie reakcji, wskazanie elementów wymagających sprawdzenia i wybór właściwej metody weryfikacji.</p></div>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.1</small><h3>Wprowadzenie: rola fact-checkera</h3></div><div class="m5-body"><p>Fact-checker nie ocenia informacji na podstawie pierwszego wrażenia. Oddziela twierdzenie od komentarza, ustala źródło pierwotne, sprawdza datę i kontekst, a następnie szuka niezależnych dowodów. W tym module wykonasz zadania podobne do sytuacji spotykanych w mediach społecznościowych, pracy zawodowej i codziennym korzystaniu z internetu.</p><img class="m5-case-image" src="grafiki/fact-checker-5-krokow-do-prawdy.png" alt="Infografika: Bądź jak fact-checker. 5 kroków do prawdy" loading="lazy"><div class="m5-summary"><strong>Zasada pracy</strong>Nie musisz natychmiast wiedzieć, czy informacja jest prawdziwa. Musisz wiedzieć, co należy sprawdzić przed jej zaakceptowaniem lub przekazaniem dalej.</div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.2</small><h3>Studium przypadku 1: sensacyjny artykuł</h3></div><div class="m5-body"><div class="m5-mock"><div class="domain">wiadomosci-dzis24.info</div><div class="headline">Pilne! Od przyszłego miesiąca wszystkie urzędy pracy zostaną zlikwidowane</div><div class="meta">Autor niepodany · „Udostępnij, zanim usuną”</div></div><img class="m5-case-image" src="grafiki/studium-przypadku-sensacyjny-artykul.png" alt="Przykład sensacyjnego, fałszywego artykułu o rzekomej likwidacji urzędów pracy" loading="lazy"><p>Artykuł nie wskazuje dokumentu, ustawy ani oficjalnego komunikatu. Nagłówek wywołuje niepokój i zachęca do natychmiastowego udostępnienia.</p><div class="m5-options"><button class="m5-option" onclick="m5Answer(this,'m5f1',false)">Udostępniam jako ostrzeżenie</button><button class="m5-option" onclick="m5Answer(this,'m5f1',true)">Sprawdzam oficjalne komunikaty i podstawę prawną</button><button class="m5-option" onclick="m5Answer(this,'m5f1',false)">Uznaję za prawdę, bo strona wygląda profesjonalnie</button></div><div id="m5f1" class="m5-feedback" data-good="Właściwym krokiem jest dotarcie do oficjalnego komunikatu, projektu aktu prawnego lub informacji instytucji odpowiedzialnej za rynek pracy." data-bad="Profesjonalny wygląd strony i emocjonalny nagłówek nie są dowodem prawdziwości."></div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.3</small><h3>Studium przypadku 2: zdjęcie z katastrofy</h3></div><div class="m5-body"><div class="m5-case"><h4>Opis sytuacji</h4><p>W mediach społecznościowych pojawia się fotografia zalanych ulic z podpisem: „Kłodzko dzisiaj rano. Media milczą”. Post nie zawiera autora zdjęcia ani odsyłacza do lokalnych służb.</p></div><div class="m5-options"><button class="m5-option" onclick="m5Answer(this,'m5f2',true)">Wyszukuję zdjęcie wstecznie i porównuję lokalne komunikaty</button><button class="m5-option" onclick="m5Answer(this,'m5f2',false)">Sprawdzam tylko liczbę udostępnień</button><button class="m5-option" onclick="m5Answer(this,'m5f2',false)">Zakładam, że zdjęcie jest aktualne, bo wygląda realistycznie</button></div><div id="m5f2" class="m5-feedback" data-good="Odwrócone wyszukiwanie może ujawnić wcześniejsze użycie fotografii. Potem trzeba porównać miejsce, datę i komunikaty służb." data-bad="Liczba udostępnień i realizm obrazu nie potwierdzają miejsca ani daty wykonania zdjęcia."></div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.4</small><h3>Studium przypadku 3: podejrzane nagranie</h3></div><div class="m5-body"><div class="m5-case"><h4>Opis sytuacji</h4><p>Krótki film pokazuje znaną osobę zachęcającą do „gwarantowanej inwestycji”. Głos brzmi wiarygodnie, lecz nagranie opublikowano na nowym profilu, a odsyłacz prowadzi do formularza wymagającego numeru telefonu.</p></div><p>Nie należy polegać wyłącznie na widocznych niedoskonałościach twarzy lub głosu. Nowsze materiały syntetyczne mogą wyglądać bardzo przekonująco.</p><div class="m5-options"><button class="m5-option" onclick="m5Answer(this,'m5f3',true)">Szukam nagrania na oficjalnych profilach i sprawdzam podmiot inwestycyjny</button><button class="m5-option" onclick="m5Answer(this,'m5f3',false)">Podaję numer, aby uzyskać więcej informacji</button></div><div id="m5f3" class="m5-feedback" data-good="Weryfikacja oficjalnego kanału i podmiotu oferującego inwestycję jest ważniejsza niż samo oglądanie ruchu ust." data-bad="Podanie danych uruchamia kolejny etap oszustwa i nie potwierdza autentyczności oferty."></div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.5</small><h3>Studium przypadku 4: fałszywy profil</h3></div><div class="m5-body"><div class="m5-mock"><div class="domain">@PanstwowaKomisjaWyborcza_PL_info</div><div class="headline">Pilny komunikat: głosowanie w Warszawie zostało unieważnione</div><div class="meta">Konto utworzone w tym miesiącu · 86 obserwujących</div></div><p>Profil wykorzystuje nazwę instytucji, ale jego identyfikator jest nietypowy, historia krótka, a komunikat nie pojawia się na oficjalnej stronie.</p><div class="m5-options"><button class="m5-option" onclick="m5Answer(this,'m5f4',true)">Otwieram oficjalną stronę instytucji samodzielnie</button><button class="m5-option" onclick="m5Answer(this,'m5f4',false)">Klikam link z posta, bo zawiera nazwę instytucji</button></div><div id="m5f4" class="m5-feedback" data-good="Należy wejść na znany oficjalny adres, zamiast korzystać z odsyłacza z podejrzanego profilu." data-bad="Nazwa instytucji w profilu lub adresie nie oznacza, że konto jest oficjalne."></div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.6</small><h3>Studium przypadku 5: fałszywa oferta pracy</h3></div><div class="m5-body"><div class="m5-mock"><div class="domain">Praca zdalna — kontakt wyłącznie przez komunikator</div><div class="headline">6500 zł miesięcznie bez doświadczenia. Rozpocznij od jutra</div><div class="meta">Wymagane: skan dowodu, numer PESEL i opłata 149 zł za pakiet startowy</div></div><p>Atrakcyjna oferta może wykorzystywać nazwę prawdziwej firmy, ale kontakt i żądane dane nie odpowiadają standardowej procedurze rekrutacyjnej.</p><div class="m5-options"><button class="m5-option" onclick="m5Answer(this,'m5f5',true)">Kontaktuję się z firmą przez jej oficjalną stronę i nie przesyłam dokumentów</button><button class="m5-option" onclick="m5Answer(this,'m5f5',false)">Płacę niewielką opłatę, żeby nie stracić okazji</button></div><div id="m5f5" class="m5-feedback" data-good="Prawdziwość rekrutacji należy potwierdzić niezależnym kanałem. Kandydat nie powinien płacić za możliwość rozpoczęcia pracy." data-bad="Presja czasu i niewielka opłata są częstymi elementami oszustwa."></div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.7</small><h3>Symulacja pracy fact-checkera</h3></div><div class="m5-body"><p>Do zespołu trafia wiadomość: „Od poniedziałku urząd wypłaca nowe świadczenie. Formularz trzeba wypełnić do godziny 18:00”. W poście znajduje się logo instytucji i skrócony link.</p><div class="m5-tools"><div class="m5-tool"><strong>Wyszukiwarka</strong><span>Sprawdzenie, czy komunikat pojawia się w oficjalnych źródłach.</span></div><div class="m5-tool"><strong>Analiza domeny</strong><span>Rozwinięcie skróconego linku i odczyt właściwego adresu.</span></div><div class="m5-tool"><strong>Archiwum strony</strong><span>Porównanie wcześniejszych wersji komunikatu lub witryny.</span></div></div><div class="m5-steps"><div class="m5-step"><div><strong>Zatrzymaj publikację</strong><p>Nie przekazuj wiadomości dalej przed sprawdzeniem.</p></div></div><div class="m5-step"><div><strong>Zidentyfikuj twierdzenie</strong><p>Co dokładnie ma się wydarzyć, od kiedy i na jakiej podstawie?</p></div></div><div class="m5-step"><div><strong>Dotrzyj do źródła pierwotnego</strong><p>Poszukaj oficjalnego komunikatu, aktu prawnego lub formularza na znanej domenie.</p></div></div><div class="m5-step"><div><strong>Porównaj niezależne informacje</strong><p>Sprawdź, czy inne wiarygodne źródła prowadzą własne ustalenia, a nie kopiują ten sam post.</p></div></div><div class="m5-step"><div><strong>Sformułuj wniosek</strong><p>Podaj ocenę wraz z dowodami i wskaż, czego nie udało się potwierdzić.</p></div></div></div><div class="m5-summary"><strong>Wynik symulacji</strong>Najbezpieczniejszą decyzją jest wstrzymanie udostępniania, samodzielne wejście na oficjalną stronę i sprawdzenie podstawy prawnej. Logo i presja czasu nie potwierdzają autentyczności.</div></div></section>
+
+<section class="m5-section"><div class="m5-head"><small>CZĘŚĆ 5.8</small><h3>Gra: rozpoznaj rodzaj manipulacji</h3></div><div class="m5-body"><p>Wybierz kategorię najlepiej opisującą każdy przykład. Informację zwrotną zobaczysz od razu.</p><div class="m5-game-grid">
+<div class="m5-game-card"><blockquote>„Nie uwierzysz, co wydarzyło się potem. Kliknij natychmiast!”</blockquote><select class="m5-select" data-answer="clickbait" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="clickbait">Clickbait</option><option value="deepfake">Deepfake</option><option value="malinformacja">Malinformacja</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Zdjęcie powodzi w Hiszpanii opisane jako aktualna sytuacja w Kłodzku.</blockquote><select class="m5-select" data-answer="kontekst" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="kontekst">Fałszywy kontekst</option><option value="podszywanie">Podszywanie się</option><option value="clickbait">Clickbait</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Film z wygenerowanym głosem polityka zachęca do inwestycji.</blockquote><select class="m5-select" data-answer="deepfake" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="deepfake">Deepfake</option><option value="cherry">Cherry picking</option><option value="misinformacja">Misinformacja</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Konto używa logo urzędu i prawie identycznej nazwy, aby opublikować fałszywy komunikat.</blockquote><select class="m5-select" data-answer="podszywanie" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="podszywanie">Podszywanie się</option><option value="malinformacja">Malinformacja</option><option value="kontekst">Fałszywy kontekst</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Autor wybiera jeden rok wzrostu i pomija wieloletni trend spadkowy.</blockquote><select class="m5-select" data-answer="cherry" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="cherry">Cherry picking</option><option value="deepfake">Deepfake</option><option value="podszywanie">Podszywanie się</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Użytkownik bez złej intencji udostępnia błędną datę wydarzenia, sądząc, że jest poprawna.</blockquote><select class="m5-select" data-answer="misinformacja" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="misinformacja">Misinformacja</option><option value="dezinformacja">Dezinformacja</option><option value="malinformacja">Malinformacja</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Autor świadomie tworzy nieprawdziwą wiadomość, aby wpłynąć na odbiorców.</blockquote><select class="m5-select" data-answer="dezinformacja" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="dezinformacja">Dezinformacja</option><option value="misinformacja">Misinformacja</option><option value="clickbait">Clickbait</option></select><div class="m5-game-result"></div></div>
+<div class="m5-game-card"><blockquote>Prawdziwe prywatne dane zostają ujawnione publicznie, aby zaszkodzić konkretnej osobie.</blockquote><select class="m5-select" data-answer="malinformacja" onchange="m5CheckGame(this)"><option value="">Wybierz kategorię</option><option value="malinformacja">Malinformacja</option><option value="deepfake">Deepfake</option><option value="kontekst">Fałszywy kontekst</option></select><div class="m5-game-result"></div></div>
+</div><div class="m5-summary"><strong>Podsumowanie modułu</strong>Skuteczna weryfikacja nie polega na jednym „magicznym” narzędziu. Łączy analizę źródła, kontekstu, daty, domeny, materiału pierwotnego i niezależnych dowodów.</div></div></section>
+</div>`;
+        return;
+      }
+
+      if (module.id === 4) {
+        container.innerHTML = `<div class="m4-course">
+<div class="m4-intro-panel">
+<figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-4-krytyczny-umysl.webp?v=1" alt="Infografika Krytyczny umysł – twoja tarcza w sieci" loading="lazy" decoding="async"><figcaption>Krytyczne myślenie jako podstawa świadomej weryfikacji informacji.</figcaption></figure>
+<p>Weryfikowanie informacji nie wymaga dostępu do specjalistycznego laboratorium ani zaawansowanej wiedzy informatycznej. W wielu przypadkach wystarczą ogólnodostępne narzędzia, uważna analiza treści i kilka prostych nawyków. Największe znaczenie ma zatrzymanie automatycznej reakcji: zanim uwierzymy w sensacyjną wiadomość lub przekażemy ją dalej, powinniśmy sprawdzić, skąd pochodzi, w jakim kontekście ją opublikowano i czy potwierdzają ją niezależne źródła.</p>
+</div>
+<section class="m4-section" id="m4-1"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>1. Google Lens i odwrotne wyszukiwanie obrazem</h3></div></div><div class="m4-section-body">
+
+<details class="m4-accordion"><summary><span>Na czym polega odwrotne wyszukiwanie obrazem?</span></summary><div class="m4-accordion-body"><p>Odwrócone wyszukiwanie obrazem, nazywane również wyszukiwaniem wstecznym, pozwala wykorzystać zdjęcie zamiast tradycyjnego zapytania tekstowego. Użytkownik przesyła plik, wkleja adres grafiki albo zaznacza fragment obrazu, a narzędzie wyszukuje podobne materiały i strony, na których dana fotografia lub jej zmodyfikowana wersja została wcześniej opublikowana.</p>
+<p>Do najpopularniejszych narzędzi należą:</p>
+<ul><li>Google Lens,</li><li>wyszukiwarka obrazów Google,</li><li>TinEye,</li><li>Bing Visual Search,</li><li>Yandex Images.</li></ul>
+<p>Wyniki mogą pomóc ustalić wcześniejszy kontekst zdjęcia, odnaleźć jego pełniejszą wersję, rozpoznać przedstawione miejsce lub osobę, a także sprawdzić, czy obraz nie został wykorzystany do zilustrowania zupełnie innego wydarzenia.</p>
+<p>Odwrócone wyszukiwanie nie daje jednak pewności, że odnaleziony wynik jest najstarszą publikacją w internecie. Wyszukiwarki nie indeksują wszystkich stron, część materiałów zostaje usunięta, a posty z zamkniętych grup i prywatnych profili mogą nie pojawiać się w wynikach. Znalezienie wcześniejszej wersji zdjęcia stanowi mocną wskazówkę, ale nie zawsze pozwala jednoznacznie wskazać jego autora i pierwotne miejsce publikacji.</p></div></details>
+<details class="m4-accordion"><summary><span>Jak przeprowadzić sprawdzenie?</span></summary><div class="m4-accordion-body"><p>Najpierw należy zapisać zdjęcie lub wykonać zrzut ekranu. W przypadku filmu można zatrzymać nagranie w charakterystycznym momencie i wyszukać pojedynczy kadr. Najlepiej sprawdzić kilka różnych fragmentów, ponieważ wyszukiwarka może lepiej rozpoznać twarz, budynek, pojazd, znak drogowy lub element krajobrazu niż cały obraz.</p>
+<p>Następnie trzeba porównać daty publikacji, opisy oraz kontekst wcześniejszych wyników. Samo odnalezienie podobnej fotografii nie kończy weryfikacji. Należy sprawdzić, czy przedstawia ona to samo miejsce i wydarzenie, czy została wykadrowana, odwrócona, przerobiona albo uzupełniona o nowe elementy.</p></div></details>
+<details class="m4-accordion m4-example-accordion"><summary><span>Przykład fałszywego kontekstu</span></summary><div class="m4-accordion-body"><p>W mediach społecznościowych może pojawić się post informujący o aktualnej powodzi w Kłodzku. Do wpisu dołączono dramatyczne zdjęcie zalanych ulic, samochodów i budynków. Fotografia jest prawdziwa, ale nie przedstawia Kłodzka ani bieżącego wydarzenia. Została wykonana podczas powodzi w Hiszpanii kilka lat wcześniej.</p>
+<p>Autor posta nie musiał ingerować w sam obraz. Manipulacja polegała na dodaniu fałszywego opisu oraz nowej daty. Odwrócone wyszukiwanie może ujawnić wcześniejsze publikacje zdjęcia i pokazać, gdzie oraz w jakich okolicznościach wykonano fotografię.</p>
+<p>Przykład pokazuje, że autentyczne zdjęcie może przekazywać fałszywą informację, jeżeli zostanie umieszczone w nieprawdziwym kontekście.</p></div></details>
+</div></section>
+<section class="m4-section" id="m4-2"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>2. Fact Check Explorer i serwisy weryfikujące fakty</h3></div></div><div class="m4-section-body">
+
+<details class="m4-accordion"><summary><span>Czym jest fact-checking?</span></summary><div class="m4-accordion-body"><p>Fact-checking to uporządkowany proces sprawdzania, czy określone twierdzenie pozostaje zgodne z dostępnymi dowodami. Weryfikacja może dotyczyć wypowiedzi polityka, artykułu, filmu, grafiki, danych statystycznych, wpisu w mediach społecznościowych lub informacji przekazywanej w komunikatorze.</p>
+<p>Osoba sprawdzająca informację powinna ustalić:</p>
+<ul><li>kto sformułował dane twierdzenie</li><li>gdzie i kiedy je opublikowano</li><li>na jakich danych lub dokumentach je oparto</li><li>czy przywołane źródła rzeczywiście potwierdzają przedstawiony wniosek</li><li>czy nie pominięto informacji zmieniających sens przekazu</li><li>czy sprawę potwierdzają niezależne i wiarygodne źródła.</li></ul>
+<p>Fact-checking nie polega wyłącznie na oznaczeniu wiadomości jako „prawdziwej” albo „fałszywej”. Wiele przekazów zawiera elementy zgodne z faktami, które połączono z błędną interpretacją, wyrwano z kontekstu albo przedstawiono w sposób prowadzący odbiorcę do nieuzasadnionego wniosku.</p></div></details>
+<details class="m4-accordion"><summary><span>Google Fact Check Explorer</span></summary><div class="m4-accordion-body"><p>Google Fact Check Explorer jest wyszukiwarką materiałów przygotowanych przez organizacje zajmujące się profesjonalną weryfikacją informacji. Użytkownik może wpisać nazwisko, temat, cytat lub fragment sprawdzanej wiadomości i odnaleźć opublikowane wcześniej analizy.</p>
+<p>Narzędzie przydaje się szczególnie wtedy, gdy dana informacja stała się popularna i była już wielokrotnie udostępniana. Nie zastępuje jednak samodzielnej oceny źródła. Brak wyników nie oznacza, że wiadomość jest prawdziwa. Może jedynie wskazywać, że żadna z indeksowanych organizacji jeszcze jej nie sprawdziła albo opublikowała analizę z użyciem innych słów.</p></div></details>
+<details class="m4-accordion"><summary><span>Serwisy fact-checkingowe</span></summary><div class="m4-accordion-body"><p>W Polsce weryfikacje publikują między innymi:</p>
+<ul><li>Stowarzyszenie Demagog,</li><li>AFP Sprawdzam,</li><li>Konkret24,</li><li>Fakenews.pl.</li></ul>
+<p>W przypadku treści zagranicznych można sprawdzić również materiały publikowane przez organizacje i redakcje działające w innych państwach. Przy wyborze serwisu należy zwrócić uwagę na opis metodologii, sposób prezentowania źródeł, możliwość prześledzenia toku analizy oraz jawność informacji o autorach i finansowaniu działalności.</p></div></details>
+<details class="m4-accordion m4-example-accordion"><summary><span>Przykład</span></summary><div class="m4-accordion-body"><p>W mediach społecznościowych pojawia się wiadomość, według której określony produkt spożywczy albo lek powoduje poważną chorobę. Post zawiera emocjonalny nagłówek, fragment wypowiedzi lekarza i odsyłacz do nieznanej strony.</p>
+<p>Przed udostępnieniem wiadomości można wpisać jej główne twierdzenie do Fact Check Explorer oraz wyszukiwarek serwisów weryfikujących fakty. Może się okazać, że eksperci już opisali ten przekaz, odnaleźli pierwotne badanie i wykazali, że jego wyniki zostały błędnie zinterpretowane.</p>
+<p>Nawet gotową analizę fact-checkingową należy przeczytać w całości. Sam nagłówek lub ocena końcowa nie pokazują, na czym polegała manipulacja i jakie dowody wykorzystano podczas sprawdzania.</p></div></details>
+</div></section>
+<section class="m4-section" id="m4-3"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>3. Sprawdzanie domeny, daty i archiwalnej wersji strony</h3></div></div><div class="m4-section-body">
+
+<details class="m4-accordion"><summary><span>Weryfikacja techniczna źródła</span></summary><div class="m4-accordion-body"><p>Ocena wiarygodności informacji obejmuje analizę strony, na której opublikowano materiał. Oszuści często kopiują wygląd znanych portali, banków, sklepów, urzędów oraz firm kurierskich. Podrobiona witryna może zawierać właściwe logo, podobną kolorystykę, zdjęcia pracowników i tekst skopiowany z prawdziwego serwisu.</p>
+<p>Najważniejszą wskazówką pozostaje wtedy adres strony widoczny w pasku przeglądarki.</p></div></details>
+<details class="m4-accordion"><summary><span>Na co zwrócić uwagę w adresie URL?</span></summary><div class="m4-accordion-body"><p>Podejrzane domeny mogą wykorzystywać:</p>
+<ul><li>literówki w nazwie marki</li><li>dodatkowe znaki lub wyrazy</li><li>zamianę litery „m” na zestaw „rn” albo „nn”</li><li>zamianę małej litery „l” na wielką literę „I”</li><li>nietypowe rozszerzenie domeny</li><li>subdomenę zawierającą nazwę znanej instytucji, podczas gdy właściwa domena należy do innego podmiotu</li><li>skrócony adres ukrywający rzeczywiste miejsce przekierowania.</li></ul>
+<p>Przykładowo adres zawierający nazwę banku nie musi należeć do tego banku. W domenie najważniejsza jest jej zasadnicza część znajdująca się bezpośrednio przed rozszerzeniem, takim jak „.pl” albo „.com”. Oszuści mogą umieścić prawdziwą nazwę marki wcześniej, aby odwrócić uwagę od właściwego właściciela domeny.</p>
+<p>Obecność symbolu kłódki i połączenia HTTPS również nie potwierdza wiarygodności strony. Informuje jedynie, że połączenie między przeglądarką a serwisem zostało zaszyfrowane. Fałszywa witryna także może posiadać certyfikat bezpieczeństwa.</p></div></details>
+<details class="m4-accordion"><summary><span>Znaczenie daty publikacji</span></summary><div class="m4-accordion-body"><p>Prawdziwy artykuł może wprowadzać w błąd, gdy zostanie ponownie udostępniony po kilku latach bez informacji o pierwotnej dacie. Dotyczy to szczególnie materiałów o zmianach prawnych, ostrzeżeniach pogodowych, epidemiach, konfliktach, wydarzeniach politycznych i świadczeniach finansowych.</p>
+<p>Przed uznaniem wiadomości za aktualną trzeba sprawdzić:</p>
+<ul><li>datę pierwszej publikacji</li><li>datę ostatniej aktualizacji</li><li>daty opisanych wydarzeń</li><li>odsyłacze do dokumentów źródłowych</li><li>informację, czy przepisy lub dane nie zostały później zmienione.</li></ul>
+<p>Data wyświetlona na stronie nie zawsze jest wiarygodna. Część serwisów automatycznie odświeża datę artykułu albo pokazuje dzień ponownego opublikowania materiału. Dlatego należy porównać ją z treścią, komentarzami, adresami odsyłaczy i wersjami archiwalnymi.</p></div></details>
+<details class="m4-accordion"><summary><span>Wayback Machine i archiwalne wersje stron</span></summary><div class="m4-accordion-body"><p>Wayback Machine umożliwia przeglądanie kopii wielu stron internetowych zapisanych w różnych momentach. Narzędzie może pomóc sprawdzić:</p>
+<ul><li>jak wcześniej wyglądała dana witryna</li><li>czy treść artykułu została zmieniona</li><li>czy na stronie znajdował się usunięty komunikat</li><li>jakie informacje publikowała wcześniej firma lub organizacja</li><li>czy podejrzana domena niedawno zmieniła tematykę i właściciela.</li></ul>
+<p>Archiwum nie przechowuje każdej strony ani każdej jej wersji. Brak kopii nie potwierdza więc, że materiał nigdy nie istniał. Niektóre strony blokują archiwizację, a treści wymagające logowania mogą nie zostać zapisane.</p></div></details>
+<details class="m4-accordion m4-example-accordion"><summary><span>Przykład</span></summary><div class="m4-accordion-body"><p>Użytkownik otrzymuje wiadomość o pilnym zwrocie podatku. Odsyłacz prowadzi do strony wyglądającej jak oficjalny serwis administracji publicznej. Formularz prosi o podanie numeru PESEL, danych karty oraz kodu autoryzacyjnego.</p>
+<p>Dokładne sprawdzenie adresu pokazuje, że strona nie znajduje się w oficjalnej domenie instytucji. Logo i układ graficzny zostały skopiowane, ale domena zawiera dodatkowy znak i nietypowe rozszerzenie. W takiej sytuacji nie należy wypełniać formularza. Prawdziwy serwis trzeba otworzyć samodzielnie, wpisując znany adres w przeglądarce.</p></div></details>
+</div></section>
+<section class="m4-section" id="m4-4"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>4. Weryfikacja raportów, liczb i cytatów</h3></div></div><div class="m4-section-body">
+
+<details class="m4-accordion"><summary><span>Fakt, opinia i interpretacja</span></summary><div class="m4-accordion-body"><p>Fakt to informacja, którą można sprawdzić na podstawie danych, dokumentów, obserwacji lub innych dowodów. Opinia wyraża ocenę, przekonanie albo stanowisko autora. Interpretacja łączy fakty z określonym sposobem ich wyjaśniania.</p>
+<p>Rozróżnienie tych kategorii nie zawsze jest proste. Zdanie może zawierać prawdziwą liczbę, ale prowadzić do mylącego wniosku. Autor może również przedstawić własną ocenę tak, jakby wynikała bezpośrednio z danych.</p>
+<p>Przykładowo informacja, że liczba określonych zdarzeń wzrosła o 100%, brzmi alarmująco. Jeżeli jednak liczba przypadków zwiększyła się z jednego do dwóch, odbiorca potrzebuje wartości bezwzględnych, aby prawidłowo ocenić skalę zjawiska.</p></div></details>
+<details class="m4-accordion"><summary><span>Jak sprawdzać dane?</span></summary><div class="m4-accordion-body"><p>Podczas analizy raportu, wykresu lub informacji statystycznej należy ustalić:</p>
+<ul><li>kto zebrał dane</li><li>w jakim okresie przeprowadzono badanie</li><li>jak liczna była próba</li><li>kogo objęło badanie</li><li>w jaki sposób sformułowano pytania</li><li>czy wyniki są reprezentatywne</li><li>czy porównywane wartości obliczono według tej samej metody</li><li>czy autor przedstawia liczby bezwzględne, procenty czy zmianę procentową</li><li>czy dostępny jest pełny raport, a nie wyłącznie omówienie prasowe.</li></ul>
+<p>Trzeba również sprawdzić, kto sfinansował badanie i czy autorzy ujawnili możliwy konflikt interesów. Źródło finansowania nie przesądza automatycznie o niewiarygodności wyników, ale pomaga ocenić kontekst publikacji.</p></div></details>
+<details class="m4-accordion"><summary><span>Cherry picking, czyli wybiórcze dobieranie danych</span></summary><div class="m4-accordion-body"><p>Cherry picking polega na wybieraniu tylko tych wyników, które potwierdzają wcześniej przyjętą tezę, przy jednoczesnym pomijaniu danych prowadzących do innych wniosków.</p>
+<p>Autor może na przykład powołać się na jeden rok, w którym nastąpił wzrost określonego zjawiska, i pominąć dłuższy okres pokazujący ogólną tendencję spadkową. Może też zacytować jedno badanie zgodne z jego stanowiskiem, ignorując większą liczbę analiz wskazujących na odmienne rezultaty.</p>
+<p>Rozpoznanie tej techniki wymaga dotarcia do pełnego materiału źródłowego oraz porównania go z innymi badaniami. Pojedyncza liczba nie wystarcza do oceny złożonego zjawiska.</p></div></details>
+<details class="m4-accordion"><summary><span>Reguła trzech niezależnych źródeł</span></summary><div class="m4-accordion-body"><p>Kontrowersyjną lub sensacyjną wiadomość dobrze jest porównać z informacjami opublikowanymi przez co najmniej trzy wiarygodne i niezależne źródła. Nie chodzi jednak o samo policzenie artykułów.</p>
+<p>Kilka portali może powtarzać tę samą depeszę, wpis w mediach społecznościowych albo komunikat prasowy. W takiej sytuacji nie mamy trzech niezależnych potwierdzeń, lecz jedną informację skopiowaną przez trzy redakcje.</p>
+<p>Podczas porównywania źródeł należy sprawdzić:</p>
+<ul><li>czy redakcje opierają się na własnych ustaleniach</li><li>czy wszystkie odwołują się do tego samego autora</li><li>czy podają dokumenty, nagrania lub dane pierwotne</li><li>czy opisują sprawę z różnych perspektyw</li><li>czy wyraźnie oddzielają fakty od komentarzy.</li></ul>
+<p>Najlepszym rozwiązaniem jest dotarcie do źródła pierwotnego: raportu, ustawy, orzeczenia, nagrania całej wypowiedzi, oficjalnego komunikatu albo oryginalnego zbioru danych.</p></div></details>
+<details class="m4-accordion"><summary><span>Cytaty wyrwane z kontekstu</span></summary><div class="m4-accordion-body"><p>Jedno zdanie wyjęte z dłuższej wypowiedzi może otrzymać znaczenie inne niż zamierzone przez autora. Często pomija się pytanie zadane rozmówcy, wcześniejszą część wypowiedzi, warunek, zastrzeżenie albo fragment wyjaśniający, że autor opisuje cudze stanowisko.</p>
+<p>Przed udostępnieniem cytatu trzeba sprawdzić:</p>
+<ul><li>czy istnieje pełne nagranie lub stenogram</li><li>kto wypowiedział dane słowa</li><li>w odpowiedzi na jakie pytanie padła wypowiedź</li><li>co powiedziano bezpośrednio przed cytowanym fragmentem i po nim</li><li>czy zapis nie został skrócony albo błędnie przetłumaczony</li><li>czy cytat nie pochodzi z wypowiedzi satyrycznej lub fikcyjnej.</li></ul></div></details>
+<details class="m4-accordion m4-example-accordion"><summary><span>Przykład</span></summary><div class="m4-accordion-body"><p>W mediach pojawia się nagłówek: „Eksperci przyznają, że program całkowicie się nie udał”. Artykuł przywołuje jedno zdanie z obszernego raportu.</p>
+<p>Po otwarciu dokumentu okazuje się, że cytat dotyczył wyłącznie jednego etapu realizacji, w którym nie osiągnięto części założeń. W kolejnych rozdziałach autorzy opisali poprawę wyników i pozytywne rezultaty pozostałych działań. Nagłówek wykorzystał prawdziwe zdanie, ale przedstawił je w sposób zmieniający sens całej oceny.</p></div></details>
+</div></section>
+<section class="m4-section" id="m4-5"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>Zapamiętaj</h3></div></div><div class="m4-section-body">
+
+<details class="m4-accordion"><summary><span>Silna emocja jest sygnałem ostrzegawczym</span></summary><div class="m4-accordion-body"><figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-4-sygnaly-manipulacji.webp?v=1" alt="Infografika Uwaga, to może być manipulacja" loading="lazy" decoding="async"><figcaption>Najczęstsze sygnały ostrzegawcze w emocjonalnym przekazie.</figcaption></figure><p>Dezinformacja często wywołuje lęk, złość, oburzenie, poczucie zagrożenia albo euforię. Silne emocje przyspieszają reakcję i ograniczają gotowość do sprawdzania informacji.</p>
+<p>Jeżeli post sprawia, że od razu chcesz go udostępnić, skomentować lub przesłać znajomym, zatrzymaj się. Przeczytaj treść ponownie, sprawdź źródło i odczekaj chwilę. Autor może celowo próbować skłonić Cię do reakcji przed przeprowadzeniem weryfikacji.</p>
+<p>Emocja sama w sobie nie dowodzi, że wiadomość jest fałszywa. Informuje jednak, że przekaz wymaga spokojniejszej i dokładniejszej analizy.</p></div></details>
+<details class="m4-accordion"><summary><span>Czytaj lateralnie</span></summary><div class="m4-accordion-body"><p>Czytanie lateralne polega na opuszczeniu sprawdzanej strony i otwarciu nowych kart w przeglądarce. Zamiast polegać wyłącznie na informacjach zamieszczonych w zakładce „O nas”, należy sprawdzić, co o danym portalu, autorze lub organizacji piszą niezależne źródła.</p>
+<p>W praktyce oznacza to poszukiwanie odpowiedzi na pytania:</p>
+<ul><li>kto jest właścicielem strony</li><li>kto tworzy publikowane materiały</li><li>jak portal finansuje działalność</li><li>czy wcześniej publikował nierzetelne informacje</li><li>czy inne źródła potwierdzają jego dane</li><li>czy autor posiada deklarowane kwalifikacje</li><li>czy istnieją niezależne informacje o organizacji.</li></ul>
+<p>Każda strona może przedstawić siebie jako rzetelną i niezależną. Wiarygodność należy oceniać na podstawie informacji pochodzących również spoza badanego serwisu.</p></div></details>
+<details class="m4-accordion"><summary><span>Procedura SIFT</span></summary><div class="m4-accordion-body"><figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-4-procedura-sift.webp?v=1" alt="Infografika Procedura SIFT – cztery kroki do weryfikacji" loading="lazy" decoding="async"><figcaption>Procedura SIFT w czterech krokach: zatrzymaj się, zbadaj źródło, znajdź lepsze potwierdzenie i dotrzyj do pierwotnego kontekstu.</figcaption></figure><p>SIFT to czterostopniowy sposób szybkiego sprawdzania treści internetowych. Nazwa pochodzi od pierwszych liter angielskich określeń poszczególnych działań.</p>
+<h4>1. Stop – zatrzymaj się</h4>
+<p>Nie udostępniaj materiału natychmiast. Zastanów się, czy znasz źródło, autora i kontekst publikacji. Zwróć uwagę na emocje, które wywołuje treść.</p>
+<p>Nie musisz od razu rozstrzygać, czy wiadomość jest prawdziwa. Pierwszym krokiem jest przerwanie automatycznej reakcji.</p>
+<h4>2. Investigate the source – zbadaj źródło</h4>
+<p>Sprawdź, kto opublikował informację. Poszukaj danych o autorze, redakcji, organizacji lub profilu. Oceń ich doświadczenie, wcześniejszą działalność, sposób finansowania i reputację.</p>
+<p>Nie ograniczaj się do opisu przygotowanego przez samo źródło. Zastosuj czytanie lateralne i zobacz, co piszą o nim inni.</p>
+<h4>3. Find better coverage – znajdź lepsze potwierdzenie</h4>
+<p>Poszukaj innych materiałów opisujących tę samą sprawę. Pierwsza znaleziona strona nie zawsze jest najlepszym źródłem. Bardziej przydatny może być oficjalny dokument, pełna wypowiedź, raport instytucji, analiza ekspercka albo materiał redakcji, która samodzielnie sprawdziła wydarzenie.</p>
+<p>Jeżeli kilka stron powtarza tę samą wiadomość, ustal, z jakiego pierwotnego źródła korzystają.</p>
+<h4>4. Trace claims, quotes and media to the original context – prześledź twierdzenia, cytaty i multimedia do pierwotnego kontekstu</h4>
+<p>Dotrzyj do oryginalnego raportu, zdjęcia, filmu, wpisu lub nagrania. Sprawdź, czy materiał został prawidłowo zacytowany, czy nie zmieniono jego daty i czy nie pominięto fragmentu wpływającego na znaczenie.</p>
+<p>W przypadku zdjęć użyj odwróconego wyszukiwania obrazem. W przypadku cytatów znajdź pełną wypowiedź. Przy danych statystycznych otwórz raport źródłowy i sprawdź metodologię.</p>
+<p>SIFT nie wymaga przeprowadzania długiego śledztwa przy każdej napotkanej wiadomości. Pomaga szybko ocenić, czy treść zasługuje na zaufanie, czy wymaga dokładniejszej kontroli, czy też nie powinna być dalej rozpowszechniana.</p></div></details>
+</div></section>
+<section class="m4-section" id="m4-6"><div class="m4-section-head"><div><span class="m4-label">CZĘŚĆ MODUŁU</span><h3>Najprostsza zasada weryfikacji</h3></div></div><div class="m4-section-body">
+<figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-4-cztery-kroki-do-prawdy.webp?v=1" alt="Infografika Jak nie dać się nabrać – cztery kroki do prawdy" loading="lazy" decoding="async"><figcaption>Graficzne podsumowanie najprostszych zasad weryfikacji informacji.</figcaption></figure>
+<p>Zanim uwierzysz lub udostępnisz informację, odpowiedz na pięć pytań:</p>
+<ol><li>Kto opublikował tę wiadomość?</li><li>Skąd pochodzą przywołane dane, zdjęcia lub cytaty?</li><li>Czy materiał jest aktualny i pokazany w prawidłowym kontekście?</li><li>Czy potwierdzają go niezależne źródła?</li><li>Co autor chce, żebym poczuł lub zrobił?</li></ol>
+<p>Jeżeli nie potrafisz odpowiedzieć na te pytania, nie przekazuj informacji dalej. Brak pewności nie oznacza, że treść jest fałszywa. Oznacza, że nie została jeszcze wystarczająco sprawdzona.</p>
+</div></section>
+</div>`;
+        return;
+      }
+
+      if (module.id === 3) {
+        container.innerHTML = `<div class="m3-course">
+<div class="m3-intro-panel">
+<p>Rozwój sztucznej inteligencji usprawnił analizowanie informacji, tworzenie treści i komunikację. Te same narzędzia coraz częściej wykorzystują jednak osoby, które chcą manipulować odbiorcami, wyłudzać pieniądze albo przejmować dane osobowe. Fałszywe nagrania, sklonowane głosy, podrobione profile i sensacyjne wiadomości mogą wyglądać wiarygodnie, szczególnie gdy oszust posługuje się wizerunkiem znanej osoby lub nazwą rozpoznawalnej instytucji.</p>
+<p>Granica między autentyczną a sztucznie wygenerowaną treścią staje się coraz trudniejsza do rozpoznania. Odbiorca nie zawsze może już polegać wyłącznie na własnym wzroku lub słuchu. Potrzebuje również umiejętności sprawdzania źródła, porównywania informacji i rozpoznawania mechanizmów wywierania presji.</p>
+</div>
+<section class="m3-section" id="m3-3"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>Ograniczenia modeli sztucznej inteligencji i zjawisko halucynacji</h3></div></div><div class="m3-section-body">
+<p>Sztuczna inteligencja pomaga wykrywać dezinformację. Systemy wykorzystujące przetwarzanie języka naturalnego mogą analizować duże zbiory tekstów, wyszukiwać powtarzające się schematy językowe oraz śledzić sposób rozprzestrzeniania się fałszywych treści w mediach społecznościowych. Automatyczna analiza pozwala objąć badaniem znacznie większą liczbę publikacji, niż byłoby to możliwe przy pracy wykonywanej wyłącznie przez człowieka.</p>
+<p>Modele wykorzystywane do rozpoznawania fałszywych informacji mają jednak wyraźne ograniczenia. Wymagają trenowania na rozbudowanych i regularnie aktualizowanych zbiorach danych. Materiał szkoleniowy szybko się dezaktualizuje, ponieważ autorzy dezinformacji zmieniają sposób działania, język i tematykę publikowanych przekazów. Model przygotowany do wykrywania jednego rodzaju manipulacji może nie rozpoznać nowego schematu lub treści odnoszącej się do wydarzenia, którego wcześniej nie uwzględniono w danych.</p>
+<p>Trudność sprawiają również krótkie wypowiedzi publikowane między innymi w serwisie X. Kilka zdań lub pojedynczy komunikat często nie dostarczają wystarczającego kontekstu, aby system mógł prawidłowo ocenić intencję autora. Sarkazm, ironia, aluzje, lokalne odniesienia i gry językowe dodatkowo zwiększają ryzyko błędnej interpretacji.</p>
+<p>Każdy język wymaga osobnego dostosowania narzędzi. Model skuteczny w analizie treści anglojęzycznych nie musi równie dobrze rozpoznawać manipulacji w języku polskim. Różnice dotyczą słownictwa, składni, kontekstu kulturowego, sposobu wyrażania emocji i charakterystycznych dla danego kraju odniesień społecznych lub politycznych.</p>
+<p>Osobnym problemem są tak zwane halucynacje modeli generatywnych. Model może stworzyć odpowiedź, która brzmi logicznie i przekonująco, choć zawiera zmyślone fakty, nieistniejące źródła, błędne daty albo fałszywie przypisane wypowiedzi. Nie oznacza to, że system świadomie kłamie. Generuje treść na podstawie prawdopodobnych zależności językowych, a nie na podstawie rozumienia prawdy w ludzkim znaczeniu tego pojęcia.</p>
+<aside class="m3-callout m3-callout-remember"><strong>Zapamiętaj</strong><p>Dlatego odpowiedzi wygenerowanych przez AI nie należy automatycznie traktować jako wiarygodnego źródła. Dane dotyczące prawa, zdrowia, finansów, bieżących wydarzeń, statystyk oraz wypowiedzi konkretnych osób wymagają sprawdzenia w niezależnych i możliwych do zidentyfikowania źródłach.</p></aside>
+<aside class="m3-callout m3-callout-note"><strong>Nota dotycząca źródeł</strong><p>Informacje dotyczące ograniczeń automatycznego wykrywania dezinformacji wynikają z materiałów źródłowych. Opis halucynacji AI stanowi uzupełnienie oparte na wiedzy ogólnej i wymaga odrębnego udokumentowania przed wykorzystaniem w publikacji naukowej lub oficjalnym opracowaniu.</p></aside>
+</div></section>
+<section class="m3-section" id="m3-12"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>Deepfake obrazu, filmu i głosu</h3></div></div><div class="m3-section-body">
+<figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-3-pulapki-ai.webp?v=1" alt="Infografika Pułapki AI – jak nie dać się oszukać w sieci" loading="lazy" decoding="async"><figcaption>Najważniejsze zagrożenia związane z obrazem, filmem i głosem generowanym przez AI.</figcaption></figure>
+<p>Deepfake to syntetyczna lub zmodyfikowana treść multimedialna przygotowana z wykorzystaniem metod sztucznej inteligencji. Nazwa powstała z połączenia angielskich określeń <em>deep learning</em>, czyli głębokie uczenie, oraz <em>fake</em>, czyli fałsz.</p>
+<p>Technologia pozwala tworzyć obrazy, nagrania filmowe i dźwiękowe, które imitują prawdziwe osoby. Oszust może zmienić wygląd twarzy, zsynchronizować ruch ust z inną wypowiedzią, sklonować głos albo wygenerować fotografię przedstawiającą wydarzenie, które nigdy się nie odbyło.</p>
+<p>Deepfake nie jest jednym rodzajem materiału. Obejmuje kilka odmiennych sposobów manipulowania obrazem i dźwiękiem.</p>
+<details class="m3-accordion"><summary><span>Deepfake wideo</span></summary><div class="m3-accordion-body">
+<p>Wideo deepfake polega na modyfikowaniu nagrania lub tworzeniu jego sztucznej wersji. Jedną z najbardziej rozpoznawalnych technik jest zamiana twarzy, określana jako <em>face swap</em>. Twarz osoby występującej w oryginalnym materiale zostaje zastąpiona wizerunkiem kogoś innego.</p>
+<p>Stosuje się również morphing, czyli płynne przekształcanie jednego obrazu w drugi, oraz animowanie ruchów twarzy lub całego ciała. Dzięki tym technikom można stworzyć materiał sugerujący, że polityk, przedstawiciel instytucji albo osoba publiczna uczestniczyła w wydarzeniu, którego w rzeczywistości nie było.</p>
+<p>Wiarygodność takiego nagrania zwiększa znajome otoczenie, logo stacji telewizyjnej, pasek informacyjny, odpowiednio dobrany podpis lub fragment autentycznego materiału. Odbiorca może skupić się na rozpoznawalnej twarzy i nie sprawdzić, gdzie po raz pierwszy opublikowano film.</p>
+<article class="deepfake-example">
+<h4>Przykład: deepfake wideo</h4>
+<p>Obejrzyj materiał i zastanów się, czy bez dodatkowego kontekstu uznałbyś go za autentyczny.</p>
+<div class="deepfake-question"><strong>Na co zwrócić uwagę?</strong> Sprawdź ruch ust, mimikę, przejścia między klatkami, jakość obrazu oraz źródło publikacji.</div>
+<div class="deepfake-video"><iframe src="https://www.youtube-nocookie.com/embed/WzK1MBEpkJ0" title="Przykład deepfake wideo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="deepfake-caption">Materiał demonstracyjny dotyczący manipulacji wideo z wykorzystaniem sztucznej inteligencji.</p>
+</article>
+</div></details>
+<details class="m3-accordion"><summary><span>Deepfake audio</span></summary><div class="m3-accordion-body">
+<p>Deepfake audio polega na generowaniu lub przekształcaniu głosu. Po zebraniu odpowiedniej liczby próbek nagrań system może odtworzyć barwę, sposób mówienia, intonację i charakterystyczne cechy wypowiedzi konkretnej osoby. Następnie dowolny tekst zostaje przekształcony w nagranie brzmiące tak, jakby wypowiedziała go osoba, której głos sklonowano.</p>
+<article class="m3-case"><span>PRZYKŁAD</span><p>W kampanii wyborczej w Polsce w 2023 roku jedna z partii wykorzystała wygenerowany przez AI głos premiera Mateusza Morawieckiego. Przypadek ten pokazał, że syntetyczna mowa może być używana w komunikacji politycznej, nawet gdy odbiorcy nie mają pewności, czy słyszą autentyczne nagranie.</p></article>
+<p>W materiałach źródłowych opisano również fałszywe nagranie wykorzystujące głos Taylor Swift. W spreparowanej wypowiedzi artystka miała obrażać mniej zamożnych fanów. Materiał wywołał dezorientację wśród internautów, ponieważ głos przypominał sposób mówienia prawdziwej osoby, a odbiorcy nie dysponowali od razu informacją o jego sztucznym pochodzeniu.</p>
+<p>Klonowanie głosu może służyć do oszustw finansowych. Przestępca może zadzwonić do członka rodziny, pracownika firmy lub księgowego i, korzystając ze sklonowanego głosu, poprosić o pilny przelew, przekazanie kodu autoryzacyjnego albo ujawnienie danych. Presja czasu i znajoma barwa głosu utrudniają zachowanie ostrożności.</p>
+<article class="deepfake-example">
+<h4>Przykład: deepfake audio</h4>
+<p>Posłuchaj nagrania i oceń, czy sam znajomy głos wystarczyłby Ci do uznania wypowiedzi za prawdziwą.</p>
+<div class="deepfake-question"><strong>Pytanie do uczestnika:</strong> Jak zweryfikowałbyś pilną prośbę przekazaną głosem bliskiej osoby lub przełożonego?</div>
+<div class="deepfake-video"><iframe src="https://www.youtube-nocookie.com/embed/3wVpVH0Wa6E" title="Przykład deepfake audio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="deepfake-caption">Przykład pokazujący, jak przekonująco może brzmieć syntetyczna lub zmodyfikowana mowa.</p>
+</article>
+</div></details>
+<details class="m3-accordion"><summary><span>Syntetyczne i zmodyfikowane obrazy</span></summary><div class="m3-accordion-body">
+<p>Sztuczna inteligencja pozwala tworzyć realistyczne twarze osób, które nigdy nie istniały, oraz modyfikować prawdziwe fotografie. Wygenerowana osoba może otrzymać imię, historię zawodową, profil w mediach społecznościowych, listę znajomych i regularnie publikowane wpisy. Taka fikcyjna tożsamość może następnie służyć do rozpowszechniania dezinformacji, prowadzenia oszustw inwestycyjnych lub nawiązywania relacji z przyszłymi ofiarami.</p>
+<p>Badania przywołane w materiałach wskazują, że ludzie mają poważne trudności z odróżnianiem syntetycznych twarzy od zdjęć prawdziwych osób. Ocena oparta wyłącznie na wyglądzie fotografii często okazuje się niewystarczająca.</p>
+<article class="m3-case"><span>PRZYKŁAD</span><p>Przykładem szeroko rozpowszechnianej manipulacji były wygenerowane przez AI obrazy przedstawiające rzekome aresztowanie Donalda Trumpa. Zdjęcia wyglądały jak fotografie reporterskie wykonane podczas interwencji służb. Pokazywały dynamiczne sceny, funkcjonariuszy i realistyczne otoczenie. Wydarzenia przedstawione na obrazach nie miały jednak miejsca.</p></article>
+<article class="deepfake-example">
+<h4>Studium przypadku: papież Franciszek w białej kurtce</h4>
+<p>W marcu 2023 roku internet obiegł realistyczny obraz przedstawiający papieża Franciszka w dużej białej kurtce. Materiał wyglądał jak fotografia prasowa, ale został wygenerowany przez sztuczną inteligencję.</p>
+<img class="deepfake-image" src="assets/img/moduly-3-4/deepfake-obraz-papiez-franciszek.png?v=1" alt="Wpis w serwisie społecznościowym z wygenerowanym przez AI obrazem papieża Franciszka w białej kurtce" loading="lazy" decoding="async">
+<p class="deepfake-caption">Przykład obrazu wygenerowanego przez AI, który zdobył dużą popularność w mediach społecznościowych.</p>
+<div class="deepfake-question"><strong>Dlaczego materiał wyglądał wiarygodnie?</strong> Realistyczne światło, naturalna poza, znajoma osoba i forma posta przypominająca autentyczną publikację zwiększały zaufanie odbiorców.</div>
+<p><strong>Jak sprawdzić taki obraz?</strong></p>
+<ul class="deepfake-checklist">
+<li>ustalić, kto opublikował go jako pierwszy;</li>
+<li>wykonać odwrotne wyszukiwanie obrazem;</li>
+<li>sprawdzić, czy informację potwierdzają wiarygodne media i oficjalne kanały;</li>
+<li>zwrócić uwagę na kontekst, datę i opis towarzyszący fotografii.</li>
+</ul>
+</article>
+<p>Przypadek ten pokazuje, że realizm fotografii nie potwierdza jej autentyczności. Przed uznaniem zdjęcia za dowód należy ustalić jego pierwotne źródło, sprawdzić datę publikacji i porównać materiał z relacjami wiarygodnych redakcji lub instytucji.</p>
+</div></details>
+</div></section>
+<section class="m3-section" id="m3-34"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>Podszywanie się pod osoby i instytucje</h3></div></div><div class="m3-section-body">
+<figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-3-straznicy-prawdy.webp?v=1" alt="Infografika Strażnicy prawdy – bot, troll, fact-checking i wiralność" loading="lazy" decoding="async"><figcaption>Aktorzy i mechanizmy wpływające na rozprzestrzenianie oraz weryfikowanie treści w sieci.</figcaption></figure>
+<p>Podszywanie się polega na przejęciu elementów cudzej tożsamości lub sposobu komunikowania się. Oszuści wykorzystują imiona i nazwiska, fotografie, nazwy organizacji, logotypy, adresy stron internetowych, szablony wiadomości oraz charakterystyczny styl publikacji.</p>
+<p>Celem jest wzbudzenie zaufania i skłonienie odbiorcy do określonego działania. Może nim być kliknięcie odsyłacza, podanie danych, przekazanie pieniędzy, udostępnienie wiadomości albo zaakceptowanie fałszywej informacji jako oficjalnego komunikatu.</p>
+<p>Mechanizm działa szczególnie skutecznie wtedy, gdy odbiorca zna podszywającą się markę lub instytucję. Widok rozpoznawalnego logo obniża ostrożność. Osoba może nie zauważyć drobnej różnicy w nazwie profilu, adresie strony lub pisowni domeny.</p>
+<details class="m3-accordion"><summary><span>Fałszywe konto Państwowej Komisji Wyborczej</span></summary><div class="m3-accordion-body">
+<article class="m3-case"><span>PRZYKŁAD</span><p>Podczas wyborów w Polsce w 2023 roku w serwisie X pojawiło się fałszywe konto podszywające się pod Państwową Komisję Wyborczą. Profil rozpowszechniał informację o rzekomym unieważnieniu głosowania w Warszawie.</p></article>
+<p>Komunikat dotyczył wydarzenia budzącego duże zainteresowanie społeczne i pojawił się w dniu, w którym odbiorcy oczekiwali szybkich informacji. Połączenie presji czasu, rozpoznawalnej nazwy instytucji i poważnej treści zwiększało ryzyko, że użytkownicy przekażą wiadomość dalej bez sprawdzenia jej autentyczności.</p>
+<p>W takiej sytuacji należy wejść na oficjalną stronę instytucji samodzielnie, zamiast korzystać z odsyłacza umieszczonego w podejrzanej publikacji. Trzeba również porównać nazwę profilu, historię wpisów, liczbę obserwujących i informacje podawane przez oficjalne kanały.</p>
+</div></details>
+<details class="m3-accordion"><summary><span>Fikcyjni dziennikarze i skradzione zdjęcia</span></summary><div class="m3-accordion-body">
+<p>Opracowanie Fundacji Orange opisuje mechanizm tworzenia fałszywych person na przykładzie rzekomych dziennikarzy portalu Niezależny Dziennik Polityczny. Profile przedstawiano jako konta prawdziwych autorów, choć wykorzystywane fotografie pochodziły od innych osób.</p>
+<p>Skradzione zdjęcie profilowe nadaje fikcyjnemu autorowi ludzką twarz i pozory wiarygodności. Odbiorca widzi imię, nazwisko, fotografię i publikowane artykuły, dlatego może uznać, że ma do czynienia z rzeczywistym dziennikarzem.</p>
+<p>Sprawdzenie takiej tożsamości wymaga czegoś więcej niż przeczytania biogramu. Należy poszukać wcześniejszych publikacji autora, informacji o jego doświadczeniu, profili w innych serwisach oraz potwierdzenia współpracy z redakcją. Pomocne bywa również wyszukiwanie obrazu, które pozwala ustalić, czy fotografia nie została wcześniej opublikowana pod innym nazwiskiem.</p>
+</div></details>
+<details class="m3-accordion"><summary><span>Fałszywe profile marek</span></summary><div class="m3-accordion-body">
+<p>Oszuści tworzą również konta naśladujące profile znanych firm. Wykorzystują nazwę marki, jej logo, zdjęcia produktów i fragmenty prawdziwych komunikatów. Następnie publikują informacje o konkursach, wyprzedażach, zwrotach pieniędzy albo rozdawaniu nagród.</p>
+<p>Fałszywy profil może udawać między innymi firmę Samsung i informować o możliwości otrzymania telefonu lub innego sprzętu. Warunkiem udziału bywa wypełnienie formularza, udostępnienie posta, podanie danych karty płatniczej albo wniesienie niewielkiej opłaty za przesyłkę.</p>
+<p>Niska kwota nie oznacza, że ryzyko jest niewielkie. Formularz może służyć do przejęcia danych osobowych lub informacji umożliwiających kolejne próby oszustwa. Podana karta może zostać obciążona wyższą kwotą albo wykorzystana w płatnej subskrypcji, której warunki ukryto w regulaminie.</p>
+</div></details>
+</div></section>
+<section class="m3-section" id="m3-54"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>Fake newsy, fałszywe oferty i wyłudzanie danych</h3></div></div><div class="m3-section-body">
+<p>Fałszywe informacje służą manipulacji politycznej i społecznej, lecz często prowadzą również do bezpośrednich strat finansowych. Cyberprzestępcy łączą sensacyjne wiadomości, wizerunki znanych osób i spreparowane materiały z odsyłaczami prowadzącymi do fałszywych stron.</p>
+<p>Oszustwo może rozpoczynać się od artykułu, filmu, reklamy, wiadomości e-mail, SMS-a albo wpisu w mediach społecznościowych. Treść ma wywołać emocję i skłonić odbiorcę do szybkiego działania. Najczęściej wykorzystuje strach, ciekawość, nadzieję na zysk, chęć pomocy bliskiej osobie albo obawę przed utratą dostępu do konta.</p>
+<details class="m3-accordion"><summary><span>Oszustwa inwestycyjne z wykorzystaniem deepfake</span></summary><div class="m3-accordion-body">
+<article class="m3-case"><span>PRZYKŁAD</span><p>W materiałach opisano fałszywe nagranie z wizerunkiem premiera Kanady Justina Trudeau. Zmanipulowany głos zachęcał odbiorców do korzystania ze specjalnej platformy inwestycyjnej, która miała być powiązana z państwem.</p></article>
+<p>Autorytet premiera i sugestia, że platforma działa pod nadzorem instytucji publicznych, tworzyły wrażenie bezpieczeństwa. Odbiorca mógł uznać ofertę za prawdziwą, ponieważ widział rozpoznawalną osobę i słyszał głos podobny do jej głosu.</p>
+<p>Kliknięcie odsyłacza prowadziło do zagranicznej strony zawierającej formularz. Użytkownik miał podać dane osobowe i kontaktowe, a następnie mógł zostać nakłoniony do wpłacenia pieniędzy. Nagranie nie przekazywało prawdziwej informacji o państwowym programie. Stanowiło element oszustwa wykorzystującego syntetyczne multimedia do przełamania nieufności odbiorcy.</p>
+<aside class="m3-callout m3-callout-remember"><strong>Zapamiętaj</strong><p>Materiały inwestycyjne wykorzystujące znane osoby wymagają szczególnej ostrożności. Obecność polityka, przedsiębiorcy, dziennikarza lub celebryty nie potwierdza autentyczności oferty. Przed podaniem danych należy sprawdzić, czy dana osoba rzeczywiście opublikowała komunikat we własnych oficjalnych kanałach, a podmiot oferujący inwestycję figuruje w odpowiednich rejestrach.</p></aside>
+</div></details>
+<details class="m3-accordion"><summary><span>Podszywanie się pod influencerów</span></summary><div class="m3-accordion-body">
+<article class="m3-case"><span>PRZYKŁAD</span><p>NASK opisał oszustwa wykorzystujące fałszywe profile znanych twórców internetowych, między innymi youtubera Friza. Oszuści publikowali informacje o darmowym rozdawaniu nagród, takich jak breloki lub inne przedmioty powiązane z działalnością influencera.</p></article>
+<p>Odbiorca miał uwierzyć, że uczestniczy w prawdziwej akcji promocyjnej. Następnie proszono go o podanie danych, przejście na zewnętrzną stronę lub opłacenie przesyłki. Niewielka wartość opłaty miała ograniczyć podejrzliwość i ułatwić podjęcie decyzji.</p>
+<p>Fałszywy konkurs często wykorzystuje presję czasu, ograniczoną liczbę nagród i komunikaty sugerujące, że odbiorca został już wybrany. Może również wymagać przesłania wiadomości do znajomych, dzięki czemu oszustwo szybciej się rozprzestrzenia.</p>
+<p>Przed udziałem w akcji trzeba sprawdzić, czy informacja pojawiła się na oficjalnym profilu twórcy. Należy zwrócić uwagę na datę założenia konta, dokładną nazwę użytkownika, historię wpisów, sposób prowadzenia komunikacji oraz adres strony, na którą prowadzi odsyłacz.</p>
+</div></details>
+<details class="m3-accordion"><summary><span>Fałszywe oferty pracy</span></summary><div class="m3-accordion-body">
+<p>Fałszywe ogłoszenia o pracę wykorzystują potrzebę znalezienia zatrudnienia lub poprawy sytuacji finansowej. Oszuści publikują atrakcyjne oferty, które obiecują wysokie wynagrodzenie, pracę zdalną, elastyczne godziny, szybkie rozpoczęcie współpracy i niewielkie wymagania wobec kandydata.</p>
+<p>Ogłoszenie może posługiwać się nazwą prawdziwej firmy, skopiowanym logo i danymi rzeczywistych pracowników. Kontakt odbywa się często poza oficjalnym systemem rekrutacyjnym, na przykład przez komunikator, prywatny adres e-mail lub formularz umieszczony na podrobionej stronie.</p>
+<p>Przestępcy mogą prosić o przesłanie skanu dowodu osobistego, numeru PESEL, danych rachunku bankowego albo zdjęcia dokumentu trzymanego obok twarzy. Czasem żądają opłaty za szkolenie, sprzęt, przesyłkę, badania lub dostęp do platformy pracowniczej. Zdarzają się również polecenia wykonania przelewu testowego albo założenia konta bankowego wskazanego przez osobę prowadzącą rekrutację.</p>
+<aside class="m3-callout m3-callout-remember"><strong>Zapamiętaj</strong><p>Prawdziwy pracodawca nie powinien wymagać od kandydata wpłacenia pieniędzy w zamian za możliwość rozpoczęcia pracy. Wątpliwości powinny wzbudzić również nieprecyzyjny zakres obowiązków, presja na natychmiastową decyzję, brak rozmowy rekrutacyjnej i komunikacja prowadzona wyłącznie przez komunikator.</p></aside>
+<aside class="m3-callout m3-callout-note"><strong>Nota dotycząca źródeł</strong><p>Opis fałszywych ofert pracy opiera się na wiedzy ogólnej i nie został szczegółowo przedstawiony w materiałach wskazanych jako podstawa tekstu. Przed włączeniem tego fragmentu do opracowania wymagającego pełnego aparatu źródłowego należy uzupełnić go o publikacje dotyczące phishingu rekrutacyjnego oraz kradzieży tożsamości kandydatów.</p></aside>
+</div></details>
+</div></section>
+<section class="m3-section" id="m3-77"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>Jak ograniczyć ryzyko oszustwa</h3></div></div><div class="m3-section-body">
+<figure class="module-infographic"><img src="assets/img/moduly-3-4/modul-3-cyfrowy-niezbednik.webp?v=1" alt="Infografika Cyfrowy niezbędnik weryfikacji" loading="lazy" decoding="async"><figcaption>Praktyczne podsumowanie zasad ograniczających ryzyko oszustwa w sieci.</figcaption></figure>
+<p>Samo rozpoznawanie niedoskonałości obrazu lub głosu nie daje wystarczającej ochrony. Narzędzia generatywne rozwijają się szybko, dlatego charakterystyczne błędy widoczne w starszych materiałach mogą nie występować w nowszych nagraniach.</p>
+<p>Skuteczniejsza jest weryfikacja całego kontekstu publikacji. Przed kliknięciem odsyłacza, podaniem danych lub przekazaniem pieniędzy należy:</p>
+<ol class="m3-checklist">
+<li><p>sprawdzić, kto jako pierwszy opublikował materiał;</p></li>
+<li><p>wejść na oficjalną stronę osoby, firmy lub instytucji bez korzystania z odsyłacza z podejrzanej wiadomości;</p></li>
+<li><p>porównać informację z komunikatami kilku niezależnych źródeł;</p></li>
+<li><p>sprawdzić dokładną nazwę profilu i adres domeny;</p></li>
+<li><p>ocenić, czy autor wywiera presję czasu lub obiecuje łatwy zysk;</p></li>
+<li><p>nie przekazywać kodów autoryzacyjnych, haseł i danych karty płatniczej;</p></li>
+<li><p>potwierdzić nietypową prośbę innym kanałem kontaktu;</p></li>
+<li><p>przerwać działanie, gdy formularz wymaga danych nieadekwatnych do deklarowanego celu.</p></li>
+</ol>
+<p>W przypadku połączenia telefonicznego od bliskiej osoby lub przełożonego, podczas którego pojawia się prośba o pilny przelew, warto zakończyć rozmowę i samodzielnie zadzwonić na znany numer tej osoby. Sklonowany głos może brzmieć przekonująco, lecz oszust nie zawsze potrafi odpowiedzieć na pytanie dotyczące informacji znanej wyłącznie prawdziwemu rozmówcy.</p>
+<aside class="m3-callout m3-callout-remember"><strong>Zapamiętaj</strong><p>Najlepszą ochronę zapewnia zasada ograniczonego zaufania. Im silniejszą emocję wywołuje materiał i im szybciej jego autor oczekuje reakcji, tym więcej czasu należy poświęcić na sprawdzenie informacji.</p></aside>
+</div></section>
+<section class="m3-section m3-source-section" id="m3-sources"><div class="m3-section-head"><div><span class="m3-label">MATERIAŁ ŹRÓDŁOWY</span><h3>Podstawa źródłowa tekstu</h3></div></div><div class="m3-section-body"><p>Poniżej znajduje się zestawienie źródeł wykorzystanych w poszczególnych częściach modułu.</p></div></section>
+<section class="m3-section" id="m3-94"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>1. Ograniczenia modeli AI</h3></div></div><div class="m3-section-body">
+<aside class="m3-callout m3-callout-note"><strong>Nota dotycząca źródeł</strong><p>Informacje dotyczące automatycznego wykrywania dezinformacji opierają się na artykule „Dezinformacja w mediach społecznościowych. Przegląd technik automatycznego wykrywania fake news opartych o analizę języka”.</p></aside>
+<p>Autorzy opisują potrzebę trenowania modeli uczenia maszynowego na rozbudowanych i aktualizowanych zbiorach danych. Wskazują również problemy związane z analizą krótkich tekstów oraz konieczność uwzględniania cech charakterystycznych dla poszczególnych języków.</p>
+<p>Opis halucynacji modeli generatywnych został dodany na podstawie wiedzy ogólnej i wymaga uzupełnienia o osobne źródło.</p>
+</div></section>
+<section class="m3-section" id="m3-99"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>2. Deepfake obrazu, filmu i głosu</h3></div></div><div class="m3-section-body">
+<p>Przykłady fotorealistycznych obrazów przedstawiających rzekome aresztowanie Donalda Trumpa oraz fałszywych nagrań wykorzystujących głos Taylor Swift pochodzą z rozdziału Adama Majchrzaka „Rodzaje deepfake’ów – studium przypadku i podział »głębokich fałszywek« ze względu na tematykę oraz zastosowanie w procesie dezinformacji”.</p>
+<aside class="m3-callout m3-callout-note"><strong>Nota dotycząca źródeł</strong><p>Informacje dotyczące klonowania głosów polskich polityków i wykorzystywania syntetycznych nagrań w czasie kampanii wyborczej pochodzą z artykułu „Fake newsy i deepfaki w kampanii wyborczej w Polsce w 2023 roku – case studies”.</p></aside>
+</div></section>
+<section class="m3-section" id="m3-103"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>3. Podszywanie się pod osoby i instytucje</h3></div></div><div class="m3-section-body">
+<p>Opis fałszywego konta Państwowej Komisji Wyborczej w serwisie X opiera się na analizie „Fake newsy i deepfaki w kampanii wyborczej w Polsce w 2023 roku”.</p>
+<p>Mechanizm kradzieży zdjęć i tworzenia zmyślonych person, przedstawiony na przykładzie rzekomych dziennikarzy portalu Niezależny Dziennik Polityczny, pochodzi z opracowania Fundacji Orange „Dezinformacja”.</p>
+</div></section>
+<section class="m3-section" id="m3-107"><div class="m3-section-head"><div><span class="m3-label">CZĘŚĆ MODUŁU</span><h3>4. Fake newsy i wyłudzanie danych</h3></div></div><div class="m3-section-body">
+<p>Przykład fałszywych profili podszywających się pod znanych twórców internetowych, w tym oszustwa wykorzystującego wizerunek Friza i obietnicę darmowych prezentów, pochodzi z opracowania NASK „Era (Dez)informacji dla kadry nauczycielskiej”.</p>
+<p>Przypadek oszustwa inwestycyjnego wykorzystującego zmanipulowane nagranie z wizerunkiem premiera Kanady Justina Trudeau opisano w rozdziale Adama Majchrzaka.</p>
+<aside class="m3-callout m3-callout-note"><strong>Nota dotycząca źródeł</strong><p>Fragment dotyczący fałszywych ofert pracy stanowi uzupełnienie oparte na wiedzy ogólnej. Przed wykorzystaniem tekstu w oficjalnej publikacji należy dodać źródło opisujące oszustwa rekrutacyjne, phishing oraz wyłudzanie danych kandydatów.</p></aside>
+<p>Tekst można następnie dostosować do układu modułu e-learningowego, podręcznika szkoleniowego albo materiału publikowanego na stronie internetowej.</p>
+</div></section></div>`;
+        return;
+      }
+
+      if (module.id === 2) {
+        container.innerHTML = `
+          <div class="lesson-sections">
+            <details class="lesson-section" open>
+              <summary><span class="lesson-number">2.1</span><span>Emocjonalny skrót: od bodźca do udostępnienia</span></summary>
+              <div class="lesson-body">
+                <p class="lesson-lead">Emocjonalny przekaz może uruchomić reakcję jeszcze przed dokładną analizą treści.</p>
+                <div class="competence-grid">
+                  <div class="competence-card"><strong>Bodziec</strong><span>Nagłówek, obraz albo nagranie przyciąga uwagę.</span></div>
+                  <div class="competence-card"><strong>Emocja</strong><span>Pojawia się strach, gniew, oburzenie lub ciekawość.</span></div>
+                  <div class="competence-card"><strong>Impuls</strong><span>Odbiorca chce kliknąć, skomentować albo ostrzec innych.</span></div>
+                  <div class="competence-card"><strong>Reakcja</strong><span>Treść zostaje udostępniona przed sprawdzeniem źródła.</span></div>
+                </div>
+                <div class="remember-box"><strong>Najważniejsza zasada</strong><p>Im silniejszą emocję wywołuje przekaz, tym bardziej potrzebujesz chwili dystansu.</p></div>
+              </div>
+            </details>
+            <details class="lesson-section">
+              <summary><span class="lesson-number">2.2</span><span>Clickbait i język presji</span></summary>
+              <div class="lesson-body">
+                <p>Clickbait wykorzystuje lukę informacyjną: ujawnia tylko fragment historii i obiecuje zaskakujące rozwiązanie po kliknięciu. Język presji dodatkowo sugeruje, że odbiorca nie ma czasu na sprawdzanie.</p>
+                <div class="lesson-example"><strong>Przykład</strong><p>„Lekarze nie chcą, żebyś to wiedział. Ten prosty sposób zmienia wszystko!” — nagłówek nie wskazuje autora, dowodów ani konkretnego twierdzenia, ale pobudza ciekawość i nieufność.</p></div>
+              </div>
+            </details>
+            <details class="lesson-section">
+              <summary><span class="lesson-number">2.3</span><span>Bańka informacyjna i komora echa</span></summary>
+              <div class="lesson-body">
+                <p>Algorytmy częściej pokazują treści podobne do tych, z którymi wcześniej wchodziliśmy w interakcję. W efekcie możemy odnosić wrażenie, że „wszyscy myślą tak samo”, ponieważ rzadziej widzimy odmienne stanowiska.</p>
+                <p>Komora echa dodatkowo wzmacnia przekaz przez powtarzanie go w grupie osób o zbliżonych poglądach.</p>
+              </div>
+            </details>
+            <details class="lesson-section">
+              <summary><span class="lesson-number">2.4</span><span>Jak odzyskać dystans?</span></summary>
+              <div class="lesson-body">
+                <ul>
+                  <li>Nazwij emocję, którą wywołała treść.</li>
+                  <li>Przeczytaj cały materiał, nie tylko nagłówek.</li>
+                  <li>Sprawdź autora, datę i źródło pierwotne.</li>
+                  <li>Poszukaj informacji, która podważa Twoją pierwszą interpretację.</li>
+                  <li>Odczekaj przed udostępnieniem.</li>
+                </ul>
+              </div>
+            </details>
+          </div>`;
+        return;

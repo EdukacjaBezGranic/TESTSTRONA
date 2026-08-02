@@ -1,0 +1,57 @@
+RAPORT FINALNY - REDESIGN, KONTRAST, WYROWNANIA I ODSTEPY
+Projekt: Edukacja bez granic
+Data kontroli: 29.07.2026
+
+1. ZAKRES POPRAWEK
+- usunięto konflikty kolorystyczne powodujące biały tekst na białym lub bardzo jasnym tle;
+- uporządkowano kontrast nagłówków, opisów, etykiet, danych kontaktowych i przycisków;
+- ujednolicono szerokości kontenerów, marginesy, odstępy wewnętrzne i pionowy rytm sekcji;
+- wyrównano siatki kart, bloki tekstowe, przyciski oraz sekcje kontaktowe;
+- uporządkowano wygląd strony głównej, strony szkoleń, zapisów, kalendarza, kontaktu, katalogu kursów, panelu trenera i kursu online;
+- poprawiono panel kontaktowy na stronie zapisów;
+- poprawiono proporcje i wysokość nagłówka panelu trenera;
+- poprawiono mobilne odstępy strony „Nasze szkolenia” i usunięto poziome rozsuwanie widoku;
+- naprawiono mobilne menu na stronie kursu online;
+- zachowano treści, materiały, grafiki, filmy, formularze, logotypy, linki i mechanikę kursu.
+
+2. TESTY WIDOKU
+Widok desktop: 1440 x 1000 px
+Widok mobilny: 390 x 844 px
+
+Sprawdzone strony:
+- index.html
+- nasze-szkolenia.html
+- zapisy.html
+- zapisy-kalendarz.html
+- kursy-online.html
+- kontakt.html
+- panel-trenera.html
+- kurs-fake-news.html
+
+Wynik:
+- brak poziomego przepełnienia na wszystkich sprawdzonych stronach;
+- brak błędów JavaScript w sprawdzanych przepływach;
+- brak brakujących zasobów i odpowiedzi 404;
+- menu mobilne działa na wszystkich stronach, także w kursie oraz po odblokowaniu panelu trenera;
+- kontrast panelu kontaktowego zapisów został poprawiony.
+
+3. TESTY FUNKCJONALNE
+- rozpoczęcie kursu: poprawne;
+- przejście do panelu pięciu modułów: poprawne;
+- otwarcie modułów 1-5: poprawne;
+- kontroler etapów w każdym module: poprawny, dokładnie jeden aktywny etap;
+- powrót do panelu kursu: zachowany;
+- bramka dostępu panelu trenera: poprawna;
+- linki materiałów panelu trenera: czytelne po odblokowaniu;
+- interakcja z kalendarzem szkoleń: poprawna;
+- 35 plików HTML oraz 363 lokalne odwołania do plików: 0 brakujących zasobów.
+
+4. STRUKTURA GITHUB PAGES
+- zachowano plik .nojekyll;
+- zachowano względne ścieżki do zasobów;
+- dodano aktualny parametr cache-busting dla końcowego arkusza stylów;
+- paczka zawiera pliki projektu bez dodatkowego katalogu nadrzędnego.
+
+5. ZNANE OGRANICZENIA
+- przycisk nieaktywnego materiału w panelu trenera pozostaje celowo wyszarzony, ponieważ plik nie został jeszcze podłączony;
+- terminy i formularze pozostają zgodne z bieżącą zawartością danych projektu.

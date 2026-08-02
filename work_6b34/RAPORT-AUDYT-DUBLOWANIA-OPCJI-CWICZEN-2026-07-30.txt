@@ -1,0 +1,57 @@
+AUDYT I KOREKTA DUBLUJĄCYCH SIĘ OPCJI W ĆWICZENIACH
+Kurs: Media Literacy, Fake News i Krytyczne Myślenie
+Data: 30.07.2026
+
+1. Zakres audytu
+- sprawdzono wszystkie 31 interaktywnych ćwiczeń w 5 modułach;
+- porównano listy rozwijane, pola wielokrotnego wyboru, checklisty, skale i pytania podsumowujące;
+- wyszukano przypadki, w których uczestnik odpowiadał dwa razy na to samo pytanie lub widział drugi zestaw opcji powtarzający wcześniejsze odpowiedzi.
+
+2. Usunięte dublowanie
+
+Moduł 1 – Ćwiczenie 1. Jak docierały do mnie informacje?
+- pozostawiono wielokrotny wybór sposobów dotarcia informacji;
+- usunięto drugą listę, która ponownie pytała o tę samą ścieżkę;
+- w jej miejsce dodano odrębne pytanie o świadomość tego, kto lub co wybrało treść.
+
+Moduł 1 – Ćwiczenie 2. Mój ekosystem informacyjny
+- pozostawiono wybór grup źródeł;
+- usunięto ponowny wybór tej samej grupy jako najczęściej używanej;
+- dodano pytanie o częstotliwość porównywania informacji między różnymi grupami źródeł.
+
+Moduł 1 – Ćwiczenie 5. Analiza fikcyjnego postu
+- usunięto pięć checkboxów powtarzających odpowiedzi widoczne wcześniej w listach;
+- ćwiczenie zawiera teraz cztery różne pytania: o źródło, mechanizm, pierwszy krok weryfikacji i odpowiedzialną reakcję;
+- usunięto opcjonalne pole tekstowe, zastępując je krótkim wyborem działania.
+
+Moduł 2 – Ćwiczenie 2. Post, z którym od razu się zgadzam
+- pozostawiono wielokrotny wybór mechanizmów wpływających na pierwszą ocenę;
+- usunięto ponowny wybór „najsilniejszego” mechanizmu z tej samej listy;
+- dodano inne pytanie: co pomaga skorygować pierwszą ocenę.
+
+Moduł 5 – Ćwiczenie 5.1. Mój sygnał przeciążenia
+- pozostawiono zaznaczanie rozpoznawanych sygnałów oraz wybór jednego priorytetu;
+- doprecyzowano instrukcję, aby uczestnik rozumiał różnicę między rozpoznaniem kilku sygnałów a wyborem jednego działania.
+
+3. Celowo zachowane powtórzenia
+Nie usuwano opcji, które muszą być takie same ze względu na konstrukcję zadania:
+- porównanie dwóch nagłówków według tej samej listy ram;
+- klasyfikacja sześciu zdań według tego samego zestawu kategorii;
+- ocena trzech momentów kontaktu z informacją według wspólnych kryteriów;
+- skale samooceny 1–5;
+- odpowiedzi „nie wiem” lub „jeszcze nie sprawdziłem” odnoszące się do różnych pytań.
+
+4. Wynik techniczny
+- zachowano 111 sekcji kursu;
+- zachowano 31 interaktywnych ćwiczeń;
+- liczba elementów zapisujących odpowiedzi: 331;
+- wszystkie klucze zapisu są unikalne;
+- brak zduplikowanych identyfikatorów HTML;
+- brak brakujących zasobów lokalnych;
+- 70 unikalnych zasobów sprawdzono przez lokalny serwer HTTP – wszystkie zwróciły status 200;
+- składnia wszystkich lokalnych plików JavaScript przeszła kontrolę node --check;
+- wybrane zmienione ćwiczenia wyrenderowano w Chromium w widoku desktopowym i mobilnym;
+- w teście renderowania nie wystąpiły błędy konsoli ani nakładanie się elementów.
+
+5. Ograniczenie środowiska testowego
+Bezpośrednia nawigacja Chromium do lokalnego adresu HTTP została zablokowana przez politykę środowiska (ERR_BLOCKED_BY_ADMINISTRATOR). Zasoby sprawdzono przez lokalny serwer HTTP, a zmienione ćwiczenia wyrenderowano w Chromium z rzeczywistymi arkuszami CSS projektu za pomocą strony testowej osadzonej w pamięci.

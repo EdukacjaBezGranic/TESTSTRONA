@@ -1,0 +1,12 @@
+POPRAWKA NAWIGACJI KURSU ONLINE
+
+Zmieniono docelowy stan historii z #moduly na #panel-szkolenia.
+
+Efekt:
+- wejście do modułu zapisuje wcześniej stan „Twój panel szkolenia”,
+- strzałka Wstecz z modułu wraca do panelu szkolenia,
+- starsze adresy z #moduly są nadal obsługiwane i automatycznie zamieniane,
+- ekran ładowania nie jest używany jako etap historii kursu.
+
+Formularz rejestracji/testu:
+https://forms.gle/7rJ6Q3eMgx7XBsLw6

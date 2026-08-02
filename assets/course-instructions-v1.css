@@ -1,0 +1,22 @@
+/* ETAP 6B.3 — proste instrukcje do ćwiczeń */
+.exercise-guide{
+  margin:14px 0 18px;
+  padding:15px 17px;
+  border:1px solid #cfe0ec;
+  border-left:4px solid var(--module-accent,#2578b7);
+  border-radius:12px;
+  background:linear-gradient(180deg,#f7fbfe 0%,#f1f7fb 100%);
+  color:#173b5d;
+  box-shadow:0 5px 14px rgba(17,59,93,.05)
+}
+.exercise-guide h4{margin:0 0 8px;font-size:.98rem;line-height:1.35;color:#153e61}
+.exercise-guide ol{margin:0;padding-left:1.35rem}
+.exercise-guide li{margin:.34rem 0;line-height:1.55;color:#253f55}
+.exercise-guide-note{margin:.75rem 0 0;padding-top:.7rem;border-top:1px solid #d9e7f0;color:#516a7c;font-size:.88rem}
+.exercise-guide-note strong{color:#294d68}
+.m1v3-activity .exercise-guide{margin:0 0 18px}
+@media(max-width:620px){
+  .exercise-guide{padding:13px 14px;margin:12px 0 16px}
+  .exercise-guide h4{font-size:.94rem}
+  .exercise-guide li{font-size:.92rem}
+}

@@ -1,0 +1,30 @@
+NAPRAWA PASKA NAWIGACJI W KURSIE ONLINE
+Data: 2026-07-27
+
+PUNKT WYJŚCIA
+- Najnowsza paczka: PORTAL-3-GITHUB-MASTER-NOWY-PASEK-LOGOTYPOW-UE-WUP.zip
+
+ROZPOZNANE PROBLEMY
+1. W pliku kurs-fake-news.html logo projektu w górnym pasku było osadzone jako bardzo duży ciąg data URI zamiast korzystać ze wspólnego pliku graficznego portalu.
+2. Skrypt obsługujący mobilne menu zaczynał się od uszkodzonej, niedomkniętej instrukcji komentarza. Powodowało to błąd składni i blokowało obsługę przycisku menu.
+3. Nagłówek kursu nie był bezpośrednio synchronizowany z aktualnym wzorcem strony „Kursy online”.
+
+WPROWADZONE ZMIANY
+- Nagłówek kursu zastąpiono aktualnym nagłówkiem z kursy-online.html.
+- Przywrócono właściwe logo: grafiki/logo-projektu-symbol-transparent.png.
+- Zachowano kolejność menu:
+  Start → Nasze szkolenia → Zapisy na szkolenia → Kursy online → Kontakt.
+- Zakładka „Kursy online” pozostaje oznaczona jako aktywna.
+- Naprawiono linię inicjalizującą przycisk mobilnego menu:
+  const navToggle = document.querySelector('[data-nav-toggle]');
+- Dodano końcowe, zakresowe zabezpieczenie widoczności nawigacji na komputerach bez ingerowania w treść kursu.
+
+WERYFIKACJA
+- Składnia 3 osadzonych skryptów JavaScript: OK (node --check).
+- Kolejność i kompletność menu na 6 głównych stronach: OK.
+- Logo projektu w nagłówku kursu: właściwa lokalna ścieżka, brak data URI.
+- Lokalne odwołania we wszystkich plikach HTML: brak brakujących zasobów.
+- Pliki kursu, moduły, grafiki, filmy i treści nie zostały skrócone ani usunięte.
+
+OGRANICZENIE TESTU
+- Próba automatycznego wykonania zrzutu ekranu w systemowym Chromium nie zakończyła się w limicie czasu środowiska. Weryfikacja została wykonana strukturalnie, przez lokalny serwer HTTP oraz kontrolę składni i zasobów.

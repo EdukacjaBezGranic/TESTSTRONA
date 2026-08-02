@@ -1,0 +1,9 @@
+POPRAWKA MODUŁU 2
+
+1. Uzupełniono pełną treść sekcji „Autorytet i pozory eksperckości” w faktycznie wyświetlanej części Modułu 2.
+2. Poprawiono kontrast sekcji „Efekt zakotwiczenia”:
+   - ciemne otoczenie ma jasne nagłówki i tekst,
+   - jasne karty wewnętrzne mają ciemne nagłówki i tekst,
+   - cytaty na jasnych kartach mają ciemną czcionkę.
+3. Dodano końcowe reguły kontrastu dla innych ciemnych paneli Modułu 2, aby nie występowała ciemna czcionka na ciemnym tle.
+4. Nie zmieniano treści pozostałych modułów ani funkcji kursu.

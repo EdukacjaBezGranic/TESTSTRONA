@@ -1,0 +1,36 @@
+RAPORT ZMIAN – PRZYKŁADY DEEPFAKE WIDEO I AUDIO
+Data: 30.07.2026
+
+ZAKRES ZMIANY
+1. W punkcie „Moduł 2 – 11. AI, deepfake i media syntetyczne” dodano dwa materiały wykorzystywane w poprzedniej wersji szkolenia:
+   - przykład deepfake wideo: https://www.youtube.com/watch?v=WzK1MBEpkJ0
+   - przykład deepfake audio: https://www.youtube.com/watch?v=3wVpVH0Wa6E
+2. Materiały osadzono w trybie zwiększonej prywatności przez youtube-nocookie.com.
+3. Przy każdym materiale dodano bezpośredni odnośnik otwierający film w nowej karcie – jako rozwiązanie zapasowe, gdy osadzone odtwarzanie jest niedostępne.
+4. Do przykładu wideo dodano wskazówki dotyczące analizy ruchu ust, mimiki, przejść między klatkami, jakości obrazu i źródła publikacji.
+5. Do przykładu audio dodano pytanie o sposób weryfikacji pilnej prośby przekazanej głosem bliskiej osoby, współpracownika lub przełożonego.
+6. Dodano zasadę: obrazu ani głosu nie należy traktować jako samodzielnego potwierdzenia tożsamości.
+
+ZACHOWANE ELEMENTY
+- pełna struktura 5 modułów i 111 sekcji kursu,
+- zapis postępu i odpowiedzi,
+- karty pracy PDF,
+- formularze początkowe i końcowe,
+- samoocena i tryb indywidualny,
+- grafiki, ilustracje i filmy znajdujące się wcześniej w projekcie,
+- działanie na GitHub Pages i ścieżki względne.
+
+WERYFIKACJA
+- w sekcji znajdują się 2 osadzone ramki wideo i 2 bezpośrednie odnośniki,
+- brak zduplikowanych identyfikatorów HTML,
+- zachowano 111 sekcji kursu,
+- wszystkie 73 unikalne lokalne zasoby użyte przez stronę zwracają HTTP 200,
+- brak brakujących zasobów w HTML i CSS,
+- arkusz CSS został poprawnie sparsowany – brak błędów składni,
+- wszystkie lokalne pliki JavaScript przechodzą kontrolę składni node --check,
+- układ desktopowy: 2 równe kolumny, bez poziomego przewijania,
+- układ mobilny 390 px: 1 kolumna, bez poziomego przewijania,
+- render kontrolny zmienionej sekcji nie wykazał błędów konsoli.
+
+OGRANICZENIE TESTU
+Środowisko testowe blokowało nawigację przeglądarki do zewnętrznych stron internetowych. Sprawdzono więc poprawność adresów zapisanych w kodzie, osadzenie przez youtube-nocookie.com, odnośniki zapasowe oraz pełne renderowanie układu z kontrolnymi ramkami 16:9. Dostępność samych materiałów YouTube zależy od zewnętrznej platformy i jej ustawień.

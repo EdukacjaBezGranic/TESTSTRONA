@@ -1,0 +1,11 @@
+POPRAWKA MODUŁU 2
+
+W Module 2 ukryto elementy robocze:
+- Informacje o module,
+- Czas,
+- Forma,
+- Do przygotowania,
+- komunikat COURSE_CONFIG,
+- Materiały do pobrania, dopóki nie ma realnych plików.
+
+Moduł 1 pozostaje bez zmian.

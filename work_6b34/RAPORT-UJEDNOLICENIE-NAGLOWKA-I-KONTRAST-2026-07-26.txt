@@ -1,0 +1,56 @@
+UJEDNOLICENIE PASKA GÓRNEGO I POPRAWA KONTRASTU
+Data: 26.07.2026
+
+Źródło zmian:
+PORTAL-3-GITHUB-MASTER-NASZE-SZKOLENIA-DOPRACOWANE.zip
+
+Wprowadzone zmiany
+1. Pasek górny został ujednolicony na stronach:
+   - Start,
+   - Nasze szkolenia,
+   - Kursy online,
+   - Zapisy na szkolenia,
+   - Kontakt,
+   - strona właściwego kursu online.
+
+2. Ujednolicono:
+   - wysokość paska,
+   - rozmiar logo projektu,
+   - rozmiary logo UE i WUP,
+   - odstępy pomiędzy logotypami,
+   - wysokość, padding i promień zaokrąglenia przycisków nawigacji,
+   - zachowanie nagłówka na tabletach i telefonach.
+
+3. Wszystkie główne podstrony otrzymały ten sam parametr wersji CSS i JS.
+   Zapobiega to sytuacji, w której przeglądarka wyświetla starą wersję nagłówka z pamięci podręcznej.
+
+4. Na podstronie „Nasze szkolenia” poprawiono kontrast:
+   - nagłówki umieszczone bezpośrednio na ciemnym tle mają jasną czcionkę,
+   - tekst pomocniczy na ciemnych panelach ma jasny kolor,
+   - przycisk pomocniczy w ciemnym hero ma jasną czcionkę,
+   - przycisk pomocniczy w jasnym panelu końcowym ma ciemną czcionkę,
+   - akcenty tekstowe w jasnych sekcjach otrzymały ciemniejszy odcień.
+
+5. Link „Nasze szkolenia” dodano również do górnej i dolnej nawigacji strony kursu online.
+
+Walidacja
+- sprawdzono 35 plików HTML,
+- sprawdzono 351 lokalnych odwołań do plików,
+- brak brakujących lokalnych zasobów,
+- wszystkie główne podstrony mają identyczną kolejność pięciu odnośników w górnym menu,
+- wszystkie główne podstrony korzystają z tej samej wersji public.css,
+- bilans nawiasów CSS: poprawny,
+- składnia assets/public.js: poprawna,
+- składnia assets/portal.js: poprawna,
+- składnia assets/zapisy-render.js: poprawna,
+- składnia assets/contact-render.js: poprawna,
+- składnia skryptów osadzonych w kluczowych stronach: poprawna,
+- lokalny serwer HTTP zwrócił kod 200 dla sześciu głównych stron oraz plików CSS i JS.
+
+Kontrast po poprawce
+- jasny nagłówek na głównym ciemnym tle: około 10,9:1,
+- jasny tekst pomocniczy na głównym ciemnym tle: około 8,6:1,
+- jasny tekst na panelu tematycznym: około 8,7–14,5:1.
+
+Ograniczenie testowe
+Systemowy Chromium w środowisku testowym ponownie nie zakończył generowania zrzutu ekranu w wyznaczonym czasie. Próba renderowania przez WeasyPrint zakończyła się błędem tego silnika przy złożonym układzie CSS Grid. W związku z tym wykonano walidację struktury, zasobów, składni, serwera HTTP, spójności menu i matematyczną kontrolę kontrastu, ale bez wiarygodnego zrzutu z prawdziwej przeglądarki.

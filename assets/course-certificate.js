@@ -90,7 +90,8 @@
       completedSections,
       totalSections,
       moduleDetails,
-      eligible: formsDone === 4 && completedModules === 5 && totalSections > 0 && completedSections === totalSections
+      privacyAccepted: Boolean(forms.privacyAccepted),
+      eligible: formsDone === 4 && Boolean(forms.privacyAccepted) && completedModules === 5 && totalSections > 0 && completedSections === totalSections
     };
   }
 

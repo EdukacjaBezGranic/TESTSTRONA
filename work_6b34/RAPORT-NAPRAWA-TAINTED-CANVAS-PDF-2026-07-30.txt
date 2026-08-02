@@ -1,0 +1,32 @@
+RAPORT NAPRAWY GENEROWANIA KOŃCOWEGO PDF
+Data: 30.07.2026
+
+ZGŁOSZONY BŁĄD
+Przy tworzeniu końcowego dokumentu przeglądarka wyświetlała komunikat:
+Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.
+
+PRZYCZYNA
+Logotyp projektu i logotyp dofinansowania UE były wczytywane do elementu canvas jako zewnętrzne pliki PNG. W niektórych sposobach uruchamiania portalu, zwłaszcza z pliku lokalnego lub przy ograniczeniach pochodzenia zasobów, przeglądarka oznaczała canvas jako „tainted” i blokowała jego eksport do obrazu, a następnie do PDF.
+
+WPROWADZONA NAPRAWA
+1. Przygotowano zoptymalizowane wersje obu logotypów do generowania dokumentu.
+2. Logotypy osadzono bezpośrednio w skrypcie jako dane PNG (data URI).
+3. Generator PDF nie pobiera już logotypów z osobnych ścieżek podczas tworzenia canvas.
+4. Tę samą bezpieczną wersję logotypów zastosowano w wersji dokumentu przeznaczonej do druku.
+5. Zmieniono numer wersji skryptu course-certificate.js z 20260730-3 na 20260730-4, aby GitHub Pages i przeglądarka nie korzystały ze starego pliku z pamięci podręcznej.
+
+WYNIKI TESTÓW
+- składnia course-certificate.js: poprawna;
+- 16 lokalnych plików JavaScript: bez błędów składni;
+- 111 sekcji kursu: zachowane;
+- zduplikowane identyfikatory HTML: brak;
+- brakujące lokalne zasoby w kurs-fake-news.html: brak;
+- oba osadzone logotypy: poprawne pliki PNG;
+- test w Chromium: oba logotypy zostały narysowane na canvas, a canvas.toDataURL('image/jpeg') wykonało się bez błędu SecurityError;
+- test rzeczywistej funkcji canvasToPdf z kursu: utworzono Blob application/pdf o nagłówku %PDF-1.4 i prawidłowym zakończeniu %%EOF.
+
+UWAGA DOTYCZĄCA TESTÓW
+Środowisko testowe blokuje bezpośrednie otwieranie stron localhost i file:// w Chromium zgodnie z polityką organizacji. Z tego powodu test funkcji wykonano w dozwolonej karcie about:blank, używając rzeczywistej funkcji canvasToPdf i rzeczywistych logotypów osadzonych w poprawionym skrypcie. Test odtworzył dokładnie etap, na którym wcześniej występował błąd „tainted canvas”.
+
+ZALECENIE PO PUBLIKACJI
+Po podmianie plików na GitHub Pages należy odświeżyć stronę z pominięciem pamięci podręcznej (Ctrl+F5 w Windows/Linux lub Cmd+Shift+R w macOS), jeśli przeglądarka nadal pokazuje starszy komunikat.

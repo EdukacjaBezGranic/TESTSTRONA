@@ -1,0 +1,16 @@
+WYROWNANIE I UJEDNOLICENIE STOPKI PORTALU
+Data: 2026-07-27
+
+WPROWADZONE ZMIANY
+- stopka kursu i pozostalych glownych podstron ma maksymalna szerokosc 1180 px,
+- stopka jest wyrownana do tej samej osi co naglowek i glowna tresc kursu,
+- uporzadkowano kolejnosc linkow: Strona glowna, Nasze szkolenia, Zapisy na szkolenia, Kursy online, Kontakt, Panel trenera,
+- dodano wyrazne odstepy i pola klikalne pomiedzy linkami,
+- na tabletach stopka przechodzi do jednego ukladu kolumnowego,
+- na telefonach linki sa wyswietlane w czytelnej siatce 2 x 3, a na bardzo waskich ekranach w jednej kolumnie,
+- zaktualizowano wersje CSS w celu ominiecia starej pamieci podrecznej.
+
+TESTY
+- sprawdzono kolejnosc linkow w 8 plikach HTML,
+- sprawdzono lokalne odwolania do zasobow: brak brakujacych plikow,
+- sprawdzono skladnie osadzonych skryptow JavaScript kursu: bez bledow.

@@ -1,0 +1,27 @@
+DODANE PRZYKŁADY DO MODUŁU 3
+
+1. Deepfake wideo
+- osadzony film YouTube: WzK1MBEpkJ0
+- responsywna ramka 16:9
+- pytanie aktywizujące i wskazówki analizy
+
+2. Deepfake audio
+- osadzony film YouTube: 3wVpVH0Wa6E
+- responsywna ramka 16:9
+- pytanie o weryfikację pilnej prośby głosowej
+
+3. Deepfake obrazu
+- studium przypadku obrazu papieża Franciszka w białej kurtce
+- opis mechanizmu wiarygodności
+- lista kroków weryfikacji
+
+ZACHOWANO
+- dotychczasową strukturę portalu
+- Moduły 1–5
+- infografiki Modułów 3 i 4
+- style oraz funkcje rozwijanych paneli
+
+WERYFIKACJA
+- plik obrazu znajduje się w ścieżce względnej zgodnej z GitHub Pages
+- oba filmy osadzono przez youtube-nocookie.com
+- układ filmów i obrazu jest responsywny

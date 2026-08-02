@@ -1,0 +1,55 @@
+AUDYT ODSTĘPÓW I RYTMU PIONOWEGO — 24.07.2026
+
+Źródło bazowe:
+PORTAL-3-GITHUB-MASTER-KURSY-ONLINE-TYLKO-HERO-OTWORZ-KURS.zip
+
+Zakres sprawdzenia:
+- strona główna,
+- Kursy online,
+- Zapisy na szkolenia,
+- Kalendarz zapisów,
+- Kontakt,
+- Oferta szkoleniowa,
+- Panel trenera,
+- strona tytułowa kursu „Fake news, dezinformacja i krytyczne myślenie”,
+- widoki desktop, tablet i telefon.
+
+Najważniejsze ustalenia:
+1. Nadmierne puste pasy występowały przede wszystkim na stronie głównej. Wynikały z nakładania się kilku starszych reguł CSS: paddingów 82–92 px, dolnych paddingów sekcji i dodatkowych marginesów kolejnych paneli.
+2. Pozostałe główne podstrony miały zasadniczo poprawny rytm pionowy. Nie zostały ściskane na siłę.
+3. Na stronie zapisów zmniejszono jedynie zbyt obszerny dolny odstęp w sekcji wprowadzającej.
+
+Wprowadzone korekty na stronie głównej (desktop):
+- początek sekcji trzech programów: 92 px → 58 px,
+- początek sekcji procesu projektu: 82 px → 54 px,
+- dolny oddech sekcji procesu: 72 px → 30 px,
+- odstęp przed sekcją „Wiedza wykorzystana w praktyce”: 92 px → 54 px,
+- początek galerii rezultatów: 82 px → 56 px,
+- początek rozszerzonej oferty: 88 px → 58 px,
+- początek sekcji odbiorców: 82 px → 54 px,
+- początek sekcji sposobu pracy: 82 px → 54 px,
+- odstęp przed końcowym wezwaniem do działania: 82 px → 56 px,
+- zmniejszono też zbyt duże odstępy między nagłówkami sekcji a ich treścią.
+
+Widoki responsywne:
+- tablet: główne odstępy ustawiono na około 50 px,
+- telefon: główne odstępy ustawiono na około 42 px,
+- zachowano czytelność, oddech i wyraźne oddzielenie sekcji.
+
+Elementy zachowane:
+- pełna treść strony,
+- kolejność sekcji,
+- ciemna, matowa stylistyka premium,
+- zdjęcia, logotypy, formularze, kurs i Moduły 1–5,
+- układ kart i komponentów,
+- responsywność.
+
+Weryfikacja:
+- wykonano renderowanie kontrolne 8 głównych powierzchni w 3 szerokościach,
+- sprawdzono rytm pomiędzy kolejnymi sekcjami i wewnątrz sekcji,
+- sprawdzono lokalne ścieżki zasobów,
+- sprawdzono składnię plików JavaScript,
+- sprawdzono integralność finalnego archiwum ZIP.
+
+Znane ograniczenie środowiska testowego:
+Bezpośrednia nawigacja lokalnego Chromium do adresów file:// i localhost była blokowana przez politykę środowiska. Do kontroli wyglądu użyto Chromium z dokumentami i zasobami osadzonymi bezpośrednio w pamięci strony. Pozwoliło to sprawdzić CSS, układ, obrazy oraz responsywność bez zmiany projektu.

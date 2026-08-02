@@ -4884,3 +4884,42 @@ img,video,iframe{max-width:100%}
     grid-template-columns:1fr !important;
   }
 }
+
+
+/* 2026-08-02 — logo projektu w prawej dolnej części hero strony głównej */
+.home-rd .home-rd-meta{
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:16px 24px !important;
+}
+.home-rd .home-rd-meta>div:nth-child(3){grid-column:auto !important;}
+.home-rd .home-rd-meta>div:nth-child(2),
+.home-rd .home-rd-meta>div:nth-child(4){
+  padding-right:0 !important;
+  border-right:0 !important;
+}
+.home-rd .home-rd-meta-logo{
+  min-height:76px;
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  padding:8px 0 0 !important;
+  background:transparent;
+}
+.home-rd .home-rd-meta-logo img{
+  width:min(100%, 250px);
+  max-height:54px;
+  height:auto;
+  object-fit:contain;
+  opacity:.96;
+}
+@media(max-width:700px){
+  .home-rd .home-rd-meta-logo{
+    min-height:auto;
+    justify-content:flex-start;
+    padding-top:4px !important;
+  }
+  .home-rd .home-rd-meta-logo img{
+    width:min(100%, 220px);
+    max-height:none;
+  }
+}

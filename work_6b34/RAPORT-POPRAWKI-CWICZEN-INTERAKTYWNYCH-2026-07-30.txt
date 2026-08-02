@@ -1,0 +1,45 @@
+RAPORT POPRAWEK ĆWICZEŃ INTERAKTYWNYCH
+Kurs: Media Literacy, Fake News i Krytyczne Myślenie
+Data: 30.07.2026
+
+1. Ćwiczenie 3.1. Rozpoznaj rodzaj wypowiedzi
+- Zastąpiono puste miejsca interaktywnym wyborem odpowiedzi.
+- Każde z 6 zdań ma 6 kategorii: fakt, opinia, interpretacja, założenie, przewidywanie i sąd wartościujący.
+- Zastosowano pola wielokrotnego wyboru, ponieważ jedno zdanie może łączyć kilka kategorii.
+- Pod każdym zdaniem pozostawiono krótkie, opcjonalne pole na uzasadnienie.
+- Wybrane odpowiedzi i uzasadnienia zapisują się lokalnie oraz są uwzględniane w karcie pracy PDF.
+- Etykiety PDF zawierają numer i pełną treść zdania, dzięki czemu odpowiedzi są jednoznaczne.
+
+2. Ćwiczenie 2. Mapa mojego ekosystemu informacyjnego
+- Ograniczono mapę do maksymalnie 5 źródeł.
+- Usunięto 3 nadmiarowe wiersze.
+- Duże pola tekstowe zastąpiono krótkimi polami wpisu.
+- Częstotliwość korzystania wybiera się z listy: codziennie, kilka razy w tygodniu, raz w tygodniu lub rzadziej.
+- Liczbę pytań pod tabelą ograniczono do 3 najważniejszych pytań podsumowujących.
+
+3. Ćwiczenie 6. Bilet wyjścia z modułu
+- Dodano 6 widocznych pól do wpisania odpowiedzi.
+- Pola ułożono w czytelnej siatce 2-kolumnowej na komputerze i 1-kolumnowej na telefonie.
+- Odpowiedzi zapisują się lokalnie oraz trafiają do PDF modułu i zbiorczego PDF kursu.
+
+4. Elementy zachowane
+- 5 modułów i 111 sekcji kursu.
+- Nawigacja, postęp, formularze Google, eksport i import postępu.
+- Generowanie kart pracy PDF.
+- Automatyczny zapis lokalny odpowiedzi.
+- Wszystkie grafiki, filmy i pozostałe ćwiczenia.
+
+5. Weryfikacja
+- 5 wierszy w mapie ekosystemu: wynik prawidłowy.
+- 6 pól biletu wyjścia: wynik prawidłowy.
+- 6 zestawów klasyfikacji, 36 pól wyboru i 6 pól uzasadnienia: wynik prawidłowy.
+- Automatyczny komunikat zapisu lokalnego: działa.
+- Widok desktopowy i mobilny: bez poziomego przepełnienia nowych elementów.
+- Błędy JavaScriptu i błędy strony podczas testu interakcji: 0.
+- Brakujące pliki i ścieżki lokalnych zasobów: 0.
+- Kontrola składni głównych skryptów JavaScript: zaliczona.
+
+Środowisko testowe:
+- Browser plugin: niedostępny.
+- Test interakcji: Playwright 1.57 z systemowym Chromium.
+- Bezpośrednia nawigacja do lokalnego adresu została zablokowana przez politykę środowiska, dlatego finalny HTML załadowano w Chromium wraz z rzeczywistymi arkuszami CSS i skryptami JavaScript. Ścieżki zasobów sprawdzono oddzielnym audytem plików.

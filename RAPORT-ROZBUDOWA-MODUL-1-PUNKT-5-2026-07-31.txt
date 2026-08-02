@@ -1,0 +1,39 @@
+RAPORT ZMIAN – MODUŁ 1, PUNKT 5
+Data: 31.07.2026
+
+ZAKRES ZMIANY
+Zastąpiono dotychczasową krótką treść sekcji „5. Od mediów tradycyjnych do mediów cyfrowych” rozbudowaną wersją przygotowaną na podstawie materiału użytkownika.
+
+NOWA STRUKTURA SEKCJI
+A. Ewolucja ekosystemu informacyjnego
+B. Cyfrowe kanały i formaty przekazu
+C. Zmiana pozycji odbiorcy
+D. Cyfrowa odpowiedzialność użytkownika
+Zapamiętaj – lista działań przed udostępnieniem sensacyjnego materiału
+
+DODANE ELEMENTY
+- wyjaśnienie roli redakcji jako gatekeeperów;
+- porównanie mediów tradycyjnych i cyfrowych w tabeli;
+- omówienie mediów społecznościowych, krótkich form wideo, komunikatorów, treści AI, memów, personalizacji i influencerów;
+- wyjaśnienie pojęcia prosumenta i ról użytkownika;
+- praktyczne zasady odpowiedzialnego reagowania na treści;
+- końcowy blok „Zapamiętaj”.
+
+ELEMENTY ZACHOWANE
+- identyfikator sekcji i jej pozycja w nawigacji;
+- mechanizm oznaczania sekcji jako ukończonej;
+- liczba 111 sekcji kursu;
+- wszystkie grafiki, ćwiczenia, samooceny, formularze i generowanie PDF;
+- pozostałe treści portalu.
+
+WERYFIKACJA
+- struktura HTML została prawidłowo odczytana;
+- zachowano 111 sekcji kursu;
+- brak zduplikowanych treści technicznych w kodzie sekcji;
+- brak brakujących lokalnych zasobów;
+- wszystkie pliki JavaScript przeszły kontrolę składni;
+- kurs-fake-news.html zwrócił HTTP 200 na lokalnym serwerze;
+- wykonano render sekcji w widoku desktopowym i mobilnym bez błędów konsoli.
+
+OGRANICZENIE TESTU
+Środowisko blokowało pełną nawigację Chromium do lokalnego adresu. Widok sekcji sprawdzono przez render jej rzeczywistego HTML i arkuszy CSS w Playwright. Dostępność pliku przez lokalny serwer potwierdzono oddzielnie odpowiedzią HTTP 200.

@@ -1,0 +1,64 @@
+Panel szkolenia AI
+Wersja GitHub: 2026-06-02 / 25 cwiczen / kolory sekcji i szare tla cwiczen / 20260602-06
+
+Ta paczka zawiera ostatnie zmiany:
+- sekcja Cwiczenia warsztatowe ma kolor akcentu taki sam jak Narzedzia AI,
+- sekcja Materialy ma kolor akcentu taki sam jak Generator zaswiadczen,
+- sekcja Cwiczenia warsztatowe ma ciemniejsze szare tlo pod kafelkami,
+- okna cwiczen, nowoczesne pulpity cwiczen i tryb ekranowy maja spokojne szare tlo,
+- naglowek panelu ma teraz szeroki baner graficzny zamiast osobnego tytulu i malego logo,
+- baner nie ma juz dodatkowej ramki, obramowania ani cienia,
+- baner jest statyczny i nie porusza sie przy przewijaniu strony,
+- tytuly glownych sekcji maja wlasne kolory,
+- kafelki sa spokojne w stanie spoczynku, a po najechaniu kursorem dostaja kolorowy fade, lekkie uniesienie i kolorowy przycisk,
+- wnetrza cwiczen maja delikatne pastelowe akcenty w kartach, sekcjach, zakladkach, materialach zrodlowych i scenariuszach prowadzacego,
+- dodany jest plik assets/training-banner.png,
+- wszystkie cwiczenia otwieraja sie teraz w wizualnym ukladzie:
+  Pulpit pracy, Materialy zrodlowe, Dla prowadzacego,
+- pierwszy ekran cwiczenia pokazuje mape pracy, efekty, decyzje, kroki i checklisty zamiast samej dlugiej tresci,
+- dlugie karty pracy nie sa usuniete: zostaja w Materialach zrodlowych i w wydruku,
+- dodany jest wspolny plik assets/exercise-visual-all.js do dalszego przerabiania cwiczen po kolei,
+- cwiczenie 7 "Prezentacja ze zrodel" ma trzeci probny widok z zakladkami:
+  Pulpit pracy, Materialy zrodlowe, Dla prowadzacego,
+- cwiczenie 7 ma bardziej wizualny pulpit zadania: mape zrodel, kafle efektow, os pracy, krotkie decyzje projektowe i boczny panel,
+- cwiczenie 7 ma rozwijane pelne zrodla i mniej przytlaczajacy uklad,
+- pelne teksty zrodlowe w cwiczeniu 7 zostaja w materialach zrodlowych i w wydruku uczestnika,
+- cwiczenie 7 ma osobne przyciski:
+  Drukuj dla uczestnika
+  Drukuj dla prowadzacego,
+- wydruki sa przygotowywane jako kompletne materialy bez automatycznego dodawania pustego miejsca na notatki,
+- generator zaswiadczen offline V27 ma teraz osobne pobieranie dla macOS i Windows,
+- wersja Windows jest paczka offline uruchamiana przez plik "Uruchom generator.bat",
+- generator zaswiadczen offline V27 jest dodany na koncu strony, za timerem, jako plik ZIP do pobrania,
+- dopracowane i pozostale cwiczenia maja spokojne kafelki, ktore ozywaja kolorem po najechaniu kursorem,
+- nowe cwiczenia 5-9 dodane z plikow Word,
+- cwiczenia ulozone w nowej kolejnosci: nowe materialy sa teraz po cwiczeniu 4,
+- timer zostaje tylko na dole glownej strony i nie jest juz pokazywany w widoku cwiczenia,
+- tryb ekranowy cwiczen bez bocznego timera,
+- logo projektu,
+- 25 cwiczen warsztatowych,
+- cwiczenia z kodowaniem,
+- cwiczenia plikowe: Google Docs, TXT/Markdown, Excel/Sheets, Google Slides.
+- przycisk w stopce: Sprawdz nowsza wersje.
+- pierwszy scenariusz cwiczenia "Dobry i zly prompt" ma rozbudowany scenariusz prowadzacego.
+- pierwszy scenariusz cwiczenia "Dobry i zly prompt" ma osobna wersje dla uczestnikow i poprawiony widok pelnoekranowy.
+- w oknie cwiczenia jest przycisk Drukuj, ktory przygotowuje wersje dla uczestnikow.
+- cwiczenia maja sekcje Narzedzia do wykonania cwiczenia z praktyczna informacja, czego uzyc.
+- cwiczenie 1 ma tylko dopracowana wersje, bez starych losowanych przykladow.
+- przycisk Losuj znika przy cwiczeniach, ktore maja tylko jeden dopracowany wariant.
+- wydruk cwiczenia ma czytelny wyglad karty pracy, bez sztucznego dopelniania pustymi notatkami.
+- cwiczenie 2 "Popraw tekst urzedowy" ma dopracowana wersje bez starych losowanych przykladow.
+- cwiczenie 1 "Dobry i zly prompt" zostalo podmienione na nowy opis z pliku Word.
+- opisy cwiczen w panelu sa dzielone na czytelne sekcje, ramki, listy i kroki zamiast jednej sciany tekstu.
+- cwiczenie 2 "Popraw tekst urzedowy" zostalo podmienione na scenariusz o prostym jezyku i uzupelnieniu brakow w dokumentacji.
+- wydruk cwiczenia 2 ma osobna karte pracy dla uczestnikow.
+- scenariusze prowadzacego w cwiczeniu 1 i 2 nie powtarzaja juz pelnej karty uczestnika.
+- wydruki cwiczen 1 i 2 nadal zawieraja kompletne karty pracy dla uczestnikow.
+- sekcje w opisach cwiczen maja delikatne szare wyroznienia i spokojne akcenty boczne.
+- cwiczenie 3 "Odpowiedz na trudnego maila" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.
+- cwiczenie 4 "Uporzadkuj notatke ze spotkania" ma pelny scenariusz, karte uczestnika, druk, widok ekranowy i tabele.
+- cwiczenie 5 "Przygotuj informacje o naborze" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.
+- cwiczenie 6 "Przygotuj ankiete ewaluacyjna" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.
+- cwiczenie 7 "Przygotuj prezentacje z materialow zrodlowych" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.
+- cwiczenie 8 "Przygotuj formularz zapisow na konferencje" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.
+- cwiczenie 9 "Przygotuj plakat na wydarzenie w Canvie" ma pelny scenariusz, karte uczestnika, druk i widok ekranowy.

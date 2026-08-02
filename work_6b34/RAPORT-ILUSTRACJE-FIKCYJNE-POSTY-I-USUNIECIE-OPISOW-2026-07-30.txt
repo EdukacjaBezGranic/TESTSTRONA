@@ -1,0 +1,34 @@
+AKTUALIZACJA KURSU – ILUSTRACJE FIKCYJNYCH POSTÓW
+Data: 30.07.2026
+
+WPROWADZONE ZMIANY
+1. W punkcie „6. Wyzwalacze emocjonalne w przekazach manipulacyjnych” dodano ilustrację do fikcyjnego postu:
+   „Ten szokujący film dowodzi, co robią naszym dzieciom. Udostępnij natychmiast, zanim nagranie zostanie usunięte!”.
+2. W punkcie „9. Fact-checking i weryfikacja – podejście praktyczne”, przy ćwiczeniu SIFT, dodano ilustrację do fikcyjnego komunikatu:
+   „PILNE! Od przyszłego miesiąca wszystkie urzędy pracy zostaną zlikwidowane. Media milczą. Udostępnij, zanim usuną.”
+3. Usunięto zbędne, techniczne podpisy pod obiema ilustracjami.
+4. Usunięto i zabezpieczono przed ponownym wyświetleniem techniczne etykiety typu:
+   „Materiały z dotychczasowego projektu – dopasowane do tematu”.
+5. Zmieniono niewidoczny opis dostępności z technicznego na neutralny: „Ilustracje do tematu”.
+6. Druga ilustracja została zoptymalizowana do formatu WebP, bez zmiany proporcji.
+7. Zaktualizowano numer wersji arkusza CSS w adresie zasobu, aby GitHub Pages nie wyświetlał starej wersji z pamięci podręcznej.
+
+ELEMENTY ZACHOWANE
+- pełna treść obu ćwiczeń;
+- wszystkie pola odpowiedzi i zapis lokalny;
+- automatyczna samoocena;
+- generowanie PDF i eksport/import postępu;
+- 111 sekcji kursu;
+- pozostałe strony i zasoby portalu.
+
+WERYFIKACJA
+- obie ilustracje istnieją i mają prawidłowe odwołania w HTML;
+- brak brakujących lokalnych zasobów kursu;
+- brak zduplikowanych identyfikatorów HTML;
+- 111 sekcji kursu pozostało bez zmian;
+- brak tekstów „Materiały z dotychczasowego projektu” i „dopasowane do tematu” w stronie kursu;
+- składnia głównych plików JavaScript poprawna;
+- wykonano wizualny render obu przykładów w układzie A4 – grafiki są czytelne, zachowują proporcje i nie są przycinane.
+
+OGRANICZENIE TESTU
+Systemowa przeglądarka Chromium w środowisku testowym blokowała lokalne adresy komunikatem ERR_BLOCKED_BY_ADMINISTRATOR. Zamiast testu nawigacyjnego Playwright wykonano kontrolę struktury, zasobów, składni oraz niezależny render wizualny HTML/PDF.

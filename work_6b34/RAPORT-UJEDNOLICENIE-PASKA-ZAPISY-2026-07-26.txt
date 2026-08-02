@@ -1,0 +1,22 @@
+UJEDNOLICENIE PASKA NAWIGACYJNEGO — 26.07.2026
+
+ZMIANY
+- Ujednolicono główny pasek nawigacyjny na stronach: Start, Nasze szkolenia,
+  Zapisy na szkolenia, kalendarz zapisów, Kursy online, kurs Fake news,
+  Kontakt oraz Panel trenera.
+- Wspólna kolejność: Start → Nasze szkolenia → Zapisy na szkolenia →
+  Kursy online → Kontakt.
+- Na stronie zapisów zakładka „Nasze szkolenia” jest obecna bezpośrednio
+  w kodzie HTML i prowadzi do nasze-szkolenia.html.
+- Dodano zabezpieczenie w assets/public.js, które przy każdym otwarciu strony
+  normalizuje kolejność pięciu pozycji menu. Chroni to przed ponownym
+  rozjechaniem nagłówków między kopiami podstron.
+- Zmieniono oznaczenia wersji public.css i public.js, aby GitHub Pages oraz
+  przeglądarka nie wczytywały poprzedniego paska z pamięci podręcznej.
+
+TESTY
+- Sprawdzenie kolejności menu w 8 plikach HTML: OK.
+- Sprawdzenie odnośnika „Nasze szkolenia” na stronie zapisy.html: OK.
+- Składnia assets/public.js (node --check): OK.
+- Sprawdzenie lokalnych odwołań w głównych plikach HTML: OK.
+- Integralność końcowego ZIP: sprawdzona osobno podczas pakowania.

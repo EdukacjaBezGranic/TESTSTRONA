@@ -1,0 +1,23 @@
+RAPORT ZMIAN — PRZYKŁAD CHERRY-PICKING
+Data: 2026-07-27
+
+WPROWADZONA ZMIANA
+- Dodano przesłaną grafikę porównującą koszty trzech obiektów mostowych.
+- Umieszczono ją w Module 4, bezpośrednio po definicji „Cherry picking, czyli wybiórcze dobieranie danych”.
+- Dodano osobne rozwijane pole: „Przykład: selektywne porównanie kosztów mostów”.
+- Dodano wyjaśnienie, że liczby nie muszą być fałszywe, aby porównanie było manipulacyjne.
+- Dodano pytania do analizy dotyczące porównywalności inwestycji, zakresu kosztów i pominiętego kontekstu.
+- Nie zmieniano pozostałych treści ani kolejności modułów.
+
+PLIK GRAFICZNY
+- grafiki/przyklad-cherry-picking-koszty-mostow.jpg
+
+WYNIKI TESTÓW
+- 3 skrypty JavaScript: składnia poprawna.
+- 356 lokalnych odwołań do zasobów: brak brakujących plików.
+- Plik HTML i nowa grafika dostępne przez lokalny serwer HTTP: OK.
+- Kolejność sekcji: definicja cherry-picking → nowy przykład → reguła trzech źródeł: OK.
+- Test integralności końcowego ZIP: OK.
+
+OGRANICZENIE
+- Pełny test wizualny w Chromium nie został wykonany, ponieważ przeglądarka nie jest dostępna jako działające narzędzie w tej sesji.

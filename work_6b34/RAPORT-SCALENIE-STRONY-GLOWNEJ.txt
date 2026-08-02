@@ -1,0 +1,15 @@
+SCALENIE STRONY GŁÓWNEJ — 24.07.2026
+
+WPROWADZONE ZMIANY
+- Sekcję „O projekcie” przeniesiono na stronę główną i rozbudowano bez powtarzania tych samych treści.
+- Sekcję „Nowe tematy szkoleń” połączono z istniejącymi trzema programami na stronie głównej.
+- Usunięto zduplikowany blok „Najważniejsze informacje w czterech ścieżkach”.
+- Dodano czytelną ścieżkę projektu: mobilność, adaptacja, programy i materiały, upowszechnianie.
+- Nawigację w całym portalu uproszczono: „O projekcie” i „Tematy szkoleń” prowadzą teraz do odpowiednich sekcji strony głównej.
+- Zachowano osobną podstronę „Nasze szkolenia”, ponieważ opisuje doświadczenia i realizację szkoleń, a nie powtarza katalogu trzech nowych tematów.
+- Dawne pliki o-projekcie.html i szkolenia.html pozostawiono dla zgodności istniejących odnośników, ale usunięto je z głównej nawigacji.
+
+ZACHOWANE ELEMENTY
+- Wszystkie moduły kursu, multimedia, infografiki i przykłady deepfake.
+- Zapisy, kontakt, kursy online, panel trenera i generator dokumentacji.
+- Dotychczasowa kolorystyka, typografia i styl strony głównej.

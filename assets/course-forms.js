@@ -37,6 +37,8 @@
     pretest: false,
     finaltest: false,
     evaluation: false,
+    privacyAccepted: false,
+    privacyReadToEnd: false,
     ...readJson(FORM_STATE_KEY, {})
   });
 
@@ -92,11 +94,37 @@
     document.querySelectorAll('[data-form-complete]').forEach(input => {
       input.checked = Boolean(state[input.dataset.formComplete]);
     });
+    const privacyInput = document.querySelector('[data-privacy-accepted]');
+    const privacyPanel = document.querySelector('.course-privacy-consent');
+    const enterButton = document.querySelector('[data-enter-course]');
+    const privacyStatus = document.querySelector('[data-privacy-status]');
+    if (privacyInput) {
+      privacyInput.checked = Boolean(state.privacyAccepted);
+      privacyInput.disabled = !state.privacyReadToEnd && !state.privacyAccepted;
+      privacyInput.setAttribute('aria-disabled', String(privacyInput.disabled));
+    }
+    if (privacyPanel) {
+      privacyPanel.classList.toggle('is-complete', Boolean(state.privacyAccepted));
+    }
+    if (enterButton) {
+      enterButton.disabled = !state.privacyAccepted;
+      enterButton.setAttribute('aria-disabled', String(!state.privacyAccepted));
+      enterButton.title = state.privacyAccepted ? '' : 'Najpierw potwierdź zapoznanie się z klauzulą informacyjną.';
+    }
+    if (privacyStatus) {
+      privacyStatus.textContent = state.privacyAccepted
+        ? 'Potwierdzenie zapisano na tym urządzeniu.'
+        : state.privacyReadToEnd
+          ? 'Możesz teraz zaznaczyć obowiązkowe oświadczenie.'
+          : 'Otwórz klauzulę i przewiń ją do końca, aby odblokować oświadczenie.';
+      privacyStatus.classList.toggle('is-complete', Boolean(state.privacyAccepted));
+    }
 
     const formsDone = formKeys.filter(key => state[key]).length;
     const modulesDone = moduleCompletion();
-    const totalSteps = 9;
-    const doneSteps = formsDone + modulesDone;
+    const privacyDone = state.privacyAccepted ? 1 : 0;
+    const totalSteps = 10;
+    const doneSteps = formsDone + modulesDone + privacyDone;
     const percent = Math.round((doneSteps / totalSteps) * 100);
     const startDone = ['registration', 'pretest'].filter(key => state[key]).length;
 
@@ -116,7 +144,7 @@
       node.style.width = `${percent}%`;
     });
     document.querySelectorAll('[data-certificate-status]').forEach(node => {
-      if (formsDone === 4 && modulesDone === 5) {
+      if (formsDone === 4 && modulesDone === 5 && state.privacyAccepted) {
         node.textContent = 'Możesz pobrać potwierdzenie do weryfikacji';
       } else if (doneSteps >= 5) {
         node.textContent = 'Jesteś blisko ukończenia wszystkich warunków';
@@ -129,7 +157,7 @@
       card.classList.toggle('is-complete', Boolean(state[card.dataset.formCard]));
     });
     document.dispatchEvent(new CustomEvent('ebg:certificate-requirements-updated', {
-      detail: { formsDone, modulesDone, eligible: formsDone === 4 && modulesDone === 5, percent }
+      detail: { formsDone, modulesDone, privacyAccepted: state.privacyAccepted, eligible: formsDone === 4 && modulesDone === 5 && state.privacyAccepted, percent }
     }));
   }
 
@@ -151,20 +179,111 @@
     });
   });
 
+  const privacyModal = document.querySelector('[data-privacy-modal]');
+  const privacyPanel = privacyModal?.querySelector('.course-privacy-modal__panel');
+  const privacyScroll = privacyModal?.querySelector('[data-privacy-scroll]');
+  let privacyReturnFocus = null;
+
+  function markPrivacyReadIfAtEnd() {
+    if (!privacyScroll) return;
+    const atEnd = privacyScroll.scrollTop + privacyScroll.clientHeight >= privacyScroll.scrollHeight - 8;
+    if (!atEnd) return;
+    const state = getFormState();
+    if (!state.privacyReadToEnd) {
+      state.privacyReadToEnd = true;
+      state.updatedAt = new Date().toISOString();
+      writeJson(FORM_STATE_KEY, state);
+      updateUi();
+    }
+  }
+
+  function openPrivacyModal() {
+    if (!privacyModal) return;
+    privacyReturnFocus = document.activeElement;
+    privacyModal.hidden = false;
+    document.body.classList.add('has-privacy-modal');
+    requestAnimationFrame(() => {
+      privacyPanel?.focus();
+      markPrivacyReadIfAtEnd();
+    });
+  }
+
+  function closePrivacyModal() {
+    if (!privacyModal) return;
+    privacyModal.hidden = true;
+    document.body.classList.remove('has-privacy-modal');
+    if (privacyReturnFocus instanceof HTMLElement) privacyReturnFocus.focus();
+  }
+
+
+  const certificateRulesModal = document.querySelector('[data-certificate-rules-modal]');
+  const certificateRulesPanel = certificateRulesModal?.querySelector('.course-privacy-modal__panel');
+  let certificateRulesReturnFocus = null;
+
+  function openCertificateRulesModal() {
+    if (!certificateRulesModal) return;
+    certificateRulesReturnFocus = document.activeElement;
+    certificateRulesModal.hidden = false;
+    document.body.classList.add('has-privacy-modal');
+    requestAnimationFrame(() => certificateRulesPanel?.focus());
+  }
+
+  function closeCertificateRulesModal() {
+    if (!certificateRulesModal) return;
+    certificateRulesModal.hidden = true;
+    document.body.classList.remove('has-privacy-modal');
+    if (certificateRulesReturnFocus instanceof HTMLElement) certificateRulesReturnFocus.focus();
+  }
+
+  document.querySelectorAll('[data-certificate-rules-open]').forEach(node => {
+    node.addEventListener('click', openCertificateRulesModal);
+  });
+  certificateRulesModal?.querySelectorAll('[data-certificate-rules-close]').forEach(node => {
+    node.addEventListener('click', closeCertificateRulesModal);
+  });
+
+  document.querySelector('[data-privacy-open]')?.addEventListener('click', openPrivacyModal);
+  privacyScroll?.addEventListener('scroll', markPrivacyReadIfAtEnd, { passive: true });
+  privacyModal?.querySelectorAll('[data-privacy-close]').forEach(node => {
+    node.addEventListener('click', closePrivacyModal);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    if (certificateRulesModal && !certificateRulesModal.hidden) { closeCertificateRulesModal(); return; }
+    if (privacyModal && !privacyModal.hidden) closePrivacyModal();
+  });
+
+  document.querySelector('[data-privacy-accepted]')?.addEventListener('change', event => {
+    const state = getFormState();
+    if (event.currentTarget.checked && !state.privacyReadToEnd) {
+      event.currentTarget.checked = false;
+      openPrivacyModal();
+      return;
+    }
+    state.privacyAccepted = event.currentTarget.checked;
+    state.updatedAt = new Date().toISOString();
+    writeJson(FORM_STATE_KEY, state);
+    updateUi();
+  });
+
   document.querySelector('[data-start-requirements]')?.addEventListener('click', () => {
     document.getElementById('courseRequirements')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  document.querySelector('[data-enter-course]')?.addEventListener('click', () => {
+  document.querySelector('[data-enter-course]')?.addEventListener('click', event => {
+    const state = getFormState();
+    if (!state.privacyAccepted) {
+      event.preventDefault();
+      openPrivacyModal();
+      return;
+    }
     document.querySelector('[data-module-target="1"]')?.click();
     requestAnimationFrame(() => {
       document.querySelector('[data-module-panel="1"]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 
-  document.querySelector('[data-go-requirements]')?.addEventListener('click', () => {
-    document.getElementById('courseRequirements')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+  document.querySelector('[data-go-requirements]')?.addEventListener('click', openCertificateRulesModal);
 
   document.addEventListener('click', event => {
     if (event.target.closest('[data-toggle-complete]')) {

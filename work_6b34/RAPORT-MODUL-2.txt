@@ -1,0 +1,15 @@
+PORTAL — MASTER Z MODUŁEM 1 I 2
+
+Dodano Moduł 2: Emocje i mechanizmy manipulacji
+- osobna infografika,
+- sekcje rozwijane o emocjach i mechanizmach psychologicznych,
+- procedura obrony przed manipulacją,
+- część teoretyczna,
+- pięć przykładów do analizy,
+- quiz końcowy: 5 pytań,
+- spójny styl z Modułem 1,
+- brak ikon w nagłówkach,
+- brak paska postępu.
+
+Publikacja GitHub Pages:
+Wgraj zawartość paczki bezpośrednio do katalogu głównego repozytorium.

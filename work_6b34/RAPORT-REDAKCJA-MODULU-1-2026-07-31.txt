@@ -1,0 +1,53 @@
+Redakcja treści Modułu 1 – ograniczenie powtórzeń
+Data: 2026-07-31
+
+Cel:
+- ograniczenie powtarzania zagadnień rozwijanych w Modułach 2, 4 i 5;
+- zachowanie pełnej logiki wprowadzającej Modułu 1;
+- wyraźne rozdzielenie zakresów poszczególnych punktów;
+- zachowanie ćwiczeń, grafik, filmu o algorytmach, źródeł oraz funkcji kursu.
+
+Zmienione punkty:
+5. Od mediów tradycyjnych do mediów cyfrowych
+- skoncentrowano treść na zmianie modelu medialnego, kanałach przekazu, roli prosumenta i rozproszeniu odpowiedzialności;
+- usunięto rozbudowane instrukcje fact-checkingowe, które należą do Modułu 2.
+
+7. Algorytmy i personalizacja
+- zachowano wyjaśnienie systemów rekomendacyjnych, sygnałów, pętli personalizacji i algorytmicznej pułapki;
+- zachowano wyśrodkowany materiał wideo;
+- ograniczono powtarzanie bańki filtrującej, komory echa, czytania lateralnego i szczegółowej weryfikacji.
+
+8. Komory pogłosowe i bańki filtrujące
+- punkt otrzymał odrębny zakres: różnica między mechanizmem technologicznym a społecznym;
+- usunięto ponowne wyjaśnianie pełnego działania algorytmów.
+
+10. PISA 2029 MAIL i AILit
+- pozostawiono jedno główne wyjaśnienie obu ram w całym kursie;
+- treść uporządkowano wokół praktycznych zastosowań;
+- zaznaczono, że kolejne moduły wykorzystują ramy bez ponownego definiowania ich od początku.
+
+12. Edukacja medialna, demokracja i dobrostan psychiczny
+- przekształcono punkt w pomost do Modułów 4 i 5;
+- pozostawiono podstawowy związek jakości informacji z debatą publiczną, odpowiedzialnością użytkownika i ochroną uwagi;
+- szczegółowe treści o polaryzacji, wartościach demokratycznych, doomscrollingu i zdrowych nawykach pozostawiono dla późniejszych modułów.
+
+15. Najważniejsze wnioski
+- dostosowano podsumowanie do nowej struktury Modułu 1.
+
+Efekt redakcyjny:
+- Moduł 1 przed redakcją: ok. 8194 słowa;
+- Moduł 1 po redakcji: ok. 4115 słów;
+- liczba sekcji kursu: 111;
+- liczba sekcji Modułu 1: 16;
+- zduplikowane identyfikatory: 0;
+- brakujące zasoby lokalne: 0;
+- pliki JavaScript: kontrola składni zakończona bez błędów.
+
+Zachowano:
+- najnowsze ćwiczenia samooceny i analizy nawyków medialnych;
+- film o algorytmach;
+- grafiki i tabele;
+- zapisywanie postępu i odpowiedzi;
+- generowanie PDF;
+- formularze Google;
+- responsywność i ujednolicone szerokości pól kursu.

@@ -1,0 +1,48 @@
+PRZEBUDOWA STRONY STARTOWEJ — ERASMUS+, FINANSOWANIE UE I REZULTATY
+Data: 24.07.2026
+
+ŹRÓDŁO BAZOWE
+- PORTAL-3-GITHUB-MASTER-PREMIUM-MATOWY-LOGA-UE-I-WUP-POPRAWIONE.zip
+- Zastosowano zasadę minimalnej zmiany: przebudowano stronę index.html i dodano wyłącznie niezbędne style do assets/public.css.
+- Pozostałe podstrony, kursy, moduły, zapisy, formularze, filmy, grafiki, panele i funkcje zostały zachowane.
+
+WPROWADZONE ZMIANY
+1. Wzmocniono informację, że portal i oferta powstają dzięki projektom mobilności edukacyjnej Erasmus+ finansowanym ze środków Unii Europejskiej.
+2. Usunięto eksponowanie państw i kierunków mobilności jako głównych punktów strony.
+3. Stronę ułożono według logicznej ścieżki odbiorcy:
+   - główna obietnica portalu,
+   - źródło finansowania i znaczenie mobilności,
+   - trzy najnowsze programy,
+   - sposób przekładania finansowania na działania,
+   - dotychczasowe rezultaty wcześniejszych projektów,
+   - rozwijana oferta szkoleniowa,
+   - kurs online,
+   - odbiorcy i sposób pracy,
+   - zapisy.
+4. Rozbudowano opisy bez skracania treści do krótkich haseł.
+5. Najnowsze programy przedstawiono jako główny rezultat obecnego etapu projektu:
+   - media literacy, fake news i krytyczne myślenie,
+   - skuteczna komunikacja i wystąpienia publiczne,
+   - gamifikacja i game-based learning.
+6. Zachowano informacje i fotografie dotyczące wcześniej zrealizowanych szkoleń. Pokazano je jako dowód wykorzystania kompetencji zdobytych w kolejnych projektach mobilnościowych.
+7. Wprowadzono opis ciągłości oferty: AI, SEL, cyberbezpieczeństwo, mindfulness, 4C, coaching i doradztwo.
+8. Zachowano istniejącą matową kolorystykę premium i zestaw logotypów w nagłówku.
+
+TESTY
+- Parsowanie HTML i kontrola struktury: zaliczone.
+- Liczba głównych nagłówków H1: 1.
+- Duplikaty identyfikatorów HTML: brak.
+- Składnia assets/public.js: poprawna (node --check).
+- Bilans nawiasów CSS: poprawny.
+- Sprawdzono 303 lokalne odwołania w plikach HTML: brak brakujących zasobów.
+- Lokalny serwer HTTP: index.html zwraca 200 OK.
+- Test renderowania desktop 1440 × 1000: zaliczony.
+- Test renderowania mobile 390 × 844: zaliczony.
+- Menu mobilne otwiera się i zmienia aria-expanded na true.
+- Brak poziomego przepełnienia na widoku mobilnym.
+- Brak błędów i ostrzeżeń JavaScript w konsoli strony startowej.
+- Przycisk „Poznaj najnowsze programy” prowadzi do właściwej sekcji.
+
+ZNANE OGRANICZENIA
+- Nie zmieniano treści innych podstron ani ich układu, ponieważ zakres dotyczył strony startowej.
+- Zdjęcia i grafiki pozostają materiałami już obecnymi w projekcie.

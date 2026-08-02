@@ -1,0 +1,15 @@
+PORTAL — PACZKA MASTER POD GITHUB PAGES
+
+Zawiera:
+- poprawioną nawigację i cofanie do panelu szkolenia,
+- formularz Google do rejestracji i testu,
+- Moduł 1 z filmem, infografiką, akordeonami i quizem,
+- profesjonalne nagłówki bez ikon,
+- spójny styl graficzny i responsywność,
+- poprawne ścieżki względne pod GitHub Pages.
+
+Publikacja:
+1. Rozpakuj paczkę.
+2. Wgraj zawartość bez dodatkowego folderu do katalogu głównego repozytorium.
+3. GitHub: Settings → Pages → Deploy from a branch → main → /(root).
+4. Po aktualizacji wykonaj Ctrl+F5.

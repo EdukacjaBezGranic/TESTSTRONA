@@ -1,0 +1,7 @@
+POPRAWKA TREŚCI FORMULARZA W NAGŁÓWKU KURSU
+
+Wprowadzone zmiany:
+- usunięto powtórzenie dotyczące jakości materiałów i dokumentowania rezultatów,
+- mocniej zaakcentowano realizację celów i założeń projektu Erasmus+,
+- zachowano informację, że kurs jest dostępny bez kodu dostępu,
+- nie zmieniono układu, linków, działania przycisków ani pozostałych treści kursu.

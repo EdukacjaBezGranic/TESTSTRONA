@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Reset cache</title></head>
+<body style="font-family:system-ui;padding:30px">
+<h1>Reset pamięci podręcznej</h1>
+<p>Trwa czyszczenie starej wersji aplikacji...</p>
+<script>
+(async function(){
+  if ('serviceWorker' in navigator) {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    for (const reg of regs) await reg.unregister();
+  }
+  if ('caches' in window) {
+    const keys = await caches.keys();
+    for (const key of keys) await caches.delete(key);
+  }
+  const url = new URL('index.html', window.location.href);
+  url.searchParams.set('check', Date.now().toString());
+  document.body.innerHTML = '<h1>Gotowe</h1><p>Stara wersja została wyczyszczona. <a href="' + url.href + '">Wróć do panelu</a>.</p>';
+})();
+</script>
+</body></html>

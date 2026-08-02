@@ -1,0 +1,39 @@
+AUDYT WIZUALNY MODUŁU 1
+Data: 31.07.2026
+
+Zakres
+- 16 sekcji Modułu 1.
+- Widok desktopowy 1440 × 1000 px.
+- Widok mobilny 390 × 844 px.
+- Rozbudowane punkty 5, 7, 10 i 12.
+- Nowa interaktywna część ćwiczeniowa w punkcie 13.
+- Osadzenie filmu o algorytmach w punkcie 7.
+
+Wynik audytu
+- Wszystkie 16 sekcji Modułu 1 znajduje się w aktualnej wersji.
+- Zachowano rozbudowane treści punktów 5, 7, 10 i 12.
+- Zachowano najnowszą wersję punktu 13 z ćwiczeniami przeznaczonymi do samodzielnego kursu online.
+- Nie stwierdzono poziomego przepełnienia całej strony na komputerze ani telefonie.
+- Tabele na telefonie znajdują się w przewijanych poziomo kontenerach i nie rozszerzają strony poza ekran.
+- Nagłówki, panele, listy, tabele, bloki „Zapamiętaj” i ćwiczenia zachowują spójne odstępy oraz hierarchię.
+- Nie stwierdzono nakładania się elementów, uciętych nagłówków ani niekontrolowanych pustych przestrzeni.
+
+Film o algorytmach
+- Film jest umieszczony w osobnym, symetrycznym panelu.
+- Odtwarzacz ma proporcje 16:9.
+- Desktop: równe marginesy po 24 px po obu stronach odtwarzacza.
+- Telefon: równe marginesy po 15 px po obu stronach odtwarzacza.
+- Przycisk otwierający materiał w YouTube jest wyśrodkowany i na telefonie zajmuje pełną dostępną szerokość panelu.
+
+Kontrola techniczna
+- 111 sekcji w całym kursie.
+- 16 sekcji w Module 1.
+- Brak zduplikowanych identyfikatorów HTML.
+- Brak brakujących lokalnych zasobów.
+- Wszystkie obrazy użyte w Module 1 są poprawnymi plikami graficznymi.
+- Wszystkie pliki JavaScript przeszły kontrolę składni.
+- Arkusze CSS mają prawidłową strukturę nawiasów.
+- Zmieniono wersję arkusza course-v2.css na 20260731-3, aby wymusić pobranie poprawionego układu filmu po publikacji na GitHub Pages.
+
+Ograniczenie środowiska testowego
+Bezpośrednia nawigacja Chromium do lokalnego serwera została zablokowana przez politykę środowiska. Audyt wizualny wykonano w Chromium na samodzielnym renderze zawierającym rzeczywiste HTML i CSS projektu. Lokalizacje plików i składnię skryptów sprawdzono niezależnie w finalnym katalogu projektu.

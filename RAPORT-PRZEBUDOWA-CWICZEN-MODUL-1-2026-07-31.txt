@@ -1,0 +1,45 @@
+RAPORT PRZEBUDOWY ĆWICZEŃ – MODUŁ 1, PUNKT 13
+Data: 31.07.2026
+
+ŹRÓDŁO TREŚCI
+- Materiał użytkownika: „13. Ćwiczenia praktyczne – samoocena i analiza nawyków medialnych”.
+- Treść została zachowana znaczeniowo, lecz przekształcona z rozbudowanych kart warsztatowych w zwięzłą formę odpowiednią dla samodzielnego kursu online.
+
+WPROWADZONE ZMIANY
+1. Zastąpiono dotychczasową część ćwiczeniową trzema uporządkowanymi ćwiczeniami:
+   - Jak docierały do mnie informacje?
+   - Mój ekosystem informacyjny.
+   - Mój plan poprawy nawyków medialnych.
+2. Ograniczono liczbę grup źródeł do pięciu.
+3. Usunięto rozbudowane tabele procentowe, wielokrotne pola opisowe i pytania wymagające długiego pisania.
+4. Pozostawiono jedno opcjonalne, krótkie pole tekstowe.
+5. Po ukończeniu ćwiczeń 1 i 2 pojawia się automatyczne podsumowanie wraz z wyjaśnieniem znaczenia odpowiedzi.
+6. Ćwiczenie 3 pozwala wybrać maksymalnie trzy działania. Po osiągnięciu limitu pozostałe opcje są blokowane.
+7. Automatyczne podsumowania są zapisywane lokalnie i trafiają do karty pracy PDF.
+8. Zachowano wcześniejsze klucze zapisu tam, gdzie odpowiedzi odpowiadają wcześniejszym polom.
+
+ELEMENTY ZACHOWANE
+- 111 sekcji kursu.
+- Pięć modułów i dotychczasowa nawigacja.
+- Automatyczny zapis lokalny.
+- Eksport i import postępu.
+- Generowanie kart pracy PDF.
+- Formularze Google Forms i końcowy dokument do weryfikacji certyfikatu.
+- Wszystkie grafiki, filmy i pozostałe treści kursu.
+
+WERYFIKACJA
+- HTML: 111 sekcji, brak zduplikowanych identyfikatorów.
+- Klucze zapisu: 306, brak duplikatów.
+- Lokalne zasoby: 74 odwołania, brak brakujących plików.
+- JavaScript: poprawna składnia plików course-module1-exercises.js, course-workbook.js i course-certificate.js.
+- Serwer HTTP: kurs-fake-news.html, nowy skrypt i arkusz CSS zwracają HTTP 200.
+- Test interakcji w Chromium na rzeczywistym kodzie sekcji:
+  - automatyczny wynik ćwiczenia 1 – działa;
+  - automatyczny wynik ćwiczenia 2 – działa;
+  - limit trzech działań w ćwiczeniu 3 – działa;
+  - trzy podsumowania do PDF – są generowane;
+  - brak błędów i ostrzeżeń konsoli.
+- Widok sprawdzono w rozmiarach 1440 × 1000 oraz 390 × 844.
+
+OGRANICZENIE ŚRODOWISKA TESTOWEGO
+Pełna nawigacja Playwright do lokalnego adresu została zablokowana przez politykę środowiska (ERR_BLOCKED_BY_ADMINISTRATOR). Interakcje i responsywność zweryfikowano w Chromium na rzeczywistym HTML sekcji, rzeczywistym arkuszu CSS i rzeczywistym skrypcie JavaScript kursu. Dostępność plików potwierdzono niezależnie przez lokalny serwer HTTP.

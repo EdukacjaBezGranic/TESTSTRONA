@@ -1,0 +1,15 @@
+PODMIANA GRAFIKI – CHAOS MEDIALNY
+
+Zmiana:
+- podmieniono plik assets/img/chaos-medialny.jpg na poprawioną grafikę przekazaną przez użytkownika,
+- zaktualizowano parametr wersji w kurs-fake-news.html z ?v=3 na ?v=4, aby przeglądarka i GitHub Pages nie wyświetlały starej wersji z pamięci podręcznej.
+
+Elementy zachowane:
+- układ i treść modułu,
+- wszystkie pozostałe grafiki i pliki projektu,
+- względne ścieżki zgodne z GitHub Pages.
+
+Weryfikacja:
+- plik grafiki istnieje i ma format JPEG 1536 × 857,
+- oba odwołania w kurs-fake-news.html wskazują na assets/img/chaos-medialny.jpg?v=4,
+- paczka została ponownie rozpakowana i sprawdzona.

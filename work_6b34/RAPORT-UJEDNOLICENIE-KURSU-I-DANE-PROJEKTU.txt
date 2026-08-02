@@ -1,0 +1,9 @@
+UJEDNOLICENIE KURSU ONLINE I STRONY STARTOWEJ — 2026-07-24
+
+Zmiany:
+- usunięto rozbudowany blok kursu online ze strony startowej;
+- w hero strony startowej zastąpiono powtarzające się hasła danymi projektu: numer, beneficjent i akcja;
+- katalog kursów otrzymał docelowe, nierobocze opisy;
+- strona tytułowa kursu, panel modułów i wszystkie moduły otrzymały matową kolorystykę premium zgodną z portalem;
+- zachowano pełną treść, filmy, infografiki, testy i funkcje kursu;
+- usunięto techniczny komunikat o COURSE_CONFIG widoczny dla uczestnika.

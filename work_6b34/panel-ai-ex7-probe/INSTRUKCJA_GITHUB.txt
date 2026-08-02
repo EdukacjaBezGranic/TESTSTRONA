@@ -1,0 +1,42 @@
+AKTUALNA PACZKA PANELU AI
+
+Wersja: panel szkolenia AI z wizualnymi cwiczeniami, agenda, timerem, QR i generatorem zaswiadczen HTML.
+
+Jak wgrac na GitHub:
+
+1. Wgraj zawartosc calej paczki portalu szkolen do glownego katalogu repozytorium.
+2. Plik index.html portalu musi lezec w katalogu glownym repozytorium.
+3. Folder panel-ai-ex7-probe musi zostac wgrany razem z folderami:
+   - assets
+   - prompts
+   - training-panels
+   - generator-zaswiadczen-html
+4. Generator zaswiadczen jest teraz jedna wersja HTML uruchamiana w przegladarce.
+5. Nie trzeba wybierac osobnej wersji na macOS albo Windows.
+
+Po publikacji:
+
+1. Otworz strone GitHub Pages.
+2. Jezeli przegladarka pokazuje stara wersje, odswiez mocno:
+   - Mac: Cmd + Shift + R
+   - Windows: Ctrl + F5
+3. W panelu AI mozna tez uzyc przycisku:
+   Sprawdz nowsza wersje
+
+Jak poznac, ze jest aktualna wersja:
+
+- W portalu jest sekcja Generator zaswiadczen z jednym przyciskiem:
+  Otworz generator
+- W panelu AI, za timerem, jest ta sama jedna wersja generatora.
+- Nie ma juz dwoch osobnych przyciskow pobierania generatora na macOS i Windows.
+- W panelu AI jest przycisk powrotu do portalu szkolen.
+- W panelu AI jest przycisk Agenda szkolenia.
+- Cwiczenia otwieraja sie w ukladzie:
+  Pulpit pracy
+  Materialy zrodlowe
+  Dla prowadzacego
+- Timer znajduje sie na dole glownej strony panelu.
+
+Uwaga:
+
+Projekt jest statyczny i nie wymaga procesu budowania. Wystarczy wgrac pliki na GitHub Pages.

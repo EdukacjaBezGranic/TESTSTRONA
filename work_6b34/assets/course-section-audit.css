@@ -1,0 +1,774 @@
+/*
+  Końcowy audyt sekcja po sekcji – 2026-07-29
+  Jedna geometria ramek, symetryczne siatki, poprawny kontrast i spójna ekspozycja multimediów.
+*/
+body.online-course-page #moduleView{
+  --audit-ink:#1b3444;
+  --audit-text:#4f606c;
+  --audit-muted:#73818a;
+  --audit-panel:#fbfaf6;
+  --audit-panel-2:#f3f0e9;
+  --audit-line:#d8d3c9;
+  --audit-line-strong:#c9c1b3;
+  --audit-blue:#376b8d;
+  --audit-gold:#c79a4c;
+  --audit-dark:#173247;
+  --audit-dark-2:#21465d;
+  --audit-radius:18px;
+  --audit-gap:18px;
+  --audit-reading:960px;
+  --audit-shadow:0 12px 30px rgba(18,38,51,.09);
+}
+
+/* Jedna, konsekwentna rama dla każdego aktywnego etapu. */
+body.online-course-page #moduleView .course-scene{
+  box-sizing:border-box!important;
+  width:100%!important;
+  padding:clamp(30px,4vw,52px)!important;
+  border:1px solid rgba(201,193,179,.92)!important;
+  border-radius:22px!important;
+  background:linear-gradient(145deg,#fbfaf6 0%,#f1eee7 100%)!important;
+  box-shadow:0 20px 52px rgba(10,29,40,.14)!important;
+  color:var(--audit-ink)!important;
+  overflow:hidden!important;
+}
+body.online-course-page #moduleView .course-scene *,
+body.online-course-page #moduleView .course-scene *::before,
+body.online-course-page #moduleView .course-scene *::after{box-sizing:border-box}
+
+/* Wspólna oś treści oraz równe nagłówki sekcji. */
+body.online-course-page #moduleView .course-scene > :is(
+  .content-block,.lesson-section,.information-disorder-section,.glossary-section,
+  .module2-section,.m3-intro-panel,.m3-section,.m4-intro-panel,.m4-section,
+  .m5-intro,.m5-section,.course-infographic
+){
+  width:min(100%,var(--audit-reading))!important;
+  max-width:var(--audit-reading)!important;
+  margin-inline:auto!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .section-heading,.m3-section-head,.m4-section-head,.m5-head,.content-block>h3
+){
+  width:100%!important;
+  margin:0 0 26px!important;
+  padding:0 0 18px!important;
+  border:0!important;
+  border-bottom:1px solid rgba(77,98,111,.22)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  text-align:left!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .section-heading h2,.m3-section-head h3,.m4-section-head h3,.m5-head h3,.content-block>h3
+){
+  margin:8px 0 0!important;
+  color:var(--audit-ink)!important;
+  font-size:clamp(27px,3vw,40px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.025em!important;
+  text-wrap:balance;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .section-lead,.m3-intro-panel>p,.m4-intro-panel>p,.m5-intro>p
+){
+  width:min(100%,78ch)!important;
+  margin:0 auto!important;
+  color:var(--audit-text)!important;
+  font-size:16px!important;
+  line-height:1.72!important;
+}
+body.online-course-page #moduleView .course-scene p,
+body.online-course-page #moduleView .course-scene li,
+body.online-course-page #moduleView .course-scene blockquote{
+  color:var(--audit-text)!important;
+  line-height:1.72!important;
+}
+body.online-course-page #moduleView .course-scene :is(h2,h3,h4,strong,legend,dt){color:var(--audit-ink)!important}
+
+/* Wszystkie zwykłe pola otrzymują pełną, symetryczną ramę. */
+body.online-course-page #moduleView .course-scene :is(
+  .mini-card,.competence-card,.repetition-card,.confirmation-card,.emotion-mechanism-card,
+  .social-proof-card,.authority-card,.availability-anchor-card,.availability-anchor-part,
+  .authority-check,.availability-anchor-process,.m5-tool,.m5-step,.m5-game-card,
+  .m5-case,.m5-mock,.module2-case,.module2-case-question,.m4-tip,.deepfake-note,
+  .deepfake-example,.m1-question,.example-viewer,.m5-feedback,.lesson-example
+):not(.repetition-card-dark):not(.social-proof-card-dark):not(.authority-card-dark):not(.availability-anchor-part-dark){
+  min-width:0!important;
+  margin:0!important;
+  padding:20px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:var(--audit-radius)!important;
+  background:rgba(255,255,255,.78)!important;
+  box-shadow:var(--audit-shadow)!important;
+  color:var(--audit-ink)!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .mini-card,.competence-card,.repetition-card,.confirmation-card,.emotion-mechanism-card,
+  .social-proof-card,.authority-card,.availability-anchor-card,.availability-anchor-part,
+  .authority-check,.availability-anchor-process,.m5-tool,.m5-step,.m5-game-card,
+  .m5-case,.m5-mock,.module2-case,.module2-case-question,.m4-tip,.deepfake-note,
+  .deepfake-example,.m1-question,.example-viewer,.m5-feedback,.lesson-example
+):not(.repetition-card-dark):not(.social-proof-card-dark):not(.authority-card-dark):not(.availability-anchor-part-dark) :is(p,li,span,blockquote){
+  color:var(--audit-text)!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .mini-card,.competence-card,.repetition-card,.confirmation-card,.emotion-mechanism-card,
+  .social-proof-card,.authority-card,.availability-anchor-card,.availability-anchor-part,
+  .authority-check,.availability-anchor-process,.m5-tool,.m5-step,.m5-game-card,
+  .m5-case,.m5-mock,.module2-case,.module2-case-question,.m4-tip,.deepfake-note,
+  .deepfake-example,.m1-question,.example-viewer,.m5-feedback,.lesson-example
+):not(.repetition-card-dark):not(.social-proof-card-dark):not(.authority-card-dark):not(.availability-anchor-part-dark) :is(h3,h4,strong,legend){
+  color:var(--audit-ink)!important;
+}
+
+/* Pola wyróżnione mają rzeczywiście ciemne tło i jasny tekst – bez białego tekstu na jasnym panelu. */
+body.online-course-page #moduleView .course-scene :is(
+  .remember-box,.repetition-remember,.confirmation-remember,.social-proof-remember,
+  .authority-remember,.availability-anchor-remember,.m3-callout-remember,.m5-summary,
+  .audio-summary-box,.activation-box,.authority-trace,.availability-anchor-sift,
+  .repetition-card-dark,.social-proof-card-dark,.authority-card-dark,.availability-anchor-part-dark
+){
+  margin:20px 0 0!important;
+  padding:22px 24px!important;
+  border:1px solid rgba(229,202,148,.26)!important;
+  border-radius:var(--audit-radius)!important;
+  background:linear-gradient(135deg,var(--audit-dark),var(--audit-dark-2))!important;
+  box-shadow:0 15px 34px rgba(12,31,43,.18)!important;
+  color:#f5f8f9!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .remember-box,.repetition-remember,.confirmation-remember,.social-proof-remember,
+  .authority-remember,.availability-anchor-remember,.m3-callout-remember,.m5-summary,
+  .audio-summary-box,.activation-box,.authority-trace,.availability-anchor-sift,
+  .repetition-card-dark,.social-proof-card-dark,.authority-card-dark,.availability-anchor-part-dark
+) :is(p,li,span,blockquote){color:#edf3f6!important}
+body.online-course-page #moduleView .course-scene :is(
+  .remember-box,.repetition-remember,.confirmation-remember,.social-proof-remember,
+  .authority-remember,.availability-anchor-remember,.m3-callout-remember,.m5-summary,
+  .audio-summary-box,.activation-box,.authority-trace,.availability-anchor-sift,
+  .repetition-card-dark,.social-proof-card-dark,.authority-card-dark,.availability-anchor-part-dark
+) :is(h3,h4,strong){color:#f0d59e!important}
+
+/* Równe siatki i identyczne wysokości elementów w tym samym rzędzie. */
+body.online-course-page #moduleView .course-scene :is(
+  .mini-card-grid,.competence-grid,.repetition-grid,.confirmation-grid,.social-proof-grid,
+  .authority-grid,.availability-anchor-grid,.m5-tools,.m5-game-grid
+){
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:var(--audit-gap)!important;
+  align-items:stretch!important;
+  width:100%!important;
+  margin:22px 0!important;
+}
+body.online-course-page #moduleView .course-scene .m5-tools{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+body.online-course-page #moduleView .course-scene .m5-steps{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:14px!important;
+  width:100%!important;
+  margin:22px 0!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .mini-card-grid,.competence-grid,.repetition-grid,.confirmation-grid,.social-proof-grid,
+  .authority-grid,.availability-anchor-grid,.m5-tools,.m5-steps,.m5-game-grid
+)>*{
+  width:100%!important;
+  height:100%!important;
+}
+body.online-course-page #moduleView .course-scene :is(.m5-tool,.m5-game-card,.m5-step){display:flex!important;flex-direction:column!important}
+body.online-course-page #moduleView .course-scene .m5-game-card :is(select,.m5-select){margin-top:auto!important}
+
+/* Formularze i odpowiedzi zajmują równe pola. */
+body.online-course-page #moduleView .course-scene .m1-quiz{
+  display:grid!important;
+  gap:18px!important;
+  width:min(100%,900px)!important;
+  margin-inline:auto!important;
+}
+body.online-course-page #moduleView .course-scene .m1-question{width:100%!important;padding:22px!important}
+body.online-course-page #moduleView .course-scene .m1-options{display:grid!important;gap:10px!important}
+body.online-course-page #moduleView .course-scene .m1-option{
+  display:grid!important;
+  grid-template-columns:22px minmax(0,1fr)!important;
+  align-items:start!important;
+  gap:10px!important;
+  width:100%!important;
+  min-height:54px!important;
+  padding:13px 14px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:var(--audit-text)!important;
+}
+body.online-course-page #moduleView .course-scene .m1-option span{color:var(--audit-text)!important}
+body.online-course-page #moduleView .course-scene .m5-options{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+  width:100%!important;
+  margin:20px 0 0!important;
+}
+body.online-course-page #moduleView .course-scene .m5-options>.m5-option:last-child:nth-child(odd){grid-column:1/-1!important}
+body.online-course-page #moduleView .course-scene .m5-option{
+  width:100%!important;
+  min-height:58px!important;
+  padding:13px 15px!important;
+  border:1px solid var(--audit-line-strong)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:var(--audit-ink)!important;
+  text-align:left!important;
+  line-height:1.45!important;
+}
+body.online-course-page #moduleView .course-scene .m5-feedback{
+  width:100%!important;
+  min-height:0!important;
+  margin-top:14px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body.online-course-page #moduleView .course-scene .m5-feedback:not(:empty){
+  padding:16px 18px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:13px!important;
+  background:#fff!important;
+  color:var(--audit-text)!important;
+}
+
+/* Jednolite ramy multimediów – proporcje zachowane, bez rozciągania. */
+body.online-course-page #moduleView .course-scene figure{
+  width:min(100%,920px)!important;
+  margin:28px auto!important;
+  padding:9px!important;
+  border:1px solid rgba(65,98,119,.18)!important;
+  border-radius:20px!important;
+  background:#102735!important;
+  box-shadow:0 18px 42px rgba(13,31,42,.17)!important;
+  overflow:hidden!important;
+}
+body.online-course-page #moduleView .course-scene figure>a:has(>img){
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:13px!important;
+  background:#f8f6f0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+}
+body.online-course-page #moduleView .course-scene figure img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:min(68vh,690px)!important;
+  margin:0 auto!important;
+  padding:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border:0!important;
+  border-radius:12px!important;
+  background:#f8f6f0!important;
+  box-shadow:none!important;
+}
+body.online-course-page #moduleView .course-scene figcaption{
+  width:min(100%,760px)!important;
+  margin:11px auto 1px!important;
+  padding:0 8px!important;
+  color:#d6e0e5!important;
+  font-size:12.5px!important;
+  line-height:1.5!important;
+  text-align:center!important;
+}
+body.online-course-page #moduleView .course-scene :is(img.m5-case-image,img.deepfake-image,img.confirmation-card-image){
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:min(68vh,650px)!important;
+  margin:26px auto!important;
+  padding:9px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border:1px solid rgba(65,98,119,.18)!important;
+  border-radius:20px!important;
+  background:#102735!important;
+  box-shadow:0 18px 42px rgba(13,31,42,.17)!important;
+}
+body.online-course-page #moduleView .course-scene :is(.course-media-portrait,img.course-media-portrait){max-width:520px!important}
+body.online-course-page #moduleView .course-scene :is(.course-media-square,img.course-media-square){max-width:680px!important}
+body.online-course-page #moduleView .course-scene :is(.course-media-landscape,img.course-media-landscape){max-width:920px!important}
+body.online-course-page #moduleView .course-scene :is(.course-media-wide,img.course-media-wide){max-width:1000px!important}
+
+body.online-course-page #moduleView .course-scene .m1-video-wrap,
+body.online-course-page #moduleView .course-scene .deepfake-video,
+body.online-course-page #moduleView .course-scene .course-video-frame{
+  display:grid!important;
+  place-items:center!important;
+  width:min(100%,960px)!important;
+  aspect-ratio:16/9!important;
+  margin:28px auto!important;
+  overflow:hidden!important;
+  border:1px solid rgba(65,98,119,.22)!important;
+  border-radius:20px!important;
+  background:#07141d!important;
+  box-shadow:0 20px 46px rgba(8,26,38,.23)!important;
+}
+body.online-course-page #moduleView .course-scene video.m5-case-video{
+  display:block!important;
+  width:100%!important;
+  aspect-ratio:16/9!important;
+  height:auto!important;
+  max-height:620px!important;
+  margin:26px auto!important;
+  object-fit:contain!important;
+  border:1px solid rgba(65,98,119,.22)!important;
+  border-radius:20px!important;
+  background:#07141d!important;
+  box-shadow:0 20px 46px rgba(8,26,38,.23)!important;
+}
+body.online-course-page #moduleView .course-scene :is(.m1-video-wrap,.deepfake-video,.course-video-frame)>:is(video,iframe){
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  object-fit:contain!important;
+  border:0!important;
+  border-radius:0!important;
+  background:#07141d!important;
+}
+
+/* Tekst + medium: dwie równe kolumny, ta sama górna linia i brak przypadkowych przesunięć. */
+body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+){
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:clamp(26px,3.4vw,44px)!important;
+  align-items:start!important;
+  width:100%!important;
+  max-width:none!important;
+}
+body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+)>.course-primary-media{
+  align-self:start!important;
+  justify-self:center!important;
+  width:100%!important;
+  margin:0!important;
+}
+body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+)>:not(.course-primary-media){
+  width:100%!important;
+  margin-top:0!important;
+  margin-bottom:0!important;
+}
+
+/* Studium przypadku: opis, materiał i odpowiedzi mają wspólną oś. */
+body.online-course-page #moduleView .course-scene .m5-body>.m5-case,
+body.online-course-page #moduleView .course-scene .m5-body>.m5-mock,
+body.online-course-page #moduleView .course-scene .m5-body>p,
+body.online-course-page #moduleView .course-scene .m5-body>.m5-options,
+body.online-course-page #moduleView .course-scene .m5-body>.m5-feedback{
+  min-width:0!important;
+}
+body.online-course-page #moduleView .course-scene .m5-mock{
+  display:grid!important;
+  gap:10px!important;
+}
+body.online-course-page #moduleView .course-scene .m5-mock .headline{
+  color:var(--audit-ink)!important;
+  font-size:clamp(19px,2vw,25px)!important;
+  line-height:1.25!important;
+}
+body.online-course-page #moduleView .course-scene .m5-mock :is(.domain,.meta){color:#667580!important}
+
+/* Akordeony są rozwinięte, ale zachowują regularny nagłówek i odstępy. */
+body.online-course-page #moduleView .course-scene details[data-course-expanded="true"]{
+  width:100%!important;
+  margin:0!important;
+  border:0!important;
+  border-top:1px solid rgba(77,98,111,.22)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body.online-course-page #moduleView .course-scene details[data-course-expanded="true"]>summary{
+  display:flex!important;
+  width:100%!important;
+  min-height:64px!important;
+  align-items:center!important;
+  gap:12px!important;
+  padding:16px 2px!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--audit-ink)!important;
+}
+body.online-course-page #moduleView .course-scene details[data-course-expanded="true"]>:is(
+  .accordion-content,.example-accordion-body,.m3-accordion-body,.m4-accordion-body,
+  .m4-example-accordion-body,.lesson-body
+){
+  padding:4px 0 30px!important;
+}
+
+/* Wspólne, spokojne odstępy między elementami bez kumulowania starych marginesów. */
+body.online-course-page #moduleView .course-scene :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body,.accordion-content,
+  .example-accordion-body,.m3-accordion-body,.m4-accordion-body,.m4-example-accordion-body
+)>*+*{margin-top:18px!important}
+body.online-course-page #moduleView .course-scene :is(ul,ol){padding-left:1.35rem!important}
+body.online-course-page #moduleView .course-scene :is(p,ul,ol,blockquote):last-child{margin-bottom:0!important}
+
+@media(max-width:1040px){
+  body.online-course-page #moduleView .course-scene .m5-tools{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  ){
+    grid-template-columns:1fr!important;
+  }
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>.course-primary-media{
+    grid-column:1!important;
+    grid-row:auto!important;
+    width:min(100%,820px)!important;
+    margin:6px auto 0!important;
+  }
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>:not(.course-primary-media){grid-column:1!important}
+}
+
+@media(max-width:700px){
+  body.online-course-page #moduleView .course-scene{
+    padding:24px 16px!important;
+    border-radius:17px!important;
+  }
+  body.online-course-page #moduleView .course-scene :is(
+    .mini-card-grid,.competence-grid,.repetition-grid,.confirmation-grid,.social-proof-grid,
+    .authority-grid,.availability-anchor-grid,.m5-tools,.m5-game-grid,.m5-options
+  ){
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+  body.online-course-page #moduleView .course-scene .m5-options>.m5-option:last-child:nth-child(odd){grid-column:auto!important}
+  body.online-course-page #moduleView .course-scene :is(
+    .mini-card,.competence-card,.repetition-card,.confirmation-card,.emotion-mechanism-card,
+    .social-proof-card,.authority-card,.availability-anchor-card,.availability-anchor-part,
+    .authority-check,.availability-anchor-process,.m5-tool,.m5-step,.m5-game-card,
+    .m5-case,.m5-mock,.module2-case,.module2-case-question,.m4-tip,.deepfake-note,
+    .deepfake-example,.m1-question,.example-viewer,.lesson-example
+  ){
+    padding:17px!important;
+    border-radius:14px!important;
+  }
+  body.online-course-page #moduleView .course-scene :is(
+    .remember-box,.repetition-remember,.confirmation-remember,.social-proof-remember,
+    .authority-remember,.availability-anchor-remember,.m3-callout-remember,.m5-summary,
+    .audio-summary-box,.activation-box,.authority-trace,.availability-anchor-sift
+  ){
+    padding:18px!important;
+    border-radius:14px!important;
+  }
+  body.online-course-page #moduleView .course-scene figure,
+  body.online-course-page #moduleView .course-scene :is(img.m5-case-image,img.deepfake-image,img.confirmation-card-image),
+  body.online-course-page #moduleView .course-scene :is(.m1-video-wrap,.deepfake-video,.course-video-frame),
+  body.online-course-page #moduleView .course-scene video.m5-case-video{
+    width:100%!important;
+    margin:20px auto!important;
+    border-radius:14px!important;
+  }
+  body.online-course-page #moduleView .course-scene figure{padding:6px!important}
+  body.online-course-page #moduleView .course-scene figcaption{font-size:11.5px!important}
+  body.online-course-page #moduleView .course-scene .m1-question{padding:17px!important}
+  body.online-course-page #moduleView .course-scene .m1-option{min-height:50px!important;padding:11px 12px!important}
+}
+
+/* --------------------------------------------------------------------------
+   Audyt szczegółowy: każda sekcja, każda ramka i każde pole – 2026-07-29
+   -------------------------------------------------------------------------- */
+
+/* Usunięcie podwójnej ramy historycznego kontenera. Widoczna pozostaje jedna,
+   równa rama aktywnego etapu. */
+body.online-course-page #moduleView .course-stage-host--nested.is-host-active{
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+body.online-course-page #moduleView .course-stage-host--nested.is-host-active>:is(#lessonContent,#exampleSection){
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+/* Wspólna geometria dla wszystkich dodatkowych pól, które wcześniej korzystały
+   z różnych wariantów obramowania, promieni i odstępów. */
+body.online-course-page #moduleView .course-scene :is(
+  .emotion-intro-panel,.repetition-intro,.confirmation-intro,.social-proof-intro,
+  .authority-intro,.availability-anchor-intro,.social-proof-reasons,
+  .example-reflection,.m3-case,.deepfake-question,.lesson-source,.placeholder,
+  .m5-exercise-stage
+){
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:22px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:var(--audit-radius)!important;
+  background:rgba(255,255,255,.80)!important;
+  box-shadow:var(--audit-shadow)!important;
+  color:var(--audit-ink)!important;
+}
+body.online-course-page #moduleView .course-scene :is(
+  .emotion-intro-panel,.repetition-intro,.confirmation-intro,.social-proof-intro,
+  .authority-intro,.availability-anchor-intro,.social-proof-reasons,
+  .example-reflection,.m3-case,.deepfake-question,.lesson-source,.placeholder,
+  .m5-exercise-stage
+) :is(p,li,span,blockquote){color:var(--audit-text)!important}
+body.online-course-page #moduleView .course-scene :is(
+  .emotion-intro-panel,.repetition-intro,.confirmation-intro,.social-proof-intro,
+  .authority-intro,.availability-anchor-intro,.social-proof-reasons,
+  .example-reflection,.m3-case,.deepfake-question,.lesson-source,.placeholder,
+  .m5-exercise-stage
+) :is(h3,h4,strong){color:var(--audit-ink)!important}
+
+/* Ciemne pola specjalne mają jednolite tło i kontrolowany kontrast. */
+body.online-course-page #moduleView .course-scene :is(.confirmation-trigger,.social-proof-flow){
+  width:100%!important;
+  margin:20px 0 0!important;
+  padding:22px 24px!important;
+  border:1px solid rgba(229,202,148,.26)!important;
+  border-radius:var(--audit-radius)!important;
+  background:linear-gradient(135deg,var(--audit-dark),var(--audit-dark-2))!important;
+  box-shadow:0 15px 34px rgba(12,31,43,.18)!important;
+  color:#f5f8f9!important;
+}
+body.online-course-page #moduleView .course-scene :is(.confirmation-trigger,.social-proof-flow) :is(p,li,span,blockquote){color:#edf3f6!important}
+body.online-course-page #moduleView .course-scene :is(.confirmation-trigger,.social-proof-flow) :is(h3,h4,strong){color:#f0d59e!important}
+
+/* Sekcja „Zatrzymaj emocję” i podobne zestawy – równe kolumny oraz karty. */
+body.online-course-page #moduleView .course-scene .module2-stop-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;
+  width:100%!important;
+  margin:22px 0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+body.online-course-page #moduleView .course-scene .module2-stop-grid>article{
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:18px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:15px!important;
+  background:rgba(255,255,255,.80)!important;
+  box-shadow:var(--audit-shadow)!important;
+}
+body.online-course-page #moduleView .course-scene .module2-stop-grid>article :is(p,span){color:var(--audit-text)!important}
+body.online-course-page #moduleView .course-scene .module2-stop-grid>article strong{color:var(--audit-ink)!important}
+
+/* Rozbudowane ćwiczenie w module 5: pełna szerokość, brak ścisku i łamania poza ramką. */
+body.online-course-page #moduleView .course-scene .m5-exercise-stage{
+  display:block!important;
+  margin:20px 0 0!important;
+}
+body.online-course-page #moduleView .course-scene .m5-exercise-stage>h4{
+  width:100%!important;
+  margin:0 0 10px!important;
+  padding-bottom:12px!important;
+  border-bottom:1px solid rgba(77,98,111,.18)!important;
+  font-size:clamp(18px,2vw,22px)!important;
+  line-height:1.28!important;
+}
+body.online-course-page #moduleView .course-scene .m5-signal-grid{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:10px!important;
+  width:100%!important;
+  margin:18px 0!important;
+}
+body.online-course-page #moduleView .course-scene .m5-signal{
+  display:grid!important;
+  grid-template-columns:20px minmax(0,1fr)!important;
+  align-items:start!important;
+  gap:11px!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:54px!important;
+  margin:0!important;
+  padding:13px 14px!important;
+  border:1px solid var(--audit-line)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:var(--audit-text)!important;
+  box-shadow:none!important;
+}
+body.online-course-page #moduleView .course-scene .m5-signal>span{
+  min-width:0!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  color:var(--audit-text)!important;
+  line-height:1.5!important;
+}
+body.online-course-page #moduleView .course-scene .m5-signal>input{margin:2px 0 0!important}
+body.online-course-page #moduleView .course-scene .m5-check-signals{margin-top:2px!important}
+
+/* Pola z przykładami i źródłami – jedna oś, bez lewego „ucięcia”. */
+body.online-course-page #moduleView .course-scene :is(.example-reflection,.deepfake-question,.lesson-source){
+  border-left:1px solid var(--audit-line)!important;
+  text-align:left!important;
+}
+body.online-course-page #moduleView .course-scene .placeholder{
+  display:grid!important;
+  place-items:center!important;
+  min-height:220px!important;
+  text-align:center!important;
+  border-style:dashed!important;
+}
+
+/* Elementy w obrębie każdej ramki trzymają wspólną szerokość i nie wypychają kolumn. */
+body.online-course-page #moduleView .course-scene :is(
+  .m5-case,.m5-mock,.m5-exercise-stage,.deepfake-example,.m3-case,
+  .emotion-intro-panel,.repetition-intro,.confirmation-intro,.social-proof-intro,
+  .authority-intro,.availability-anchor-intro,.social-proof-reasons
+)>*{max-width:100%!important}
+body.online-course-page #moduleView .course-scene :is(
+  .m5-body,.lesson-body,.m3-section-body,.m4-section-body,
+  .m5-exercise-stage,.module2-stop-grid
+){min-width:0!important}
+
+/* Media umieszczone w połowie układu nie mogą tworzyć mniejszej lub większej osi niż tekst. */
+body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+)>.course-primary-media{
+  max-width:100%!important;
+}
+body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+  .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+)>img.course-primary-media{
+  height:auto!important;
+  max-height:520px!important;
+  padding:8px!important;
+  border:1px solid rgba(65,98,119,.18)!important;
+  border-radius:18px!important;
+  background:#102735!important;
+  box-shadow:0 16px 36px rgba(13,31,42,.16)!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+@media(max-width:1040px){
+  body.online-course-page #moduleView .course-scene .module2-stop-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:700px){
+  body.online-course-page #moduleView .course-stage-host--nested.is-host-active{padding:0!important}
+  body.online-course-page #moduleView .course-scene :is(
+    .emotion-intro-panel,.repetition-intro,.confirmation-intro,.social-proof-intro,
+    .authority-intro,.availability-anchor-intro,.social-proof-reasons,
+    .example-reflection,.m3-case,.deepfake-question,.lesson-source,.placeholder,
+    .m5-exercise-stage,.confirmation-trigger,.social-proof-flow
+  ){padding:17px!important;border-radius:14px!important}
+  body.online-course-page #moduleView .course-scene .module2-stop-grid{grid-template-columns:1fr!important;gap:12px!important}
+  body.online-course-page #moduleView .course-scene .m5-signal{padding:12px!important}
+}
+
+/* Drobne korekty wykryte podczas przejścia przez wszystkie 46 etapów. */
+body.online-course-page #moduleView .course-scene :is(.lesson-number){
+  flex:0 0 auto!important;
+  width:auto!important;
+  min-width:44px!important;
+  height:34px!important;
+  padding:0 7px!important;
+  overflow:hidden!important;
+  white-space:nowrap!important;
+  line-height:1!important;
+}
+body.online-course-page #moduleView .course-scene:is(.course-infographic,.m4-intro-panel) > :first-child{
+  margin-top:0!important;
+}
+body.online-course-page #moduleView .course-scene:is(.course-infographic,.m4-intro-panel) > :last-child{
+  margin-bottom:0!important;
+}
+
+/* Rozbudowane studium 5.7 jest czytelniejsze jako pełna, pionowa ścieżka niż
+   jako bardzo wąska kolumna obok grafiki. */
+body.online-course-page #moduleView #m5-material-udajacy-wiadomosci .m5-body{
+  display:block!important;
+  width:100%!important;
+}
+body.online-course-page #moduleView #m5-material-udajacy-wiadomosci .m5-body > :is(.m5-case,.m5-exercise-stage,.m5-summary){
+  width:100%!important;
+  max-width:none!important;
+}
+body.online-course-page #moduleView #m5-material-udajacy-wiadomosci img.m5-case-image{
+  width:min(100%,820px)!important;
+  max-height:620px!important;
+  margin:24px auto!important;
+}
+
+/* Po przejściu na jedną kolumnę usuwamy wszystkie historyczne numery kolumn
+   i wierszy. Zapobiega to zwężaniu obrazu do ikony na telefonie. */
+@media(max-width:1040px){
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media.course-scene--reverse :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>*,
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media:not(.course-scene--reverse) :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>*{
+    grid-column:1!important;
+    grid-row:auto!important;
+    justify-self:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+  body.online-course-page #moduleView .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>.course-primary-media{
+    width:min(100%,820px)!important;
+    max-width:100%!important;
+    margin:8px auto 0!important;
+    justify-self:center!important;
+  }
+}
+@media(max-width:1040px){
+  body.online-course-page #moduleView.module-view.visible .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  ){
+    display:block!important;
+  }
+  body.online-course-page #moduleView.module-view.visible .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>*{
+    grid-column:auto!important;
+    grid-row:auto!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  body.online-course-page #moduleView.module-view.visible .course-scene.course-scene--balanced-media :is(
+    .lesson-body,.m3-section-body,.m4-section-body,.m5-body
+  )>.course-primary-media{
+    display:block!important;
+    width:min(100%,820px)!important;
+    max-width:100%!important;
+    height:auto!important;
+    margin:20px auto!important;
+  }
+}

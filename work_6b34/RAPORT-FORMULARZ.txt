@@ -1,0 +1,12 @@
+AKTUALIZACJA LINKU — SZKOLENIE ONLINE
+
+Podpięty formularz:
+https://forms.gle/7rJ6Q3eMgx7XBsLw6
+
+Zmieniono:
+1. Przycisk „Zarejestruj się i wykonaj test” w kurs-fake-news.html.
+2. Pole konfiguracyjne registration.
+3. Pole konfiguracyjne preTest.
+
+Formularz otwiera się w nowej karcie z zabezpieczeniem rel="noopener noreferrer".
+Usunięto stare znaczniki #REJESTRACJA_FORMULARZ i #TEST_POCZATKOWY.

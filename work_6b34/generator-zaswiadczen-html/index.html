@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generator dokumentacji szkoleniowej WUP 3.0.1</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="panel">
+    <header class="brand"><img src="assets/panel-logo.png" alt=""><div><h1>Generator certyfikatów</h1><p>WUP Katowice · wersja 3.0.1</p></div></header>
+
+    <section class="card">
+      <h2>1. Szablon</h2>
+      <label>Rodzaj certyfikatu
+        <select id="templateSelect">
+          <option value="ebg">Edukacja bez granic</option>
+          <option value="k40">Kierunek – Kompetencje 4.0</option>
+          <option value="wup">WUP Katowice – Fundusze Europejskie</option>
+        </select>
+      </label>
+      <div class="segmented"><button data-side="front" class="active">Przód</button><button data-side="back">Tył</button></div>
+    </section>
+
+    <section class="card">
+      <h2>2. Treść certyfikatu</h2>
+      <label>Lista uczestników — jedna osoba w wierszu<textarea id="peopleList" rows="7" placeholder="Jan Kowalski&#10;Anna Nowak">Jan Kowalski
+Anna Nowak</textarea></label>
+      <p class="hint"><strong id="peopleCount">2 osoby</strong> · Podgląd pokazuje pierwszą osobę z listy.</p>
+      <label>Numer certyfikatu — wzór z symbolem {N}<input id="certPattern" type="text" value="WUP/2026/{N}"></label>
+      <div class="grid2">
+        <label>Numer początkowy<input id="startN" type="number" min="0" value="1"></label>
+        <label>Liczba cyfr<input id="padN" type="number" min="1" max="8" value="3"></label>
+      </div>
+      <label>Nazwa szkolenia<textarea id="trainingName" rows="3">Media Literacy, Fake News i krytyczne myślenie</textarea></label>
+      <div class="grid2">
+        <label>Liczba godzin<input id="hours" type="text" value="5 godzin dydaktycznych"></label>
+        <label>Data<input id="date" type="text" value="15 października 2026 r."></label>
+      </div>
+      <label>Miejsce<input id="place" type="text" value="Katowice"></label>
+      <label>Tekst dodatkowy<textarea id="extraText" rows="3">Zaświadczenie potwierdza ukończenie szkolenia.</textarea></label>
+      <label>Osoby prowadzące — każda w nowym wierszu<textarea id="trainersList" rows="3" placeholder="Imię i nazwisko prowadzącego"></textarea></label>
+      <label>Program / treść na odwrocie<textarea id="programText" rows="8">Program szkolenia:
+1. Edukacja medialna i informacyjna
+2. Mechanizmy dezinformacji
+3. Krytyczna ocena źródeł
+4. Narzędzia fact-checkingowe
+5. Zastosowanie w pracy urzędu</textarea></label>
+    </section>
+
+    <section class="card">
+      <h2>3. Podpis i pieczątka</h2>
+      <label class="check"><input id="signatureEnabled" type="checkbox" checked> Umieść podpis na certyfikacie</label>
+      <label class="upload">Grafika podpisu z pieczątką (PNG/JPG/WEBP)<input id="signatureFile" type="file" accept="image/png,image/jpeg,image/webp"></label>
+      <p class="hint">Wbudowana grafika Grażyny Walasz jest zapisana w generatorze. Możesz ją przeciągać i zmieniać jej szerokość tak jak pozostałe pola. Wczytanie własnej grafiki zastąpi wersję wbudowaną.</p>
+      <label>Imię i nazwisko<input id="signatureName" type="text" value="Grażyna Walasz"></label>
+      <label>Funkcja / upoważnienie<textarea id="signatureRole" rows="4">z upoważnienia Dyrektora
+Wojewódzkiego Urzędu Pracy
+w Katowicach</textarea></label>
+      <button id="removeSignature" class="light">Usuń grafikę i użyj tekstu</button>
+    </section>
+
+    <section class="card">
+      <h2>4. Ustawienia zaznaczonego pola</h2>
+      <p id="selectedName" class="muted">Kliknij pole lub podpis na dokumencie.</p>
+      <div id="fieldTools" class="field-tools disabled">
+        <div class="grid2">
+          <label>Rozmiar<input id="fontSize" type="number" min="8" max="64" step="1"></label>
+          <label>Szerokość pola<input id="fieldWidth" type="number" min="10" max="95" step="1"></label>
+        </div>
+        <label>Czcionka<select id="fontFamily"><option value="Georgia,serif">Georgia</option><option value="Arial,sans-serif">Arial</option><option value="'Times New Roman',serif">Times New Roman</option><option value="system-ui,sans-serif">Systemowa</option></select></label>
+        <div class="toolbar"><button id="boldBtn" title="Pogrubienie"><b>B</b></button><button id="italicBtn" title="Kursywa"><i>I</i></button><button data-align="left">L</button><button data-align="center">C</button><button data-align="right">P</button></div>
+        <button id="centerField" class="secondary">Wyśrodkuj na stronie</button>
+        <button id="resetLayout" class="light">Przywróć układ szablonu</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Prowadnice</h2>
+      <label class="check"><input id="showCenter" type="checkbox" checked> Środek strony</label>
+      <label class="check"><input id="showSafe" type="checkbox" checked> Bezpieczny obszar</label>
+      <label class="check"><input id="showGrid" type="checkbox"> Siatka</label>
+      <p class="hint">Elementy przyciągają się do środka dokumentu. Podczas przesuwania pojawia się linia celowania.</p>
+    </section>
+
+    <section class="card actions">
+      <h2>6. Generowanie seryjne</h2>
+      <button id="pdfCombined" class="primary">PDF zbiorczy — wszystkie osoby</button>
+      <button id="pdfSeparate" class="secondary">Osobne PDF-y — każda osoba</button>
+      <button id="attendancePdf" class="secondary">Lista obecności PDF — tło projektu</button>
+      <button id="csvExport" class="light">Wykaz certyfikatów CSV</button>
+      <button id="trainingPackage" class="primary">Przygotuj paczkę dokumentacji szkolenia</button>
+      <p id="batchStatus" class="hint">Gotowy do generowania.</p>
+      <h2>7. Projekt</h2>
+      <button id="saveProject" class="secondary">Zapisz projekt JSON</button>
+      <label class="upload buttonlike">Wczytaj projekt JSON<input id="loadProject" type="file" accept="application/json,.json"></label>
+    </section>
+  </aside>
+
+  <main class="workspace">
+    <div class="topbar"><span id="pageLabel">Przód certyfikatu</span><span class="tip">Przeciągaj pola bezpośrednio na dokumencie</span></div>
+    <div class="canvas-wrap">
+      <div id="page" class="page">
+        <img id="background" class="background" alt="Tło certyfikatu">
+        <div class="guide center-v"></div><div class="guide center-h"></div><div class="safe-area"></div><div class="grid-overlay"></div>
+        <div id="snapGuideV" class="snap-guide vertical"></div><div id="snapGuideH" class="snap-guide horizontal"></div>
+        <div class="editable" data-key="heading">ZAŚWIADCZENIE</div>
+        <div class="editable" data-key="intro">Niniejszym zaświadcza się, że</div>
+        <div class="editable" data-key="name">Jan Kowalski</div>
+        <div class="editable" data-key="completion">ukończył(a) szkolenie</div>
+        <div class="editable" data-key="training">Media Literacy, Fake News i krytyczne myślenie</div>
+        <div class="editable" data-key="hours">w wymiarze 5 godzin dydaktycznych</div>
+        <div class="editable" data-key="extra">Zaświadczenie potwierdza ukończenie szkolenia.</div>
+        <div class="editable" data-key="placeDate">Katowice, 15 października 2026 r.</div>
+        <div class="editable" data-key="number">Nr WUP/2026/001</div>
+        <div class="editable back-only" data-key="program">Program szkolenia</div>
+        <img id="signature" class="asset signature" alt="Podpis i pieczątka">
+        <div id="signatureFallback" class="signature-fallback" aria-label="Tekst podpisu"></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/jszip.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

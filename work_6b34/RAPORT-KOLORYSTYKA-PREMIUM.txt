@@ -1,0 +1,29 @@
+PORTAL 3.0 — KOLORYSTYKA PREMIUM
+Data: 24.07.2026
+
+Źródło bazowe:
+PORTAL-3-GITHUB-MASTER-STRONA-GLOWNA-ROZBUDOWANA-BEZ-DUBLOWANIA.zip
+
+Wprowadzone zmiany:
+1. Ciemniejsze, granatowo-grafitowe tło całego portalu z subtelnymi gradientami.
+2. Ciemny, półprzezroczysty pasek nawigacji z poprawionym kontrastem.
+3. Ciepłe, jasne powierzchnie kart i paneli zamiast czystej bieli.
+4. Subtelny złoty akcent w obramowaniach, etykietach i detalach.
+5. Ujednolicone, głębsze cienie oraz bardziej eleganckie obramowania.
+6. Przebudowana kolorystyka hero strony głównej — ciemny panel tekstowy i białe logo.
+7. Trzy główne programy otrzymały głębokie, stonowane kolory i białą typografię.
+8. Dopasowano katalog kursów, zapisy, kontakt, kalendarz i ramę kursu online.
+9. Zachowano dotychczasową strukturę, teksty, grafiki, funkcje i responsywność.
+10. Zmieniono cache-busting arkusza CSS, aby GitHub Pages nie pokazywał starego wyglądu.
+
+Weryfikacja:
+- sprawdzono 289 lokalnych odwołań do plików — brak brakujących zasobów;
+- sprawdzono składnię wszystkich plików JavaScript — bez błędów;
+- sprawdzono bilans nawiasów CSS — poprawny;
+- sprawdzono strony główne w renderze desktopowym i mobilnym;
+- sprawdzono odpowiedzi lokalnego serwera HTTP dla strony głównej, katalogu kursów, kontaktu, zapisów, kalendarza, kursu i arkusza CSS — 200 OK;
+- po spakowaniu wykonano ponowne rozpakowanie i kontrolę integralności.
+
+Znane ograniczenia:
+- zmiana dotyczy warstwy wizualnej; nie zmieniano treści, struktury ani logiki formularzy i kursów;
+- filmy YouTube wymagają połączenia z internetem, tak jak w wersji bazowej.

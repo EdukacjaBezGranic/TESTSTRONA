@@ -1,0 +1,66 @@
+KOREKTA MODUŁ PO MODULE I SEKCJA PO SEKCJI
+Data: 2026-07-29
+
+ZAKRES AUDYTU
+- 5 modułów kursu.
+- 46 etapów: 11 + 10 + 6 + 7 + 12.
+- Panel modułów, lewa nawigacja tematów, wszystkie pola tekstowe, ramki, multimedia, quizy i materiały.
+- Widok desktopowy 1440 × 1000 oraz mobilny 390 × 844.
+
+PANEL MODUŁÓW
+- Ułożono karty modułów w równej siatce dwóch kolumn.
+- Rozdzielono podgląd tematów na czytelne, równe wiersze.
+- Ujednolicono punkt rozpoczęcia opisów, sekcji tematów, czasu i przycisków.
+
+MODUŁ 1 – FAKE NEWS I DEZINFORMACJA
+- Ujednolicono geometrię nagłówków etapów.
+- Zmniejszono nadmiar pustej przestrzeni w sekcjach pojęciowych.
+- Przykłady fałszywych informacji ułożono tak, aby grafika i analiza tworzyły spójną kompozycję.
+- Uporządkowano sekcję testu i materiały do pobrania.
+
+MODUŁ 2 – EMOCJE I MECHANIZMY MANIPULACJI
+- Przebudowano wnętrza rozbudowanych sekcji „Emocje i uwaga” oraz „Mechanizmy psychologiczne”.
+- Elementy mechanizmów, przykładów, infografik i checklist wykorzystują szerokość ramki zamiast tworzyć wąski pionowy ciąg.
+- Pięć kart metody zatrzymania emocji ułożono symetrycznie: trzy karty w pierwszym rzędzie i dwie szersze w drugim.
+- Krótkie etapy otrzymały układy dwukolumnowe lub siatki zamiast pustych fragmentów ramki.
+- Ukryto historyczne bloki filmu i testu, które nie należą do bieżącego etapu modułu 2.
+
+MODUŁ 3 – AI, DEEPFAKE I OSZUSTWA CYFROWE
+- Wprowadzenie podzielono na dwa równe pola treści.
+- Rozbudowane sekcje ułożono w spójne karty z równymi odstępami.
+- Uporządkowano infografiki, przykłady i pola „zapamiętaj”.
+- Checklistę ograniczania ryzyka ułożono w dwóch kolumnach na szerokich ekranach.
+
+MODUŁ 4 – FACT-CHECKING W PRAKTYCE
+- Wprowadzenie otrzymało proporcjonalny układ grafika–tekst.
+- Narzędzia i metody weryfikacji uporządkowano w jednolitych, rozwiniętych kartach.
+- Ujednolicono szerokość infografik, treści i podpisów.
+- Wszystkie sekcje zachowują naturalną wysokość bez sztucznego rozciągania.
+
+MODUŁ 5 – LABORATORIUM FACT-CHECKERA
+- Ujednolicono sześć studiów przypadku: polecenie, materiał, pytania, odpowiedzi i informacja zwrotna.
+- Sygnały ostrzegawcze w materiale telewizyjnym ułożono w dwóch kolumnach.
+- Kroki symulacji pracy fact-checkera ułożono w zwartej siatce.
+- Usunięto pustą sekcję-zastępnik „Przykłady i analiza”.
+- W jej miejscu dodano podsumowanie z sześcioma kartami prowadzącymi bezpośrednio do przeanalizowanych przypadków.
+- Poprawiono nazwy pierwszych etapów i podsumowania także w mobilnej nawigacji.
+
+NAPRAWA LOGIKI WIDOCZNOŚCI
+- Przywrócono bezwzględne respektowanie atrybutu hidden.
+- Film, test i materiały z innych etapów nie pozostają widoczne nad ani pod aktywną sekcją.
+- Każdy etap pokazuje dokładnie jeden aktywny blok treści.
+
+WYNIKI TESTÓW
+- 46/46 etapów otwiera się prawidłowo.
+- Liczba tematów: 11, 10, 6, 7 i 12.
+- Wszystkie zagnieżdżone treści pozostają rozwinięte.
+- Brak poziomego rozsuwania strony na desktopie i telefonie.
+- Brak multimediów wychodzących poza ramki.
+- Brak błędów JavaScript wykrytych w testowanym przepływie.
+- Podsumowanie modułu 5 zawiera 6 działających odnośników do studiów przypadku.
+- 402 sprawdzone lokalne odwołania, 0 brakujących plików.
+
+ŚRODOWISKO TESTOWE
+- Chromium uruchomiony przez Playwright.
+- Browser plugin nie był dostępny; zastosowano kontrolowany test Playwright.
+- Ze względu na ograniczenie bezpośredniej nawigacji do plików lokalnych zasoby zostały osadzone w testowym dokumencie, bez modyfikacji wersji produkcyjnej.

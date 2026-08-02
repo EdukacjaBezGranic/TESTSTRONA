@@ -1,0 +1,47 @@
+RAPORT AUDYTU POJĘĆ, RAM KOMPETENCJI I AKRONIMÓW
+Kurs: „Media Literacy, Fake News i Krytyczne Myślenie”
+Data: 30.07.2026
+
+1. CEL AUDYTU
+Sprawdzono, czy nazwy programów, ram kompetencji, metod i pojęć specjalistycznych są wyjaśnione w miejscu, w którym pojawiają się w kursie. Szczególną uwagę poświęcono sekcjom, które wcześniej wyglądały jak formalne zestawienia zgodności programu, lecz nie tłumaczyły uczestnikowi, czym jest dane odniesienie i do czego może je wykorzystać.
+
+2. ZAKRES
+Przejrzano wszystkie 111 sekcji w pięciu modułach. Zmieniono treść 16 sekcji, bez zmiany ich identyfikatorów, kolejności i sposobu zaliczania postępu.
+
+3. NAJWAŻNIEJSZE KOREKTY
+- PISA 2029 MAIL: dodano wyjaśnienie, że jest to obszar badania OECD dotyczący kompetencji medialnych i kompetencji związanych z AI; rozwinięto skrót MAIL; wyjaśniono, że kurs dla dorosłych korzysta z ramy jako punktu odniesienia, a nie jako testu.
+- AILit Framework: wyjaśniono pochodzenie nazwy AI Literacy, autorstwo Komisji Europejskiej i OECD oraz praktyczne zastosowanie ram podczas korzystania z AI.
+- Formalne tabele „Powiązanie/Związek z…” zastąpiono układem sytuacja – pytanie – działanie, odnoszącym się do doświadczeń uczestnika.
+- SIFT: wyjaśniono, czym jest fact-checking, rozwinięto funkcję akronimu i zaznaczono, że procedura nie wydaje automatycznej oceny prawdziwości.
+- CLEAR: wyjaśniono pięć etapów akronimu oraz ograniczenie modelu – porządkuje analizę, lecz nie gwarantuje poprawnej decyzji.
+- SHARE: rozwinięto pięć obszarów używanych w kursie: Source, Harm, Accuracy, Reason, Emotion; wyjaśniono, że checklista zatrzymuje impuls przed udostępnieniem.
+- Deepfake i media syntetyczne: dodano krótkie definicje przed przykładami wideo i audio.
+- OECD i UNESCO: rozwinięto nazwy przy pierwszym wystąpieniu w materiale merytorycznym.
+
+4. ELEMENTY SPRAWDZONE I POZOSTAWIONE
+Bez zmian pozostawiono terminy, które miały już bezpośrednie objaśnienie: doomscrolling, czytanie boczne, nieład informacyjny, misinformation, dezinformacja, malinformation, komora pogłosowa i bańka filtrująca.
+
+5. ELEMENTY ZACHOWANE
+- 111 sekcji i 5 modułów;
+- identyfikatory sekcji i zapis ukończenia;
+- ćwiczenia, odpowiedzi, samooceny i lokalny zapis postępu;
+- formularze Google Forms i warunki certyfikatu;
+- generowanie kart pracy i końcowego PDF do weryfikacji;
+- grafiki, filmy, ilustracje i układ portalu;
+- naprawa generatora PDF związana z błędem „Tainted canvases”.
+
+6. TESTY
+- 111 sekcji: PASS
+- brak zduplikowanych identyfikatorów: PASS
+- wszystkie odnośniki nawigacji prowadzą do istniejących sekcji: PASS
+- brak brakujących lokalnych zasobów: PASS
+- składnia wszystkich skryptów JavaScript: PASS
+- 74 unikalne pliki sprawdzone przez lokalny serwer HTTP – status 200: PASS
+- render rzeczywistych arkuszy CSS i skryptów w Chromium: PASS
+- widoczność nowych sekcji PISA/AILit na komputerze: PASS
+- widoczność sekcji na szerokości mobilnej 390 px: PASS
+- działanie przełączania modułów i nawigacji do zmienionych sekcji: PASS
+- brak błędów i ostrzeżeń w konsoli podczas testu renderowanego: PASS
+
+7. OGRANICZENIE ŚRODOWISKA TESTOWEGO
+Bezpośrednia nawigacja Chromium do lokalnego serwera została zablokowana przez politykę środowiska („ERR_BLOCKED_BY_ADMINISTRATOR”). Weryfikację interakcji i wyglądu wykonano w Chromium przez załadowanie pełnego dokumentu z rzeczywistymi arkuszami CSS i skryptami JavaScript osadzonymi lokalnie. Dostępność zasobów przez HTTP sprawdzono osobno – wszystkie zwróciły status 200.

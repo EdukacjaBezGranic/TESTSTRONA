@@ -1,0 +1,57 @@
+PRZEBUDOWA WNĘTRZA MODUŁÓW — ŚCIEŻKA CZYTANIA I SUBTELNE EFEKTY
+Data: 2026-07-28
+
+WPROWADZONE ZMIANY
+
+1. Dodano pasek postępu wewnątrz każdego otwartego modułu.
+- Pasek pokazuje procent przeczytanej treści.
+- Wyświetla aktualny etap oraz jego numer.
+- Pozostaje widoczny podczas przewijania.
+
+2. Dodano nawigację po etapach modułu.
+- Na komputerze wyświetla się jako boczny, przyklejony panel.
+- Na tablecie i telefonie zmienia się w przewijaną poziomą listę.
+- Kliknięcie etapu przewija do właściwej części treści.
+- Aktualnie czytany etap jest automatycznie wyróżniany.
+
+3. Dodano efekty pojawiania się treści.
+- Sekcje delikatnie przenikają i przesuwają się podczas przewijania.
+- Efekt jest spokojny i zgodny z profesjonalnym charakterem portalu.
+- Pierwsze sekcje są widoczne od razu, aby strona nie wyglądała na pustą.
+
+4. Dodano efekt aktywnej sekcji.
+- Czytana część otrzymuje subtelną linię mosiężno-niebieską.
+- Delikatnie zwiększa się jej głębia i kontrast.
+
+5. Ulepszono rozwijane pola.
+- Po rozwinięciu akordeon otrzymuje subtelny efekt morph.
+- Pojawia się animowana linia akcentowa.
+- Treść rozwija się przez łagodne przenikanie i przesunięcie.
+
+6. Zachowano spójność kolorystyczną.
+- Ciemny grafit i granat w elementach nawigacyjnych.
+- Jasne matowe powierzchnie do czytania.
+- Mosiężno-złote i stonowane niebieskie akcenty.
+
+7. Zachowano dostępność.
+- Wszystkie animacje są wyłączane lub skracane przy ustawieniu prefers-reduced-motion.
+- Nawigacja etapów jest obsługiwana przyciskami i ma etykietę dla czytników ekranu.
+
+ELEMENTY ZACHOWANE
+- wszystkie treści modułów,
+- testy i ćwiczenia,
+- filmy, grafiki i materiały źródłowe,
+- zapis postępu,
+- dotychczasowy ekran panelu modułów,
+- nagłówek i stopka portalu,
+- działanie na telefonach i tabletach.
+
+WERYFIKACJA
+- 3 osadzone skrypty JavaScript: składnia prawidłowa,
+- 187 lokalnych odwołań do plików statycznych: brak brakujących zasobów,
+- index.html, kurs-fake-news.html i kursy-online.html: status HTTP 200,
+- obecność paska postępu, nawigacji etapów, efektów akordeonów i reduced motion: potwierdzona,
+- końcowa paczka ZIP: test integralności prawidłowy.
+
+OGRANICZENIE ŚRODOWISKA
+Wbudowana przeglądarka nie była dostępna. Systemowy Chromium został uruchomiony jako test awaryjny, ale nie zakończył generowania zrzutu w limicie 25 sekund z powodu ograniczeń środowiska DBus/zygote. Nie zaliczono więc pełnego testu wizualnego w przeglądarce. Wykonano walidację składniową, strukturalną, zasobów i lokalnego serwera HTTP.

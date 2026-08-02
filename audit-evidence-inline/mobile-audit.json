@@ -1,0 +1,309 @@
+{
+  "sections": 16,
+  "docOverflow": 0,
+  "broken": [
+    "Grafika dydaktyczna - moduł 1",
+    "Algorytmiczna pułapka – personalizacja i bańka filtrująca",
+    "Grafika dydaktyczna - moduł 1",
+    "AI w środowisku informacyjnym",
+    "Grafika dydaktyczna - moduł 1",
+    "Chaos medialny",
+    "Mapa chaosu medialnego",
+    "Kluczowe pojęcia",
+    "Dlaczego pojęcie „fake news” nie wystarcza",
+    "Grafika dydaktyczna - moduł 2",
+    "Emocje jako paliwo dezinformacji",
+    "Emocja kontra analiza",
+    "Emocje i fakty",
+    "Grafika dydaktyczna - moduł 2",
+    "Przykład edukacyjny fikcyjnego postu wykorzystującego strach i presję natychmiastowego udostępnienia",
+    "Sygnały ostrzegawcze w języku",
+    "Mechanizmy i techniki manipulacji",
+    "Kto uczestniczy w weryfikacji",
+    "Pięć kroków do prawdy",
+    "Grafika dydaktyczna - moduł 2",
+    "Fikcyjny komunikat o rzekomej likwidacji urzędów pracy",
+    "Fałszywy profil",
+    "Obraz syntetyczny",
+    "Cherry-picking danych",
+    "Grafika dydaktyczna - moduł 2",
+    "Materiał udający wiadomości",
+    "Sensacyjny artykuł",
+    "Fałszywa oferta pracy",
+    "Prawdziwe zdjęcie, fałszywy kontekst",
+    "Grafika dydaktyczna - moduł 3",
+    "Grafika dydaktyczna - moduł 3",
+    "Cyfrowy niezbędnik",
+    "Strażnicy wiarygodności",
+    "Grafika dydaktyczna - moduł 3",
+    "Pułapki AI",
+    "Krytyczny umysł",
+    "Tożsamość grupowa i polityczna",
+    "Grafika dydaktyczna - moduł 4",
+    "Sygnały manipulacji",
+    "Cztery kroki przed publikacją",
+    "Procedura SIFT",
+    "Grafika dydaktyczna - moduł 4",
+    "Grafika dydaktyczna - moduł 5",
+    "Uważność i higiena informacyjna",
+    "Grafika dydaktyczna - moduł 5",
+    "Grafika dydaktyczna - moduł 5",
+    "Kompetencje odpowiedzialnego działania"
+  ],
+  "rows": [
+    {
+      "id": "m1-1-wprowadzenie",
+      "title": "1. Wprowadzenie",
+      "height": 1664,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-2-dlaczego-edukacja-medialna-jest-potrzebna",
+      "title": "2. Dlaczego edukacja medialna jest potrzebna",
+      "height": 1438,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-3-cele-uczenia-sie",
+      "title": "3. Cele uczenia się",
+      "height": 849,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-4-czym-jest-edukacja-medialna",
+      "title": "4. Czym jest edukacja medialna",
+      "height": 1327,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-5-od-mediow-tradycyjnych-do-mediow-cyfrowych",
+      "title": "5. Od mediów tradycyjnych do mediów cyfrowych",
+      "height": 8383,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": []
+    },
+    {
+      "id": "m1-6-cyfrowy-ekosystem-informacyjny",
+      "title": "6. Cyfrowy ekosystem informacyjny",
+      "height": 1264,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": [
+        {
+          "alt": "Grafika dydaktyczna - moduł 1",
+          "w": 332,
+          "h": 2,
+          "nw": 0,
+          "nh": 0
+        }
+      ]
+    },
+    {
+      "id": "m1-7-algorytmy-i-personalizacja",
+      "title": "7. Algorytmy i personalizacja – algorytmiczna pułapka",
+      "height": 15344,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": [
+        {
+          "alt": "Algorytmiczna pułapka – personalizacja i bańka filtrująca",
+          "w": 296,
+          "h": 0,
+          "nw": 0,
+          "nh": 0
+        }
+      ]
+    },
+    {
+      "id": "m1-8-komory-poglosowe-i-banki-filtrujace",
+      "title": "8. Komory pogłosowe i bańki filtrujące",
+      "height": 1381,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": [
+        {
+          "alt": "Grafika dydaktyczna - moduł 1",
+          "w": 332,
+          "h": 2,
+          "nw": 0,
+          "nh": 0
+        }
+      ]
+    },
+    {
+      "id": "m1-9-sztuczna-inteligencja-a-edukacja-medialna",
+      "title": "9. Sztuczna inteligencja a edukacja medialna",
+      "height": 1917,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": [
+        {
+          "alt": "AI w środowisku informacyjnym",
+          "w": 296,
+          "h": 0,
+          "nw": 0,
+          "nh": 0
+        },
+        {
+          "alt": "Grafika dydaktyczna - moduł 1",
+          "w": 332,
+          "h": 2,
+          "nw": 0,
+          "nh": 0
+        }
+      ]
+    },
+    {
+      "id": "m1-10-powiazania-z-pisa-2029-mail-i-ailit-framework",
+      "title": "10. PISA 2029 MAIL i AILit – międzynarodowe ramy kompetencji medialnych i AI w praktyce",
+      "height": 8901,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": []
+    },
+    {
+      "id": "m1-11-podstawowe-pytania-krytyczne",
+      "title": "11. Podstawowe pytania krytyczne",
+      "height": 523,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": []
+    },
+    {
+      "id": "m1-12-edukacja-medialna-demokracja-i-dobrostan",
+      "title": "12. Edukacja medialna, demokracja i dobrostan psychiczny",
+      "height": 12608,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 490,
+          "client": 330,
+          "scroll": 820
+        }
+      ],
+      "imgs": []
+    },
+    {
+      "id": "m1-13-cwiczenia-i-karty-pracy",
+      "title": "13. Ćwiczenia praktyczne – samoocena i analiza nawyków medialnych",
+      "height": 5093,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-14-slownik-pojec",
+      "title": "14. Słownik pojęć",
+      "height": 898,
+      "width": 362,
+      "overflow": 0,
+      "tables": [
+        {
+          "overflow": 290,
+          "client": 330,
+          "scroll": 620
+        }
+      ],
+      "imgs": []
+    },
+    {
+      "id": "m1-15-najwazniejsze-wnioski",
+      "title": "15. Najważniejsze wnioski",
+      "height": 911,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    },
+    {
+      "id": "m1-16-zrodla-i-materialy-do-dalszej-lektury",
+      "title": "16. Źródła i materiały do dalszej lektury",
+      "height": 896,
+      "width": 362,
+      "overflow": 0,
+      "tables": [],
+      "imgs": []
+    }
+  ],
+  "video": {
+    "featureWidth": 335,
+    "frameWidth": 306,
+    "leftGap": 15,
+    "rightGap": 15,
+    "ratio": 1.778,
+    "top": 18737
+  },
+  "logs": [
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "other",
+          "level": "warning",
+          "text": "Unrecognized feature: 'web-share'.",
+          "timestamp": 1785496911127.942,
+          "url": "about:blank",
+          "lineNumber": 986
+        }
+      }
+    }
+  ]
+}
